@@ -1147,11 +1147,15 @@ h3{
 }
 .image-content-block{
     padding-top: 90px;
-    text-align: center;
+    
     @media(max-width:767px){
+        text-align: center;
         .main-title{
             h1{
                 display: block;
+                strong{
+                    font-weight: 400;
+                }
                 &.title-image{
                     &:before{
                         display: none;
