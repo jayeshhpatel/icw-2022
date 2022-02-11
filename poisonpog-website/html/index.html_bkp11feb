@@ -82,12 +82,10 @@
         <section class="main-banner">
             <div class="banner-action">
                 <div class="container">
-                    <a href="#">
-                        <img src="assets/images/metamask-mark.svg" alt="metamask-mark" class="metamask-mark-icon"/>
-                        <span><span class="sub-text">Login With</span><br class="d-none d-md-block"> Metamask</span>
-                    </a>
+                    <a href="#">Login With<br> Metamask</a>
                 </div>
             </div>
+            <!-- <img src="assets/images/main-banner.jpg" alt="" class="banner-img"/> -->
             <div class="embed-container">
                 <video class="embed-block" autoplay muted loop>
                     <source src="assets/images/banner-bg-video.mp4" type="video/mp4">
@@ -97,11 +95,8 @@
         <main class="main-content-wrapper bg-tree">
             <section class="section-block image-content-block img-shape-left" id="about">
                 <div class="container">
-                    <div class="main-title wow fadeInUp d-none d-md-block" data-wow-delay="0.2s">
+                    <div class="main-title wow fadeInUp" data-wow-delay="0.2s">
                         <h1 class="title-image"><span>WELCOME TO THE POISON POG SKULL BAR</span></h1>
-                    </div>
-                    <div class="main-title wow fadeInUp d-block d-md-none" data-wow-delay="0.2s">
-                        <h1 class="title-image"> WELCOME TO <span><br class="d-block d-md-none"/> THE POISON POG SKULL BAR</span></h1>
                     </div>
                     <div class="card-content">
                         <p class="wow fadeInUp" data-wow-delay="0.4s">The Skull Bar is our hangout, inspired by Rip Bull Networks products and services.</p>
@@ -125,35 +120,131 @@
                             <img src="assets/images/cricle-img4.png" alt="" class="scale"/>
                         </div>
                     </div>
-                    <div class="text-center mt-3 mt-lg-5">
+                    <div class="text-center mt-4 mt-lg-5">
                         <a href="gallery.html" class="btn-primary">Enter Gallery</a>
                     </div>
                 </div>
             </section>
-            <section class="section-block circle-content-block img-shape-right pb-0" style="background-position: right -7%;">
+            <section class="section-block circle-img-content img-shape-right pb-0" style="background-position: right -7%;">
                 <div class="container">
-                    <div class="card-item">
-                        <div class="main-title wow fadeInUp" data-wow-delay="0.2s">
-                            <h2 class="title-image"><span>minting Process</span></h2>
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="card-item">
+                                <div class="main-title wow fadeInUp" data-wow-delay="0.2s">
+                                    <h2 class="title-image"><span>minting Process</span></h2>
+                                </div>
+                                <p class="wow fadeInUp" data-wow-delay="0.4s">Each Pog is unique and randomly generated upon the minting process - including backgrounds, headwear, mouth props, and more.  You can’t break these Pogs out on the street, but you can still trade at will.</p>
+                            </div>
+                            <div class="card-item">
+                                <div class="main-title wow fadeInUp" data-wow-delay="0.2s">
+                                    <h2 class="title-image"><span>token strength</span></h2>
+                                </div>
+                                <p class="wow fadeInUp" data-wow-delay="0.4s">The Pogs are stored as ERC-721 tokens on the Ethereum blockchain and hosted on IPFS. (See Record and Proof.)</p>
+                            </div>
                         </div>
-                        <p class="wow fadeInUp" data-wow-delay="0.4s">Each Pog is unique and randomly generated upon the minting process - including backgrounds, headwear, mouth props, and more.  You can’t break these Pogs out on the street, but you can still trade at will.</p>
+                        <div class="col-md-6">
+                            <div class="image-block text-center">
+                                <div class="wow bounceInUp" data-wow-delay="0.4s">
+                                    <img src="assets/images/cricle-img5.png" alt="" class="scale"/>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-item">
+                    <div class="card-item position-relative roadmap-wrapper" id="roadmap">
                         <div class="main-title wow fadeInUp" data-wow-delay="0.2s">
-                            <h2 class="title-image"><span>token strength</span></h2>
+                            <h2 class="title-image"><span>ROADMAP ACTIVATIONS</span></h2>
                         </div>
-                        <p class="wow fadeInUp" data-wow-delay="0.4s">The Pogs are stored as ERC-721 tokens on the Ethereum blockchain and hosted on IPFS. (See Record and Proof.)</p>
+                       <div class="roadmap-block">
+                            <div class="roadmap-item">
+                                <img src="assets/images/number-img1.png" alt=""/>
+                                <h3><span class="text-blue">December 2021</span><span> 500 Poison pogs to be released as pre-sale on dec. 24</span></h3>
+                            </div>
+                            <div class="line-img">
+                                <img src="assets/images/line1.svg" alt=""/>
+                            </div>
+                            <div class="roadmap-item justify-content-end">
+                                <h3 class="text-right"><span class="text-blue">February 2022</span><span>9,500+ Additional Poison Pogs go on sale the first week of february</span></h3>
+                                <img src="assets/images/number-img2.png" alt=""/>
+                            </div>
+                            <div class="line-img">
+                                <img src="assets/images/line2.svg" alt=""/>
+                            </div>
+                            <div class="roadmap-item">
+                                <img src="assets/images/number-img3.png" alt=""/>
+                                <h3><span class="text-blue">March 2022</span><span>g2 Minus Encrypted messenger available to poison pog owners</span></h3>
+                            </div>
+                            <div class="line-img">
+                                <img src="assets/images/line1.svg" alt=""/>
+                            </div>
+                            <div class="roadmap-item justify-content-end">
+                                <h3 class="text-right"><span class="text-blue">MAY 2022</span><span>in-App Chat membership discounts available with metamask</span></h3>
+                                <img src="assets/images/number-img4.png" alt=""/>
+                            </div>
+                       </div>
+                       <img src="assets/images/bg-image.png" alt="" class="animation-image swing"/>
                     </div>
                 </div>
             </section>
+            <!-- <section class="section-block pb-0 contributors-block">
+                <div class="container">
+                    <div class="main-title wow fadeInUp" data-wow-delay="0.2s">
+                        <h2 class="title-image"><span>Contributors</span></h2>
+                    </div>
+                    <p class="wow fadeInUp" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="row row-card pt-4">
+                        <div class="col-12 col-md-4">
+                            <div class="card card-block is-card-hover">
+                                <div class="card-body">
+                                    <a href="#!" class="card-head">
+                                        <img src="assets/images/cricle-img1.png" alt="" />
+                                    </a>
+                                    <a href="#!">
+                                        <h3 class="card-title text-center">Poison Pog #8</h3>
+                                    </a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card card-block is-card-hover">
+                                <div class="card-body">
+                                    <a href="#!" class="card-head">
+                                        <img src="assets/images/cricle-img2.png" alt="" />
+                                    </a>
+                                    <a href="#!">
+                                        <h3 class="card-title text-center">Poison Pog #9</h3>
+                                    </a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card card-block is-card-hover">
+                                <div class="card-body">
+                                    <a href="#!" class="card-head">
+                                        <img src="assets/images/cricle-img3.png" alt="" />
+                                    </a>
+                                    <a href="#!">
+                                        <h3 class="card-title text-center">Poison Pog #10</h3>
+                                    </a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="animation-image">
+                    <img src="assets/images/bg-image-left.png" alt="" class="swing">
+                </div>
+            </section> -->
             <section class="section-block benifits-block">
                 <div class="container">
                     <div class="main-title wow fadeInUp" data-wow-delay="0.2s">
                         <h2 class="title-image"><span>MEMBER BENEFITS</span></h2>
                     </div>
-                    <p class="wow fadeInUp mw-500" data-wow-delay="0.4s">Poison Pog ownership gains exclusive membership access to Rip Bull Networks products and services. </p>
+                    <p class="wow fadeInUp" data-wow-delay="0.4s">Poison Pog ownership gains exclusive membership access to Rip Bull Networks products and services. </p>
                     <div class="row row-card pt-4">
-                        <div class="col-6 col-sm-6 col-md-3 wow bounceInUp" data-wow-delay="0.2s">
+                        <div class="col-12 col-sm-6 col-md-3 wow bounceInUp" data-wow-delay="0.2s">
                             <div class="card card-grid-block is-card-hover">
                                 <div class="card-body">
                                     <a href="#!" class="card-head">
@@ -165,7 +256,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-sm-6 col-md-3 wow bounceInUp" data-wow-delay="0.4s">
+                        <div class="col-12 col-sm-6 col-md-3 wow bounceInUp" data-wow-delay="0.4s">
                             <div class="card card-grid-block is-card-hover">
                                 <div class="card-body">
                                     <a href="#!" class="card-head">
@@ -177,7 +268,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-sm-6 col-md-3 wow bounceInUp" data-wow-delay="0.6s">
+                        <div class="col-12 col-sm-6 col-md-3 wow bounceInUp" data-wow-delay="0.6s">
                             <div class="card card-grid-block is-card-hover">
                                 <div class="card-body">
                                     <a href="#!" class="card-head">
@@ -189,7 +280,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-sm-6 col-md-3 wow bounceInUp" data-wow-delay="0.8s">
+                        <div class="col-12 col-sm-6 col-md-3 wow bounceInUp" data-wow-delay="0.8s">
                             <div class="card card-grid-block is-card-hover">
                                 <div class="card-body">
                                     <a href="#!" class="card-head">
@@ -203,24 +294,19 @@
                         </div>
                     </div>
                 </div>
-                <img src="assets/images/bg-image-left.png" alt="" class="animation-image swing">
             </section>
-            <section class="circle-img-content meta-mansion-block pt-0 pt-lg-3">
+            <section class="circle-img-content pt-0 pt-lg-3">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="main-title wow fadeInUp" data-wow-delay="0.2s">
                                 <h2 class="title-image"><span>THE meta MANSION</span></h2>
                             </div>
-                            <div class="image-block d-table d-md-none">
-                                <img src="assets/images/blog-img1.png" alt="" class="blog-img"/>
-                                <img src="assets/images/bg-image-left.png" alt="" class="animation-image-block swing">
-                            </div>
                             <div class="wow fadeInUp" data-wow-delay="0.4s">
                                 <p>The Meta Mansion will become operational once the presale period is over. Its walls contain various rooms that include membership-only activities, games, and puzzles that will evolve over time.</p>
                             </div>
                         </div>
-                        <div class="col-md-6 d-none d-md-block">
+                        <div class="col-md-6">
                             <div class="image-block overflow-hidden text-center">
                                 <img src="assets/images/meta-mansion.png" alt="" class="scale"/>
                             </div>
@@ -228,62 +314,49 @@
                     </div>
                 </div>
             </section>
-            <section class="section-block roadmap-wrapper circle-img-content">
-                <div class="container">
-                    <div class="card-item position-relative" id="roadmap">
-                        <div class="main-title wow fadeInUp" data-wow-delay="0.2s">
-                            <h2 class="title-image"><span>ROADMAP ACTIVATIONS</span></h2>
-                        </div>
-                       <div class="roadmap-block">
-                            <div class="roadmap-item">
-                                <img src="assets/images/number-img1.png" alt=""/>
-                                <h3><span class="text-blue">December 2021</span><span> 500 Poison pogs to be released as pre-sale on dec. 24</span></h3>
-                            </div>
-                            <div class="line-img">
-                                <img src="assets/images/line1.svg" alt="" class="d-none d-md-block mx-auto"/>
-                                <img src="assets/images/line1-mobile.svg" alt="" class="d-block d-md-none mx-auto"/>
-                            </div>
-                            <div class="roadmap-item justify-content-end">
-                                <h3 class="text-right"><span class="text-blue">February 2022</span><span>9,500+ Additional Poison Pogs go on sale the first week of february</span></h3>
-                                <img src="assets/images/number-img2.png" alt="" class="second-img"/>
-                            </div>
-                            <div class="line-img">
-                                <img src="assets/images/line2.svg" alt="" class="d-none d-md-block mx-auto"/>
-                                <img src="assets/images/line2-mobile.svg" alt="" class="d-block d-md-none mx-auto"/>
-                            </div>
-                            <div class="roadmap-item">
-                                <img src="assets/images/number-img3.png" alt=""/>
-                                <h3><span class="text-blue">March 2022</span><span>g2 Minus Encrypted messenger available to poison pog owners</span></h3>
-                            </div>
-                            <div class="line-img">
-                                <img src="assets/images/line1.svg" alt="" class="d-none d-md-block mx-auto"/>
-                                <img src="assets/images/line1-mobile.svg" alt="" class="d-block d-md-none mx-auto"/>
-                            </div>
-                            <div class="roadmap-item justify-content-end">
-                                <h3 class="text-right"><span class="text-blue">MAY 2022</span><span>in-App Chat membership discounts available with metamask</span></h3>
-                                <img src="assets/images/number-img4.png" alt="" class="second-img"/>
-                            </div>
-                       </div>
-                       <img src="assets/images/bg-image.png" alt="" class="animation-image swing">
-                    </div>
-                </div>
-            </section>
             <section class="circle-img-content pt-0 pt-lg-3 list-block">
                 <div class="container">
-                    <div class="main-title wow fadeInUp" data-wow-delay="0.2s">
-                        <h2 class="title-image"><span>HOW DO I GET A POISON POG?</span></h2>
-                    </div>
-                    <div class="wow fadeInUp" data-wow-delay="0.4s">
-                        <p>It’s easy! Follow these three steps:</p>
-                        <ul class="dots-list">
-                            <li>First, download and install MetaMask.</li>
-                            <li>Next, buy some Ether.</li>
-                            <li>Finally, purchase a Poison Pog from OpenSea</li>
-                        </ul>
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <div class="main-title wow fadeInUp" data-wow-delay="0.2s">
+                                <h2 class="title-image"><span>HOW DO I GET A POISON POG?</span></h2>
+                            </div>
+                            <div class="wow fadeInUp" data-wow-delay="0.4s">
+                                <p>It’s easy! Follow these three steps:</p>
+                                <ul class="dots-list">
+                                    <li>First, download and install MetaMask.</li>
+                                    <li>Next, buy some Ether.</li>
+                                    <li>Finally, purchase a Poison Pog from OpenSea</li>
+                                </ul>
+                                <!-- <a href="#!" class="btn-secondary mt-4 mt-lg-5">Opensea.io</a> -->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="image-block">
+                                <img src="assets/images/get-poisonpog.gif" alt="" class="scale"/>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-            
+            <!-- <section class="newsletter-wrapper">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="main-title text-center wow fadeInUp" data-wow-delay="0.2s">
+                                <h2><span>SUBSCRIBE</span></h2>
+                                <p>Stay up to date & receive email updates</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="newsletter-input wow fadeInUp" data-wow-delay="0.4s">
+                                <input type="email" class="form-control" placeholder="enter your email address"/>
+                                <button class="btn-primary"><span>SUBMIT</span><i class="icon icon-right-arrow"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
         </main>
         <!-- // MAIN SECTION -->
         <!-- FOOTER SECTION -->
