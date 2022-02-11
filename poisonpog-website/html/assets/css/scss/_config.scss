@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Hahmlet:wght@400;500;700&family=Lato:wght@400;700&family=Poppins:wght@400;500;600&display=swap');
+
+/* Variables */
+$bodyfont:'Hahmlet', serif;
+$bodyfontsize:20px;
+$bodyfontcolor: #E5E5E5;
+$bodybg: #ffffff;
+$darkBlack: #273739;
+$white: #ffffff;
+$black: #000000;
+$purple:#442DC1;
+
+/* Mixins */
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+}
+@mixin box-shadow($box-shadow) {
+  -moz-box-shadow: $box-shadow;
+  -webkit-box-shadow: $box-shadow;
+  box-shadow: $box-shadow;
+}
+@mixin box-shadow-all($bs-t, $bs-r, $bs-b, $bs-l, $box-shadow-all-color) {
+  box-shadow: $bs-t $bs-r $bs-b $bs-l $box-shadow-all-color;
+  -webkit-box-shadow: $bs-t $bs-r $bs-b $bs-l $box-shadow-all-color;
+  -moz-box-shadow: $bs-t $bs-r $bs-b $bs-l $box-shadow-all-color;
+  -o-box-shadow: $bs-t $bs-r $bs-b $bs-l $box-shadow-all-color;
+}
+
+@mixin transition($duration, $ease) {
+  -webkit-transition: all $duration $ease;
+  -moz-transition: all $duration $ease;
+  -o-transition: all $duration $ease;
+  transition: all $duration $ease;
+}
+@mixin transitionValue($value, $duration, $ease) {
+  -webkit-transition: $value $duration $ease;
+  -moz-transition: $value $duration $ease;
+  -o-transition: $value $duration $ease;
+  transition: $value $duration $ease;
+}
+@mixin opacity($value) {
+  -moz-opacity: $value;
+  -khtml-opacity: $value;
+  -webkit-opacity: $value;
+  opacity: $value;
+}
+@mixin transform($value) {
+  -moz-transform: $value;
+  -webkit-transform: $value;
+  -o-transform: $value;
+  -ms-transform: $value;
+  transform: $value;
+}
+
+@mixin filter($value) {
+  -webkit-filter: $value;
+  -moz-filter: $value;
+  -o-filter: $value;
+  filter: $value;
+}
+
+/* display: flex */
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+@mixin inline-flex {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+@mixin justify-content($justify) {
+  -webkit-justify-content: $justify;
+  -moz-justify-content: $justify;
+  -ms-justify-content: $justify;
+  justify-content: $justify;
+  -ms-flex-pack: $justify;
+}
+@mixin align-items($align) {
+  -webkit-align-items: $align;
+  -moz-align-items: $align;
+  -ms-align-items: $align;
+  -ms-flex-align: $align;
+  align-items: $align;
+}
+@mixin flex-direction($direction) {
+  -webkit-flex-direction: $direction;
+  -moz-flex-direction: $direction;
+  -ms-flex-direction: $direction;
+  flex-direction: $direction;
+}
+@mixin flex-wrap($wrap) {
+  -webkit-flex-wrap: $wrap;
+  -moz-flex-wrap: $wrap;
+  -ms-flex-wrap: $wrap;
+  flex-wrap: $wrap;
+}
+@mixin flex-flow($flow) {
+  -webkit-flex-flow: $flow;
+  -moz-flex-flow: $flow;
+  -ms-flex-flow: $flow;
+  flex-flow: $flow;
+}
+// Display Order
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;
+  -moz-box-ordinal-group: $val;
+  -ms-flex-order: $val;
+  -webkit-order: $val;
+  order: $val;
+}
+
+/** Operation **/
+/* Parametric Mixins */
+/** Guarded Mixins **/
+
+body{
+  scrollbar-width: thin;
+  scroll-margin-right: 5px;
+}
+::-webkit-scrollbar {
+  background-color:transparent;
+  width:8px; height: 10px;
+  border-radius:2px;
+}
+/* background of the scrollbar except button or resizer */
+::-webkit-scrollbar-track {
+  background-color:rgba($black, 0.05)
+}
+::-webkit-scrollbar-track:hover {
+  background-color:rgba($black, 0.15)
+}
+
+/* scrollbar itself */
+::-webkit-scrollbar-thumb {
+  background-color:rgba(#92C748, 0.5);
+  border-radius:2px;
+  // border:2px solid #FFFFFF;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color:#92C748;
+  // border:4px solid #f4f4f4
+}
+
+/* set button(top and bottom of the scrollbar) */
+::-webkit-scrollbar-button {display:none}

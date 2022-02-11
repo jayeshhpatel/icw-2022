@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="theme-color" content="#000000">
+        <meta name="Googlebot" content="noindex,nofollow">
+        <meta name="author" content="POISON POG">
+        <meta name="description" content="POISON POG">
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" href="assets/images/favicon.gif" sizes="180x180">
+        <link rel="shortcut icon" type="images/x-icon" href="assets/images/favicon.gif">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+
+        <title>POISON POG</title>
+    </head>
+
+    <body class="splash-home">
+
+        <!-- MAIN SECTION -->
+        <main class="main-content-wrapper">
+            <section class="section-block main-banner-block countdown-banner-block"> 
+                <!-- <div class="bg-page-image" style="background-image: url(assets/images/splash-screen-bg-img.png);"></div>                 -->
+                <div class="embed-container">
+                    <video class="embed-block" autoplay muted loop>
+                        <source src="assets/images/splash-screen-bg-video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="countdown-content-block">
+                    <div class="container-fluid">
+                        <div class="info-block">
+                            <div class="logo">
+                                <a class="pulse" href="index.html"><img src="assets/images/logo.gif" alt="POISON POG" /></a>
+                            </div>
+                            <div class="main-title wow fadeInUp m-0" data-wow-delay="0.2s">
+                                <h1 class="mb-0 d-block">Countdown to <br>NFT Presale</h1>
+                                <div id="countdown">
+                                    <ul>
+                                        <li><span id="days"></span>days</li>
+                                        <li><span id="hours"></span>Hours</li>
+                                        <li><span id="minutes"></span>Minutes</li>
+                                        <li><span id="seconds"></span>Seconds</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- // MAIN SECTION -->
+
+        <!-- JS -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            new WOW().init();
+            (function () {
+                const second = 1000,
+                minute = second * 60,
+                hour = minute * 60,
+                day = hour * 24;
+
+                //I'm adding this section so I don't have to keep updating this pen every year :-)
+                //remove this if you don't need it
+                let today = new Date(),
+                dd = String(today.getDate()).padStart(2, "0"),
+                mm = String(today.getMonth() + 1).padStart(2, "0"),
+                yyyy = today.getFullYear(),
+                nextYear = yyyy + 1,
+                dayMonth = "December 24, 2021 17:00:00 PST",
+                birthday = dayMonth + yyyy;
+
+                today = mm + "/" + dd + "/" + yyyy;
+                if (today > birthday) {
+                    birthday = dayMonth + nextYear;
+                    }
+                //end
+  
+                const countDown = new Date(birthday).getTime(),
+                x = setInterval(function() { 
+                    const now = new Date().getTime(), distance = countDown - now;
+                    document.getElementById("days").innerText = Math.floor(distance / (day)),
+                    document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+                    document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+                    document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+                //seconds
+                }, 0)
+            }());
+        </script>
+    </body>
+
+</html>
