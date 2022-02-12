@@ -1065,8 +1065,36 @@ h3{
     }
     @media(max-width:767px){
        overflow: visible;
-       height: 260px;
-       .embed-container {padding-bottom: 0; height:260px; }
+       height: 50vh;
+        .embed-container {
+            height: 50vh;
+            video {
+                -o-object-fit: contain;
+                object-fit: contain;
+                -o-object-position: center bottom;
+                object-position: center bottom;
+                left: -100px;
+                width: calc(100% + 150px);
+                -webkit-animation: videomarquee 12s linear infinite;
+                        animation: videomarquee 12s linear infinite;
+            }
+            @-webkit-keyframes videomarquee {
+                0%   { left: 0px; }
+                50% { left: -120px; }
+                100% { left: 0px; }
+            }
+            @keyframes videomarquee {
+                0%   { left: 0px; }
+                50% { left: -120px; }
+                100% { left: 0px; }
+            }
+        }
+    }
+    @media(max-width:575px){
+        height: 300px;
+        .embed-container {
+            height: 100%;
+        }
     }
 }
 
@@ -1147,7 +1175,6 @@ h3{
 }
 .image-content-block{
     padding-top: 90px;
-    
     @media(max-width:767px){
         text-align: center;
         .main-title{
