@@ -71,12 +71,24 @@
             .header-large.icon {  margin: 8px 8px 0; }
             .popup { left: auto; right: 0; }
         }
-        .view-image-container { padding: 16px;
-            .content {
-                .column {
-                    &.left-column, &.right-column { width: 48px; }
-                    &.middle-column { width: calc(100% - 96px); padding: 12px 8px;
-                        img { max-height: calc(100% - 24px); }
+        .custom-popup {
+            &.view-image-container {
+                padding: 16px;
+                .wrapper {
+                    .header {
+                        .actions {
+                            .action-box {min-width: 25px;
+                                &.closer {width: 35px;}
+                            }
+                        }
+                    }
+                    .content {
+                        .column {
+                            &.left-column, &.right-column { width: 48px; }
+                            &.middle-column { width: calc(100% - 96px); padding: 12px 8px;
+                                img { max-height: calc(100% - 24px); }
+                            }
+                        }
                     }
                 }
             }

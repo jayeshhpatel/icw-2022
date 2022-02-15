@@ -51,6 +51,9 @@
             &:hover { @include opacity(0.8); }
         }
         .popup { position: absolute; width: 100%; min-width: 200px; left: 0px; top: 100%; visibility: hidden; opacity: 0; pointer-events: none; z-index: -2; @include transition(0.3s, ease-in-out);  overflow: hidden; overflow-y: auto; border: 1px solid $primary; background: #111116; padding: 6px 0; max-height: 0;
+            &.bottom-right{
+                right: 0;left: auto;
+            }
             .popup-container { 
                 ul { 
                     li { text-align: left; @include flexbox; @include justify-content(space-between); @include align-items(center);

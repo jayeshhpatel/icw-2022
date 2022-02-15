@@ -394,20 +394,22 @@
             }
         }
         &.view-image-container {
-            .wrapper { background: $dark-black; max-width: 1000px; margin: 0 auto; overflow: hidden; width: 100%; height: 100%; display: flex; flex-direction: column;
-                .header { display: flex; justify-content: space-between; align-items: center; height: 57px; min-height: 57px; background-color: #313140; border-bottom: 1px solid #454A60;
-                    .file-sender {display: flex; width: calc(100% - 136px); padding-left: 16px; float: left;
-                        .avatar { width: 34px; height: 34px; margin-right: 8px; border-radius: 3px; }
+            .wrapper { background: $dark-black; max-width: 1000px; margin:auto; overflow: hidden; width: 100%; min-height: 580px; display: flex; flex-direction: column;
+                .header { display: flex; justify-content: space-between; align-items: center; height: 60px; min-height: 60px; background-color: #313140; border-bottom: 1px solid #454A60;
+                    .file-sender {display: flex;align-items: center; width: calc(100% - 136px); padding-left: 16px; float: left;
+                        .avatar { width: 38px; height: 38px; margin-right: 10px; }
                         .info { overflow: hidden; }
-                        .name-date { font-weight: 500; font-size: 14px; color: #f2f5f9; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+                        .name-date { font-weight: 600; font-size: 15px; color: #f2f5f9; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
                             .date { font-weight: normal; font-size: 12px; }
                         }
-                        .file-detail { color: #ADB3CC; font-weight: normal; font-size: 12px; line-height: 1.5; }
+                        .file-detail { color: #ADB3CC; font-weight: normal; font-size: 12px; line-height: 1.5;white-space: nowrap; }
                     }
                     .actions { display: flex;
-                        .action-box { min-width: 40px; height: 50px; display: flex; align-items: center; justify-content: center; cursor: pointer;
-                            .icon { width: 24px; height: 18px; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease-in-out; }
-                            &.more { border-right: 1px solid #454A60; }
+                        .action-box { min-width: 40px; height: 60px; display: flex; align-items: center; justify-content: center; cursor: pointer;
+                            &:last-child{border-left: 1px solid #454A60;margin-left: 5px;}
+                            .icon { width: 24px; height: 18px; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease-in-out;
+                                .ico{width: 16px;height: 16px;}
+                            }
                             &.closer { width: 50px; }
                             &:hover {
                                 .icon { opacity: 0.7; }
@@ -420,12 +422,12 @@
                         .left-column, .right-column { height: 100%; display: flex; align-items: center; justify-content: center; width: 120px;
                             .slide-btn { width: 28px; opacity: 1; cursor: pointer; }
                         }
-                        .middle-column { width: calc(100% - 240px); height: 100%; padding: 48px; display: flex; position: relative;
-                            img { max-width: 100%; position: absolute; max-height: calc(100% - 96px); top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%); }  
+                        .middle-column { width: calc(100% - 240px); height: 100%; padding: 30px; display: flex; position: relative;
+                            img { max-width: 100%; position: absolute; max-height: calc(100% - 60px); top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%); }  
                         }
                     }
                 }
-                .footer { height: 57px; min-height: 57px; background-color: #313140; display: flex; justify-content: center; align-items: center; border-top: 1px solid #454A60;
+                .footer { height: 60px; min-height: 60px; background-color: #313140; display: flex; justify-content: center; align-items: center; border-top: 1px solid #454A60;
                     .range-box { display: flex;
                         .decrease, .increase { padding: 11px 24px; position: relative;                           
                             &::before, &::after { width: 16px; height: 2px; position: absolute; content: ''; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%); background-color: #949494; }
@@ -932,7 +934,7 @@
                     }
                     .actions {
                         .action-box { 
-                            &.more { border-right-color: #E3E6E9; }
+                            &:last-child { border-left-color: #E3E6E9; }
                         }
                     }
                 }

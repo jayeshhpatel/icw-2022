@@ -1,6 +1,8 @@
-<svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1 5H3H19" stroke="#F03D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M6 5V3C6 2.46957 6.21071 1.96086 6.58579 1.58579C6.96086 1.21071 7.46957 1 8 1H12C12.5304 1 13.0391 1.21071 13.4142 1.58579C13.7893 1.96086 14 2.46957 14 3V5M17 5V19C17 19.5304 16.7893 20.0391 16.4142 20.4142C16.0391 20.7893 15.5304 21 15 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5H17Z" stroke="#F03D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M8 10V16" stroke="#F03D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M12 10V16" stroke="#F03D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="13.714" height="16" viewBox="0 0 13.714 16">
+  <g id="delete" transform="translate(-4.5 -2.25)">
+    <path id="Path_12068" data-name="Path 12068" d="M13.5,13.5h1.143v6.857H13.5Z" transform="translate(-4.429 -5.536)" fill="#f85353"/>
+    <path id="Path_12069" data-name="Path 12069" d="M20.25,13.5h1.143v6.857H20.25Z" transform="translate(-7.75 -5.536)" fill="#f85353"/>
+    <path id="Path_12070" data-name="Path 12070" d="M4.5,6.75V7.893H5.643V19.321a1.143,1.143,0,0,0,1.143,1.143h9.143a1.143,1.143,0,0,0,1.143-1.143V7.893h1.143V6.75ZM6.786,19.321V7.893h9.143V19.321Z" transform="translate(0 -2.214)" fill="#f85353"/>
+    <path id="Path_12071" data-name="Path 12071" d="M13.5,2.25h4.571V3.393H13.5Z" transform="translate(-4.429)" fill="#f85353"/>
+  </g>
 </svg>
