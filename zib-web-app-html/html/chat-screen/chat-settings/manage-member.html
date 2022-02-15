@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="Googlebot" content="noindex,nofollow">
+        <meta name="author" content="ZIB">
+        <meta name="description" content="ZIB">
+
+        <link rel="shortcut icon" href="../../favicon.ico" type="images/x-icon" sizes="16x16">
+        <link rel="stylesheet" href="../assets/css/main-settings.css" />
+        <title>Manage Member | Settings</title>
+    </head>
+    <body class="settings-content app-content">
+        <header class="main-header">
+            <div class="container">
+                <nav class="navbar">        
+                    <div class="page-logo-block">
+                        <div class="menu-btn">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>        
+                        <a href="../chat-screen.html" class="avatar-logo">
+                            <em class="ico icon-settings-arrow-left"></em>
+                            <div class="avatar">
+                                <span><img src="../assets/images/william.jpg" alt="William"></span>
+                            </div>
+                            <span class="name">Settings</span>
+                        </a>
+                    </div>
+                    <a href="#" class="navbar-brand">
+                        <img src="../assets/images/zib-logo.svg" alt="ZIB Messenger" />
+                    </a>  
+                    <div class="main-menu">
+                        <button class="button btn-primary with-icon" type="button" onclick="window.location.href='professional-plan-setup.html';">Upgrade to Pro <em class="ico icon-setting-upgrade"></em></button>
+                    </div>              
+                </nav>
+            </div>
+        </header>
+        <main class="main-content-wrapper">
+            <div class="container">
+                <div class="grid-content">
+                    <div class="menu-sidebar-block">
+                        <div class="main-sidebar">
+                            <span class="menu-title">Account Settings</span>
+                            <ul class="menu-list">
+                                <li><a href="edit-profile.html"><em class="ico icon-setting-profile"></em>Edit Profile</a></li>
+                            </ul>
+                            <span class="menu-title">Workspace Settings</span>
+                            <ul class="menu-list">
+                                <li><a href="about-workspace.html"><em class="ico icon-setting-workspace"></em>About Workspace</a></li>
+                                <li><a href="manage-member.html" class="active"><em class="ico icon-setting-member"></em>Manage Members</a></li>
+                                <li><a href="invitations.html"><em class="ico icon-setting-invitation"></em>Invitations</a></li>
+                                <li><a href="channels.html"><em class="ico icon-setting-channel-list"></em>Channel List</a></li>
+                                <li><a href="3d-smart-office.html"><em class="ico icon-setting-office"></em>3D Smart Office</a></li>
+                                <li><a href="billing.html"><em class="ico icon-setting-billing"></em>Billing</a></li>
+                                <li><a href="settings.html"><em class="ico icon-setting-menu"></em>Settings</a></li>
+                            </ul>                            
+                            <ul class="menu-list d-none">
+                                <li><button class="button btn-primary with-icon" type="button" onclick="window.location.href='professional-plan-setup.html';">Upgrade to Pro <em class="ico icon-setting-upgrade"></em></button></li>
+                            </ul>
+                            <ul class="menu-list signout-menu">
+                                <li><a href="#"><em class="ico icon-setting-signout"></em>Sign out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content-block">
+                        <div class="title-box">
+                            <h1>Manage Members</h1>
+                            <span class="info">Manage the current members of your workspace or invite new one</span>
+                        </div>
+                        <div class="info-content-block no-border">
+                            <div class="input-search-block">
+                                <div class="add-btn-block">
+                                    <button class="button btn-light with-icon small" type="button" data-popup="addMemberModal">Add New Member <em class="ico icon-setting-add"></em></button>
+                                </div>
+                                <div class="input-field pre-icon-input"> 
+                                    <span class="pre-icon"><em class="ico icon-search"></em></span>
+                                    <input type="text" class="tBox" placeholder="Search">
+                                </div> 
+                            </div>
+                            <div class="list-block">
+                                <div class="title">
+                                    <h2>Member List</h2>
+                                </div>
+                                <div class="table-block">
+                                    <div class="table-responsive">
+                                        <table class="record-list-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                        <div class="sorting">
+                                                            <span>Name</span> <em class="ico icon-setting-sorting"></em>
+                                                        </div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="sorting">
+                                                            <span>Email Address</span> <em class="ico icon-setting-sorting"></em>
+                                                        </div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="sorting">
+                                                            <span>Account Type</span> <em class="ico icon-setting-sorting"></em>
+                                                        </div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="sorting">
+                                                            <span>Status</span> <em class="ico icon-setting-sorting"></em>
+                                                        </div>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Kishan Thanki</td>
+                                                    <td>kishan@ripbullnetworks.com</td>
+                                                    <td>Primary Owner</td>
+                                                    <td class="with-dropdown">
+                                                        <div><span class="status online"></span>Active</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>William Wright</td>
+                                                    <td>william@ripbullnetworks.com</td>
+                                                    <td>Full Member</td>
+                                                    <td class="with-dropdown">
+                                                        <div><span class="status billing"></span>Billing</div>
+                                                        <div class="more-dropdown">
+                                                            <a href="javascript:void(0)" class="more-info"><em class="ico icon-dot"></em></a> 
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>John Doe</td>
+                                                    <td>john@ripbullnetworks.com</td>
+                                                    <td>Full Member</td>
+                                                    <td class="with-dropdown">
+                                                        <div><span class="status online"></span>Active</div>
+                                                        <div class="more-dropdown">
+                                                            <a href="javascript:void(0)" class="more-info"><em class="ico icon-dot"></em></a> 
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Jayesh Patel</td>
+                                                    <td>jayesh@ripbullnetworks.com</td>
+                                                    <td>Full Member</td>
+                                                    <td class="with-dropdown">
+                                                        <div><span class="status online"></span>Active</div>
+                                                        <div class="more-dropdown">
+                                                            <a href="javascript:void(0)" class="more-info"><em class="ico icon-dot"></em></a> 
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Jane Doe</td>
+                                                    <td>jane@ripbullnetworks.com</td>
+                                                    <td>Primary Owner</td>
+                                                    <td class="with-dropdown">
+                                                        <div><span class="status online"></span>Active</div>
+                                                        <div class="more-dropdown">
+                                                            <a href="javascript:void(0)" class="more-info"><em class="ico icon-dot"></em></a> 
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- dropdown -->
+            <div id="channel1" class="jq-dropdown popup jq-dropdown-tip jq-dropdown-anchor-right">
+                <div class="popup-container">
+                    <ul>
+                        <li class="item" data-popup="deactivateAccountModal">Deactivate account</li>
+                        <li class="item" data-popup="removeUserModal">Remove user</li>
+                        <li class="item" data-popup="removeAdministratorModal">Remove as administrator</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- modal -->
+            <div class="modal" id="addMemberModal">
+                <div class="modal-wrapper">
+                    <div class="closer"><em class="ico icon-close-gray"></em></div>
+                    <div class="modal-body">
+                        <div class="title">Add members to workspace</div>
+                        <div class="tag-box-fields custom-tag-box-fields">    
+                            <div class="tag-box scrollable">
+                                <div class="tag">wwright13@gmail.com 
+                                    <span class="tag-remover"><em class="ico icon-close-white" aria-hidden="true"></em></span>
+                                </div> 
+                                <div class="input-box">
+                                    <input id="invite-input" type="text" class="text-box" name="text" placeholder="Email addresses">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tag-box-fields custom-tag-box-fields">  
+                            <label>Invite new users to join channels</label> 
+                            <div class="tag-box scrollable">
+                                <div class="tag">#general
+                                    <span class="tag-remover"><em class="ico icon-close-white" aria-hidden="true"></em></span>
+                                </div> 
+                                <div class="input-box">
+                                    <input id="invite-input" type="text" class="text-box" name="text" placeholder="Channels">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button type="button" class="button btn-primary">Add Member</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="deactivateAccountModal">
+                <div class="modal-wrapper modal-sm">
+                    <div class="closer"><em class="ico icon-close-gray"></em></div>
+                    <div class="modal-body">
+                        <div class="title">Deactivate account?</div>
+                        <p class="info">This user will no longer be able to access your workspace until they are reactivated.</p>
+                        <div class="action">
+                            <button type="button" class="button btn-primary medium">Deactivate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="removeUserModal">
+                <div class="modal-wrapper modal-sm">
+                    <div class="closer"><em class="ico icon-close-gray"></em></div>
+                    <div class="modal-body">
+                        <div class="title">Remove member?</div>
+                        <p class="info">This user will no longer be able to access your workspace.</p>
+                        <div class="action">
+                            <button type="button" class="button btn-primary medium">Remove</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="removeAdministratorModal">
+                <div class="modal-wrapper modal-sm">
+                    <div class="closer"><em class="ico icon-close-gray"></em></div>
+                    <div class="modal-body">
+                        <div class="title">Set as administrator?</div>
+                        <p class="info">This user will be granted full administrator priviliges.</p>
+                        <div class="action">
+                            <button type="button" class="button btn-primary medium">Confirm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="../assets/js/jquery.min.js"></script>
+        <script src="../assets/js/jquery.dropdown.min.js"></script>
+        <script src="../assets/js/chat-settings.js"></script>
+        <script src="../assets/js/chat.js"></script>
+        <script>
+            $('.file-input').change(function(){
+                var curElement = $('.user-image');
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    // get loaded data and render thumbnail.
+                    curElement.attr('src', e.target.result);
+                };
+                // read the image file as a data URL.
+                reader.readAsDataURL(this.files[0]);
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,214 @@
+.app-content {
+    .two-clmn-grid { 
+        width: 100%; @include flexbox(); @include flex-direction(column); float: left;
+        .grid-row { 
+            width: 100%; @include flexbox();
+            .left-clmn { 
+                width: calc(50% - 16px); margin-right: 16px; 
+            }
+            .right-clmn { 
+                width: calc(50% - 16px); margin-left: 16px; 
+            }
+        }
+        &.three-clmns {
+            .grid-row {
+                .left-clmn { 
+                    width: 42%; 
+                }
+                .right-clmn { 
+                    width: 42%; 
+                }
+                .clmn-options { 
+                    width: 16%; text-align: right; @include flexbox(); height: 100%; @include justify-content(flex-end); @include align-items(center);
+                    img { 
+                        display: block; width: 24px; 
+                    }
+                }
+            }
+        }
+    }
+    .divide-60-40 { 
+        @include flexbox();
+        .column:first-child { 
+            width: calc(60% - 8px); margin-right: 8px; 
+        }
+        .column:last-child { 
+            width: calc(40% - 8px); margin-left: 8px; 
+        }
+    }
+    .table-wrapper { 
+        max-width: 100%;
+        @media (max-width: 1199px) { 
+            overflow-x: auto; 
+        }
+    }
+    .table {
+        .row {
+            & > div { 
+                @include flexbox(); @include flex-wrap(wrap); 
+            }
+            @for $i from 0 through 100 {
+                @if $i % 5 == 0 {
+                    .clmn-#{$i} { 
+                        width: calc(#{ percentage($i/100) } - 16px); margin-right: 8px; margin-left: 8px; 
+                    }
+                }
+            }
+            .clmn-33 { 
+                width: 33.333333333% 
+            }
+            .clmn-66 { 
+                width: 66.666666666%; 
+            }
+            .no-shrink { 
+                flex-shrink: 0; 
+            }
+            .clmn-grow { 
+                flex-grow: 1; flex-shrink: 1; 
+            }
+            .icon.options { 
+                cursor: pointer;
+                img { 
+                    display: block; @include opacity(0.3); 
+                }
+            }
+        }
+    }
+    .table { 
+        width: 100%; @include flexbox(); @include flex-direction(column);
+        .row { 
+            @include flexbox(); @include align-items(center); padding: 16px 0; border-bottom: 1px solid #ededed; margin: 0;
+            & > div { 
+                margin: 0 12px 0 0; overflow-wrap: break-word;
+                &.sort-by { 
+                    color: #0576BF; 
+                }
+                .order { 
+                    padding: 0 3px; display: none; 
+                }
+                .order.desc { 
+                    transform: rotate(180deg) translateY(-3px); 
+                }
+                &.sort-by .order { 
+                    display: inline-block; 
+                }
+                span.status { 
+                    margin-bottom: 2px; 
+                }
+            }
+        }
+        .row.head { 
+            color: $gray; 
+        }
+        .column-name { 
+            @include flexbox(); width: calc(40% - 12px); flex-shrink: 0; flex-grow: 0;
+            .avatar { 
+                width: 40px; height: 40px; margin-right: 8px; 
+            }
+            .info { 
+                @include flexbox(); flex-grow: 1; @include flex-direction(column); @include justify-content(center); 
+            }
+            .name { 
+                font-size: 1rem; line-height: 1;
+            }
+            .user { 
+                font-size: .85rem; color: $gray; 
+            }
+        }
+        .column-acc-type { 
+            width: calc(30% - 12px); flex-grow: 0; flex-shrink: 0;
+            span:not(.order) { 
+                padding: 2px 6px; display: inline-block; background-color: rgba(0, 0, 0, 0.1); line-height: 2; border-radius: 3px; text-align: center; 
+            }
+            span.p-owner { 
+                color: #E2574C; background-color: rgba(226, 87, 76, .1); 
+            }
+            span.w-admin { 
+                color: #819C2D; background-color: rgba(129, 156, 45, .1); 
+            }
+        }
+        .column-billing { 
+            @include flexbox(); width: calc(20% - 12px); flex-grow: 0; flex-shrink: 0; @include align-items(center);
+            span.status { 
+                width: 6px; height: 6px; border-radius: 50%; background: #cccccc; margin-right: 3px;
+                &.active { 
+                    background: #3CDE7A; 
+                }
+            }
+        }
+        .authentication { 
+            width: 150px; flex-grow: 1; 
+        }
+        .column-options { 
+            @include flexbox(); @include justify-content(flex-end); @include align-items(center); width: 9%; flex-shrink: 0; position: relative;
+            .icon { 
+                display: inline-block; cursor: pointer;
+                img { 
+                    @include opacity(0.25); 
+                }
+                &:hover {
+                    img { 
+                        @include opacity(0.65); 
+                    }
+                }
+            }
+            .popup { 
+                width: 200px; 
+            }
+        }
+    }
+    .table-data-loader { 
+        width: 100%; text-align: center; padding: 16px 24px; cursor: pointer; color: $blue; border-top: 1px solid #dedede; 
+    }
+    .price-table {
+         width: 100%; @include flexbox(); flex-wrap: wrap; border: 1px solid #dedede; border-radius: 3px;
+        & > div { 
+            width: 33.333333%; border-right: 1px solid #dedede; padding: 16px 16px 0px 16px; position: relative;
+            &:last-of-type { 
+                border-right: 0px; 
+            }
+        }
+        .price-box { 
+            width: 100%; float: left; padding: 32px 0 6px 0;
+            p { 
+                width: 100%; text-align: center; 
+            }
+        }
+        p.plan { 
+            margin: 0 0 4px 0; 
+        }
+        p.price { 
+            font-size: 2.25rem; font-weight: 600; line-height: 1;
+            &.premium { 
+                font-size: 1.5rem; line-height: 2.2rem; 
+            }
+        }
+        p.duration { 
+            color: #5c5c5c; @include opacity(0.6);
+            &.hold-space { 
+                visibility: hidden; 
+            }
+        }
+        .feature-box { 
+            width: 100%; float: left; margin: 12px 0 32px 0; overflow: hidden;
+            ul { 
+                width: 100%; padding: 0;
+                li { 
+                    list-style: none; padding: 0 0 12px 24px; background: url($iconpath + 'new-icons/check-mark.svg') no-repeat 0 5px; background-size: 14px; color: #5c5c5c; font-size: 0.875rem;
+                    &:last-of-type { 
+                        margin-bottom: 0; 
+                    }
+                }
+            }
+        }
+        .btn-box { 
+            width: 100%; float: left; text-align: center; padding: 16px; left: 0; bottom: 0;
+            button { 
+                padding: 0; 
+            }
+            button.current { 
+                background-color: #c6c6c6; cursor: not-allowed; pointer-events: none; 
+            }
+        }
+    }
+}

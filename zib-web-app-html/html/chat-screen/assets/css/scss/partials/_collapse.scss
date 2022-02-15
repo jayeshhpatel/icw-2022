@@ -1,0 +1,63 @@
+.app-content {
+    .collapse-info-block {
+        .collapse-header { margin-bottom: 10px; cursor: pointer;
+            span { color: $gray-3; font-size: 15px; font-weight: 600; 
+                &::before { display: inline-block; margin-right: 5px; vertical-align: middle; content: ""; border-top: 4px solid #7A7F93; border-right: 4px solid transparent; border-bottom: 0; border-left: 4px solid transparent; border-radius: 2px; }
+            }
+        }
+        .collapse-body { display: none;
+            &.show { display: block; }
+        }
+    }
+    .collapse-content-block {
+        .collapse-card { border-bottom: 1px solid rgba(69, 74, 96, 0.2); padding-bottom: 15px; margin-top: 15px;
+            .collapse-header { display: flex; align-items: center; justify-content: space-between; cursor: pointer; 
+                .title { margin: 0; font-size: 15px; color: $gray-4; padding-bottom: 5px; font-weight: 600; }
+                p { font-size: 13px; color: $light-blue; margin-top: 0; }
+                .icon-arrow { line-height: 0.7; width: 50px; text-align: right; 
+                    em { transform: rotate(0deg); transition: all 0.3s ease-in-out }
+                }
+            }
+            .collapse-body { display: none;
+                &.show { display: block; padding-top: 20px; }
+                .two-filed { display: flex; align-items: center; justify-content: space-between; 
+                    .input-field { width: 49%; 
+                        label { font-weight: 600; font-size: 12px; color: #454A60; }
+                    }
+                }
+                .action { padding-top: 0px; text-align: right; @include justify-content(flex-end); }
+            }
+            &.active { 
+                .collapse-header { 
+                    .icon-arrow { 
+                        em { transform: rotate(90deg); }
+                    }
+                }
+            }
+        }
+    }
+}
+.app-content.light-theme {
+    .collapse-info-block {
+        .collapse-header { 
+            span { color: #202028; 
+                &::before { border-top-color: #7A7F93; border-right-color: transparent; border-left-color: transparent; }
+            }
+        }
+    }
+    .collapse-content-block {
+        .collapse-card { border-bottom-color: rgba(69, 74, 96, 0.2); 
+            .collapse-header { 
+                .title { color: #202028; }
+                p { color: #33333F; }
+            }
+            .collapse-body {
+                .two-filed { 
+                    .input-field { 
+                        label { color: #454A60; }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,222 @@
+.app-content {
+    .message-write-container { padding: 0; margin-top: 30px; position: relative; max-width: 100%;
+        form { display: flex; align-items: flex-end; width: 100%;
+            .message-write-wrapper { background: transparent; border: none; border-radius: 0; padding-bottom: 0px; display: block; align-items: flex-end; width: 100%; padding: 0px; position: relative; float: none; margin-left: 0px;
+                .message-write-box { border-bottom: 1px solid $dark-black; background: $light-black-3; display: block; line-height: 0.7;max-width: 100%; flex-grow: 1; position: relative;
+                    .message-new { padding: 14px 120px 12px 20px; border-radius: 0px; color: $light-blue; font-size: 15px; font-weight: 500; width: 100%; height: 50px; box-sizing: border-box; background: $light-black-3; border: 1px solid transparent; min-height: 50px;line-height: 1.375rem; text-align: left; flex-grow: 1;min-width: 130px !important; resize: none; 
+                        &::placeholder { opacity: 1; color: $light-black; }
+                    }
+                    .send-action { position: absolute; right: 30px; top: 16px;
+                        a { line-height: 0.7;
+                            em { margin-right: 0px; @include transition(0.3s, ease-in-out); }
+                            &:hover {  
+                                em { background: url($iconpath + 'fill-send-blue.svg'); height: 20px; width: 20px; }
+                            }
+                        }
+                    }
+                    .attach-file-block { padding: 0px 30px 12px 30px;display: none; @include align-items(center); @include flex-wrap(wrap);
+                        &.active {@include flexbox; }
+                        .attach-img { position: relative; display: inline-block; line-height: 0.7; margin-right: 10px; max-width: 50px;
+                            img { width: 100%; }
+                            .remove { display: none; position: absolute; top: -7px; right: -7px; cursor: pointer;
+                                .ico.icon-fill-close { background:url($iconpath + 'fill-close.svg'); width: 16px; height: 16px; }
+                            }
+                            &:hover {  
+                                .remove { display: inline-block; }
+                            }
+                        }
+                        .attach-file { margin-right: 10px; border: 1px solid #484855; @include border-radius(1px); padding: 8px 12px; position: relative; @include inline-flex; @include justify-content(center); @include flex-direction(column); background: #484855; min-height: 50px;
+                            .file-detail { display: flex; align-items: center; 
+                                img, .ico { margin-right: 10px; max-width: 20px; }
+                                .name { display: block; font-weight: 500; font-size: 14px; color: #E8E8E9; line-height: 1.2; padding-right: 10px; }
+                                .play { color: #E8E8E9; font-size: 8px; @include flexbox(); @include align-items(center); @include justify-content(space-between); padding-top: 5px;
+                                    .size { color: #ABAEBB; }
+                                }
+                            }
+                            .audio { margin-top: 7px;
+                                .audio-line { max-width: 140px; width: 100%; background: #ABAEBB; height: 1px; position: relative;
+                                    &::before { content: ''; width: 50%; background: #8C91F9; height: 1px; position: absolute; }
+                                }
+                            }
+                            .remove { display: none; position: absolute; top: -7px; right: -7px; cursor: pointer; 
+                               .ico.icon-fill-close { background:url($iconpath + 'fill-close.svg'); width: 16px; height: 16px; }
+                            }
+                            &:hover {  
+                                .remove { display: inline-block; }
+                            }
+                        }
+                        .in-progress {
+                            .progress-file-name { @include flexbox; @include align-items(center); @include justify-content(space-between); 
+                                span { color: #E8E8E9; font-size: 9px; font-weight: 500; display: inline-block; padding-bottom: 5px; }
+                            }
+                            .progress-wrapper { background: $gray-2; @include border-radius(4px); height: 13px; overflow: hidden; width: 100%; min-width: 135px; }
+                            .progress-bar { background: #33333f; height: inherit; }                              
+                            .progress-bar-width { @include border-radius(4px); width: 100%; }                              
+                            .progress-bar-anim { animation: progress 3s linear infinite; background: linear-gradient(-45deg, #8C91F9 25%, transparent 25%, transparent 50%, #8C91F9 50%, #8C91F9 75%, transparent 75%, transparent); background-repeat: repeat-x !important; background-size: 13px 13px !important; @include border-radius(4px); height: inherit; width: 100%; }                              
+                            @keyframes progress {
+                                to { background-position: 13px 0; }
+                            }
+                        }
+                    }
+                }
+                .msg-option-block { @include flexbox; @include align-items(center); @include justify-content(space-between); padding: 3px 20px 3px 8px; background: $light-black-3;
+                    .message-options { position: relative; @include flexbox; @include align-items(center); top: 0; right: 0; 
+                        .msg-option-button { width: 28px !important; height: 28px; margin: 0 5px; transition: all 0.3s ease-in-out; padding: 5px; font-size: 16px;vertical-align: middle; cursor: pointer; @include border-radius(2px); @include flexbox; @include align-items(center); @include justify-content(center);
+                            &:last-child { margin-right: 0; }
+                            &.file-upload-box { position: relative;min-width: 28px; float: left;
+                                input[type="file"] { width: 1px; height: 1px; position: absolute; opacity: 0; top: 0; left: 0; }
+                            }
+                            .icon { width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; }
+                            &:hover, &.active { 
+                                .ico { @include opacity(0.7); } 
+                            }                                           
+                            .popup { bottom: 40px; 
+                                .popup-container {
+                                    ul {
+                                        li {
+                                            &.label { font-weight: 300; font-size: 12px; color: #454A60; }
+                                            .ico { margin-right: 5px; }
+                                            &:hover {
+                                                .ico {
+                                                    &.icon-drive {  background:url($iconpath + 'icon-drive-white.svg'); }
+                                                    &.icon-computer {  background:url($iconpath + 'icon-computer-white.svg'); }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        } 
+                        .write-option { max-width: 0; overflow: hidden; @include flexbox; @include align-items(center); @include transition(0.3s, ease-in-out); }
+                    }
+                }  
+                &.focused {
+                    .msg-option-block {
+                        .message-options {  
+                            .msg-option-button { 
+                                .icon-send { background:url($iconpath + 'send-blue.svg'); opacity: 1; background-size: contain; }
+                            }
+                        }
+                    }
+                }                              
+            }
+        }
+        @media (max-width: 575px) {  
+            form {
+                .message-write-wrapper { 
+                    .message-write-box {
+                        .message-new { padding: 12px 15px; }
+                    }
+                    .msg-option-block { padding: 10px 15px;
+                        .write-option { 
+                            .option-button { width: 25px; height: 25px; margin: 0 2px; padding: 5px;
+                                &:first-child { margin-left: 0; }
+                                .icon { width: 25px; height: 25px; 
+                                    .ico { height: 13px; width: 13px; }
+                                }
+                            }
+                        }
+                        .message-options {  
+                            .msg-option-button { width: 25px; height: 25px; margin: 0 2px; padding: 5px;
+                                .icon { width: 25px; height: 25px; 
+                                    .ico { height: 14px; width: 14px; }
+                                }
+                            }
+                        }
+                    }                                
+                }
+            }
+        }
+    }
+}
+
+.app-content.light-theme {
+    .message-write-container { 
+        form {  
+            .message-write-wrapper { 
+                .message-write-box { border-bottom-color: #E2E5E9; background: #F2F5F9; 
+                    .message-new { color: $dark-black; background: #F2F5F9; 
+                        &::placeholder { color: #ACACAE; }
+                    }
+                    .send-action { 
+                        a { 
+                            em { background: url($iconpath + 'fill-send-gray.svg'); height: 20px; width: 20px; }
+                            &:hover {  
+                                em { background: url($iconpath + 'fill-send-blue.svg'); height: 20px; width: 20px; }
+                            }
+                        }
+                    }
+                    .attach-file-block {
+                        .attach-img {
+                            .remove { background: $white; @include border-radius(50%);
+                                .ico.icon-fill-close { background:url($iconpath + 'fill-close-black.svg'); }
+                            }
+                        }
+                        .attach-file { border-color: transparent; background: $white; 
+                            .file-detail { 
+                                img, .ico { 
+                                    &.icon-file { background: url($iconpath + 'icon-file-black.svg') no-repeat center center; }
+                                    &.icon-audio { background: url($iconpath + 'icon-audio-black.svg') no-repeat center center; }
+                                }
+                                .name { color: #4D5267; }
+                                .play { color: #4D5267;
+                                    .size { color: #4D5267; }
+                                }
+                            }
+                            .audio { 
+                                .audio-line { background: #E2E5E9; 
+                                    &::before { background: #5056CA; }
+                                }
+                            }
+                            .remove { background: $white; @include border-radius(50%);
+                                .ico.icon-fill-close { background:url($iconpath + 'fill-close-black.svg'); width: 16px; height: 16px; }
+                            }
+                        }
+                        .in-progress {
+                            .progress-file-name {  
+                                span { color: #33333F; }
+                            }
+                            .progress-wrapper { background: #f2f5f9;  }
+                            .progress-bar { background: #f2f5f9; }                                                 
+                            .progress-bar-anim { background: linear-gradient(-45deg, #5056ca 25%, transparent 25%, transparent 50%, #5056ca 50%, #5056ca 75%, transparent 75%, transparent); }  
+                        }
+                    }
+                }
+                .msg-option-block { background: #F2F5F9;
+                    .message-options {
+                        .msg-option-button {       
+                            .icon {
+                                .ico {
+                                    &.icon-type { background:url($iconpath + 'type-black.svg') no-repeat center center; }
+                                    &.icon-emoji { background:url($iconpath + 'emoji-black.svg') no-repeat center center; }
+                                    &.icon-attach-pin { background: url($iconpath + 'attch-pin-black.svg') no-repeat center center; } 
+                                    &.bold { background:url($iconpath + 'icon-bold-black.svg') no-repeat center center; }
+                                    &.italic { background:url($iconpath + 'icon-italic-black.svg') no-repeat center center; }
+                                    &.icon-text-underline { background:url($iconpath + 'text-center-underline-black.svg') no-repeat center center;  }
+                                    &.icon-list-menu { background:url($iconpath + 'list-menu-black.svg') no-repeat center center; }
+                                    &.icon-number-list { background:url($iconpath + 'number-list-black.svg') no-repeat center center; }
+                                    &.icon-at-sign { background:url($iconpath + 'at-sign-black.svg') no-repeat center center; }
+                                }
+                            }     
+                            .popup { bottom: 40px; 
+                                .popup-container {
+                                    ul {
+                                        li {
+                                            &.label { color: #454A60; }
+                                            &:hover {
+                                                .ico {
+                                                    &.icon-drive {  background:url($iconpath + 'icon-drive-white.svg'); }
+                                                    &.icon-computer {  background:url($iconpath + 'icon-computer-white.svg'); }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        } 
+                    }
+                }                         
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.app-content {
+    .avatar { flex-shrink: 0; @include justify-content(center); @include align-items(center); width: 30px; height: 30px; @include border-radius(50%); overflow: hidden; font-weight: 600; text-align: center; position: relative;  background-color: transparent;
+        img { width: 100%; min-height: 100%; position: relative; z-index: 1; @include border-radius(50%); }
+        span.letter { @include flexbox; @include justify-content(center); @include align-items(center); font-size: 19px; color: $white; line-height: 0.7; height: 100%; }
+        &.gradient1 { background: linear-gradient(180deg, #73A89B 0%, #73A89B 100%) !important;
+            span { color: $white !important; }
+        }
+        &.gradient2 { background: linear-gradient(180deg, #A79773 0%, #A79773 100%) !important; 
+            span { color: $white !important; }
+        }
+        &.gradient3 { background: linear-gradient(180deg, #757FA8 0%, #757FA8 100%) !important; 
+            span { color: $white !important; }
+        }
+        &.gradient4 { background: linear-gradient(180deg, #A59C88 0%, #A59C88 100%) !important;
+            span { color: $white !important; }
+        }
+        &.gradient5 { background: linear-gradient(180deg, #8C73A8 0%, #8C73A8 100%); 
+            span { color: $white !important; }
+        }
+        &.gradient6 { background: linear-gradient(180deg, #CA7A3E 0%, #BA6F37 100%); }
+        &.gradient7 { background: linear-gradient(180deg, #52A64B 0%, #4A9443 100%); }
+        &.gradient8 { background: linear-gradient(180deg, #BEB81C 0%, #ACA71D 100%); }
+        &.gradient9 { background: linear-gradient(180deg, #B85D52 0%, #A9554B 100%); }
+        &.gradient10 { background: linear-gradient(180deg, #79BCC3 0%, #6FAAB0 100%); }
+        &.gradient11 { background: linear-gradient(180deg, #CB3A99 0%, #AA2F80 100%); }
+        &.gradient12 { background: linear-gradient(180deg, #C67496 0%, #874D65 100%); }
+        &.gradient13 { background: linear-gradient(180deg, #AD5468 0%, #8B4455 100%); }
+        &.gradient14 { background: linear-gradient(180deg, #834BA6 0%, #693C85 100%); }
+        &.gradient15 { background: linear-gradient(180deg, #6C5CE7 0%, #5448B3 100%); }
+        &.gradient16 { background: linear-gradient(312.01deg, #40D4F4 0.12%, #13badf 100%); }
+    }
+}

@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="Googlebot" content="noindex,nofollow">
+        <meta name="author" content="ZIB">
+        <meta name="description" content="ZIB">
+
+        <link rel="shortcut icon" href="../../favicon.ico" type="images/x-icon" sizes="16x16">
+        <link rel="stylesheet" href="../assets/css/main-settings.css" />
+        <title>Settings</title>
+    </head>
+    <body class="settings-content app-content">
+        <header class="main-header">
+            <div class="container">
+                <nav class="navbar">        
+                    <div class="page-logo-block">
+                        <div class="menu-btn">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>        
+                        <a href="../chat-screen.html" class="avatar-logo">
+                            <em class="ico icon-settings-arrow-left"></em>
+                            <div class="avatar">
+                                <span><img src="../assets/images/william.jpg" alt="William"></span>
+                            </div>
+                            <span class="name">Settings</span>
+                        </a>
+                    </div>
+                    <a href="#" class="navbar-brand">
+                        <img src="../assets/images/zib-logo.svg" alt="ZIB Messenger" />
+                    </a>  
+                    <div class="main-menu">
+                        <button class="button btn-primary with-icon" type="button" onclick="window.location.href='professional-plan-setup.html';">Upgrade to Pro <em class="ico icon-setting-upgrade"></em></button>
+                    </div>              
+                </nav>
+            </div>
+        </header>
+        <main class="main-content-wrapper">
+            <div class="container">
+                <div class="grid-content">
+                    <div class="menu-sidebar-block">
+                        <div class="main-sidebar">
+                            <span class="menu-title">Account Settings</span>
+                            <ul class="menu-list">
+                                <li><a href="edit-profile.html"><em class="ico icon-setting-profile"></em>Edit Profile</a></li>
+                            </ul>
+                            <span class="menu-title">Workspace Settings</span>
+                            <ul class="menu-list">
+                                <li><a href="about-workspace.html"><em class="ico icon-setting-workspace"></em>About Workspace</a></li>
+                                <li><a href="manage-member.html"><em class="ico icon-setting-member"></em>Manage Members</a></li>
+                                <li><a href="invitations.html"><em class="ico icon-setting-invitation"></em>Invitations</a></li>
+                                <li><a href="channels.html"><em class="ico icon-setting-channel-list"></em>Channel List</a></li>
+                                <li><a href="3d-smart-office.html"><em class="ico icon-setting-office"></em>3D Smart Office</a></li>
+                                <li><a href="billing.html"><em class="ico icon-setting-billing"></em>Billing</a></li>
+                                <li><a href="settings.html" class="active"><em class="ico icon-setting-menu"></em>Settings</a></li>
+                            </ul>                            
+                            <ul class="menu-list d-none">
+                                <li><button class="button btn-primary with-icon" type="button" onclick="window.location.href='professional-plan-setup.html';">Upgrade to Pro <em class="ico icon-setting-upgrade"></em></button></li>
+                            </ul>
+                            <ul class="menu-list signout-menu">
+                                <li><a href="#"><em class="ico icon-setting-signout"></em>Sign out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content-block">
+                        <div class="title-box">
+                            <h1>Settings</h1>
+                            <span class="info">Adjust the settings of your workspace.</span>
+                        </div>
+                        <div class="info-content-block">
+                            <span class="title">Workspace Name</span>
+                            <p class="desc">Your workspace name is displayed in menus and headings. and is also used for the workspace URL. Avoid changing it often so you don’t confuse your members.</p>
+                            <div class="input-block">
+                                <div class="input-field has-data"> 
+                                    <input type="text" class="tBox" placeholder="Workspace Name">
+                                </div>
+                                <button class="button btn-outline-primary with-icon" type="button">Save <em class="ico icon-setting-save"></em></button>
+                            </div>
+                            <p class="desc"><strong>Note: </strong> If you change your workspace URL, ZIB will automatically redirect from the old to the new address. However, you should still make sure everyone in your workspace knows about the change as the old name will be made available for future use.</p>
+                        </div>
+                        <div class="info-content-block">
+                            <span class="title">Workspace Icon</span>
+                            <div class="change-img-block">
+                                <div class="img-block">
+                                    <img class="user-image" src="../assets/images/msg-img.png" alt="User" />
+                                    <span class="remove-img"><em class="ico icon-close-white"></em></span>
+                                </div>
+                                <button class="file-upload"><input type="file" class="file-input">Change Image</button>
+                            </div>
+                        </div>
+                        <div class="info-content-block">
+                            <span class="title">Delete Workspace</span>
+                            <p class="desc">Don’t delete your workspace if you’re only looking to change the workspace name. You may also want to export your data before deleting your workspace.</p>
+                            <button class="button btn-outline-danger with-icon m-l-0" type="button" data-popup="deleteWorkspaceModal">Delete Workspace <em class="ico icon-setting-delete"></em></button>
+                        </div>
+                        <div class="info-content-block">
+                            <span class="title">Retention & Exports</span>
+                            <p class="desc pb-3">Included</p>
+                            <ul class="desc-list">
+                                <li>- Messages list in private chats</li>
+                                <li>- Messages list in public and group channels</li> 
+                                <li>- Editing tags</li>
+                                <li>- Shared files name and format</li>
+                            </ul> 
+                            <div class="share-info">
+                                <p>Shared files not included.</p>
+                                <p>Export will consist a series of xml sheets and tables.</p>
+                                <p>For information on the format of channel messages, please consult our Support team.</p>
+                            </div>
+                            <span class="title">Export Data Range</span>
+                            <div class="input-block two-filed-grid p-b-0">
+                                <div class="input-group">
+                                    <div class="input-field has-data post-icon-input"> 
+                                        <label>From</label>
+                                        <input type="text" class="tBox" placeholder="MM/DD/YYYY">
+                                        <span class="post-icon"><i class="ico icon-celender"></i></span>
+                                    </div>
+                                    <div class="input-field has-data post-icon-input"> 
+                                        <label>To</label>
+                                        <input type="text" class="tBox" placeholder="MM/DD/YYYY">
+                                        <span class="post-icon"><i class="ico icon-celender"></i></span>
+                                    </div>
+                                </div>
+                                <button class="button btn-outline-primary with-icon m-l-0" type="button">Export Messages <em class="ico icon-setting-chat-launch"></em></button>
+                            </div>
+                        </div>
+                        <div class="info-content-block no-border">
+                            <span class="title m-b-16">Past Exports</span>
+                            <div class="table-block">
+                                <div class="table-responsive">
+                                    <table class="bill-list-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Date</th>
+                                                <th>Type</th>
+                                                <th>Date Range</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Aug 22, 2021</td>
+                                                <td>XML Export</td>
+                                                <td>10/02/2021 - 10/04/2021</td>
+                                                <td><a href="#">Download</a> <span class="text-lightgray">( 7KB )</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Aug 22, 2021</td>
+                                                <td>XML Export</td>
+                                                <td>10/02/2021 - 10/04/2021</td>
+                                                <td><a href="#">Download</a> <span class="text-lightgray">( 7KB )</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Aug 22, 2021</td>
+                                                <td>XML Export</td>
+                                                <td>10/02/2021 - 10/04/2021</td>
+                                                <td><a href="#">Download</a> <span class="text-lightgray">( 7KB )</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Aug 22, 2021</td>
+                                                <td>XML Export</td>
+                                                <td>10/02/2021 - 10/04/2021</td>
+                                                <td><a href="#">Download</a> <span class="text-lightgray">( 7KB )</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="modal" id="deleteWorkspaceModal">
+            <div class="modal-wrapper modal-sm">
+                <div class="closer"><em class="ico icon-close-gray"></em></div>
+                <div class="modal-body">
+                    <div class="title">Delete workspace</div>
+                    <p class="info"><strong>Warning: This action cannot be undone.</strong></p>
+                    <p class="info">Your team will no longer have access to conversations or files shared in this workspace. Enter your password to confirm workspace removal.</p>
+                    <div class="input-block">
+                        <div class="input-field has-data"> 
+                            <input type="text" class="tBox" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="action">
+                        <button type="button" class="button btn-outline-danger medium">Delete workspace</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../assets/js/jquery.min.js"></script>
+        <script src="../assets/js/chat-settings.js"></script>
+        <script>
+            $('.file-input').change(function(){
+                var curElement = $('.user-image');
+                console.log(curElement);
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    // get loaded data and render thumbnail.
+                    curElement.attr('src', e.target.result);
+                };
+
+                // read the image file as a data URL.
+                reader.readAsDataURL(this.files[0]);
+            });
+        </script>
+    </body>
+</html>

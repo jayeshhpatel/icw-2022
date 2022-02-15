@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="Googlebot" content="noindex,nofollow">
+        <meta name="author" content="ZIB">
+        <meta name="description" content="ZIB">
+
+        <link rel="shortcut icon" href="../../favicon.ico" type="images/x-icon" sizes="16x16">
+        <link rel="stylesheet" href="../assets/css/main-settings.css" />
+        <title>Invitations | Settings</title>
+    </head>
+    <body class="settings-content app-content">
+        <header class="main-header">
+            <div class="container">
+                <nav class="navbar">        
+                    <div class="page-logo-block">
+                        <div class="menu-btn">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>        
+                        <a href="../chat-screen.html" class="avatar-logo">
+                            <em class="ico icon-settings-arrow-left"></em>
+                            <div class="avatar">
+                                <span><img src="../assets/images/william.jpg" alt="William"></span>
+                            </div>
+                            <span class="name">Settings</span>
+                        </a>
+                    </div>
+                    <a href="#" class="navbar-brand">
+                        <img src="../assets/images/zib-logo.svg" alt="ZIB Messenger" />
+                    </a>  
+                    <div class="main-menu">
+                        <button class="button btn-primary with-icon" type="button" onclick="window.location.href='professional-plan-setup.html';">Upgrade to Pro <em class="ico icon-setting-upgrade"></em></button>
+                    </div>              
+                </nav>
+            </div>
+        </header>
+        <main class="main-content-wrapper">
+            <div class="container">
+                <div class="grid-content">
+                    <div class="menu-sidebar-block">
+                        <div class="main-sidebar">
+                            <span class="menu-title">Account Settings</span>
+                            <ul class="menu-list">
+                                <li><a href="edit-profile.html"><em class="ico icon-setting-profile"></em>Edit Profile</a></li>
+                            </ul>
+                            <span class="menu-title">Workspace Settings</span>
+                            <ul class="menu-list">
+                                <li><a href="about-workspace.html"><em class="ico icon-setting-workspace"></em>About Workspace</a></li>
+                                <li><a href="manage-member.html"><em class="ico icon-setting-member"></em>Manage Members</a></li>
+                                <li><a href="invitations.html" class="active"><em class="ico icon-setting-invitation"></em>Invitations</a></li>
+                                <li><a href="channels.html"><em class="ico icon-setting-channel-list"></em>Channel List</a></li>
+                                <li><a href="3d-smart-office.html"><em class="ico icon-setting-office"></em>3D Smart Office</a></li>
+                                <li><a href="billing.html"><em class="ico icon-setting-billing"></em>Billing</a></li>
+                                <li><a href="settings.html"><em class="ico icon-setting-menu"></em>Settings</a></li>
+                            </ul>                            
+                            <ul class="menu-list d-none">
+                                <li><button class="button btn-primary with-icon" type="button" onclick="window.location.href='professional-plan-setup.html';">Upgrade to Pro <em class="ico icon-setting-upgrade"></em></button></li>
+                            </ul>
+                            <ul class="menu-list signout-menu">
+                                <li><a href="#"><em class="ico icon-setting-signout"></em>Sign out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content-block">
+                        <div class="title-box">
+                            <h1>Invitations</h1>
+                            <span class="info">Invite people to join your workspace, and see the status of sent invitations.</span>
+                        </div>
+                        <div class="tab-block">
+                            <div class="tab-nav">
+                                <a href="#!" class="tab-item active" data-content="tab-invite">Invite</a>
+                                <a href="#!" class="tab-item" data-content="tab-add-csv-file">Add CSV File</a>
+                            </div>
+                            <div class="tab-content-block">
+                                <div class="tab-content active" id="tab-invite">
+                                    <form>
+                                        <div class="input-group">
+                                            <div class="input-field has-data m-b-40"> 
+                                                <label>Email Address *</label>
+                                                <input type="text" class="tBox" placeholder="Email Address">
+                                                <span class="error-msg">Please enter valid email</span>
+                                            </div>
+                                            <div class="input-field has-data"> 
+                                                <label>Invite New Users to Join Channel</label>
+                                                <input type="text" class="tBox" placeholder="Channels" value="Channels">
+                                            </div>
+                                        </div>
+                                        <div class="action">
+                                            <button type="button" class="button btn-light with-icon">Send Invite <em class="ico icon-setting-invitation-white"></em></button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="tab-content" id="tab-add-csv-file">
+                                    <div class="info-content-block m-b-5 p-t-0">
+                                        <span class="title">Use the CSV format below. You can import up to 150 users at a time. We'll automatically filter invalid and duplicated emails.</span>
+                                        <div class="download-csv-block">
+                                            <button type="button" class="button btn-outline-white with-icon small">Download CSV Template <em class="ico icon-upload-white"></em></button>
+                                            <div class="include">
+                                                <button type="button" class="button btn-secondary small">Includes</button> <span>Email, Role, First Name, Location</span>
+                                            </div>
+                                        </div>
+                                        <span class="title">only .csv files at 500mb or less</span>
+                                        <div class="drag-file-block">
+                                            <div class="drag-content">
+                                                <span>Drag and drop files here or click to upload</span>
+                                            </div>
+                                            <div class="upload-csv-block">
+                                                <div class="csv-file">
+                                                    <em class="ico icon-setting-csv"></em>database-1-quick.csv
+                                                    <span class="close"><em class="ico icon-close-white"></em></span>
+                                                </div>
+                                                <div class="csv-file">
+                                                    <em class="ico icon-setting-csv"></em>employee-database.csv
+                                                    <span class="close"><em class="ico icon-close-white"></em></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="input-field has-data m-b-16"> 
+                                            <label>Invite New Users to Join Channel</label>
+                                            <input type="text" class="tBox" placeholder="Channels">
+                                        </div>
+                                        <div class="action">
+                                            <button type="button" class="button btn-light with-icon">Send Invite <em class="ico icon-setting-invitation-white"></em></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-block">
+                                        <div class="tab-nav">
+                                            <a href="#!" class="tab-item active" data-content="tab-pending">Pending</a>
+                                            <a href="#!" class="tab-item" data-content="tab-accepted">Accepted</a>
+                                            <a href="#!" class="tab-item" data-content="tab-removed">Removed</a>
+                                        </div>
+                                        <div class="tab-content-block">
+                                            <div class="tab-content active" id="tab-pending">
+                                                <div class="input-search-block">
+                                                    <div class="input-field">
+                                                        <div class="has-dropdown custom-dropdown custom-input-dropdown">
+                                                            <a href="javascript:void(0)" class="input-dropdown"><span class="select-item">Sort by date</span></a>
+                                                            <div class="popup dropdown-menu">
+                                                                <div class="popup-container">
+                                                                    <ul>
+                                                                        <li class="item selected">Sort by date</li>
+                                                                        <li class="item">Option 1</li>
+                                                                        <li class="item">Option 2</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="input-field pre-icon-input"> 
+                                                        <span class="pre-icon"><em class="ico icon-search"></em></span>
+                                                        <input type="text" class="tBox" placeholder="Search">
+                                                    </div> 
+                                                </div>
+                                                <div class="info-block">
+                                                    <div class="table-block">
+                                                        <div class="table-responsive">
+                                                            <table class="bill-list-table">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Sent to</th>
+                                                                        <th>Invited by</th>
+                                                                        <th></th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>William</strong>
+                                                                            <small>William@ripbullnetworks.com</small>
+                                                                        </td>
+                                                                        <td>
+                                                                            <strong>Kishan</strong>
+                                                                            <small>August 27, 2021</small>
+                                                                        </td>
+                                                                        <td class="with-dropdown text-right">
+                                                                            <div class="more-dropdown">
+                                                                                <a href="javascript:void(0)" class="more-info" data-jq-dropdown="#invotaion1"><em class="ico icon-dot"></em></a> 
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>William</strong>
+                                                                            <small>William@ripbullnetworks.com</small>
+                                                                        </td>
+                                                                        <td>
+                                                                            <strong>Kishan</strong>
+                                                                            <small>August 27, 2021</small>
+                                                                        </td>
+                                                                        <td class="with-dropdown text-right">
+                                                                            <div class="more-dropdown">
+                                                                                <a href="javascript:void(0)" class="more-info" data-jq-dropdown="#invotaion1"><em class="ico icon-dot"></em></a> 
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-content" id="tab-accepted">                                                
+                                                <div class="input-search-block">
+                                                    <div class="input-field">
+                                                        <div class="has-dropdown custom-dropdown custom-input-dropdown">
+                                                            <a href="javascript:void(0)" class="input-dropdown"><span class="select-item">Sort by date</span></a>
+                                                            <div class="popup dropdown-menu">
+                                                                <div class="popup-container">
+                                                                    <ul>
+                                                                        <li class="item selected">Sort by date</li>
+                                                                        <li class="item">Option 1</li>
+                                                                        <li class="item">Option 2</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="input-field pre-icon-input"> 
+                                                        <span class="pre-icon"><em class="ico icon-search"></em></span>
+                                                        <input type="text" class="tBox" placeholder="Search">
+                                                    </div> 
+                                                </div>
+                                                <div class="info-block">
+                                                    <div class="table-block">
+                                                        <div class="table-responsive">
+                                                            <table class="bill-list-table">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Sent to</th>
+                                                                        <th>Invited by</th>
+                                                                        <th></th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>William</strong>
+                                                                            <small>William@ripbullnetworks.com</small>
+                                                                        </td>
+                                                                        <td>
+                                                                            <strong>Kishan</strong>
+                                                                            <small>August 27, 2021</small>
+                                                                        </td>
+                                                                        <td class="with-dropdown text-right">
+                                                                            <div class="more-dropdown">
+                                                                                <a href="javascript:void(0)" class="more-info" data-jq-dropdown="#invotaion1"><em class="ico icon-dot"></em></a> 
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>William</strong>
+                                                                            <small>William@ripbullnetworks.com</small>
+                                                                        </td>
+                                                                        <td>
+                                                                            <strong>Kishan</strong>
+                                                                            <small>August 27, 2021</small>
+                                                                        </td>
+                                                                        <td class="with-dropdown text-right">
+                                                                            <div class="more-dropdown">
+                                                                                <a href="javascript:void(0)" class="more-info" data-jq-dropdown="#invotaion1"><em class="ico icon-dot"></em></a> 
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>William</strong>
+                                                                            <small>William@ripbullnetworks.com</small>
+                                                                        </td>
+                                                                        <td>
+                                                                            <strong>Kishan</strong>
+                                                                            <small>August 27, 2021</small>
+                                                                        </td>
+                                                                        <td class="with-dropdown text-right">
+                                                                            <div class="more-dropdown">
+                                                                                <a href="javascript:void(0)" class="more-info" data-jq-dropdown="#invotaion1"><em class="ico icon-dot"></em></a> 
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-content" id="tab-removed">
+                                                <div class="input-search-block">
+                                                    <div class="input-field">
+                                                        <div class="has-dropdown custom-dropdown custom-input-dropdown">
+                                                            <a href="javascript:void(0)" class="input-dropdown"><span class="select-item">Sort by date</span></a>
+                                                            <div class="popup dropdown-menu">
+                                                                <div class="popup-container">
+                                                                    <ul>
+                                                                        <li class="item selected">Sort by date</li>
+                                                                        <li class="item">Option 1</li>
+                                                                        <li class="item">Option 2</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="input-field pre-icon-input"> 
+                                                        <span class="pre-icon"><em class="ico icon-search"></em></span>
+                                                        <input type="text" class="tBox" placeholder="Search">
+                                                    </div> 
+                                                </div>
+                                                <div class="info-block">
+                                                    <div class="table-block">
+                                                        <div class="table-responsive">
+                                                            <table class="bill-list-table">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Sent to</th>
+                                                                        <th>Invited by</th>
+                                                                        <th></th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>William</strong>
+                                                                            <small>William@ripbullnetworks.com</small>
+                                                                        </td>
+                                                                        <td>
+                                                                            <strong>Kishan</strong>
+                                                                            <small>August 27, 2021</small>
+                                                                        </td>
+                                                                        <td class="with-dropdown text-right">
+                                                                            <div class="more-dropdown">
+                                                                                <a href="javascript:void(0)" class="more-info" data-jq-dropdown="#invotaion1"><em class="ico icon-dot"></em></a> 
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>William</strong>
+                                                                            <small>William@ripbullnetworks.com</small>
+                                                                        </td>
+                                                                        <td>
+                                                                            <strong>Kishan</strong>
+                                                                            <small>August 27, 2021</small>
+                                                                        </td>
+                                                                        <td class="with-dropdown text-right">
+                                                                            <div class="more-dropdown">
+                                                                                <a href="javascript:void(0)" class="more-info" data-jq-dropdown="#invotaion1"><em class="ico icon-dot"></em></a> 
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- dropdown -->
+        <div id="invotaion1" class="jq-dropdown popup jq-dropdown-tip">
+            <div class="popup-container">
+                <ul>
+                    <li class="item">Re-send invitation</li>
+                    <li class="item">Revoke invitation</li>
+                </ul>
+            </div>
+        </div>
+        <script src="../assets/js/jquery.min.js"></script>
+        <script src="../assets/js/chat-settings.js"></script>
+        <script src="../assets/js/jquery.dropdown.min.js"></script>
+        <script src="../assets/js/chat.js"></script>     
+        <script>
+            window.addEventListener('load', function () {
+                let resultTabs = document.querySelectorAll(".tab-block .tab-item");
+                for(let i=0; i < resultTabs.length; i++){
+                    resultTabs[i].addEventListener('click', function(){
+                        if( !this.classList.contains('active')){
+                            let itemRow = getClosest(this,'.tab-block');
+                            itemRow.querySelector(".tab-block .tab-item.active").classList.remove('active');
+                            itemRow.querySelector(".tab-content-block .tab-content.active").classList.remove('active');
+                            this.classList.add('active');
+                            document.querySelector('#'+ this.dataset.content).classList.add('active');
+                        }
+                    });
+                }
+            });
+        </script> 
+    </body>
+</html>
