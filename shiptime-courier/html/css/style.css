@@ -241,6 +241,12 @@ font-size: 14px;color: #828282;
         padding: 5px 10px 5px;
     }
 }
+@media (max-width:575px) {
+    .image-banner-content .card-content {
+        padding-left: 0;
+        padding: 50px 0 0 0;
+    }
+}
 .title-block{
     text-align: center;
     padding: 20px 0 60px;
