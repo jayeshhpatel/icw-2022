@@ -13,6 +13,7 @@
     <link rel='stylesheet' id='material-icons-css'  href='//fonts.googleapis.com/icon?family=Material+Icons'  media='all' />
     <link rel='stylesheet' id='all-style-css'  href='https://shiptime.com/wp-content/themes/shiptime/css/_all_style.css'  media='all' />
     <link rel='stylesheet' id='main-css'  href='https://shiptime.com/wp-content/themes/shiptime/css/_main.css'  media='all' />
+    <link rel='stylesheet' id='main-css' href='css/flags.css'  media='all' />
     <link rel='stylesheet' id='main-css' href='css/style.css'  media='all' />
     <script  src='https://shiptime.com/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
     <script  src='https://shiptime.com/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
@@ -84,12 +85,36 @@
     <section id="_pageHeader" class="bg-animation">
         <div class="container">
           <div class="breadcrumb-block">
-              <span>
+            <a href="#!" class="previous-title">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg> Go to previous page
-            </span>
-          </div>
+            </a>
+            <div class="country-input">
+                <div id="country" class="select">Country</div>
+                <div id="country-drop" class="dropdown">
+                    <ul>
+                        <li data-code="ca" data-name="Canada" data-cid="c32"><i class="flagstrap-icon"></i>Canada</li>
+                        <li data-code="AL" data-name="Albania" data-cid="c33"><i class="flagstrap-icon"></i>Albania</li>
+                        <li data-code="DZ" data-name="Algeria" data-cid="c34"><i class="flagstrap-icon"></i>Algeria</li>
+                        <li data-code="AS" data-name="American Samoa" data-cid="c35"><i class="flagstrap-icon"></i>American Samoa</li>
+                        <li data-code="AO" data-name="Angola" data-cid="c37"><i class="flagstrap-icon flagstrap-ao"></i>Angola</li>
+                        <li data-code="AI" data-name="Anguilla" data-cid="c38"><i class="flagstrap-icon flagstrap-ai"></i>Anguilla</li>
+                        <li data-code="AG" data-name="Antigua and Barbuda" data-cid="c39"><i class="flagstrap-icon flagstrap-ag"></i>Antigua and Barbuda</li>
+                        <li data-code="AR" data-name="Argentina" data-cid="c40"><i class="flagstrap-icon flagstrap-ar"></i>Argentina</li>
+                        <li data-code="AM" data-name="Armenia" data-cid="c41"><i class="flagstrap-icon flagstrap-am"></i>Armenia</li>
+                        <li data-code="AW" data-name="Aruba" data-cid="c42"><i class="flagstrap-icon flagstrap-aw"></i>Aruba</li>
+                        <li data-code="AU" data-name="Australia" data-cid="c43"><i class="flagstrap-icon flagstrap-au"></i>Australia</li>
+                        <li data-code="AT" data-name="Austria" data-cid="c44"><i class="flagstrap-icon flagstrap-at"></i>Austria</li>
+                        <li data-code="AZ" data-name="Azerbaijan" data-cid="c45"><i class="flagstrap-icon flagstrap-az"></i>Azerbaijan</li>
+                        <li data-code="BS" data-name="Bahamas" data-cid="c46"><i class="flagstrap-icon flagstrap-bs"></i>Bahamas</li>
+                        <li data-code="BH" data-name="Bahrain" data-cid="c47"><i class="flagstrap-icon flagstrap-bh"></i>Bahrain</li>
+                        <li data-code="BD" data-name="Bangladesh" data-cid="c48"><i class="flagstrap-icon flagstrap-bd"></i>Bangladesh</li>
+                        <li data-code="BB" data-name="Barbados" data-cid="c49"><i class="flagstrap-icon flagstrap-bb"></i>Barbados</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
     <main class="scrollspy">
@@ -272,6 +297,41 @@
     <script  src='https://shiptime.com/wp-content/themes/shiptime/js/slick.min.js' id='slick-jQuerys-js'></script>
     <script  src='https://shiptime.com/wp-content/themes/shiptime/js/jquery.fancybox.min.js' id='_fancybox-js-js'></script>
     <script  src='https://shiptime.com/wp-content/themes/shiptime/js/_main.js' id='main-js'></script>
-    <script  src='https://shiptime.com/wp-content/themes/shiptime/js/main.js' id='main2-js'></script>
-</body></html>
+
+    <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+    <script src="js/jquery.flagstrap.js"></script>
+    <script>
+        function countryDropdown(seletor){
+            var Selected = $(seletor);
+            var Drop = $(seletor+'-drop');
+            var DropItem = Drop.find('li');
+
+            Selected.click(function(){
+                Selected.toggleClass('open');
+                Drop.toggle();
+            });
+
+            Drop.find('li').click(function(){
+                Selected.removeClass('open');
+                Drop.hide();
+                
+                var item = $(this);
+                Selected.html(item.html());
+            });
+
+            DropItem.each(function(){
+                var code = $(this).attr('data-code');
+
+                if(code != undefined){
+                    var countryCode = code.toLowerCase();
+                    $(this).find('i').addClass('flagstrap-'+countryCode);
+                }
+            });
+        }
+
+        countryDropdown('#country');
+    </script>
+    
+    </body>
+</html>
     

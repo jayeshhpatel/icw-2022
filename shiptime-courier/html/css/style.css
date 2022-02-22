@@ -178,13 +178,23 @@ img{
     align-items: center;
     justify-content: space-between;
 }
-.breadcrumb-block span{
+.breadcrumb-block .previous-title{
     display: flex;
     align-items: center;font-weight: 600;
     font-size: 18px;color: #FFFFFF;
 }
-.breadcrumb-block span svg{margin-right: 10px;}
-
+.breadcrumb-block .country-input .select{
+    min-height: 40px;
+}
+.breadcrumb-block .previous-title svg{margin-right: 10px;}
+@media (max-width:575px) {
+    .breadcrumb-block{
+        display: block;
+    }
+    .breadcrumb-block .previous-title{
+        margin-bottom: 15px;
+    }
+}
 /* image-banner-content */
 .image-banner-content .card-content{
     padding-left: 20px;
