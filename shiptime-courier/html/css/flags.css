@@ -1,3 +1,57 @@
+.country-input {
+    position: relative;
+}
+.country-input .select{
+    font-size: 16px;
+    color: #828282;
+    font-weight: 600;
+    background: #FFFFFF;
+    cursor: pointer;
+    padding: 5px 40px 5px 20px;
+    min-height: 50px;
+    border: 1px solid #C4C4C4;border-radius: 100px;
+    background-image: url(../images/chevron-down.svg);
+    background-position: calc(100% - 15px);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.country-input .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 225px;
+    border: 1px solid #C4C4C4;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 20%);
+    overflow-y: auto;
+    z-index: 1;
+}
+@media (max-width:991px) {
+    .country-input .select{
+        min-height: 42px;
+    }
+}
+.country-input .dropdown ul{
+    margin: 5px 0;
+}
+.country-input .dropdown li {
+    padding: 5px 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.country-input .dropdown li:focus, .country-input .dropdown li:hover {
+    color: #262626;
+    text-decoration: none;
+    background-color: #f5f5f5;
+}
 .flagstrap {
     display: inline-block;
     position: relative;
@@ -8,6 +62,8 @@
     display: inline-block;
     width: 16px;
     height: 11px;
+    margin-right: 10px;
+    flex: none;
     background: url(../images/flags.png) no-repeat
 }
 

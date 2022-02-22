@@ -90,7 +90,7 @@
             <div class="content-image-block">
                 <div class="container">
                     <div class="row">
-                        <div class="col s12 m6 l6 xl6">
+                        <div class="col s12 m12 l6 xl6">
                             <div class="card-content">
                                 <h1>Find your courier in <span class="text-orange">Canada</span></h1>
                                 <p>Compare the best shipping companies and save up to <strong class="text-black">70%</strong></p>
@@ -99,16 +99,21 @@
                                 <div class="search-input">
                                     <input type="text" placeholder="Search by courier name" class="form-input"/>
                                 </div>
-                                <!-- <div class="country-input">
-                                    <form>
-                                        <div class="form-group">
-                                            <div id="basic" data-input-name="country"></div>
-                                        </div>
-                                    </form>
-                                </div> -->
+                                <div class="country-input">
+                                    <div id="country" class="select">Country</div>
+                                    <div id="country-drop" class="dropdown">
+                                    <ul>
+                                        <li data-code="ca" data-name="Canada" data-cid="c32"><i class="flagstrap-icon"></i>Canada</li>
+                                        <li data-code="AL" data-name="Albania" data-cid="c33"><i class="flagstrap-icon"></i>Albania</li>
+                                        <li data-code="DZ" data-name="Algeria" data-cid="c34"><i class="flagstrap-icon"></i>Algeria</li>
+                                        <li data-code="AS" data-name="American Samoa" data-cid="c35"><i class="flagstrap-icon"></i>American Samoa</li>
+                                        <li data-code="ZW" data-name="Zimbabwe" data-cid="c266"><i class="flagstrap-icon"></i>Zimbabwe</li>
+                                    </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col s12 m6 l6 xl6">
+                        <div class="col s12 m12 l6 xl6">
                             <div class="image-block">
                                 <img src="images/courier-img.png" alt=""/>
                             </div>
@@ -119,29 +124,45 @@
             <div class="logo-block">
                 <div class="container">
                     <div class="logo-items">
-                        <div class="logo-item">
-                            <img src="images/canada-post.png" alt="canada-post"/>
+                        <div class="logo-item" style="background-color: #0F4E8A;">
+                            <a href="#!">
+                                <img src="images/canada-post.png" alt="canada-post"/>
+                            </a>
                         </div>
-                        <div class="logo-item">
-                            <img src="images/fedex.png" alt="fedex"/>
+                        <div class="logo-item" style="background-color:#4D148C ;">
+                            <a href="#!">
+                                <img src="images/fedex.png" alt="fedex"/>
+                            </a>
                         </div>
-                        <div class="logo-item">
-                            <img src="images/ups.png" alt="ups"/>
+                        <div class="logo-item" style="background-color: #38160D;">
+                            <a href="#!">
+                                <img src="images/ups.png" alt="ups"/>
+                            </a>
                         </div>
-                        <div class="logo-item">
-                            <img src="images/dhl.png" alt="dhl"/>
+                        <div class="logo-item" style="background-color: #FFCC00;">
+                            <a href="#!">
+                                <img src="images/dhl.png" alt="dhl"/>
+                            </a>
                         </div>
-                        <div class="logo-item">
-                            <img src="images/canada-post.png" alt="canada-post"/>
+                        <div class="logo-item" style="background-color: #0F4E8A;">
+                            <a href="#!">
+                                <img src="images/canada-post.png" alt="canada-post"/>
+                            </a>
                         </div>
-                        <div class="logo-item">
-                            <img src="images/fedex.png" alt="fedex"/>
+                        <div class="logo-item" style="background-color:#4D148C ;">
+                            <a href="#!">
+                                <img src="images/fedex.png" alt="fedex"/>
+                            </a>
                         </div>
-                        <div class="logo-item">
-                            <img src="images/ups.png" alt="ups"/>
+                        <div class="logo-item" style="background-color: #38160D;">
+                            <a href="#!">
+                                <img src="images/ups.png" alt="ups"/>
+                            </a>
                         </div>
-                        <div class="logo-item">
-                            <img src="images/dhl.png" alt="dhl"/>
+                        <div class="logo-item" style="background-color: #FFCC00;">
+                            <a href="#!">
+                                <img src="images/dhl.png" alt="dhl"/>
+                            </a>
                         </div>
                     </div>
                     <p class="mw-900">©2021 United Parcel Service of America, Inc. UPS, the UPS brand mark and the color brown are trademarks of the United Parcel Service of America, Inc. All rights reserved.</p>
@@ -210,10 +231,37 @@
     <script src='https://shiptime.com/wp-content/themes/shiptime/js/_main.js' id='main-js'></script>
     <script src='https://shiptime.com/wp-content/themes/shiptime/js/main.js' id='main2-js'></script>
     <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script src="js/jquery.flagstrap.js"></script>
     <script>
-        $('#basic').flagStrap();
+        function countryDropdown(seletor){
+            var Selected = $(seletor);
+            var Drop = $(seletor+'-drop');
+            var DropItem = Drop.find('li');
+
+            Selected.click(function(){
+                Selected.toggleClass('open');
+                Drop.toggle();
+            });
+
+            Drop.find('li').click(function(){
+                Selected.removeClass('open');
+                Drop.hide();
+                
+                var item = $(this);
+                Selected.html(item.html());
+            });
+
+            DropItem.each(function(){
+                var code = $(this).attr('data-code');
+
+                if(code != undefined){
+                    var countryCode = code.toLowerCase();
+                    $(this).find('i').addClass('flagstrap-'+countryCode);
+                }
+            });
+        }
+
+        countryDropdown('#country');
     </script>
 </body></html>
     
