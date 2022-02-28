@@ -97,13 +97,13 @@
                             </div>
                             <div class="search-filter-block">
                                 <div class="search-input">
-                                    <input type="text" id="quicksearch" placeholder="Search by courier name" class="form-input search-country" />
+                                    <input type="text" placeholder="Search by courier name" class="form-input" />
                                 </div>
                                 <div class="country-input">
                                     <div id="country" class="select"><i class="flagstrap-icon flagstrap-ca"></i>Canada</div>
                                     <div id="country-drop" class="dropdown">
-                                        <ul id="firstSelector" class="filters-select">
-                                            <li data-code="ca" data-name="canada" data-cid="c32"><i class="flagstrap-icon"></i>canada</li>
+                                        <ul>
+                                            <li data-code="ca" data-name="Canada" data-cid="c32"><i class="flagstrap-icon"></i>Canada</li>
                                             <li data-code="AL" data-name="Albania" data-cid="c33"><i class="flagstrap-icon"></i>Albania</li>
                                             <li data-code="DZ" data-name="Algeria" data-cid="c34"><i class="flagstrap-icon"></i>Algeria</li>
                                             <li data-code="AS" data-name="American Samoa" data-cid="c35"><i class="flagstrap-icon"></i>American Samoa</li>
@@ -119,64 +119,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="resource-controls">
-                        <div class="country-input">
-                            <div class="col-md-3">
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label for="firstSelector">Guidance</label>
-                                    <select id="firstSelector" class="filters-select form-control">
-                                        <option value="*">show all</option>
-                                        <option value=".fedex">fedex</option>
-                                        <option value=".ups">ups</option>
-                                        <option value=".dhl">dhl</option>
-                                        <option value=".canada-post">canada-post</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid isotope logo-items">
-                        <a href="details.html" class="logo-item fedex" data-category="fedex" style="background-color: #4d148c;">
-                            <img src="images/fedex.png" alt="fedex" />fedex
-                        </a>
-                        <a href="details.html" class="logo-item ups" data-category="ups" style="background-color: #38160d;">
-                            <img src="images/ups.png" alt="ups" />ups
-                        </a>
-                        <a href="details.html" class="logo-item dhl" data-category="dhl" style="background-color: #ffcc00;">
-                            <img src="images/dhl.png" alt="dhl" />dhl
-                        </a>
-                        <a href="details.html" class="logo-item canada-post" data-category="canada-post" style="background-color: #0f4e8a;">
-                            <img src="images/canada-post.png" alt="canada-post" />canada-post
-                        </a>
-                        <a href="details.html" class="logo-item fedex" data-category="fedex" style="background-color: #4d148c;">
-                            <img src="images/fedex.png" alt="fedex" />fedex
-                        </a>
-                        <a href="details.html" class="logo-item ups" data-category="ups" style="background-color: #38160d;">
-                            <img src="images/ups.png" alt="ups" />ups
-                        </a>
-                        <a href="details.html" class="logo-item dhl" data-category="dhl" style="background-color: #ffcc00;">
-                            <img src="images/dhl.png" alt="dhl" />dhl
-                        </a>
-                        <a href="details.html" class="logo-item canada-post" data-category="canada-post" style="background-color: #0f4e8a;">
-                            <img src="images/canada-post.png" alt="canada-post" />canada-post
-                        </a>
-                    </div>
                 </div>
             </div>
             <div class="logo-block">
                 <div class="container">
                     <div class="logo-items">
-                        <a href="details.html" class="logo-item" style="background-color: #4d148c;">
-                            <img src="images/fedex.png" alt="fedex" />
-                        </a>
-                        <a href="details.html" class="logo-item" style="background-color: #38160d;">
-                            <img src="images/ups.png" alt="ups" />
-                        </a>
-                        <a href="details.html" class="logo-item" style="background-color: #ffcc00;">
-                            <img src="images/dhl.png" alt="dhl" />
-                        </a>
                         <a href="details.html" class="logo-item" style="background-color: #0f4e8a;">
                             <img src="images/canada-post.png" alt="canada-post" />
                         </a>
@@ -191,6 +138,15 @@
                         </a>
                         <a href="details.html" class="logo-item" style="background-color: #0f4e8a;">
                             <img src="images/canada-post.png" alt="canada-post" />
+                        </a>
+                        <a href="details.html" class="logo-item" style="background-color: #4d148c;">
+                            <img src="images/fedex.png" alt="fedex" />
+                        </a>
+                        <a href="details.html" class="logo-item" style="background-color: #38160d;">
+                            <img src="images/ups.png" alt="ups" />
+                        </a>
+                        <a href="details.html" class="logo-item" style="background-color: #ffcc00;">
+                            <img src="images/dhl.png" alt="dhl" />
                         </a>
                     </div>
                     <p class="mw-900">©2021 United Parcel Service of America, Inc. UPS, the UPS brand mark and the color brown are trademarks of the United Parcel Service of America, Inc. All rights reserved.</p>
@@ -257,9 +213,9 @@
     <script src='https://shiptime.com/wp-content/themes/shiptime/js/slick.min.js' id='slick-jQuerys-js'></script>
     <script src='https://shiptime.com/wp-content/themes/shiptime/js/jquery.fancybox.min.js' id='_fancybox-js-js'></script>
     <script src='https://shiptime.com/wp-content/themes/shiptime/js/_main.js' id='main-js'></script>
-    <!-- <script src='https://shiptime.com/wp-content/themes/shiptime/js/main.js' id='main2-js'></script> -->
+    <script src='https://shiptime.com/wp-content/themes/shiptime/js/main.js' id='main2-js'></script>
     <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
-    <script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="js/jquery.flagstrap.js"></script>
     <script>
         function countryDropdown(seletor){
             var Selected = $(seletor);
@@ -290,46 +246,6 @@
         }
 
         countryDropdown('#country');
-
-        // quick search regex
-        var qsRegex;
-        var buttonFilter;
-        // init Isotope
-        var $grid = $('.grid').isotope({
-        itemSelector: '.logo-item',
-        layoutMode: 'fitRows',
-        filter: function() {
-            var $this = $(this);
-            var searchResult = qsRegex ? $this.text().match( qsRegex ) : true;
-            var buttonResult = buttonFilter ? $this.is( buttonFilter ) : true;
-            return searchResult && buttonResult;
-        }  
-        });
-        // bind filter on select change
-        $('.filters-select').on( 'change', function() {
-        buttonFilter = this.value;
-        $grid.isotope();
-        });
-        // use value of search field to filter
-        var $quicksearch = $('#quicksearch').keyup( debounce( function() {
-        qsRegex = new RegExp( $quicksearch.val(), 'gi' );
-        $grid.isotope();
-        }) );
-        // debounce so filtering doesn't happen every millisecond
-        function debounce( fn, threshold ) {
-            var timeout;
-            return function debounced() {
-                if ( timeout ) {
-                clearTimeout( timeout );
-                }
-                function delayed() {
-                fn();
-                timeout = null;
-                }
-                setTimeout( delayed, threshold || 100 );
-            };
-        }
     </script>
-</body>
-</html>
+</body></html>
     
