@@ -202,7 +202,7 @@ body.app-content { background: transparent !important; }
                                     .member-name {
                                         .hover-text {
                                             @include transform(translateX(0px));
-                                            @include opacity(0);
+                                            @include opacity(1);
                                             visibility: visible;
                                         }
                                     }
