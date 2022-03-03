@@ -1,16 +1,32 @@
 .app-content {
-    .message-write-container { padding: 0; margin-top: 30px; position: relative; max-width: 100%;
-        form { display: flex; align-items: flex-end; width: 100%;
-            .message-write-wrapper { background: transparent; border: none; border-radius: 0; padding-bottom: 0px; display: block; align-items: flex-end; width: 100%; padding: 0px; position: relative; float: none; margin-left: 0px;
+    .message-write-container { padding: 0 20px 20px; margin-top: 30px; position: relative; max-width: 100%;
+        &.action-popular {
+            form {
+                .message-write-wrapper {
+                    .msg-option-block {
+                        display: block;
+                    }
+                }
+            }
+        }
+        form { @include flexbox(); align-items: flex-end; width: 100%;
+            .message-write-wrapper { border: 1px solid $dark-black;background: transparent; border-radius: 0; padding-bottom: 0px; display: block; align-items: flex-end; width: 100%; padding: 0px; position: relative; float: none; margin-left: 0px;@include box-shadow(0px 5px 9px rgba(0,0,0,0.01));
                 .message-write-box { border-bottom: 1px solid $dark-black; background: $light-black-3; display: block; line-height: 0.7;max-width: 100%; flex-grow: 1; position: relative;
-                    .message-new { padding: 14px 120px 12px 20px; border-radius: 0px; color: $light-blue; font-size: 15px; font-weight: 500; width: 100%; height: 50px; box-sizing: border-box; background: $light-black-3; border: 1px solid transparent; min-height: 50px;line-height: 1.375rem; text-align: left; flex-grow: 1;min-width: 130px !important; resize: none; 
+                    .message-new { padding: 14px 210px 12px 15px; border-radius: 0px; color: $light-blue; font-size: 15px; font-weight: 500; width: 100%; height: 50px; box-sizing: border-box; background: $light-black-3; border: 1px solid transparent; min-height: 50px;line-height: 1.375rem; text-align: left; flex-grow: 1;min-width: 130px !important; resize: none; 
                         &::placeholder { opacity: 1; color: $light-black; }
                     }
-                    .send-action { position: absolute; right: 30px; top: 16px;
+                    .send-action { position: absolute; right: 15px; top: 16px;@include flexbox();@include align-items(center);
                         a { line-height: 0.7;
                             em { margin-right: 0px; @include transition(0.3s, ease-in-out); }
                             &:hover {  
                                 em { background: url($iconpath + 'fill-send-blue.svg'); height: 20px; width: 20px; }
+                            }
+                        }
+                        .meeting-switch {@include flexbox();@include align-items(center);margin-right: 20px;
+                            span {
+                                font-size: 16px;
+                                padding-right: 7px;
+                                font-weight: 500;line-height: normal;
                             }
                         }
                     }
@@ -26,7 +42,7 @@
                             }
                         }
                         .attach-file { margin-right: 10px; border: 1px solid #484855; @include border-radius(1px); padding: 8px 12px; position: relative; @include inline-flex; @include justify-content(center); @include flex-direction(column); background: #484855; min-height: 50px;
-                            .file-detail { display: flex; align-items: center; 
+                            .file-detail { @include flexbox(); @include align-items(center); 
                                 img, .ico { margin-right: 10px; max-width: 20px; }
                                 .name { display: block; font-weight: 500; font-size: 14px; color: #E8E8E9; line-height: 1.2; padding-right: 10px; }
                                 .play { color: #E8E8E9; font-size: 8px; @include flexbox(); @include align-items(center); @include justify-content(space-between); padding-top: 5px;
@@ -59,14 +75,16 @@
                         }
                     }
                 }
-                .msg-option-block { @include flexbox; @include align-items(center); @include justify-content(space-between); padding: 3px 20px 3px 8px; background: $light-black-3;
+                .msg-option-block { 
+                    @include flexbox; @include align-items(center); @include justify-content(space-between); 
+                    padding: 7px 10px 7px 5px; background: $light-black-3;
                     .message-options { position: relative; @include flexbox; @include align-items(center); top: 0; right: 0; 
                         .msg-option-button { width: 28px !important; height: 28px; margin: 0 5px; transition: all 0.3s ease-in-out; padding: 5px; font-size: 16px;vertical-align: middle; cursor: pointer; @include border-radius(2px); @include flexbox; @include align-items(center); @include justify-content(center);
                             &:last-child { margin-right: 0; }
                             &.file-upload-box { position: relative;min-width: 28px; float: left;
                                 input[type="file"] { width: 1px; height: 1px; position: absolute; opacity: 0; top: 0; left: 0; }
                             }
-                            .icon { width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; }
+                            .icon { width: 28px; height: 28px; @include flexbox(); @include align-items(center); justify-content: center; }
                             &:hover, &.active { 
                                 .ico { @include opacity(0.7); } 
                             }                                           
@@ -87,7 +105,9 @@
                                 }
                             }
                         } 
-                        .write-option { max-width: 0; overflow: hidden; @include flexbox; @include align-items(center); @include transition(0.3s, ease-in-out); }
+                        .write-option { 
+                            // max-width: 0;
+                            overflow: hidden; @include flexbox; @include align-items(center); @include transition(0.3s, ease-in-out); }
                     }
                 }  
                 &.focused {
@@ -100,14 +120,23 @@
                     }
                 }                              
             }
+            
         }
         @media (max-width: 575px) {  
             form {
                 .message-write-wrapper { 
                     .message-write-box {
-                        .message-new { padding: 12px 15px; }
+                        .message-new { padding: 12px 90px 12px 15px; }
+                        .send-action {
+                            .meeting-switch {
+                                margin-right: 10px;
+                                span {
+                                    display: none;
+                                }
+                            }
+                        }
                     }
-                    .msg-option-block { padding: 10px 15px;
+                    .msg-option-block { padding: 10px 10px 10px 7px;
                         .write-option { 
                             .option-button { width: 25px; height: 25px; margin: 0 2px; padding: 5px;
                                 &:first-child { margin-left: 0; }
@@ -133,7 +162,7 @@
 .app-content.light-theme {
     .message-write-container { 
         form {  
-            .message-write-wrapper { 
+            .message-write-wrapper { border: 1px solid #E2E5E9;
                 .message-write-box { border-bottom-color: #E2E5E9; background: #F2F5F9; 
                     .message-new { color: $dark-black; background: #F2F5F9; 
                         &::placeholder { color: #ACACAE; }
@@ -144,6 +173,9 @@
                             &:hover {  
                                 em { background: url($iconpath + 'fill-send-blue.svg'); height: 20px; width: 20px; }
                             }
+                        }
+                        .meeting-switch {
+                            span {color: #202028;}
                         }
                     }
                     .attach-file-block {

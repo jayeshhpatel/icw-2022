@@ -9,14 +9,14 @@ body.app-content { background: transparent !important; }
     ::-webkit-scrollbar-thumb {
         border-radius: 10px; background-color: rgba(48, 42, 64, .4);
     }
-    .message-layout { display: flex; width: 100vw; height: 100%; max-width: 100vw; max-height: 100vh; position: fixed; top: 0; left: 0; bottom: 0; right: 0;
-        .message { display: flex; flex-direction: column; width: 100%; max-width: 100%; max-height: 100%; height: 100%;
-            &__sidebar { display: flex; flex-direction: column; height: 100vh; max-height: 100vh; }
-            &__content { display: flex; margin: auto; height: 100%; max-height: 100vh; }
+    .message-layout { @include flexbox(); width: 100vw; height: 100%; max-width: 100vw; max-height: 100vh; position: fixed; top: 0; left: 0; bottom: 0; right: 0;
+        .message { @include flexbox(); flex-direction: column; width: 100%; max-width: 100%; max-height: 100%; height: 100%;
+            &__sidebar { @include flexbox(); flex-direction: column; height: 100vh; max-height: 100vh; }
+            &__content { @include flexbox(); margin: auto; height: 100%; max-height: 100vh; }
         }
     }   
     
-    .custom-switch-block { display: flex; align-items: center; width: 100%; justify-content: space-between; padding-top: 12px;
+    .custom-switch-block { @include flexbox(); @include align-items(center); width: 100%; justify-content: space-between; padding-top: 12px;
         &.p-t-20 { padding-top: 20px; }
         .info-block { max-width: calc(100% - 70px);
             strong { font-weight: bold; font-size: 14px; color: #353745; display: block; margin-bottom: 5px; }
@@ -40,7 +40,7 @@ body.app-content { background: transparent !important; }
         }
         .file-info { width: 100%;
             .name { font-weight: 600; font-size: 15px; color: $gray-4; padding-bottom: 5px; }
-            .details { color: $light-blue; font-size: 12px; font-weight: 400; display: flex; align-items: flex-end; justify-content: space-between;
+            .details { color: $light-blue; font-size: 12px; font-weight: 400; @include flexbox(); align-items: flex-end; justify-content: space-between;
                 .ico { margin: -1px 5px; }
                 .time { color: #7A7F93; font-weight: normal; font-size: 10px; padding-left: 8px; font-style: italic; padding-right: 5px; }
             }
@@ -78,7 +78,7 @@ body.app-content { background: transparent !important; }
         }
     }
     .mention-box { position: absolute; width: calc(100% - 48px); left: 24px; background-color: #111116; bottom: calc(100% + 8px); padding: 12px 0; border-radius: 1px; border: 1px solid $primary; z-index: 9; max-height: 300px;
-        .mention-row { padding: 6px 12px 6px 28px; position: relative; display: flex; cursor: pointer; font-size: 16px; font-weight: 600; align-items: center; color: $light-blue;
+        .mention-row { padding: 6px 12px 6px 28px; position: relative; @include flexbox(); cursor: pointer; font-size: 16px; font-weight: 600; @include align-items(center); color: $light-blue;
             .avatar { margin-right: 8px;
                 span {
                     &.letter { font-size: 18px; }
@@ -99,7 +99,7 @@ body.app-content { background: transparent !important; }
         .mention-row:hover,
         .mention-row.hover { background: $light-black-3; }
     }
-    .typing-alert { display: flex; align-items: center; position: absolute; top: -25px; left: 30px;
+    .typing-alert { @include flexbox(); @include align-items(center); position: absolute; top: -25px; left: 30px;
         .dot-anim-box { width: 32px;
             img { max-width: 100%; display: block; }
         }
@@ -132,7 +132,7 @@ body.app-content { background: transparent !important; }
         .new-message-content-block { width: calc(100% - 320px); transition: 0.3s padding ease-in-out; 
             &.active {  }
             
-            .message-body-wrapper { background: #282832; height: calc(100% - 95px); z-index: 1; display: flex; flex-grow: 1; position: relative;
+            .message-body-wrapper { background: #282832; height: calc(100% - 95px); z-index: 1; @include flexbox(); flex-grow: 1; position: relative;
                 &.active { z-index: inherit; 
                     .message-history-column { margin-right: 230px; }
                     @media (max-width: 992px) { 
@@ -151,22 +151,22 @@ body.app-content { background: transparent !important; }
                         }
                     }
                 }
-                .message-history-column { transition: all 300ms ease; display: flex; flex-grow: 1; height: 100%; position: relative; max-width: 100%; }
-                .message-container { display: flex; flex-direction: column; justify-content: space-between; width: 100%;
+                .message-history-column { transition: all 300ms ease; @include flexbox(); flex-grow: 1; height: 100%; position: relative; max-width: 100%; }
+                .message-container { @include flexbox(); flex-direction: column; justify-content: space-between; width: 100%;
                     .channel-message-dropdown { padding: 20px;
                         .message-input-block { width: 100%; font-weight: 500; color: #454A60; padding: 12px 20px; background: $dark-black-1; @include border-radius(0px); position: relative; max-height: 95px; background-image: url($iconpath + 'dropdown-arrow.svg'); background-size: 18px; background-position: right 15px center; background-repeat: no-repeat;
 
-                            .input-block { display: flex; flex-wrap: wrap; align-content: center; 
+                            .input-block { @include flexbox(); flex-wrap: wrap; align-content: center; 
                                 span.to { display: inline-block; white-space: nowrap; margin-right: 10px; color: #7A7F93; font-size: 16px; font-weight: 500; }
                             }
-                            .member { background: $primary; @include border-radius(1px); display: flex; align-items: center; margin-right: 8px; padding: 5px 10px;
+                            .member { background: $primary; @include border-radius(1px); @include flexbox(); @include align-items(center); margin-right: 8px; padding: 5px 10px;
                                 .avatar { width: 25px; height: 25px; border-radius: 5px; filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.255916)); margin-right: 7px;
                                     img { border-radius: 5px; }
                                 }
                                 .name { color: $white; font-size: 14px; font-weight: 500; }
                                 .ico { margin-left: 7px; cursor: pointer; width: 14px; height: 14px; }
                             }
-                            .input-box {display: flex; min-width: 32px; position: relative; z-index: 1; align-items: center;                                
+                            .input-box {@include flexbox(); min-width: 32px; position: relative; z-index: 1; @include align-items(center);                                
                                 .text-box { @include border-radius(0); font-weight: 500; color: $gray-5; width: 100%; font-size: 16px; background: transparent;
                                     &::placeholder { color: $light-black-4; }
                                 }
@@ -176,8 +176,8 @@ body.app-content { background: transparent !important; }
                             }
                         }
                         .search-member-dropdown { background: $dark-black-1; border: 1px solid $primary; @include box-shadow(0px 5px 9px rgba(0,0,0,0.01)); @include border-radius(0); padding: 10px 0; max-height: 310px; overflow-y: auto; z-index: 2; position: relative;
-                            .member-item { cursor: pointer; padding: 8px 20px; display: flex; align-items: center;
-                                .member-name { display: flex; align-items: center; font-weight: 400; font-size: 16px; color: #454A60; margin-right: 10px;
+                            .member-item { cursor: pointer; padding: 8px 20px; @include flexbox(); @include align-items(center);
+                                .member-name { @include flexbox(); @include align-items(center); font-weight: 400; font-size: 16px; color: #454A60; margin-right: 10px;
                                     .avatar { width: 18px; height: 18px; border-radius: 50%; margin-right: 7px; background: #ADB3CC;
                                         .letter { color: $dark-black; font-size: 12px; font-weight: 600; line-height: 0; margin-top: 0; }
                                         img { border-radius: 5px; }
@@ -185,15 +185,28 @@ body.app-content { background: transparent !important; }
                                     .name { color: $gray-5;
                                         &.mw-150 { width: 150px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
                                     }
-                                    .hover-text{
+                                    .hover-text {
                                         font-style: italic;
                                         font-size: 12px;
+                                        padding-left: 10px;
+                                        @include transition(0.4s, ease-in-out);
+                                        color: #9194a4;visibility: hidden;
+                                        @include opacity(0);
+                                        @include transform(translateX(-100%));
                                     }
                                 }
                                 .channel-name { color: #000000; font-weight: 500; font-size: 14px;
                                     .hashtag { color: #ADB3CC; padding-right: 5px; }
                                 }
-                                &:hover { background: $light-black-3; }
+                                &:hover { background: $light-black-3; 
+                                    .member-name {
+                                        .hover-text {
+                                            @include transform(translateX(0px));
+                                            @include opacity(0);
+                                            visibility: visible;
+                                        }
+                                    }
+                                }
                             }
                         }
                     } 
@@ -212,7 +225,7 @@ body.app-content { background: transparent !important; }
             strong { color: #353745; }
         }       
     }
-    .option-box { background: #FFFFFF; border-color: #FFFFFF;  }
+    .option-box { background: #FFFFFF; border-color: #FFFFFF; }
 
     .file-item { background: #F2F5F9; 
         .avatar { background-color: transparent; }
@@ -273,7 +286,7 @@ body.app-content { background: transparent !important; }
                 .message-container { 
                     .channel-message-dropdown { 
                         .message-input-block { color: #454A60; background: $gray-4; background-image: url($iconpath + 'dropdown-arrow.svg');
-                            background-repeat: no-repeat;background-position: right 15px center;
+                            background-repeat: no-repeat; background-position: right 15px center; background-size: 18px;
                             .input-block { 
                                 span.to { color: #7A7F93; }
                             }
@@ -289,18 +302,19 @@ body.app-content { background: transparent !important; }
                                 .create-channel-link { color: #4E54C8; }
                             }
                         }
-                        .search-member-dropdown { background: $dark-black-1; border-color: $primary;  
+                        .search-member-dropdown { background: $white; border-color: $primary; box-shadow: 0px 5px 9px #0000001A;  
                             .member-item { 
                                 .member-name { color: #454A60;
                                     .avatar { background: #ADB3CC;
                                         .letter { color: $dark-black; }
                                     }
-                                    .name { color: $gray-5; }
+                                    .name { color:$light-black; }
+                                    .hover-text { color: $light-black-4;}
                                 }
                                 .channel-name { color: #000000; 
                                     .hashtag { color: #ADB3CC; }
                                 }
-                                &:hover { background: $light-black-3; }
+                                &:hover { background: $gray-4; }
                             }
                         }
                     } 
