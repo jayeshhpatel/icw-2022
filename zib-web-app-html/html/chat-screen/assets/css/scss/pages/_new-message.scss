@@ -185,6 +185,10 @@ body.app-content { background: transparent !important; }
                                     .name { color: $gray-5;
                                         &.mw-150 { width: 150px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
                                     }
+                                    .hover-text{
+                                        font-style: italic;
+                                        font-size: 12px;
+                                    }
                                 }
                                 .channel-name { color: #000000; font-weight: 500; font-size: 14px;
                                     .hashtag { color: #ADB3CC; padding-right: 5px; }
@@ -268,7 +272,8 @@ body.app-content { background: transparent !important; }
                 }
                 .message-container { 
                     .channel-message-dropdown { 
-                        .message-input-block { color: #454A60; background: $dark-black-1; background-image: url($iconpath + 'dropdown-arrow.svg'); 
+                        .message-input-block { color: #454A60; background: $gray-4; background-image: url($iconpath + 'dropdown-arrow.svg');
+                            background-repeat: no-repeat;background-position: right 15px center;
                             .input-block { 
                                 span.to { color: #7A7F93; }
                             }

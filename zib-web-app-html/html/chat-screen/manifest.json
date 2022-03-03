@@ -1,0 +1,7 @@
+{
+    "short_name": "Zib",
+    "name": "Zib Messanger",
+    "start_url": "/zib-web-app-html/chat-screen/chat-screen.html",
+    "display": "standalone",
+    "orientation": "portrait"
+  }
