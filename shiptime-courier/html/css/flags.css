@@ -71,7 +71,12 @@
     flex: none;
     background: url(../images/flags.png) no-repeat
 }
-
+.flagstrap-icon.flagstrap-rest-world {
+    background: url(../images/circle-logo.svg) no-repeat center;
+    background-position: center !important;
+    width: 16px;
+    height: 20px;
+}
 .flagstrap-icon.flagstrap-ad {
     background-position: -16px 0
 }

@@ -3815,21 +3815,21 @@
                     $('.jq-dropdown').hide();
                     $('.more-dropdown .more-info').removeClass('jq-dropdown-open');
                 });
-                if($('.text-edit-btn').length) {
-                    $('.text-edit-btn').mouseenter(function () {
-                        $(this).hide();
-                        $('.write-option').css('max-width', '100%');
-                    });
+                // if($('.text-edit-btn').length) {
+                //     $('.text-edit-btn').mouseenter(function () {
+                //         $(this).hide();
+                //         $('.write-option').css('max-width', '100%');
+                //     });
 
-                    $('.write-option').mouseleave(function () {
-                        $(this).css('max-width', '0');
-                        setTimeout(function(){
-                            $('.text-edit-btn').show();
-                        },300)
+                //     $('.write-option').mouseleave(function () {
+                //         $(this).css('max-width', '0');
+                //         setTimeout(function(){
+                //             $('.text-edit-btn').show();
+                //         },300)
                         
-                    }
-                    ).mouseleave();
-                }
+                //     }
+                //     ).mouseleave();
+                // }
                 if($('.collapse-content-block').length) { 
                     $('.collapse-card .collapse-header').on( 'click', function() { 
                         $('.collapse-card').removeClass('active');
