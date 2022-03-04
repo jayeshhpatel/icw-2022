@@ -39,8 +39,20 @@
                     </div>
                     <p>To Finish setting up your Standard Plan workspace, complete the form below.</p>
                     <div class="sm-title">I'm planning to use ZIB for:</div>
-                    <form>
-                        <div class="radio-field">
+                    <form class="pricing-checkbox">
+                        <div class="check-field custom-checkbox">
+                            <input type="checkbox" id="event" name="event">
+                            <label for="event">An Event</label>
+                        </div>
+                        <div class="check-field custom-checkbox">
+                            <input type="checkbox" id="remote-collaboration" name="remote-collaboration">
+                            <label for="remote-collaboration">Remote collaboration with teams</label>
+                        </div>
+                        <div class="check-field custom-checkbox">
+                            <input type="checkbox" id="just-checking" name="just-checking">
+                            <label for="just-checking">Just checking it out</label>
+                        </div>
+                        <!-- <div class="radio-field">
                             <input type="radio" id="event" name="notification">
                             <label for="event">An Event</label>
                         </div>
@@ -51,7 +63,7 @@
                         <div class="radio-field">
                             <input type="radio" id="just-checking" name="notification">
                             <label for="just-checking">Just checking it out</label>
-                        </div>
+                        </div> -->
                         <div class="content-action">
                             <button type="button" class="button btn-light with-icon" onclick="window.location.href='try-zib-standrad-plan.html';">Continue <em class="ico icon-settings-arrow-right"></em></button>
                         </div>

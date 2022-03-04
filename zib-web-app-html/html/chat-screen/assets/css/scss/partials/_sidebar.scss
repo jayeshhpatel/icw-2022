@@ -143,7 +143,7 @@
                                                         
                                                     }
                                                     .name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 117px;
-                                                        .status { margin-left: 5px; }
+                                                        .status { margin-left: 5px;@include opacity(0);@include transition(0.3s, ease-in-out);}
                                                     }
                                                 }
                                                 .count { background: rgba(#8C91F9, 0.3); @include border-radius(10px); @include inline-flex; @include align-items(center); @include justify-content(center); color: #8C91F9; font-size: 14px; font-weight: 600; padding: 1px 10px; position: absolute; right: 10px; top: 50%; @include transform(translateY(-50%)); @include transition(0.3s, ease-in-out); }
@@ -174,7 +174,13 @@
                                                             }
                                                         }
                                                     }  
-                                                    .msg-name { font-size: 16px; color: $white; }  
+                                                    .msg-name { font-size: 16px; color: $white; 
+                                                        .name {
+                                                            .status {
+                                                                @include opacity(1);
+                                                            }
+                                                        }
+                                                    }  
                                                 }
                                                 &.active { background: $dark-black-1;
                                                     .channel-name { 
@@ -216,7 +222,7 @@
         .sidebar-popup { transition: all 300ms ease; position: fixed; top: 0; left: 0; transform: translateX(-150%); max-height: 100vh; background: #282832; @include box-shadow(5px 0px 20px rgba(0, 0, 0, 0.08)); width: 360px; height: 100%; z-index: 8;   
             &::before { display: inline-block; margin-right: 5px; vertical-align: middle; content: ""; border-top: 11px solid transparent; border-right: 11px solid #282832; border-bottom: 11px solid transparent; border-left: 0; border-radius: 2px; box-shadow: 5px 0px 20px #0000004D; position: absolute; top: 0; left: -11px; }        
             &.open { transform: translateX(0); left: 250px; }
-            .close-action { display: block; position: absolute; top: 17px; right: 0px; cursor: pointer; width: 30px; height: 30px;
+            .close-action { display: block; position: absolute; top: 0; right: 0px; cursor: pointer; width: 50px; height: 50px;
                 .action { @include flexbox(); @include align-items(center); @include justify-content(center); height: 100%; @include transition(0.3s, ease-in-out);
                     em { @include transition(0.3s, ease-in-out); }
                     &:hover { background: $gray-4; 
@@ -224,7 +230,7 @@
                     }
                 }
             }
-            .header { padding: 20px; display: flex; align-items: center;                
+            .header { padding: 15px 20px 11px; margin-bottom: 10px; display: flex; align-items: center;                
                 .title { color: $gray-4; font-weight: bold; font-size: 24px; line-height: 24px; text-shadow: 5px 0px 20px rgba(0, 0, 0, 0.08); }
                 .back { display: none;
                     &.active { display: inline-block; }

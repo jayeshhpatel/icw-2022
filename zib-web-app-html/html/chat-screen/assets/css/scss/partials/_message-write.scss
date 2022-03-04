@@ -1,14 +1,14 @@
 .app-content {
     .message-write-container { padding: 0 20px 20px; margin-top: 30px; position: relative; max-width: 100%;
-        &.action-popular {
-            form {
-                .message-write-wrapper {
-                    .msg-option-block {
-                        display: block;
-                    }
-                }
-            }
-        }
+        // &.action-popular {
+        //     form {
+        //         .message-write-wrapper {
+        //             .msg-option-block {
+        //                 display: block;
+        //             }
+        //         }
+        //     }
+        // }
         form { @include flexbox(); align-items: flex-end; width: 100%;
             .message-write-wrapper { border: 1px solid $dark-black;background: transparent; border-radius: 0; padding-bottom: 0px; display: block; align-items: flex-end; width: 100%; padding: 0px; position: relative; float: none; margin-left: 0px;@include box-shadow(0px 3px 6px rgba(0,0,0,0.1));
                 .message-write-box { border-bottom: 1px solid $dark-black; background: $light-black-3; display: block; line-height: 0.7;max-width: 100%; flex-grow: 1; position: relative;

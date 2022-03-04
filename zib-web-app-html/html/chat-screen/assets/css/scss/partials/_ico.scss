@@ -172,6 +172,9 @@
         &.icon-setting-sorting { height: 16px; width: 16px; background: url($iconpath + 'settings-sorting.svg') no-repeat center center; } 
         &.icon-setting-archive { height: 16px; width: 16px; background: url($iconpath + 'archive.svg') no-repeat center center; }
         &.icon-setting-unarchive { height: 16px; width: 16px; background: url($iconpath + 'unarchive.svg') no-repeat center center; }
+        &.icon-apple { height: 25px; width: 20px; background: url($iconpath + 'apple.svg') no-repeat center center; }
+        &.icon-google { height: 25px; width: 25px; background: url($iconpath + 'google-icon.svg') no-repeat center center; }
+        &.icon-lock-white { height: 20px; width: 20px; background: url($iconpath + 'lock-white.svg') no-repeat center center; }
     }
 }
 

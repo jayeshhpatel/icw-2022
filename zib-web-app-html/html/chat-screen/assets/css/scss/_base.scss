@@ -21,6 +21,9 @@ body.app-content.light-theme {
     background: $white; color: #4D5267;
 }
 .app-content{
+    .text-blue {
+        color: $blue !important;
+    }
     ol, ul {
         list-style: none;
     }

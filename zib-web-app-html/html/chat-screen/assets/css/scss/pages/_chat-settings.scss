@@ -550,7 +550,11 @@
                     .otp-input { width: 50px; height: 50px; text-align: center; background:$light-black-3; border-bottom: 1px solid $light-black; line-height: 49px; color:  $gray-2; font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1900 - 300))); padding: 0; }
                 }
             }
-            .action { padding-top: 20px; @include flexbox; @include align-items(center); @include justify-content(space-between); }
+            .action { padding-top: 20px; @include flexbox; @include align-items(center); @include justify-content(space-between); 
+                .btn-primary { 
+                    .icon-settings-arrow-left { @include transform(translateY(-50%) rotate(180deg)); height:14px; }
+                }
+            }
             .link-action { color: $gray-2; font-size: 16px; display: inline-block; padding-top: 20px; text-decoration: none; @include transition(0.3s, ease-in-out); 
                 &:hover, &:focus { color: $blue; }
             }
@@ -561,6 +565,36 @@
                         &.icon-settings-back { background: url($iconpath + 'settings-back-blue.svg') no-repeat center center; }
                         &.icon-settings-resend { background: url($iconpath + 'settings-reset-blue.svg') no-repeat center center; }
                     }
+                }
+            }
+            .new-account-block {
+                .or-text { text-align: center;
+                    &.divider {
+                        &::before {
+                            background-color: #000000;
+                        }
+                    }
+                    span {
+                        color: #ABAEBB;font-size: 11px;width: 22px;height: 22px; @include border-radius(100px);background-color: #000000;@include flexbox();@include align-items(center);@include justify-content(center);margin: auto;position: relative;
+                    }
+                }
+                .signing-option-block {
+                    padding-top: 5px;
+                    .inner-title { color: #E8E8E9;font-size: 11px;display: block;text-align: center;padding-bottom: 10px;}
+                    .signing-option-btn {
+                        @include flexbox();@include align-items(center);@include justify-content(center);
+                        .web-btn {
+                            border: 1px solid #484855;background: #33333F;padding: 10px;min-width: 50px;min-height: 50px;@include border-radius(4px);@include flexbox();@include align-items(center);@include justify-content(center);color: #E8E8E9;font-size: 16px;margin: 0 5px;text-decoration: none;
+                            &:hover , &:focus {background-color: rgba(51, 51, 63 ,0.8);}
+                            .icon-lock-white{margin-right: 5px;}
+                            @media (max-width:767px) {
+                                font-size: 14px; padding: 5px 7px;min-width: 44px;min-height: 44px;
+                            }
+                        }
+                    }
+                }
+                .account-register-link {color: $white;text-align: center; padding-top: 30px;
+                    .link-action {padding: 0; margin-left: 10px;}
                 }
             }
             @media (max-width: 575px) { max-width: 400px; margin: 30px auto; padding: 20px 25px 30px;
@@ -897,6 +931,11 @@
                 }
             }
             input[type="radio"]:checked + label::before { border-color: $primary; background: $dark-black-1; }
+        }
+        .pricing-checkbox {
+            .check-field {
+                margin-top: 25px;
+            }
         }
         .info { font-weight: 400; font-size: 14px; color: $gray-5; 
             &.font-12 { font-size: 12px; }
