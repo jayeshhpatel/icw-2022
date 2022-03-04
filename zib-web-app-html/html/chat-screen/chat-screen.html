@@ -2224,16 +2224,7 @@
                                             <div class="message-write-wrapper focus">
                                                 <div class="message-write-box">  
                                                     <textarea class="message-new" oninput="autoGrow(this)" placeholder="Message General"></textarea>
-                                                    <div class="send-action">
-                                                        <div class="meeting-switch">
-                                                            <span>start Meeting</span>
-                                                            <div class="custom-switch switch-sm">
-                                                                <input id="meeting-mode" type="checkbox" class="switch-input">
-                                                                <label for="meeting-mode" class="switch-label">Switch</label>
-                                                            </div>
-                                                        </div>
-                                                        <a href="#"><em class="ico icon-send-fill"></em></a>
-                                                    </div>
+                                                    <div class="send-action"><a href="#"><em class="ico icon-send-fill"></em></a></div>
                                                     <div class="attach-file-block">
                                                         <div class="attach-img">
                                                             <img src="assets/images/msg-img.png" alt="" />
@@ -2293,55 +2284,50 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="msg-option-block">
-                                                    <div class="message-options">
-                                                        <div class="write-option"> 
-                                                            <span class="msg-option-button">
-                                                                <span class="icon icon-gray">
+                                                <div class="msg-option-block">                                                    
+                                                    <div class="message-options">  
+                                                        <span class="msg-option-button">
+                                                            <span class="icon icon-gray">
                                                                 <em class="ico bold"></em>
-                                                                </span>
                                                             </span>
-                                                            <span class="msg-option-button">
-                                                                <span class="icon icon-gray">
+                                                        </span>
+                                                        <span class="msg-option-button">
+                                                            <span class="icon icon-gray">
                                                                 <em class="ico italic"></em>
-                                                                </span>
                                                             </span>
-                                                            <span class="msg-option-button">
-                                                                <span class="icon icon-gray">
+                                                        </span>
+                                                        <span class="msg-option-button">
+                                                            <span class="icon icon-gray">
                                                                 <em class="ico icon-text-underline"></em>
-                                                                </span>
                                                             </span>
-                                                            <span class="msg-option-button">
-                                                                <span class="icon icon-gray">
+                                                        </span>
+                                                        <span class="msg-option-button">
+                                                            <span class="icon icon-gray">
                                                                 <em class="ico icon-list-menu"></em>
-                                                                </span>
                                                             </span>
-                                                            <span class="msg-option-button">
-                                                                <span class="icon icon-gray">
+                                                        </span>
+                                                        <span class="msg-option-button">
+                                                            <span class="icon icon-gray">
                                                                 <em class="ico icon-number-list"></em>
-                                                                </span>
                                                             </span>
-                                                        </div>
-                                                        <!-- <span class="msg-option-button text-edit-btn">
-                                                            <span class="icon icon-gray"> <em class="ico icon-type"></em> </span>
-                                                        </span>  -->
-                                                        <div class="write-option m-l-auto">
-                                                            <span onclick="toggleMentionBox(this)" class="msg-option-button">
-                                                                <span class="icon icon-gray">
-                                                                    <em class="ico icon-at-sign"></em>
-                                                                </span>
-                                                            </span> 
-                                                            <span class="msg-option-button">
-                                                                <span class="icon icon-gray">
-                                                                    <em class="ico icon-emoji"></em>
-                                                                </span>
-                                                            </span> 
-                                                            <span class="msg-option-button" onclick="showUploadFile()">
-                                                                <span class="icon icon-gray">
-                                                                    <em class="ico icon-attach-pin"></em>
-                                                                </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="message-options">                                                        
+                                                        <span onclick="toggleMentionBox(this)" class="msg-option-button">
+                                                            <span class="icon icon-gray">
+                                                                <em class="ico icon-at-sign"></em>
                                                             </span>
-                                                        </div>
+                                                        </span>
+                                                        <span class="msg-option-button">
+                                                            <span class="icon icon-gray">
+                                                                <em class="ico icon-emoji"></em>
+                                                            </span>
+                                                        </span>
+                                                        <span class="msg-option-button" onclick="showUploadFile()">
+                                                            <span class="icon icon-gray">
+                                                                <em class="ico icon-attach-pin"></em>
+                                                            </span>
+                                                        </span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -4207,24 +4193,24 @@
                     $(this).parents('.item').find('.text').text('Light Mode');
                 }
             });
-            // if($('.text-edit-btn').length) {
-            //     $(".text-edit-btn").each(function () {
-            //         $(this).mouseenter(function(){
-            //             $(this).hide();
-            //             $('.write-option').css('max-width', '100%');
-            //         });
-            //     });
-            // }
-            // if($('.write-option').length) {
-            //     $(".write-option").each(function () {
-            //         $(this).mouseleave(function(){
-            //             $(this).css('max-width', '0');
-            //             setTimeout(function(){
-            //                 $('.text-edit-btn').show();
-            //             },300)
-            //         }).mouseleave();
-            //     });
-            // }
+            if($('.text-edit-btn').length) {
+                $(".text-edit-btn").each(function () {
+                    $(this).mouseenter(function(){
+                        $(this).hide();
+                        $('.write-option').css('max-width', '100%');
+                    });
+                });
+            }
+            if($('.write-option').length) {
+                $(".write-option").each(function () {
+                    $(this).mouseleave(function(){
+                        $(this).css('max-width', '0');
+                        setTimeout(function(){
+                            $('.text-edit-btn').show();
+                        },300)
+                    }).mouseleave();
+                });
+            }
             // $(document).on('click', '.channel-header-search-wrapper', function (e) {
             //     e.stopPropagation();
             // });
