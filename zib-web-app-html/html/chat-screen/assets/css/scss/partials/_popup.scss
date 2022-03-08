@@ -6,6 +6,12 @@
             .ico { width: 20px; height: 20px; } 
             &.back { right: auto; left: 16px; opacity: .8; }
         }
+        .input-field {
+            label {
+                top: 7px;
+                left: 10px;
+            }
+        }
         .wrapper { width: 100%; max-width: 510px; min-height: 100%; margin: auto; display: flex; flex-direction: column;
             .content {
                 & >.title { color: $gray-2; font-size: 20px; text-align: center; margin-top: 24px; margin-bottom: 12px; font-weight: 600; }

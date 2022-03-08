@@ -208,11 +208,15 @@
                 &.pb-3 { padding-bottom: 3px }
             }
             .input-block { @include flexbox; @include align-items(center); padding-bottom: 25px; 
-                .input-field { max-width: 350px; margin-bottom: 0; }
+                .input-field { max-width: 350px; 
+                    // margin-bottom: 0; 
+                }
                 .button { margin-left: 20px; }
                 &.two-filed-grid { display: block; padding-top: 3px;
                     .input-group { display: grid; grid-template-columns: repeat(2, 48%); grid-gap: 30px; color: $gray-2; }
-                    .input-field {max-width: 100%; margin-bottom: 25px; }
+                    .input-field {max-width: 100%; 
+                        // margin-bottom: 25px;
+                     }
                 }
                 .action { margin-top: 20px; }
             }
@@ -550,7 +554,7 @@
                     .otp-input { width: 50px; height: 50px; text-align: center; background:$light-black-3; border-bottom: 1px solid $light-black; line-height: 49px; color:  $gray-2; font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1900 - 300))); padding: 0; }
                 }
             }
-            .action { padding-top: 20px; @include flexbox; @include align-items(center); @include justify-content(space-between); 
+            .action { padding-top: 20px;margin-top: 25px; @include flexbox; @include align-items(center); @include justify-content(space-between); 
                 .btn-primary { 
                     .icon-settings-arrow-left { @include transform(translateY(-50%) rotate(180deg)); height:14px; }
                 }

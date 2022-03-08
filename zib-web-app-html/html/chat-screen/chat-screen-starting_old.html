@@ -12,7 +12,7 @@
         <link rel="manifest" href="manifest.json">        
         <title>ZIB Messanger</title>
     </head>
-    <body class="app-content">
+    <body class="app-content light-theme">
         <div id="root">
             <div class="message-layout has-multiple-workspace new-msg-layout">
                 <div class="main-new-sidebar new-sidebar">
@@ -23,7 +23,7 @@
                                 <span class="status"></span>
                             </div>
                             <div class="name-box">
-                                <h3 class="header-name">William</h3>
+                                <h3 class="name">William</h3>
                                 <div class="arrow-icon icon-hover has-dropdown">
                                     <a href="javascript:void(0)" class="more-info">RBN Trial</a>  
                                     <div>
@@ -40,12 +40,12 @@
                                                         </div>
                                                         <div class="edit-info">
                                                             <div class="current-plan">
-                                                                <div class="plan">Current Plan: <span class="text-white">Free</span></div>
+                                                                <div class="plan">Current Plan: <span>Paid</span></div>
                                                                 <div class="action"><a href="#">View Plans</a></div>
                                                             </div>
                                                             <div class="member-info">
-                                                                <div class="count-member"><strong>36</strong> Members <a href="chat-settings/manage-member.html">Edit</a></div>
-                                                                <div class="action"><a href="#"><em class="ico icon-edit-user"></em>Invite</a></div>
+                                                                <div class="count-member"><strong>36</strong> Members <a href="#">Edit</a></div>
+                                                                <div class="action"><a href="#">Invite +</a></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -94,13 +94,13 @@
                                                 <span><em class="ico icon-profile"></em>Edit Profile</span>
                                             </li>
                                             <li class="item">
-                                                <span onclick="window.location.href='chat-settings/settings.html';"><em class="ico icon-settings-black"></em>Workspace Settings</span>
+                                                <span><em class="ico icon-settings-black "></em>Workspace Settings</span>
                                             </li>
                                             <li class="item open-sidebar-by-id" data-open_id="notification-popup-bar">
                                                 <span><em class="ico icon-bell"></em>Notifications</span>
                                             </li>
                                             <li class="item">
-                                                <span><em class="ico icon-color-palette"></em><span class="text">Dark Mode</span></span> 
+                                                <span><em class="ico icon-color-palette"></em>Dark Mode</span> 
                                                 <div class="custom-switch switch-sm">
                                                     <input id="screen-mode" type="checkbox" class="switch-input" checked>
                                                     <label for="screen-mode" class="switch-label">Switch</label>
@@ -175,17 +175,17 @@
                                     <div class="message__sidebar-channels body">  
                                         <div class="collapse-info-block">                                
                                             <div class="collapse-card">
-                                                <div class="collaspe-header">
-                                                    <div class="name">Channels<span class="count">7</span></div>
+                                                <div class="collaspe-header active">
+                                                    <div class="name">Channels</div>                                                    
                                                 </div>
-                                                <div class="collapse-body">
+                                                <div class="collapse-body show">
                                                     <ul class="lists">
                                                         <li class="add-action">
                                                             <div class="channel-name custom-underline">
                                                                 <span><em class="ico icon-add"></em>Add</span>
                                                             </div>
                                                         </li>
-                                                        <li class="active">
+                                                        <li class="">
                                                             <div class="channel-name">
                                                                 <span class="img"><em class="ico icon-hashtag"></em></span>
                                                                 <span class="name">general</span>
@@ -194,176 +194,18 @@
                                                                 <a href="javascript:void(0)" class="more-info" data-jq-dropdown="#channel1"><em class="ico icon-dot-white"></em></a> 
                                                             </div>
                                                         </li>
-                                                        <li>
-                                                            <div class="channel-name">
-                                                                <span class="img"><em class="ico icon-hashtag"></em></span>
-                                                                <span class="name">testing</span>
-                                                            </div>
-                                                            <div class="more-dropdown">
-                                                                <a href="javascript:void(0)" class="more-info" data-jq-dropdown="#channel2"><em class="ico icon-dot-white"></em></a> 
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="channel-name">
-                                                                <span class="img"><span><em class="ico icon-hashtag"></em></span></span>
-                                                                <span class="name">ui/ux testing</span>
-                                                            </div>
-                                                            <div class="more-dropdown">
-                                                                <a href="javascript:void(0)" class="more-info" data-jq-dropdown="#channel3"><em class="ico icon-dot-white"></em></a>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="channel-name">
-                                                                <span class="img"><em class="ico icon-hashtag"></em></span>
-                                                                <span class="name">developers team</span>
-                                                            </div>
-                                                            <div class="more-dropdown">
-                                                                <a href="javascript:void(0)" class="more-info" data-jq-dropdown="#channel4"><em class="ico icon-dot-white"></em></a> 
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="channel-name">
-                                                                <span class="img"><em class="ico icon-hashtag"></em></span>
-                                                                <span class="name">qa team</span>
-                                                            </div>
-                                                            <span class="count">2</span>
-                                                            <div class="more-dropdown">
-                                                                <a href="javascript:void(0)" class="more-info" data-jq-dropdown="#channel5"><em class="ico icon-dot-white"></em></a> 
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="channel-name">
-                                                                <span class="img"><em class="ico icon-hashtag"></em></span>
-                                                                <span class="name">zib_3d_office</span>
-                                                            </div>
-                                                            <span class="count">5</span>
-                                                            <div class="more-dropdown">
-                                                                <a href="javascript:void(0)" class="more-info" data-jq-dropdown="#channel6"><em class="ico icon-dot-white"></em></a> 
-                                                            </div>
-                                                        </li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div class="collapse-card">
                                                 <div class="collaspe-header active">
-                                                    <div class="name">Messages<span class="count">9</span></div>
+                                                    <div class="name">Messages</div>
                                                 </div>
                                                 <div class="collapse-body show">
                                                     <ul class="lists">
                                                         <li class="add-action">
                                                             <div class="channel-name custom-underline">
                                                                 <span><em class="ico icon-create"></em>Create</span>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="msg-name with-name-tooltip"> 
-                                                                <!-- IF need Tool tip add ^^ class -->
-                                                                <div class="avatar">
-                                                                    <span><img src="assets/images/vikas.jpg" alt="Vikas" /></span>
-                                                                </div>
-                                                                <span class="name">
-                                                                   <span class="name-ellipsis">Vikas</span>
-                                                                    <div class="has-blue-tooltip status-box" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
-                                                                        <span class="status online"></span>
-                                                                        <div class="tool-tip-blue common-anim common-anim-pseudo from-top">Online</div>
-                                                                    </div>
-                                                                </span>
-                                                            </div>
-                                                            <span class="count">2</span>
-                                                            <div class="more-dropdown">
-                                                                <a href="javascript:void(0)" class="more-info" data-jq-dropdown="#channel1"><em class="ico icon-dot-white"></em></a> 
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="msg-name with-name-tooltip">
-                                                                <div class="avatar">
-                                                                    <span><img src="assets/images/william.jpg" alt="William" /></span>
-                                                                </div>
-                                                                <span class="name">
-                                                                    <span class="name-ellipsis">Williamdssds</span>
-                                                                    <div class="has-blue-tooltip status-box" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
-                                                                        <span class="status billing"></span>
-                                                                        <div class="tool-tip-blue common-anim common-anim-pseudo from-top">Offline</div>
-                                                                    </div>
-                                                                </span>
-                                                            </div>
-                                                            <span class="count">4</span>
-                                                            <div class="more-dropdown">
-                                                                <a href="javascript:void(0)" class="more-info" data-jq-dropdown="#channel2"><em class="ico icon-dot-white"></em></a> 
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="msg-name">
-                                                                <div class="avatar">
-                                                                    <span><em class="ico icon-hashtag-blue"></em></span>
-                                                                </div>
-                                                                <span class="name">Brandon, Jayesh, Kishan</span>
-                                                            </div>
-                                                            <span class="count">3</span>
-                                                            <div class="more-dropdown">
-                                                                <a href="javascript:void(0)" class="more-info" data-jq-dropdown="#channel3"><em class="ico icon-dot-white"></em></a> 
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="msg-name with-name-tooltip">
-                                                                <div class="avatar gradient1">
-                                                                    <span class="letter">J</span>
-                                                                </div>
-                                                                <span class="name">
-                                                                    <span class="name-ellipsis">Jayesh</span>
-                                                                    <div class="has-blue-tooltip status-box" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
-                                                                        <span class="status offline"></span>
-                                                                        <div class="tool-tip-blue common-anim common-anim-pseudo from-top">Do not disturb</div>
-                                                                    </div>
-                                                                </span>
-                                                            </div>
-                                                            <div class="more-dropdown">
-                                                                <a href="javascript:void(0)" class="more-info" data-jq-dropdown="#channel4"><em class="ico icon-dot-white"></em></a>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="msg-name with-name-tooltip">
-                                                                <div class="avatar gradient2">
-                                                                    <span class="letter">S</span>
-                                                                </div>
-                                                                <span class="name">
-                                                                    <span class="name-ellipsis">Sagar</span>
-                                                                    <div class="has-blue-tooltip status-box" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
-                                                                        <span class="status billing"></span>
-                                                                        <div class="tool-tip-blue common-anim common-anim-pseudo from-top">Offline</div>
-                                                                    </div>
-                                                                </span>
-                                                            </div>
-                                                            <div class="more-dropdown">
-                                                                <a href="javascript:void(0)" class="more-info" data-jq-dropdown="#channel5"><em class="ico icon-dot-white"></em></a> 
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="msg-name with-name-tooltip">
-                                                                <div class="avatar gradient3">
-                                                                    <span class="letter">K</span>
-                                                                </div>
-                                                                <span class="name">
-                                                                    <span class="name-ellipsis">Krupesh</span>
-                                                                    <div class="has-blue-tooltip status-box" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
-                                                                        <span class="status online"></span>
-                                                                        <div class="tool-tip-blue common-anim common-anim-pseudo from-top">Online</div>
-                                                                    </div>
-                                                                </span>
-                                                            </div>
-                                                            <div class="more-dropdown">
-                                                                <a href="javascript:void(0)" class="more-info" data-jq-dropdown="#channel6"><em class="ico icon-dot-white"></em></a>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="msg-name">
-                                                                <div class="avatar">
-                                                                    <span><em class="ico icon-hashtag-blue"></em></span>
-                                                                </div>
-                                                                <span class="name">Brandon, William, Jayesh</span>
-                                                            </div>
-                                                            <div class="more-dropdown">
-                                                                <a href="javascript:void(0)" class="more-info" data-jq-dropdown="#channel1"><em class="ico icon-dot-white"></em></a>
                                                             </div>
                                                         </li>
                                                     </ul>
@@ -394,7 +236,7 @@
                             </button>
                         </div>
                     </div>
-                </div>                
+                </div>    
                 <div class="notification-bar sidebar-popup" id="notification-popup-bar">
                     <div class="close-action">
                         <a href="javascript:void(0)" class="action close-popup"><em class="ico icon-close-gray"></em></a>
@@ -655,40 +497,40 @@
                                             <div class="send-action"><a href="#"><em class="ico icon-send-fill"></em></a></div>
                                         </div>
                                         <div class="msg-option-block">                                             
-                                            <div class="message-options">
-                                                <span class="msg-option-button">
-                                                    <span class="icon icon-gray">
-                                                        <em class="ico bold"></em>
-                                                    </span>
-                                                </span>
-                                                <span class="msg-option-button">
-                                                    <span class="icon icon-gray">
-                                                        <em class="ico italic"></em>
-                                                    </span>
-                                                </span>
-                                                <span class="msg-option-button">
-                                                    <span class="icon icon-gray">
-                                                        <em class="ico icon-text-underline"></em>
-                                                    </span>
-                                                </span>
-                                                <span class="msg-option-button">
-                                                    <span class="icon icon-gray">
-                                                        <em class="ico icon-list-menu"></em>
-                                                    </span>
-                                                </span>
-                                                <span class="msg-option-button">
-                                                    <span class="icon icon-gray">
-                                                        <em class="ico icon-number-list"></em>
-                                                    </span>
-                                                </span>
-                                            </div>                                                  
-                                            <div class="message-options">
+                                            <div class="message-options">                                                
                                                 <span class="msg-option-button text-edit-btn">
                                                     <span class="icon icon-gray">
                                                         <em class="ico icon-type"></em>
                                                     </span>
                                                 </span>
-                                                <span onclick="toggleMentionBox(this)" class="msg-option-button">
+                                                <div class="write-option">
+                                                    <span class="msg-option-button">
+                                                        <span class="icon icon-gray">
+                                                            <em class="ico bold"></em>
+                                                        </span>
+                                                    </span>
+                                                    <span class="msg-option-button">
+                                                        <span class="icon icon-gray">
+                                                            <em class="ico italic"></em>
+                                                        </span>
+                                                    </span>
+                                                    <span class="msg-option-button">
+                                                        <span class="icon icon-gray">
+                                                            <em class="ico icon-text-underline"></em>
+                                                        </span>
+                                                    </span>
+                                                    <span class="msg-option-button">
+                                                        <span class="icon icon-gray">
+                                                            <em class="ico icon-list-menu"></em>
+                                                        </span>
+                                                    </span>
+                                                    <span class="msg-option-button">
+                                                        <span class="icon icon-gray">
+                                                            <em class="ico icon-number-list"></em>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <span onclick="toggleMentionBox()" class="msg-option-button">
                                                     <span class="icon icon-gray">
                                                         <em class="ico icon-at-sign"></em>
                                                     </span>
@@ -698,8 +540,8 @@
                                                         <em class="ico icon-emoji"></em>
                                                     </span>
                                                 </span>
-                                                <span class="msg-option-button" onclick="showUploadFile()">
-                                                    <span class="icon icon-gray">
+                                                <span class="msg-option-button">
+                                                    <span class="icon mic icon-gray">
                                                         <em class="ico icon-attach-pin"></em>
                                                     </span>
                                                 </span>
@@ -766,7 +608,7 @@
                     <div class="content-info-block scrollable scrollbar-sm">                        
                         <div class="files-info-block">
                             <div class="field">
-                                <div class="input-field has-data pre-icon-input no-label"> 
+                                <div class="input-field has-data pre-icon-input"> 
                                     <span class="pre-icon"><em class="ico icon-search"></em></span>
                                     <input type="text" class="tBox" placeholder="Search Files">
                                 </div>
@@ -1109,8 +951,8 @@
                                 <div class="name"><span class="status online"></span> Brandon</div>
                             </div>
                             <div class="profile-action">
-                                <a href="#" class="button btn-secondary with-icon medium is-light">Message <em class="ico threads"></em></a>
-                                <a href="#" class="button btn-secondary with-icon medium edit-profile is-light">Edit Profile <em class="ico icon-profile"></em></a>
+                                <a href="#" class="button btn-secondary with-icon medium">Message <em class="ico threads"></em></a>
+                                <a href="#" class="button btn-secondary with-icon medium edit-profile">Edit Profile <em class="ico icon-profile"></em></a>
                             </div>
                             <div class="profile-info">                                
                                 <div class="info-content">
@@ -1140,7 +982,7 @@
                                 <div class="image-action">                                           
                                     <button type="button" class="button btn-primary small choose-file">Choose image</button>
                                     <input class="change-profile" id="change-profile" type="file" name="" />
-                                    <button type="button" class="button btn-secondary small is-light">Remove image</button>
+                                    <button type="button" class="button btn-secondary small">Remove image</button>
                                 </div>
                             </div>
                             <div class="profile-input-info">   
@@ -1186,7 +1028,7 @@
                                 <div class="name"><span class="status online"></span> Jan Doe</div>
                             </div>
                             <div class="profile-action">
-                                <a href="#" class="button btn-secondary with-icon medium is-light">Message <em class="ico threads"></em></a>
+                                <a href="#" class="button btn-secondary with-icon medium">Message <em class="ico threads"></em></a>
                             </div>
                             <div class="profile-info">                                
                                 <div class="info-content">
@@ -1230,7 +1072,7 @@
                                 <div class="inner">
                                     <div class="chat-info-collapse-body-item">
                                         <div class="field">
-                                            <div class="input-field has-data pre-icon-input no-label"> 
+                                            <div class="input-field has-data pre-icon-input"> 
                                                 <span class="pre-icon"><em class="ico icon-search"></em></span>
                                                 <input type="text" class="tBox" placeholder="Search Files">
                                             </div>
@@ -1579,7 +1421,7 @@
                     <div class="content-info-block with-padding scrollable">
                         <div class="file-info-block">                            
                             <div class="field">
-                                <div class="input-field has-data pre-icon-input no-label"> 
+                                <div class="input-field has-data pre-icon-input"> 
                                     <span class="pre-icon"><em class="ico icon-search"></em></span>
                                     <input type="text" class="tBox" placeholder="Search Files">
                                 </div>
@@ -1627,7 +1469,7 @@
                     <div class="content-info-block with-padding scrollable scrollbar-sm">
                         <div class="workspace-directory-block">
                             <div class="field">
-                                <div class="input-field has-data pre-icon-input no-label"> 
+                                <div class="input-field has-data pre-icon-input"> 
                                     <span class="pre-icon"><em class="ico icon-search"></em></span>
                                     <input type="text" class="tBox" placeholder="Search Files">
                                 </div>
@@ -1638,8 +1480,8 @@
                                     <div class="popup-container">
                                         <ul>
                                             <li class="item selected">Everyone (22)</li>
-                                            <li class="item">Option 1</li>
-                                            <li class="item">Option 2</li>
+                                            <li class="item">Member 1</li>
+                                            <li class="item">Member 2</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1762,6 +1604,18 @@
                             <input type="checkbox" id="cb-whats-new-notify" name="cb-whats-new-notify" checked="">
                             <label for="cb-whats-new-notify">Notify me about updates</label>
                         </div>
+                        <div class="item update-info">
+                            <p class="date">June 11, 2019</p>
+                            <p class="update-title">In case you missed it</p>
+                            <p class="update-details">From a dedicated drafts section in your channel sidebar to dark mode on mobile, there’s a handful of new features that help Slack better fit the way you work. To help you take advantage of all our latest features, read our rundown of what’s new.</p>
+                            <a href="#" class="link custom-underline">Learn more</a>
+                        </div>
+                        <div class="item update-info">
+                            <p class="date">June 11, 2019</p>
+                            <p class="update-title">In case you missed it</p>
+                            <p class="update-details">From a dedicated drafts section in your channel sidebar to dark mode on mobile, there’s a handful of new features that help Slack better fit the way you work. To help you take advantage of all our latest features, read our rundown of what’s new.</p>
+                            <a href="#" class="link custom-underline">Learn more</a>
+                        </div>
                     </div>
                 </div>    
                 <div class="activity-bar sidebar-popup" id="activity-popup-bar">
@@ -1883,560 +1737,38 @@
                             </div>
                         </div>
                     </div>
-                </div> 
-                <div class="app-search-box-bar sidebar-popup" id="app-search-popup-bar">
-                    <div class="close-action">
-                        <a href="javascript:void(0)" class="action close-popup"><em class="ico icon-close-gray"></em></a>
-                    </div>
-                    <div class="channel-search">  
-                        <div class="channel-person">
-                            <div class="heading">Channel Admin</div>
-                            <ul class="lists">
-                                <li>
-                                    <div class="client-name owner">
-                                        <div class="avatar">
-                                            <span><img src="assets/images/william.jpg" alt="William" /></span>
-                                        </div>
-                                        <span class="name">John Doe 
-                                            <span class="icon has-blue-tooltip" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
-                                                <em class="ico icon-fill-user"></em>
-                                                <div class="tool-tip-blue common-anim common-anim-pseudo from-top">Owner</div>
-                                            </span>                                                           
-                                        </span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="client-name">
-                                        <div class="avatar">
-                                            <span><img src="assets/images/william.jpg" alt="William" /></span>
-                                        </div>
-                                        <span class="name">Jane Doe</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="client-name">
-                                        <div class="avatar">
-                                            <span><img src="assets/images/kishan.jpg" alt="Kishan Thanki" /></span>
-                                        </div>
-                                        <span class="name">Kishan Thanki</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="client-name">
-                                        <div class="avatar gradient3">
-                                            <span class="letter">N</span>
-                                        </div>
-                                        <span class="name">Nams_QA</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="channel-person">
-                            <div class="heading">Online Members</div>
-                            <ul class="lists">
-                                <li>
-                                    <div class="client-name">
-                                        <div class="avatar gradient1">
-                                            <span class="letter">J</span>
-                                        </div>
-                                        <span class="name">John Doe</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="client-name">
-                                        <div class="avatar">
-                                            <span><img src="assets/images/william.jpg" alt="William Wright" /></span>
-                                        </div>
-                                        <span class="name">William Wright</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="client-name">
-                                        <div class="avatar">
-                                            <span><img src="assets/images/kishan.jpg" alt="Kishan Thanki" /></span>
-                                        </div>
-                                        <span class="name">Kishan Thanki</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="client-name">
-                                        <div class="avatar gradient2">
-                                            <span class="letter">J</span>
-                                        </div>
-                                        <span class="name">Jayesh Patel</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="channel-person">
-                            <div class="heading">Offline Members</div>
-                            <ul class="lists">
-                                <li>
-                                    <div class="client-name">
-                                        <div class="avatar gradient1">
-                                            <span class="letter">J</span>
-                                        </div>
-                                        <span class="name">John Doe</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="client-name">
-                                        <div class="avatar">
-                                            <span><img src="assets/images/william.jpg" alt="William Wright" /></span>
-                                        </div>
-                                        <span class="name">William Wright</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="client-name">
-                                        <div class="avatar">
-                                            <span><img src="assets/images/kishan.jpg" alt="Kishan Thanki" /></span>
-                                        </div>
-                                        <span class="name">Kishan Thanki</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="client-name">
-                                        <div class="avatar gradient3">
-                                            <span class="letter">J</span>
-                                        </div>
-                                        <span class="name">Jayesh Patel</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
                 <div class="message__content new_message_content new-message-content-block">
                     <div class="message">
-                        <div class="channel-header-wrapper">
-                            <div class="channel-header-container">                                 
-                                <div class="channel-title">
-                                    <div class="title">
-                                        <div class="avatar gradient1"><span class="letter">B</span></div>
-                                        <h1>Brandon</h1>
-                                    </div> 
-                                    <!-- <div class="title">
-                                        <div class="avatar gradient1"><span class="letter">#</span></div>
-                                        <h1>Brandon, Bhavin Vaghela, 4 Others</h1>
-                                    </div>  -->
-                                </div>
-                                <div class="channel-settings">                                                               
-                                    <div class="info-dropdown has-dropdown">
-                                        <div class="vertical-center header-large icon">
-                                            <em class="ico icon-info"></em>
-                                        </div>
-                                        <div class="popup bottom-right">
-                                            <div class="popup-container">
-                                                <ul>
-                                                    <li class="item open-sidebar-by-id" data-open_id="your-files-popup-bar">All Favorites</li>  
-                                                    <li class="item">Pinned Messages</li>
-                                                    <li class="item open-sidebar-by-id" data-open_id="shared-files-popup-bar">Shared Files</li>
-                                                    <li class="item open-sidebar-by-id" data-open_id="downloads-popup-bar">Downloads</li>
-                                                    <li class="item open-sidebar-by-id" data-open_id="workspace-directory-popup-bar">Members</li>
-                                                    <li class="item open-sidebar-by-id" data-open_id="whats-new-popup-bar">About</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                    <div class="info-dropdown has-dropdown">
-                                        <div class="vertical-center header-large icon open-sidebar-by-id" data-open_id="app-search-popup-bar">
-                                            <em class="ico icon-manage-user"></em>
-                                        </div>
-                                    </div>                             
-                                </div>
-                                <div class="channel-header-search-wrapper">
-                                    <div class="info-dropdown vertical-center">
-                                        <span class="icon"><i class="ico icon-search"></i></span>
-                                        <div class="mob-search">
-                                            <input id="appsearch" type="text" placeholder="Search workspace" /> 
-                                        </div>
-                                    </div>
-                                    <div class="app-search-box no-display">
-                                        <div class="channel-header-search">                                                                  
-                                            <div class="tag-box-fields custom-tag-box-fields">                                              
-                                                <div class="tag-box">
-                                                    <span class="icon"><i class="ico icon-search"></i></span>
-                                                    <!-- <div class="tag">Files
-                                                        <span class="tag-remover"><i class="ico icon-close-white" aria-hidden="true"></i></span>
-                                                    </div>  -->
-                                                    <div class="input-box">
-                                                        <input id="appsearchcontent" type="text" placeholder="Search Channels" />  
-                                                    </div>
-                                                    <span class="press-enter">Press Enter</span>
-                                                    <span id="app-search-closer" class="closer"><span class="clear">Clear</span></span>
-                                                </div>
-                                            </div>
-                                            <div class="result-box no-display">
-                                                <div class="title">Search for</div>
-                                                <div class="search-tag">
-                                                    <div class="tag-item selected">Channels</div>
-                                                    <div class="tag-item">Messages</div>
-                                                    <div class="tag-item">Files</div>
-                                                    <div class="tag-item">Members</div>
-                                                </div>
-                                                <div class="advance-search-block">
-                                                    <div class="text-right"><span class="toggle-link">Advanced Search</span></div>
-                                                    <div class="advance-input-block">
-                                                        <div class="two-input-grid">
-                                                            <div class="has-dropdown custom-dropdown custom-input-dropdown">
-                                                                <label>Shared by Members</label>
-                                                                <a href="#" class="input-dropdown"><span class="select-item">Member Name</span></a>
-                                                                <div class="popup dropdown-menu">
-                                                                    <div class="popup-container">
-                                                                        <ul>
-                                                                            <li class="item selected">Member Name</li>
-                                                                            <li class="item">Option 1</li>
-                                                                            <li class="item">Option 2</li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="has-dropdown custom-dropdown custom-input-dropdown">
-                                                                <label>Shared in</label>
-                                                                <a href="#" class="input-dropdown"><span class="select-item">Channels / DMs</span></a>
-                                                                <div class="popup dropdown-menu">
-                                                                    <div class="popup-container">
-                                                                        <ul>
-                                                                            <li class="item selected">Channels / DMs</li>
-                                                                            <li class="item">Option 1</li>
-                                                                            <li class="item">Option 2</li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="two-input-grid">
-                                                            <div class="input-field post-icon-input"> 
-                                                                <label>Start Date</label>
-                                                                <input type="text" class="tBox" placeholder="Start">
-                                                                <span class="post-icon"><i class="ico icon-celender"></i></span>
-                                                            </div>
-                                                            <div class="input-field post-icon-input">
-                                                                <label>End Date</label>
-                                                                <input type="text" class="tBox" placeholder="End"> 
-                                                                <span class="post-icon"><i class="ico icon-celender"></i></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="title">Recent searches</div>
-                                                <div class="search-suggestions">
-                                                    <div class="item">
-                                                        <i class="ico icon-search-recent"></i>
-                                                        <span class="search">Brandon <span class="info">Members</span></span>
-                                                    </div>
-                                                    <div class="item">
-                                                        <i class="ico icon-search-recent"></i>
-                                                        <span class="search">Zib Dark UI <span class="info">Files</span></span>
-                                                    </div>
-                                                    <div class="item">
-                                                        <i class="ico icon-search-recent"></i>
-                                                        <span class="search">Appointment <span class="info">Messages</span></span>
-                                                    </div>   
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
                         <div class="message-body-wrapper">
                             <div class="message-history-column">
                                 <div id="map" class="map-view-container no-display"></div>                                
                                 <div class="message-container" id="action-popular">
-                                    <div id="messageboard" class="messageboard new-messageboard scrollable">  
-                                        <div class="divider">
-                                            <div class="text"><span>Tuesday, August 17th</span></div>
-                                        </div>                                       
-                                        <div class="message-row with-avatar">
-                                            <div class="avatar gradient1"><span class="letter">B</span></div>
-                                            <div class="message-content">
-                                                <div class="text-item">
-                                                    <p class="sender-info">Brandon<span>8:01 pm</span></p>
-                                                    <p class="message-text">Hello <span class="mention no-bg">@Channel</span></p>
-                                                    <p class="message-text">Anyone else here today?</p>
-                                                </div>
-                                            </div>
-                                        </div> 
-                                        <div class="message-row with-avatar">
-                                            <div class="avatar gradient2"><span class="letter">K</span></div>
-                                            <div class="message-content">
-                                                <div class="text-item has-reply">
-                                                    <p class="sender-info">Krupesh<span>8:03 pm</span></p>
-                                                    <p class="message-text">Hi <span class="mention">@Brandon</span></p>   
-                                                    <p class="message-text">I have logged in and I am available.</p>
-                                                </div>             
-                                            </div>
-                                        </div>                                                         
-                                        <div class="message-row with-avatar">
-                                            <div class="avatar gradient3"><span class="letter">S</span></div>
-                                            <div class="message-content">
-                                                <div class="text-item">
-                                                    <p class="sender-info">Sagar<span>8:05 pm</span></p>
-                                                    <p class="message-text">I found one bug, Can anyone please note down for the future use?</p>
-                                                    <div class="chat-reaction">
-                                                        <span class="reaction"><em class="ico icon-laughing-emoji"></em> 1</span>
-                                                        <!-- <a href="#" class="add-emoji"><em class="ico icon-add-emoji"></em></a> -->
+                                    <div id="messageboard" class="messageboard new-messageboard scrollable h-100">  
+                                        <div class="empty-data-block">
+                                            <h1>Welcome to <br><span>RBN Trial</span></h1>
+                                            <p>It's looking a little empty here, isn't it? <br>Here are some possible steps to get you on your way.</p>
+                                            <div class="write-action">
+                                                <div class="action-block">
+                                                    <div class="img">
+                                                        <img src="assets/images/invite-other-img.svg" alt="Invite Others to Join" />
                                                     </div>
-                                                    <div class="thread-reply-member">
-                                                        <div class="avatar gradient4">
-                                                            <span><span class="letter">K</span></span>
-                                                        </div>
-                                                        <a href="#" class="reply-link custom-underline" onclick="replyThread()">1 Reply</a>
+                                                    <button type="button" class="button btn-secondary btn-action is-light">Invite Others to Join</button>
+                                                </div>
+                                                <div class="action-block">
+                                                    <div class="img">
+                                                        <img src="assets/images/send-message-img.svg" alt="Send a Message" />
                                                     </div>
+                                                    <button type="button" class="button btn-secondary btn-action is-light">Send a Message</button>
                                                 </div>
-                                            </div>
-                                        </div>                                   
-                                        <div class="message-row with-avatar pin-mark">
-                                            <div class="avatar"><span><img src="assets/images/vikas.jpg" alt="Vikas" /></span></div>
-                                            <div class="message-content">
-                                                <div class="text-item">
-                                                    <p class="sender-info">Vikas<span>8:05 pm</span></p>
-                                                    <p class="message-text">Hi <span class="mention no-bg">@Sagar</span> Sure Let us know in detail. We will log it into jira.</p>
-                                                </div>
-                                            </div>
-                                            <div class="pin-note"><em class="ico icon-chat-pin"></em>by Krupesh</div>
-                                        </div>
-                                        <div class="divider">
-                                            <div class="text"><span>Tuesday, August 18th</span></div>
-                                        </div>                                          
-                                        <div class="message-row with-avatar">
-                                            <div class="avatar"><span><img src="assets/images/nirav.jpg" alt="Nirav" /></span></div>
-                                            <div class="message-content">
-                                                <div class="text-item">
-                                                    <p class="sender-info">Nirav<span>8:05 pm</span></p>
-                                                    <div class="attach-item audio-file">
-                                                        <em class="ico icon-volume"></em>
-                                                        <span class="file-name">Welcome-m....age.mp3
-                                                            <span class="size">56.8 KB</span>
-                                                        </span>
-                                                        <span class="play-action"><em class="ico icon-play"></em></span>
+                                                <div class="action-block">
+                                                    <div class="img">
+                                                        <img src="assets/images/explore-office-img.svg" alt="Explore Smart Office" />
                                                     </div>
+                                                    <button type="button" class="button btn-secondary btn-action is-light">Explore Smart Office</button>
                                                 </div>
-                                            </div>
-                                        </div>  
-                                        <div class="message-row with-avatar">
-                                            <div class="avatar"><span><img src="assets/images/kishan.jpg" alt="Kishan" /></span></div>
-                                            <div class="message-content">
-                                                <div class="text-item">
-                                                    <p class="sender-info">Kishan<span>8:05 pm</span></p>
-                                                    <div class="attach-item">
-                                                        <em class="ico icon-pdf"></em>
-                                                        <span class="file-name">azurebranded.pdf
-                                                            <span class="size">90 KB</span>
-                                                        </span>
-                                                    </div>
-                                                    <div class="attach-item">
-                                                        <em class="ico icon-doc"></em>
-                                                        <span class="file-name">newdoc.docx
-                                                            <span class="size">632 KB</span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>  
-                                        <div class="message-row with-avatar">
-                                            <div class="avatar"><span><img src="assets/images/brandon.jpg" alt="Brandon" /></span></div>
-                                            <div class="message-content">
-                                                <div class="text-item">
-                                                    <p class="sender-info">Brandon<span>8:05 pm</span></p>
-                                                    <div class="attach-item">
-                                                        <em class="ico icon-file"></em>
-                                                        <span class="file-name">azurebranded.docx
-                                                            <span class="size">34 KB</span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>  
-                                        <div class="message-row with-avatar">
-                                            <div class="avatar"><span><img src="assets/images/vikas.jpg" alt="Vikas" /></span></div>
-                                            <div class="message-content">
-                                                <div class="text-item">
-                                                    <p class="sender-info">Vikas<span>8:05 pm</span></p>
-                                                    <div class="attach-item img-file" onclick="showImageView()">
-                                                        <img src="assets/images/msg-img1.png" alt="" />
-                                                        <span class="file-name">Layout.png
-                                                            <span class="size">189 KB</span>
-                                                        </span>
-                                                    </div>
-                                                    <div class="attach-item video-file" onclick="showImageView()">
-                                                        <div class="video">
-                                                            <img src="assets/images/msg-img2.png" alt="" />
-                                                            <span class="video-play"></span>
-                                                        </div>
-                                                        <span class="file-name">layout.mp4
-                                                            <span class="size">4356 KB</span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>  
-                                    </div>
-                                    <div class="message-write-container action-popular">
-                                        <form >
-                                            <div class="message-write-wrapper focus">
-                                                <div class="message-write-box">  
-                                                    <textarea class="message-new" oninput="autoGrow(this)" placeholder="Message General"></textarea>
-                                                    <div class="send-action"><a href="#"><em class="ico icon-send-fill"></em></a></div>
-                                                    <div class="attach-file-block">
-                                                        <div class="attach-img">
-                                                            <img src="assets/images/msg-img.png" alt="" />
-                                                            <span class="remove">
-                                                                <em class="ico icon-fill-close"></em>
-                                                            </span>
-                                                        </div>
-                                                        <div class="attach-file attach-video">
-                                                            <div class="file-detail">
-                                                                <em class="ico icon-file"></em>
-                                                                <span class="name">thevideotoo.mp4</span>
-                                                            </div>
-                                                            <span class="remove">
-                                                                <em class="ico icon-fill-close"></em>
-                                                            </span>
-                                                        </div>
-                                                        <div class="attach-file attach-video in-progress">
-                                                            <div class="progress-file-name">
-                                                                <span>thevideotoo.mp4</span>
-                                                                <span>59%</span>
-                                                            </div>
-                                                            <div class="progress-wrapper">
-                                                                <div class="progress-bar progress-bar-width" data-progress-bar-percent="100">
-                                                                  <div class="progress-bar-anim"></div>
-                                                                </div>
-                                                            </div>
-                                                            <span class="remove">
-                                                                <em class="ico icon-fill-close"></em>
-                                                            </span>
-                                                        </div>
-                                                        <div class="attach-file attach-audio">
-                                                            <div class="file-detail">
-                                                                <em class="ico icon-audio"></em>
-                                                                <div>
-                                                                    <span class="name">File from iOS</span>
-                                                                    <span class="play">
-                                                                        <span>0:03 <span class="size">(43kb)</span></span>
-                                                                        <span>0:14</span>
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="audio">
-                                                                <div class="audio-line"></div>
-                                                            </div>
-                                                            <span class="remove">
-                                                                <em class="ico icon-fill-close"></em>
-                                                            </span>
-                                                        </div>
-                                                        <div class="attach-file">
-                                                            <div class="file-detail">
-                                                                <img src="assets/images/svg-file.png" alt="" />
-                                                                <span class="name">doc file name.doc</span>
-                                                            </div>
-                                                            <span class="remove">
-                                                                <em class="ico icon-fill-close"></em>
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="msg-option-block">                                                    
-                                                    <div class="message-options">  
-                                                        <span class="msg-option-button">
-                                                            <span class="icon icon-gray">
-                                                                <em class="ico bold"></em>
-                                                            </span>
-                                                        </span>
-                                                        <span class="msg-option-button">
-                                                            <span class="icon icon-gray">
-                                                                <em class="ico italic"></em>
-                                                            </span>
-                                                        </span>
-                                                        <span class="msg-option-button">
-                                                            <span class="icon icon-gray">
-                                                                <em class="ico icon-text-underline"></em>
-                                                            </span>
-                                                        </span>
-                                                        <span class="msg-option-button">
-                                                            <span class="icon icon-gray">
-                                                                <em class="ico icon-list-menu"></em>
-                                                            </span>
-                                                        </span>
-                                                        <span class="msg-option-button">
-                                                            <span class="icon icon-gray">
-                                                                <em class="ico icon-number-list"></em>
-                                                            </span>
-                                                        </span>
-                                                    </div>
-                                                    <div class="message-options">                                                        
-                                                        <span onclick="toggleMentionBox(this)" class="msg-option-button">
-                                                            <span class="icon icon-gray">
-                                                                <em class="ico icon-at-sign"></em>
-                                                            </span>
-                                                        </span>
-                                                        <span class="msg-option-button">
-                                                            <span class="icon icon-gray">
-                                                                <em class="ico icon-emoji"></em>
-                                                            </span>
-                                                        </span>
-                                                        <span class="msg-option-button" onclick="showUploadFile()">
-                                                            <span class="icon icon-gray">
-                                                                <em class="ico icon-attach-pin"></em>
-                                                            </span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                        <div class="mention-box scrollable no-display">
-                                            <div class="mention-row">
-                                                <span class="status"></span>
-                                                <div class="avatar gradient4">
-                                                    <span class="letter">M</span>
-                                                </div>
-                                                pritesh <span class="info">Pritesh Kumar</span>
-                                            </div>
-                                            <div class="mention-row">
-                                                <span class="status online"></span>
-                                                <div class="avatar gradient6">
-                                                    <span class="letter">M</span>
-                                                </div>
-                                                milos <span class="info">(you)</span>
-                                            </div>
-                                            <div class="mention-row">
-                                                <span class="status"></span>
-                                                <div class="avatar gradient9">
-                                                    <span class="letter">M</span>
-                                                </div>
-                                                brandon <span class="info">Brandon</span>
-                                            </div>
-                                            <div class="mention-row">
-                                                <span class="status"></span>
-                                                <div class="avatar gradient8">
-                                                    <span class="letter">M</span>
-                                                </div>
-                                                Garreth <span class="status-icon"><img alt="icon" src="assets/images/icons/house.svg" /></span>
-                                            </div>
-                                            <div class="mention-row">
-                                                <!-- <img alt="icon" class="announce" src="assets/images/icons/new-icons/loud-speaker.svg"> -->
-                                                <span class="icon"><em class="ico icon-megaphone"></em></span>
-                                                <strong>@channel</strong> <span class="info">Notify everyone in this channel.</span>
-                                            </div>
-                                            <div class="mention-row">
-                                                <span class="icon"><em class="ico icon-megaphone"></em></span>
-                                                <strong>@here</strong> <span class="info">Notify everyone online in this channel.</span>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="message-alert wraning">
-                                    <span class="close-alert"><em class="ico icon-close-white"></em></span>
-                                    <div class="icon">
-                                        <em class="ico icon-warning"></em>
-                                    </div>
-                                    <div class="info">
-                                        <h3>Warning!</h3>
-                                        <p>Internet is slow, Please check the link given below to measure the speed.!</p>
-                                        <a href="#" class="action custom-underline">Visit this link!</a>
                                     </div>
                                 </div>
                             </div>                             
@@ -2481,126 +1813,117 @@
                                     <input id="appsearchcontent" type="text" placeholder="Search workspace" value="Testing" /> 
                                     <div class="search-for-block">
                                         <div class="search-for">
-                                            <div class="has-dropdown custom-dropdown custom-input-dropdown search-dropdown">
-                                                <label>Search For:</label>
-                                                <a href="#" class="input-dropdown"><span class="select-item">Channels</span></a>
-                                                <div class="popup dropdown-menu">
-                                                    <div class="popup-container">
-                                                        <ul>
-                                                            <li class="item selected" data-id="search-channels">Channels</li>
-                                                            <li class="item" data-id="search-messages">Messages</li>
-                                                            <li class="item" data-id="search-files">Files</li>
-                                                            <li class="item" data-id="search-members">Members</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            <span>Search For:</span>
+                                            <div>Channel</div>
                                         </div>
                                         <div class="search-for">
-                                            <div class="input-field post-icon-input"> 
-                                                <label>Start Date:</label>
-                                                <input type="text" class="tBox" placeholder="Start" value="09/07/2021">
-                                                <span class="post-icon"><i class="ico icon-celender"></i></span>
-                                            </div>
-                                            
+                                            <span>Shared by:</span>
+                                            <div>Krupesh Patel</div>
                                         </div>
                                         <div class="search-for">
-                                            <div class="input-field post-icon-input">
-                                                <label>End Date:</label>
-                                                <input type="text" class="tBox" placeholder="End" value="12/07/2021"> 
-                                                <span class="post-icon"><i class="ico icon-celender"></i></span>
-                                            </div>
+                                            <span>Shared in:</span>
+                                            <div>DMs</div>
+                                        </div>
+                                        <div class="search-for">
+                                            <span>Start Date:</span>
+                                            <div>09/07/2021</div>
+                                        </div>
+                                        <div class="search-for">
+                                            <span>End Date:</span>
+                                            <div>12/07/2021</div>
                                         </div>
                                     </div> 
+                                    <span class="edit">EDIT</span>
                                     <span class="reset">RESET</span>
                                     <span id="app-search-closer" class="closer" onclick="hideSearchContent()"><em class="ico icon-close-gray"></em></span>
                                 </div>
+                                
                             </div>
                             <div class="search-contents" id="search-files">
-                                <div class="search-list">
-                                    <div id="messageboard" class="messageboard new-messageboard scrollable">                                        
-                                        <div class="message-row with-avatar">
-                                            <div class="avatar"><span class="img"><img src="assets/images/brandon.jpg" alt="Brandon" /></span></div>
-                                            <div class="message-content">
-                                                <div class="text-item">
-                                                    <p class="sender-info">Brandon<span>Aug 23, 2021 8:01 pm</span></p>
-                                                    <div class="attach-item audio-file">
-                                                        <em class="ico icon-volume"></em>
-                                                        <span class="file-name">Welcome-m....age.mp3
-                                                            <span class="size">56.8 KB</span>
-                                                        </span>
-                                                        <span class="play-action"><em class="ico icon-play"></em></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> 
-                                        <div class="message-row with-avatar">
-                                            <div class="avatar"><span class="img"><img src="assets/images/kishan.jpg" alt="Kishan" /></span></div>
-                                            <div class="message-content">
-                                                <div class="text-item has-reply">
-                                                    <p class="sender-info">Kishan<span>Aug 23, 2021 8:01 pm</span></p>
-                                                    <div class="attach-item">
-                                                        <em class="ico icon-pdf"></em>
-                                                        <span class="file-name">azurebranded.pdf
-                                                            <span class="size">90 KB</span>
-                                                        </span>
-                                                    </div>
-                                                    <div class="attach-item">
-                                                        <em class="ico icon-doc"></em>
-                                                        <span class="file-name">newdoc.docx
-                                                            <span class="size">632 KB</span>
-                                                        </span>
-                                                    </div>
-                                                </div>             
-                                            </div>
-                                        </div>                                                  
-                                        <div class="message-row with-avatar">
-                                            <div class="avatar gradient1"><span class="letter">J</span></div>
-                                            <div class="message-content">
-                                                <div class="text-item">
-                                                    <p class="sender-info">Jayesh<span>Aug 23, 2021 8:01 pm</span></p>
-                                                    <div class="attach-item">
-                                                        <em class="ico icon-file"></em>
-                                                        <span class="file-name">azurebranded.docx
-                                                            <span class="size">34 KB</span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>  
-                                        <div class="message-row with-avatar">
-                                            <div class="avatar gradient3"><span class="letter">B</span></div>
-                                            <div class="message-content">
-                                                <div class="text-item">
-                                                    <p class="sender-info">Brandon<span>Aug 23, 2021 8:01 pm</span></p>
-                                                    <div class="attach-item img-file">
-                                                        <img src="assets/images/msg-img1.png" alt="" />
-                                                        <span class="file-name">Layout.png
-                                                            <span class="size">189 KB</span>
-                                                        </span>
-                                                    </div>
-                                                    <div class="attach-item video-file">
-                                                        <div class="video">
-                                                            <img src="assets/images/msg-img2.png" alt="" />
-                                                            <span class="video-play"></span>
-                                                        </div>
-                                                        <span class="file-name">layout.mp4
-                                                            <span class="size">4356 KB</span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>  
-                                    </div> 
+                                <div class="search-files-list">
+                                    <div class="file-item">
+                                        <div class="avatar image-thumb"><img alt="icon" src="assets/images/msg-img1.png"></div>
+                                        <div class="file-info">
+                                            <div class="name">home-demo-image.jpg</div>
+                                            <div class="details"><span>Kishan<em class="ico icon-long-arrow-right"></em>ux/ui testing</span> <span class="time">23rd June 11:17 am</span></div>
+                                        </div>
+                                        <div class="option-box">
+                                            <a href="#" class="option-link"><em class="ico icon-download"></em></a>
+                                            <a href="#" class="option-link"><em class="ico icon-share"></em></a>
+                                        </div>
+                                    </div>
+                                    <div class="file-item">
+                                        <div class="avatar image-thumb"><img alt="icon" src="assets/images/msg-img1.png"></div>
+                                        <div class="file-info">
+                                            <div class="name">home-demo-image.jpg</div>
+                                            <div class="details"><span>Kishan<em class="ico icon-long-arrow-right"></em>ux/ui testing</span> <span class="time">23rd June 11:17 am</span></div>
+                                        </div>
+                                        <div class="option-box">
+                                            <a href="#" class="option-link"><em class="ico icon-download"></em></a>
+                                            <a href="#" class="option-link"><em class="ico icon-share"></em></a>
+                                        </div>
+                                    </div>
+                                    <div class="file-item">
+                                        <div class="avatar image-thumb"><img alt="icon" src="assets/images/msg-img1.png"></div>
+                                        <div class="file-info">
+                                            <div class="name">home-demo-image.jpg</div>
+                                            <div class="details"><span>Kishan<em class="ico icon-long-arrow-right"></em>ux/ui testing</span> <span class="time">23rd June 11:17 am</span></div>
+                                        </div>
+                                        <div class="option-box">
+                                            <a href="#" class="option-link"><em class="ico icon-download"></em></a>
+                                            <a href="#" class="option-link"><em class="ico icon-share"></em></a>
+                                        </div>
+                                    </div>
+                                    <div class="file-item">
+                                        <div class="avatar image-thumb"><img alt="icon" src="assets/images/msg-img1.png"></div>
+                                        <div class="file-info">
+                                            <div class="name">home-demo-image.jpg</div>
+                                            <div class="details"><span>Kishan<em class="ico icon-long-arrow-right"></em>ux/ui testing</span> <span class="time">23rd June 11:17 am</span></div>
+                                        </div>
+                                        <div class="option-box">
+                                            <a href="#" class="option-link"><em class="ico icon-download"></em></a>
+                                            <a href="#" class="option-link"><em class="ico icon-share"></em></a>
+                                        </div>
+                                    </div>
+                                    <div class="file-item">
+                                        <div class="avatar image-thumb"><img alt="icon" src="assets/images/msg-img1.png"></div>
+                                        <div class="file-info">
+                                            <div class="name">home-demo-image.jpg</div>
+                                            <div class="details"><span>Kishan<em class="ico icon-long-arrow-right"></em>ux/ui testing</span> <span class="time">23rd June 11:17 am</span></div>
+                                        </div>
+                                        <div class="option-box">
+                                            <a href="#" class="option-link"><em class="ico icon-download"></em></a>
+                                            <a href="#" class="option-link"><em class="ico icon-share"></em></a>
+                                        </div>
+                                    </div>
+                                    <div class="file-item">
+                                        <div class="avatar image-thumb"><img alt="icon" src="assets/images/msg-img1.png"></div>
+                                        <div class="file-info">
+                                            <div class="name">home-demo-image.jpg</div>
+                                            <div class="details"><span>Kishan<em class="ico icon-long-arrow-right"></em>ux/ui testing</span> <span class="time">23rd June 11:17 am</span></div>
+                                        </div>
+                                        <div class="option-box">
+                                            <a href="#" class="option-link"><em class="ico icon-download"></em></a>
+                                            <a href="#" class="option-link"><em class="ico icon-share"></em></a>
+                                        </div>
+                                    </div>
+                                    <div class="file-item">
+                                        <div class="avatar image-thumb"><img alt="icon" src="assets/images/msg-img1.png"></div>
+                                        <div class="file-info">
+                                            <div class="name">home-demo-image.jpg</div>
+                                            <div class="details"><span>Kishan<em class="ico icon-long-arrow-right"></em>ux/ui testing</span> <span class="time">23rd June 11:17 am</span></div>
+                                        </div>
+                                        <div class="option-box">
+                                            <a href="#" class="option-link"><em class="ico icon-download"></em></a>
+                                            <a href="#" class="option-link"><em class="ico icon-share"></em></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="search-contents" id="search-messages">
-                                <div class="search-list">
-                                    <div id="messageboard" class="messageboard new-messageboard scrollable">
-                                        <div class="msg-details">
-                                            <div class="name">#design</div>
-                                            <div class="date">October 20, 2021</div>
-                                        </div>
+                            <div class="search-contents active" id="search-messages">
+                                <div class="search-files-list">
+                                    <div class="back-btn"><button type="button" class="button gradient" id="back-to-top"><em class="ico icon-up-arrow"></em>Back to Top</button></div>
+                                    <div class="chat-thread-info">
                                         <div class="message-row with-avatar">
                                             <div class="avatar gradient1"><span class="letter">B</span></div>
                                             <div class="message-content">
@@ -2611,10 +1934,6 @@
                                                 </div>
                                             </div>
                                         </div> 
-                                        <div class="msg-details">
-                                            <div class="name">#design</div>
-                                            <div class="date">October 20, 2021</div>
-                                        </div>
                                         <div class="message-row with-avatar">
                                             <div class="avatar gradient2"><span class="letter">K</span></div>
                                             <div class="message-content">
@@ -2624,11 +1943,7 @@
                                                     <p class="message-text">I have logged in and I am available.</p>
                                                 </div>             
                                             </div>
-                                        </div>   
-                                        <div class="msg-details">
-                                            <div class="name">#design</div>
-                                            <div class="date">October 20, 2021</div>
-                                        </div>                                                      
+                                        </div>                                                         
                                         <div class="message-row with-avatar">
                                             <div class="avatar gradient3"><span class="letter">S</span></div>
                                             <div class="message-content">
@@ -2647,11 +1962,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>   
-                                        <div class="msg-details">
-                                            <div class="name">#design</div>
-                                            <div class="date">October 20, 2021</div>
-                                        </div>                                
+                                        </div>                                   
                                         <div class="message-row with-avatar pin-mark">
                                             <div class="avatar"><span><img src="assets/images/vikas.jpg" alt="Vikas" /></span></div>
                                             <div class="message-content">
@@ -2662,103 +1973,17 @@
                                             </div>
                                             <div class="pin-note"><em class="ico icon-chat-pin"></em>by Krupesh</div>
                                         </div>
-                                    </div> 
+                                    </div>
                                 </div>
                             </div>
                             <div class="search-contents" id="search-members">                               
-                                <div class="search-list">
-                                    <ul class="member-list">
-                                        <li>
-                                            <div class="avatar gradient1"><span class="letter">B</span></div>
-                                            <div class="member-name">
-                                                <div class="name">Brandon Doe</div>
-                                                <span class="date">Joined on August 23, 2021</span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="avatar gradient2"><span class="letter">K</span></div>
-                                            <div class="member-name">
-                                                <div class="name">Krupesh Patel</div>
-                                                <span class="date">Joined on August 4, 2021</span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="avatar gradient1"><span class="letter">N</span></div>
-                                            <div class="member-name">
-                                                <div class="name">Nirav Patel</div>
-                                                <span class="date">Joined on August 2, 2021</span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="avatar gradient3"><span class="letter">N</span></div>
-                                            <div class="member-name">
-                                                <div class="name">Nams_QA</div>
-                                                <span class="date">Joined on September 2, 2021</span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="avatar gradient3"><span class="letter">J</span></div>
-                                            <div class="member-name">
-                                                <div class="name">Jayesh Patel</div>
-                                                <span class="date">Joined on September 6, 2021</span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="avatar gradient5"><span class="letter">K</span></div>
-                                            <div class="member-name">
-                                                <div class="name">Kishan Thanki</div>
-                                                <span class="date">Joined on September 6, 2021</span>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                <div class="search-files-list">
+                                    
                                 </div>
                             </div>
-                            <div class="search-contents active" id="search-channels">                                
-                                <div class="search-list">
-                                    <ul class="member-list">
-                                        <li>
-                                            <div class="avatar gradient1"><span class="letter">#</span></div>
-                                            <div class="member-name">
-                                                <div class="name">Design Group</div>
-                                                <span class="date">Created on August 23, 2021</span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="avatar gradient2"><span class="letter">#</span></div>
-                                            <div class="member-name">
-                                                <div class="name">Testing Group</div>
-                                                <span class="date">Created on August 4, 2021</span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="avatar gradient1"><span class="letter">Z</span></div>
-                                            <div class="member-name">
-                                                <div class="name">Zib Designs 3D</div>
-                                                <span class="date">Created on August 2, 2021</span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="avatar gradient3"><span class="letter">N</span></div>
-                                            <div class="member-name">
-                                                <div class="name">Nams_QA, William, Kishan, Krupesh</div>
-                                                <span class="date">Created on September 2, 2021</span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="avatar gradient3"><span class="letter">J</span></div>
-                                            <div class="member-name">
-                                                <div class="name">Jayesh, Nirav, Krupesh, Hardik</div>
-                                                <span class="date">Created on September 6, 2021</span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="avatar gradient5"><span class="letter">In</span></div>
-                                            <div class="member-name">
-                                                <div class="name">In-App Chat</div>
-                                                <span class="date">Created on September 6, 2021</span>
-                                            </div>
-                                        </li>
-                                    </ul>
+                            <div class="search-contents" id="search-channels">                                
+                                <div class="search-files-list">
+                                    
                                 </div>
                             </div>                            
                             <div class="pagination-block">
@@ -2876,9 +2101,8 @@
                     <div class="content">
                         <h1 class="h6 title">What’s the name of this channel?</h1>
                         <div class="field">
-                            <div class="input-field pre-icon-input no-label m-b-5"> 
-                                <span class="pre-icon"><em class="ico icon-hashtag"></em></span>
-                                <input type="text" class="tBox" placeholder="design" />
+                            <div class="input-field no-label-input-field m-b-5"> 
+                                <input type="text" class="tBox" placeholder="#design" />
                             </div>
                         </div>
                         <div class="action">
@@ -2918,9 +2142,6 @@
                                 <input type="radio" id="radio-nothing" name="notification">
                                 <label for="radio-nothing">Nothing</label>
                             </div>
-                        </div>
-                        <div class="action">
-                            <button type="button" class="button btn-primary">Save</button>
                         </div>
                     </div>
                 </div>
@@ -3243,8 +2464,8 @@
                                     </label>
                                 </div>
                             </div>
-                            <div class="action text-right m-t-16">    
-                                <button type="submit" class="button btn-primary with-icon attachment-button m-l-auto" onclick="hideUploadFile()">Upload Files <em class="ico icon-upload-white"></em></button>
+                            <div class="action text-right">    
+                                <button type="submit" class="button btn-primary with-icon attachment-button" onclick="hideUploadFile()">Upload Files <em class="ico icon-upload-white"></em></button>
                             </div>
                         </form>
                     </div>
@@ -3258,7 +2479,7 @@
                         <p class="sub-title font-sm">Channels help teams maintain organized conversations around a specific topic. Adding members at this time is optional.</p>
                         <form>
                             <div class="fields">
-                                <div class="input-field pre-icon-input no-label"> 
+                                <div class="input-field pre-icon-input"> 
                                     <span class="pre-icon"><em class="ico icon-hashtag"></em></span>
                                     <input type="text" class="tBox" placeholder="design" value="ui_team" />
                                 </div>
@@ -3327,57 +2548,46 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="has-dropdown custom-dropdown custom-input-dropdown m-t-24">
-                                <a href="#" class="input-dropdown"><span class="select-item"><em class="ico icon-hashtag"></em>General</span></a>
-                                <div class="popup dropdown-menu">
-                                    <div class="popup-container">
-                                        <ul>
-                                            <li class="item selected"><span><em class="ico icon-hashtag"></em>General</span></li>
-                                            <li class="item"><span><em class="ico icon-hashtag"></em>Channel1</span></li>
-                                            <li class="item"><span><em class="ico icon-hashtag"></em>Channel2</span></li>
-                                            <li class="item"><span><em class="ico icon-hashtag"></em>Channel3</span></li>
-                                            <li class="item"><span><span class="status online"></span>Zibtest</span></li>
-                                            <li class="item"><span><span class="status online"></span>User</span></li>
-                                            <li class="item"><span><span class="status offline"></span>Zibtest2</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="message-write-container">
                                 <form>
                                     <div class="message-write-wrapper focus">
                                         <div class="message-write-box">  
                                             <textarea class="message-new" oninput="autoGrow(this)" placeholder="Add something to message..."></textarea>
                                         </div>
-                                        <div class="msg-option-block">   
+                                        <div class="msg-option-block">                                                    
                                             <div class="message-options">
-                                                <span class="msg-option-button">
+                                                <div class="write-option">
+                                                    <span class="msg-option-button">
+                                                        <span class="icon icon-gray">
+                                                            <em class="ico bold"></em>
+                                                        </span>
+                                                    </span>
+                                                    <span class="msg-option-button">
+                                                        <span class="icon icon-gray">
+                                                            <em class="ico italic"></em>
+                                                        </span>
+                                                    </span>
+                                                    <span class="msg-option-button">
+                                                        <span class="icon icon-gray">
+                                                            <em class="ico icon-text-underline"></em>
+                                                        </span>
+                                                    </span>
+                                                    <span class="msg-option-button">
+                                                        <span class="icon icon-gray">
+                                                            <em class="ico icon-list-menu"></em>
+                                                        </span>
+                                                    </span>
+                                                    <span class="msg-option-button">
+                                                        <span class="icon icon-gray">
+                                                            <em class="ico icon-number-list"></em>
+                                                        </span>
+                                                    </span>
+                                                </div> 
+                                                <span class="msg-option-button text-edit-btn">
                                                     <span class="icon icon-gray">
-                                                        <em class="ico bold"></em>
+                                                        <em class="ico icon-type"></em>
                                                     </span>
                                                 </span>
-                                                <span class="msg-option-button">
-                                                    <span class="icon icon-gray">
-                                                        <em class="ico italic"></em>
-                                                    </span>
-                                                </span>
-                                                <span class="msg-option-button">
-                                                    <span class="icon icon-gray">
-                                                        <em class="ico icon-text-underline"></em>
-                                                    </span>
-                                                </span>
-                                                <span class="msg-option-button">
-                                                    <span class="icon icon-gray">
-                                                        <em class="ico icon-list-menu"></em>
-                                                    </span>
-                                                </span>
-                                                <span class="msg-option-button">
-                                                    <span class="icon icon-gray">
-                                                        <em class="ico icon-number-list"></em>
-                                                    </span>
-                                                </span>
-                                            </div>                                                 
-                                            <div class="message-options"> 
                                                 <span onclick="toggleMentionBox(this)" class="msg-option-button">
                                                     <span class="icon icon-gray">
                                                         <em class="ico icon-at-sign"></em>
@@ -3476,35 +2686,35 @@
                                         <div class="message-write-box">  
                                             <textarea class="message-new" oninput="autoGrow(this)" placeholder="Add something to message..."></textarea>
                                         </div>
-                                        <div class="msg-option-block">   
+                                        <div class="msg-option-block">                                                    
                                             <div class="message-options">
-                                                <span class="msg-option-button">
-                                                    <span class="icon icon-gray">
-                                                        <em class="ico bold"></em>
+                                                <div class="write-option">
+                                                    <span class="msg-option-button">
+                                                        <span class="icon icon-gray">
+                                                            <em class="ico bold"></em>
+                                                        </span>
                                                     </span>
-                                                </span>
-                                                <span class="msg-option-button">
-                                                    <span class="icon icon-gray">
-                                                        <em class="ico italic"></em>
+                                                    <span class="msg-option-button">
+                                                        <span class="icon icon-gray">
+                                                            <em class="ico italic"></em>
+                                                        </span>
                                                     </span>
-                                                </span>
-                                                <span class="msg-option-button">
-                                                    <span class="icon icon-gray">
-                                                        <em class="ico icon-text-underline"></em>
+                                                    <span class="msg-option-button">
+                                                        <span class="icon icon-gray">
+                                                            <em class="ico icon-text-underline"></em>
+                                                        </span>
                                                     </span>
-                                                </span>
-                                                <span class="msg-option-button">
-                                                    <span class="icon icon-gray">
-                                                        <em class="ico icon-list-menu"></em>
+                                                    <span class="msg-option-button">
+                                                        <span class="icon icon-gray">
+                                                            <em class="ico icon-list-menu"></em>
+                                                        </span>
                                                     </span>
-                                                </span>
-                                                <span class="msg-option-button">
-                                                    <span class="icon icon-gray">
-                                                        <em class="ico icon-number-list"></em>
+                                                    <span class="msg-option-button">
+                                                        <span class="icon icon-gray">
+                                                            <em class="ico icon-number-list"></em>
+                                                        </span>
                                                     </span>
-                                                </span>
-                                            </div>                                                  
-                                            <div class="message-options">
+                                                </div> 
                                                 <span class="msg-option-button text-edit-btn">
                                                     <span class="icon icon-gray">
                                                         <em class="ico icon-type"></em>
@@ -3655,9 +2865,9 @@
                             <button class="button btn-primary">Add</button><br>
                             <a href="#" class="custom-underline link">Share channel outside of Rip Bull</a>
                         </div>
-                        <div class="action add-member-action" style="display: none;">  
+                        <div class="action d-flex add-member-action" style="display: none;">  
                             <a href="#" class="custom-underline link">Copy & share link</a>
-                            <div class="d-flex">
+                            <div>
                                 <button class="button btn-outline-secondary">Back</button>
                                 <button class="button btn-primary">Add</button>
                             </div>
@@ -3671,7 +2881,7 @@
                         <div class="file-sender">
                             <div class="avatar gradient13"><span class="img"><img src="assets/images/brandon.jpg" alt="#" /></span></div>
                             <div class="info">
-                                <p class="name-date">William - Jul 23rd, 2021 at 11:17 am</p>
+                                <p class="name-date">Jan Doe - <span class="date">Jan 28th, 2020 at 12:26 PM</span></p>
                                 <p class="file-detail">file_name-img.png</p>
                             </div>
                         </div>
@@ -3691,9 +2901,6 @@
                                         </ul>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="action-box delete-icon">
-                                <span class="icon"><em class="ico icon-delete"></em></span>
                             </div>
                             <div class="action-box closer" onclick="hideImageView()"><span class="icon"><em class="ico icon-close-gray"></em></span></div>
                         </div>
@@ -3746,7 +2953,7 @@
                 <div class="wrapper">
                     <div class="title">Invite to channel</div>
                     <div class="search-area">                        
-                        <div class="input-field pre-icon-input no-label"> 
+                        <div class="input-field pre-icon-input"> 
                             <span class="pre-icon"><em class="ico icon-search"></em></span>
                             <input type="text" class="tBox" placeholder="Search">
                         </div>                    
@@ -4184,126 +3391,33 @@
                     <ul>
                         <li class="item open-sidebar-by-id" data-open_id="channel-info-popup-bar"><em class="ico icon-view"></em> View Room Details</li>
                         <li class="item" onclick="showAdditionalOptions()"><em class="ico icon-list-boxes"></em> Additional Options</li>
-                        <li class="item mute-btn"><em class="ico icon-volume-mute"></em> Mute #general</li>
-                        <li class="item unmute-btn"><em class="ico icon-volume"></em>Unmute #general</li>
+                        <li class="item"><em class="ico icon-volume-mute"></em> Mute #general</li>
                     </ul>
                 </div>
             </div>  
-            <div id="channel2" class="jq-dropdown popup jq-dropdown-tip">
-                <div class="popup-container">
-                    <ul>
-                        <li class="item"><em class="ico icon-view"></em> View Room Details</li>
-                        <li class="item"><em class="ico icon-list-boxes"></em> Additional Options</li>
-                        <li class="item mute-btn"><em class="ico icon-volume-mute"></em> Mute #general</li>
-                        <li class="item unmute-btn"><em class="ico icon-volume"></em> Unmute #general</li>
-                    </ul>
-                </div>
-            </div>  
-            <div id="channel3" class="jq-dropdown popup jq-dropdown-tip">
-                <div class="popup-container">
-                    <ul>
-                        <li class="item"><em class="ico icon-view"></em> View Room Details</li>
-                        <li class="item"><em class="ico icon-list-boxes"></em> Additional Options</li>
-                        <li class="item mute-btn" id="mute"><em class="ico icon-volume-mute"></em> Mute #general</li>
-                        <li class="item unmute-btn"><em class="ico icon-volume"></em> Unmute #general</li>
-                    </ul>
-                </div>
-            </div>  
-            <div id="channel4" class="jq-dropdown popup jq-dropdown-tip">
-                <div class="popup-container">
-                    <ul>
-                        <li class="item"><em class="ico icon-view"></em> View Room Details</li>
-                        <li class="item"><em class="ico icon-list-boxes"></em> Additional Options</li>
-                        <li class="item mute-btn"><em class="ico icon-volume-mute"></em> Mute #general</li>
-                        <li class="item unmute-btn"><em class="ico icon-volume"></em> Unmute #general</li>
-                    </ul>
-                </div>
-            </div>  
-            <div id="channel5" class="jq-dropdown popup jq-dropdown-tip">
-                <div class="popup-container">
-                    <ul>
-                        <li class="item"><em class="ico icon-view"></em> View Room Details</li>
-                        <li class="item"><em class="ico icon-list-boxes"></em> Additional Options</li>
-                        <li class="item mute-btn"><em class="ico icon-volume-mute"></em> Mute #general</li>
-                        <li class="item unmute-btn"><em class="ico icon-volume"></em> Unmute #general</li>
-                    </ul>
-                </div>
-            </div>  
-            <div id="channel6" class="jq-dropdown popup jq-dropdown-tip">
-                <div class="popup-container">
-                    <ul>
-                        <li class="item">View Room Details</li>
-                        <li class="item"><em class="ico icon-list-boxes"></em> Additional Options</li>
-                        <li class="item mute-btn"><em class="ico icon-volume-mute"></em> Mute #general</li>
-                        <li class="item unmute-btn"><em class="ico icon-volume"></em> Unmute #general</li>
-                    </ul>
-                </div>
-            </div>  
-        </div>             
+        </div> 
+            
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/jquery.dropdown.min.js"></script>
         <script src="assets/js/wavesurfer.js"></script>
         <script src="assets/js/chat.js"></script>
-        <script>
-           $(".mute-btn").click(function() {
-                $(".unmute-btn").css('display', 'flex');
-                $(".mute-btn").css('display', 'none');
-            });
-            $(".unmute-btn").click(function() {
-                $(".unmute-btn").css('display', 'none');
-                $(".mute-btn").css('display', 'flex');
-            });
-            $('#screen-mode').change(function(){
-                if($(this).is(":checked")) {
-                    $('body').removeClass("light-theme");
-                    $(this).parents('.item').find('.text').text('Dark Mode');
-                } else {
-                    $('body').addClass("light-theme");                    
-                    $(this).parents('.item').find('.text').text('Light Mode');
-                }
-            });
-            if($('.text-edit-btn').length) {
-                $(".text-edit-btn").each(function () {
-                    $(this).mouseenter(function(){
-                        $(this).hide();
-                        $('.write-option').css('max-width', '100%');
-                    });
-                });
-            }
-            if($('.write-option').length) {
-                $(".write-option").each(function () {
-                    $(this).mouseleave(function(){
-                        $(this).css('max-width', '0');
-                        setTimeout(function(){
-                            $('.text-edit-btn').show();
-                        },300)
-                    }).mouseleave();
-                });
-            }
-            // $(document).on('click', '.channel-header-search-wrapper', function (e) {
-            //     e.stopPropagation();
-            // });
-            $('.search-dropdown .dropdown-menu .popup-container ul li').on("click", function() {
-                var searchId = $(this).attr('data-id');
-                $('.search-contents').removeClass('active');
-                $('.search-content-block').find('#'+ searchId).addClass('active')
-            });  
-           
-            $(document).on("click", function(e) {
-                if ($(e.target).is("#appsearch, .mob-search, .channel-header-search-wrapper, .advance-search-block, .toggle-link, .advance-search-block .custom-dropdown, .advance-search-block .dropdown-menu .item, .app-search-box, .channel-person") === false) {
-                    $(".app-search-box").addClass("no-display");
-                    $(".message-body-wrapper").removeClass("active");
-                    $(".channel-header-search-wrapper").removeClass("active");
-                }
-            });    
+        <script>                    
             $(document).ready(function() {
+                $('#screen-mode').change(function(){
+                    if($(this).is(":checked")) {
+                        $('body').removeClass("light-theme");
+                        $(this).parents('.item').find('.text').text('Dark Mode');
+                    } else {
+                        $('body').addClass("light-theme");                    
+                        $(this).parents('.item').find('.text').text('Light Mode');
+                    }
+                });
                 if($('.upload-file-block').length) { 
                     var totalCount=$(".files-block .file-block").length;
                     if(totalCount >= 10) {
                         $('.upload-more').hide();
                     }
                 }
-                
                 $(".jq-dropdown ul li").click(function() {
                     $('.jq-dropdown').hide();
                     $('.more-dropdown .more-info').removeClass('jq-dropdown-open');
@@ -4319,22 +3433,16 @@
                         }
                     });
                 }
-                if($('.collapse-info-block').length) { 
-                    $('.collapse-card .collaspe-header').on( 'click', function() { 
-                        if($(this).hasClass('active')) {
-                            $(this).removeClass('active');
-                            $(this).parents('.collapse-card').find('.collapse-body').slideUp().removeClass('show');
+                if($('.collaspe-menu-block').length) { 
+                    $('.collaspe-menu .collaspe-header .name').on( 'click', function() { 
+                        if($(this).parents('.collaspe-menu').hasClass('active')) {
+                            $(this).parents('.collaspe-menu').removeClass('active');
+                            $(this).parents('.collaspe-menu').find('.collapse-body').slideUp().removeClass('show');
                         } else {
-                            $(this).addClass('active');
-                            $(this).parents('.collapse-card').find('.collapse-body').slideDown().addClass('show');
+                            $(this).parents('.collaspe-menu').addClass('active');
+                            $(this).parents('.collaspe-menu').find('.collapse-body').slideDown().addClass('show');
                         }
                     });
-                }
-                if($('.advance-search-block').length) { 
-                    $('.advance-search-block .toggle-link').on( 'click', function() { 
-                        $(this).toggleClass('active');
-                        $('.advance-input-block').slideToggle();
-                    })
                 }
                 if($('.message__sidebar .status-side').length) {
                     $('.status-side .simple-status-block .search-icon a').on( 'click', function() {
@@ -4444,6 +3552,8 @@
                 $(".custom-dropdown .dropdown-menu .item").click(function() {
                     var selected_value = $(this).html();
                     var first_li = $(this).parents('.custom-dropdown').find('.input-dropdown .select-item').html(); 
+                    console.log(selected_value);
+                    console.log(first_li);
                     $(this).parents('.custom-dropdown').find('.item').removeClass('selected');
                     $(this).addClass('selected');
                     $(this).parents('.custom-dropdown').find('.input-dropdown .select-item').html(selected_value);
@@ -4483,7 +3593,7 @@
                     $(".tag-box .tag").css('display', 'block');
                     $(".desc-input").css('display', 'block');
                     $(".action.simple-action").css('display', 'none');
-                    $(".action.add-member-action").css('display', 'block');
+                    $(".action.add-member-action").css('display', 'flex');
                 });
             });
         </script>

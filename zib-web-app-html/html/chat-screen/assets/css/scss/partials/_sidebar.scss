@@ -264,8 +264,15 @@
                 .back.active ~ .title { display: none; }
             } 
             .content-info-block { height: calc(100% - 64px); z-index: 2; position: relative;
+                .input-field {
+                    margin-top: 25px;
+                    label {position: relative; left: 0; padding: 0; top: 0;}
+                }
                 &.with-padding { padding: 20px; }
                 label { color: $gray-2; font-weight: 600; font-size: 14px; margin-bottom: 8px; display: inline-block; text-shadow: 5px 0px 20px rgba(0, 0, 0, 0.08); }                 
+                .field {
+                    margin-bottom: 25px;
+                }
             }  
             .member { display: flex; align-items: center; margin-bottom: 5px; cursor: pointer; transition: all 0.3s ease-in-out; padding: 5px; justify-content: space-between;
                 .detail { display: flex; align-items: center; }

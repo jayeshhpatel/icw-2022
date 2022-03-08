@@ -105,7 +105,12 @@
             ul { width: 100%; float: left; padding: 0; margin: 0;
                 li { list-style: none;width: 100%;text-align: left; display: flex;align-items: center;
                     &.item { font-size: 14px; padding: 10px 15px; color: $gray-5; font-weight: 500; line-height: 1;cursor: pointer; transition: unset !important;
-                        .ico{ margin-right: 9px;}
+                        .ico{ margin-right: 9px;
+                            &.icon-volume {width: 16px; height: 16px;}
+                        }
+                        &.unmute-btn{
+                            display: none;
+                        }
                         &.divider { height: 1px; opacity: 0.2; border-top: 1px solid $dark-black; padding: 0 !important; margin: 12px 0; }
                         &:hover, &.active, &:active { background: $light-black-3; }
                     }

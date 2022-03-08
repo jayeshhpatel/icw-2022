@@ -19,16 +19,42 @@ select:-webkit-autofill:focus { -webkit-text-fill-color: $black; -webkit-box-sha
             &:last-of-type { margin-right: 0; }
         }
     }
-    .input-field { width: 100%; position: relative; margin-bottom: 25px;
+    .input-field { width: 100%; position: relative;margin-bottom: 0; margin-top: 35px;
+        &.no-focus {
+            label {
+                top: -20px; left: 0; padding: 0;
+            }
+        }
+        &.focused {
+            label {
+                position: absolute;
+                top: -20px;
+                left: 0;
+                padding: 0;
+            }
+        }
+        &.select-input {
+            label{
+                top: -20px;
+                left: 0;
+                padding: 0;
+            }
+        }
         &.has-error{ margin-top: 48px; }
-        label { font-size: 11px !important; color: $gray-2 !important; margin-bottom: 5px; font-weight: 400 !important; text-shadow: none !important; display: block; }
+        label { font-size: 11px !important; color: $gray-2 !important; margin-bottom: 5px; font-weight: 400 !important; text-shadow: none !important; display: block;position: absolute; top: 13px; left: 15px; padding: 5px; @include transition(0.3s, ease-in-out);z-index: 1;}
         .error-msg { color: $red; font-size: 12px; display: inline-block; position: absolute; bottom: -20px; left: 0; }
-        .tBox { width: 100%; height: 38px; background: $light-black-3; border: 1px solid transparent; border-bottom-color: #404253; @include border-radius(1px); padding: 8px 10px 8px 15px; font-size: 14px; line-height: 1.5; color: $gray-2; font-family: 'IBM Plex Sans', sans-serif; z-index: 1; outline: none;
+        .tBox { width: 100%; height: 38px; background: $light-black-3; border: 1px solid transparent; border-bottom-color: #404253; @include border-radius(1px); padding: 8px 10px 8px 15px; font-size:14px; line-height: 1.5; color: $gray-2; font-family: 'IBM Plex Sans', sans-serif; z-index: 1; outline: none;
             input:-webkit-autofill,
             &:hover { background: #33333FCC; }
             &:focus, &:active { background: $dark-black-1; border-color: $primary; }
             &::placeholder { color: $light-blue; font-weight: 400 !important; }
             &:focus::placeholder { color: $light-blue!important; }
+            &:focus + label {
+                position: absolute;
+                top: -20px;
+                left: 0;
+                padding: 0;
+            }
         }
         &.pre-icon-input {  
             &.no-label {
