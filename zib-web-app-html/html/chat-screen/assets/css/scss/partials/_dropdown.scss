@@ -97,12 +97,15 @@
             .popup {  z-index: 100; visibility: visible; opacity: 1; pointer-events: all; max-height: 360px;  }
         }
     }
-    .jq-dropdown.popup { border: 1px solid $primary; background: #111116; padding: 6px 0; padding: 10px 0px;
+    .jq-dropdown.popup { 
+        // border: 1px solid $primary;
+        background: #111116; padding: 6px 0; padding: 10px 0px;@include border-radius(4px);
         &::after, &::before { content: none; }
         .popup-container {  
             ul { width: 100%; float: left; padding: 0; margin: 0;
                 li { list-style: none;width: 100%;text-align: left; display: flex;align-items: center;
                     &.item { font-size: 14px; padding: 10px 15px; color: $gray-5; font-weight: 500; line-height: 1;cursor: pointer; transition: unset !important;
+                        .ico{ margin-right: 9px;}
                         &.divider { height: 1px; opacity: 0.2; border-top: 1px solid $dark-black; padding: 0 !important; margin: 12px 0; }
                         &:hover, &.active, &:active { background: $light-black-3; }
                     }
@@ -116,7 +119,8 @@
     .has-dropdown {
         label { color: $gray-2 !important; }
         .input-dropdown { background: #F2F5F9 url($iconpath + 'dropdown-arrow-lighttheme.svg') no-repeat right 10px center; color: #33333F !important;  border-bottom-color: #ABAEBB; }
-        .popup { border-color: #5056CA; background: $white;
+        .popup { 
+            border-color: #5056CA; background: $white;
             .popup-container { 
                 ul { 
                     li { 
@@ -148,14 +152,15 @@
             .input-dropdown { background: #E2E5E9 url($iconpath + 'dropdown-arrow-lighttheme.svg') no-repeat right 10px center; }
         }
     }
-    .jq-dropdown.popup { border-color: #5056CA; background: $white; 
+    .jq-dropdown.popup { 
+        // border-color: #5056CA; background: $white; 
         .popup-container {  
             ul { 
                 li { 
-                    &.item { color: #33333F; 
-                        &.divider { border-top-color: $dark-black; }
-                        &:hover, &.active, &:active { background: #F2F5F9; }
-                    }
+                    // &.item { color: #33333F; 
+                    //     &.divider { border-top-color: $dark-black; }
+                    //     &:hover, &.active, &:active { background: #F2F5F9; }
+                    // }
                 }
             }
         }

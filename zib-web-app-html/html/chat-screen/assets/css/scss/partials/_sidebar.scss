@@ -86,6 +86,14 @@
                     }
                     .name { font-weight: 300; font-size: 0px; color: #ADB3CC; padding-top: 0px; @include transition(0.3s, ease-in-out); }
                     &:hover, &.active {
+                        span {
+                            svg {
+                                .fill-color,
+                                path {
+                                    fill: #8C91F9 !important;
+                                }
+                            }
+                        }
                         .icon { 
                             .ico { @include transition(0.3s, ease-in-out);
                                 &.threads { background:url($iconpath + 'thread-blue.svg') no-repeat center center; }
@@ -140,10 +148,28 @@
                                                             &.letter { font-size: 12px; line-height: 0.7; }
                                                             img { min-width: 18px; height: 18px; border-radius: 50%; }
                                                         }
-                                                        
                                                     }
-                                                    .name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 117px;
-                                                        .status { margin-left: 5px;@include opacity(0);@include transition(0.3s, ease-in-out);}
+                                                    .status-box {
+                                                        display: inline-block;
+                                                        vertical-align: middle;
+                                                    }
+                                                    .name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 125px;@include flexbox();@include align-items(center);                                                        
+                                                        .status { margin-left: 5px;}
+                                                    }
+
+                                                    &.with-name-tooltip {
+                                                        .name {
+                                                            overflow:visible !important; max-width:inherit;
+                                                        }
+                                                        .name-ellipsis {
+                                                            white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100px; display: inline-block;vertical-align: middle;margin-right: 5px;
+                                                        }
+                                                        .status-box {
+                                                            position: relative;
+                                                            .status{
+                                                                margin-left: 0;
+                                                            }
+                                                        }
                                                     }
                                                 }
                                                 .count { background: rgba(#8C91F9, 0.3); @include border-radius(10px); @include inline-flex; @include align-items(center); @include justify-content(center); color: #8C91F9; font-size: 14px; font-weight: 600; padding: 1px 10px; position: absolute; right: 10px; top: 50%; @include transform(translateY(-50%)); @include transition(0.3s, ease-in-out); }
@@ -174,13 +200,7 @@
                                                             }
                                                         }
                                                     }  
-                                                    .msg-name { font-size: 16px; color: $white; 
-                                                        .name {
-                                                            .status {
-                                                                @include opacity(1);
-                                                            }
-                                                        }
-                                                    }  
+                                                    .msg-name { font-size: 16px; color: $white; }  
                                                 }
                                                 &.active { background: $dark-black-1;
                                                     .channel-name { 
@@ -868,6 +888,14 @@
             }
             .sidebar-icon-box { border-bottom: 1px solid #454A60; background: $dark-black;
                 .icon-box { 
+                    span{
+                        svg{
+                            .fill-color,
+                            path{
+                                fill: #ffffff;
+                            }
+                        }
+                    }
                     .icon { 
                         .ico {
                             &.threads { background:url($iconpath + 'thread-white.svg') no-repeat center center; }

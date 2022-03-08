@@ -175,6 +175,9 @@
         &.icon-apple { height: 25px; width: 20px; background: url($iconpath + 'apple.svg') no-repeat center center; }
         &.icon-google { height: 25px; width: 25px; background: url($iconpath + 'google-icon.svg') no-repeat center center; }
         &.icon-lock-white { height: 20px; width: 20px; background: url($iconpath + 'lock-white.svg') no-repeat center center; }
+        &.icon-view { height: 12px; width: 16px; background: url($iconpath + 'view.svg') no-repeat center center; }
+        &.icon-list-boxes { height: 12px; width: 16px; background: url($iconpath + 'list-boxes.svg') no-repeat center center; }
+        &.icon-volume-mute { height: 16px; width: 16px; background: url($iconpath + 'volume-mute.svg') no-repeat center center; }
     }
 }
 
