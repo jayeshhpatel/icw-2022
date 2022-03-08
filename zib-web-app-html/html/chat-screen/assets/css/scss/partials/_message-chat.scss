@@ -13,7 +13,7 @@
         }
         &.new-account-view {
             align-content: flex-end;
-        }  
+        }                     
     }    
     .divider { margin-top: 10px;display: flex; justify-content: center; margin-bottom: 10px;width: 100%; position: relative;
         &::before { position: absolute; width: 100%; content: ''; left: 0; height: 1px; top: 50%; background: $dark-black; }  
