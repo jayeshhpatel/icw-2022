@@ -3834,10 +3834,12 @@
                 $(".mute-btn").click(function() {
                     $(".unmute-btn").css('display', 'flex');
                     $(".mute-btn").css('display', 'none');
+                    return flase;
                 });
                 $(".unmute-btn").click(function() {
                     $(".unmute-btn").css('display', 'none');
                     $(".mute-btn").css('display', 'flex');
+                    return flase;
                 });
                 $('#screen-mode').change(function(){
                     if($(this).is(":checked")) {

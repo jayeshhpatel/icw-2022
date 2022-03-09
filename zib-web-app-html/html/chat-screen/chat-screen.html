@@ -8,8 +8,7 @@
         <script src='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
         <link href='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="assets/css/main.css">
-        <link rel="manifest" href="manifest.json">        
+        <link rel="stylesheet" href="assets/css/main.css">  
         <title>ZIB Messanger</title>
     </head>
     <body class="app-content">
@@ -280,7 +279,7 @@
                                                                     <span><img src="assets/images/william.jpg" alt="William" /></span>
                                                                 </div>
                                                                 <span class="name">
-                                                                    <span class="name-ellipsis">Williamdssds</span>
+                                                                    <span class="name-ellipsis">William</span>
                                                                     <div class="has-blue-tooltip status-box" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
                                                                         <span class="status billing"></span>
                                                                         <div class="tool-tip-blue common-anim common-anim-pseudo from-top">Offline</div>
@@ -4248,10 +4247,12 @@
            $(".mute-btn").click(function() {
                 $(".unmute-btn").css('display', 'flex');
                 $(".mute-btn").css('display', 'none');
+                return flase;
             });
             $(".unmute-btn").click(function() {
                 $(".unmute-btn").css('display', 'none');
                 $(".mute-btn").css('display', 'flex');
+                return flase;
             });
             $('#screen-mode').change(function(){
                 if($(this).is(":checked")) {

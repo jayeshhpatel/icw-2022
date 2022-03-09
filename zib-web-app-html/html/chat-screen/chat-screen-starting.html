@@ -3391,8 +3391,7 @@
                     <ul>
                         <li class="item open-sidebar-by-id" data-open_id="channel-info-popup-bar"><em class="ico icon-view"></em> View Room Details</li>
                         <li class="item" onclick="showAdditionalOptions()"><em class="ico icon-list-boxes"></em> Additional Options</li>
-                        <li class="item mute-btn"><em class="ico icon-volume-mute"></em> Mute #general</li>
-                        <li class="item unmute-btn"><em class="ico icon-volume"></em> Unmute #general</li>
+                        <li class="item"><em class="ico icon-volume-mute"></em> Mute #general</li>
                     </ul>
                 </div>
             </div>  
@@ -3407,10 +3406,12 @@
                 $(".mute-btn").click(function() {
                     $(".unmute-btn").css('display', 'flex');
                     $(".mute-btn").css('display', 'none');
+                    return flase;
                 });
                 $(".unmute-btn").click(function() {
                     $(".unmute-btn").css('display', 'none');
                     $(".mute-btn").css('display', 'flex');
+                    return flase;
                 });
                 $('#screen-mode').change(function(){
                     if($(this).is(":checked")) {

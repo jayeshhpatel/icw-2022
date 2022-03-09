@@ -1,0 +1,9 @@
+<svg id="enterprise" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <path id="Path_11921" data-name="Path 11921" d="M9,9h4.571v9.143H9Z" transform="translate(4.714 4.714)" fill="#abaebb"/>
+  <path id="Path_11922" data-name="Path 11922" d="M9,15.75h4.571v9.143H9Z" transform="translate(4.714 11.679)" fill="#abaebb"/>
+  <path id="Path_11923" data-name="Path 11923" d="M15.75,9h4.571v9.143H15.75Z" transform="translate(11.679 4.714)" fill="#abaebb"/>
+  <path id="Path_11924" data-name="Path 11924" d="M15.75,15.75h4.571v9.143H15.75Z" transform="translate(11.679 11.679)" fill="#abaebb"/>
+  <path id="Path_11925" data-name="Path 11925" d="M9,22.5h4.571v9.143H9Z" transform="translate(4.714 18.643)" fill="#abaebb"/>
+  <path id="Path_11926" data-name="Path 11926" d="M15.75,22.5h4.571v9.143H15.75Z" transform="translate(11.679 18.643)" fill="#abaebb"/>
+  <path id="Path_11927" data-name="Path 11927" d="M66.25,29.679a4.571,4.571,0,0,0-4.571-4.571H47.964V6.821A4.571,4.571,0,0,0,43.393,2.25H6.821A4.571,4.571,0,0,0,2.25,6.821V66.25h64ZM6.821,6.821H43.393V61.679H6.821ZM47.964,61.679v-32H61.679v32Z" transform="translate(-2.25 -2.25)" fill="#abaebb"/>
+</svg>

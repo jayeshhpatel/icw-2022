@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8c91f9"/>
+      <stop offset="1" stop-color="#5056ca"/>
+    </linearGradient>
+  </defs>
+  <path id="headphones" d="M9.321,15.428h-1.5v10.5h1.5a.752.752,0,0,0,.75-.75v-9a.752.752,0,0,0-.75-.75Zm10.5,0a.752.752,0,0,0-.75.75v9a.752.752,0,0,0,.75.75h1.5v-10.5Zm6.75-1.5a12,12,0,1,0-23.281,4.1,5.251,5.251,0,0,0,3.782,7.848V15.482a5.218,5.218,0,0,0-2.057.759,9.75,9.75,0,1,1,19.114,0,5.22,5.22,0,0,0-2.057-.76V25.875a5.251,5.251,0,0,0,3.782-7.848,11.977,11.977,0,0,0,.718-4.1Z" transform="translate(-2.571 -1.928)" fill="url(#linear-gradient)"/>
+</svg>

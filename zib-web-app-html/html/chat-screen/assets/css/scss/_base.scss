@@ -416,3 +416,18 @@ $hamburger-types: (spring) !default;
         margin: 0px 0 !important;
     }
 }
+
+.onload-loader-block {
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(center);
+    min-height: 100vh;
+    width: 100%;
+    background: #202028;
+    pointer-events: none;
+    cursor: none;
+    user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
