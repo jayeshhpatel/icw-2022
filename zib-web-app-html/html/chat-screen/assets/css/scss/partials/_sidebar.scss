@@ -130,7 +130,7 @@
                                     }
                                     .collapse-body {  
                                         .lists {  
-                                            li { padding: 8px 20px 8px 32px; @include flexbox(); @include align-items(center); @include justify-content(space-between); position: relative;
+                                            li { padding: 8px 10px 8px 32px; @include flexbox(); @include align-items(center); @include justify-content(space-between); position: relative;
                                                 .channel-name { font-size: 16px; color: $light-blue; font-weight: normal; cursor: pointer; @include flexbox(); @include align-items(center); @include transition(0.3s, ease-in-out);
                                                     span.img { min-width: 16px; margin-right: 2px; 
                                                         em { margin-bottom: -3px; @include transition(0.3s, ease-in-out); }
@@ -172,9 +172,11 @@
                                                         }
                                                     }
                                                 }
-                                                .count { background: rgba(#8C91F9, 0.3); @include border-radius(10px); @include inline-flex; @include align-items(center); @include justify-content(center); color: #8C91F9; font-size: 14px; font-weight: 600; padding: 1px 10px; position: absolute; right: 10px; top: 50%; @include transform(translateY(-50%)); @include transition(0.3s, ease-in-out); }
-                                                .more-dropdown { line-height: 0.7; visibility: hidden; opacity: 0; transition: all 0.3s ease-in-out;
-                                                    .more-info { line-height: 0.7; display: inline-block; position: relative; }
+                                                .count { background: rgba(#8C91F9, 0.3); @include border-radius(10px); @include inline-flex; @include align-items(center); @include justify-content(center); color: #8C91F9; font-size: 14px; font-weight: 600; padding: 1px 10px; margin-left: auto; @include transition(0.3s, ease-in-out); margin-right: 5px; }
+                                                .more-dropdown { line-height: 0.7; 
+                                                    // visibility: hidden; opacity: 0; 
+                                                    transition: all 0.3s ease-in-out;
+                                                    .more-info { line-height: 0.7; display: inline-block; position: relative;@include transform(rotate(90deg)); }
                                                 }
                                                 &.add-action { 
                                                     span { font-size: 14px; color: $blue !important; @include flexbox; @include align-items(center); cursor: pointer;
@@ -185,10 +187,11 @@
                                                     }
                                                 }
                                                 &:hover, &.active {
-                                                    .more-dropdown { visibility: visible; opacity: 1; }
-                                                    .count { right: 40px; }
+                                                    // .more-dropdown { visibility: visible; opacity: 1; }
+                                                    // .count { right: 40px; }
                                                 }
                                                 &:hover {
+                                                    background-color: #111116;
                                                     .channel-name { 
                                                         span { color: $white; 
                                                             &.img { 
@@ -339,7 +342,7 @@
                                     &.online { background: #5CCD6E; }
                                 }
                                 &.selected, &:hover {  
-                                    .status { opacity: 0; } 
+                                    // .status { opacity: 0; } 
                                 }
                             }
                         }
@@ -949,6 +952,7 @@
                                                 }
                                                 .msg-name { color: $white; }
                                                 &:hover {
+                                                    
                                                     .channel-name { @include opacity(0.7); }  
                                                     .msg-name { @include opacity(0.7); }  
                                                 }

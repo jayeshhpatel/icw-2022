@@ -123,7 +123,7 @@ select:-webkit-autofill:focus { -webkit-text-fill-color: $black; -webkit-box-sha
         & > label { line-height: 1.5; padding-left: 28px; min-height: auto; cursor: pointer; font-size: 16px !important; font-weight: 400 !important; position: relative; color: $gray-2; text-shadow: 5px 0px 20px rgba(0, 0, 0, 0.08);
             &::before, 
             &::after { content: ''; @include border-radius(1px); width: 18px; height: 18px; position: absolute; top: 0px; left: 0; @include flexbox; @include border-radius(1px); }
-            &::before { border: 1px solid $dark-black; background: $dark-black-1; }
+            &::before { border: 1px solid #ACACAE; background: $dark-black-1; }
             &::after { background: $primary url($iconpath + 'icon-check-white.svg') no-repeat center center; background-size: 9px !important; transform: scale(0); }  
             &:hover {  
                 &::before { border-color: #4D5267; }
@@ -277,7 +277,7 @@ select:-webkit-autofill:focus { -webkit-text-fill-color: $black; -webkit-box-sha
 
     .custom-checkbox {
         & > label { color: #202028; 
-            &::before { border-color: #202028; background: #FFFFFF; }
+            &::before { background: #FFFFFF; }
             &::after { background: #5056CA url($iconpath + 'icon-check-white.svg') no-repeat center center; }  
             &:hover {  
                 &::before { border-color: #202028; }

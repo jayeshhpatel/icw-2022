@@ -619,40 +619,35 @@
                                             <div class="send-action"><a href="#"><em class="ico icon-send-fill"></em></a></div>
                                         </div>
                                         <div class="msg-option-block">                                             
-                                            <div class="message-options">                                                
-                                                <span class="msg-option-button text-edit-btn">
+                                            <div class="message-options">
+                                                <span class="msg-option-button">
                                                     <span class="icon icon-gray">
-                                                        <em class="ico icon-type"></em>
+                                                        <em class="ico bold"></em>
                                                     </span>
                                                 </span>
-                                                <div class="write-option">
-                                                    <span class="msg-option-button">
-                                                        <span class="icon icon-gray">
-                                                            <em class="ico bold"></em>
-                                                        </span>
+                                                <span class="msg-option-button">
+                                                    <span class="icon icon-gray">
+                                                        <em class="ico italic"></em>
                                                     </span>
-                                                    <span class="msg-option-button">
-                                                        <span class="icon icon-gray">
-                                                            <em class="ico italic"></em>
-                                                        </span>
+                                                </span>
+                                                <span class="msg-option-button">
+                                                    <span class="icon icon-gray">
+                                                        <em class="ico icon-text-underline"></em>
                                                     </span>
-                                                    <span class="msg-option-button">
-                                                        <span class="icon icon-gray">
-                                                            <em class="ico icon-text-underline"></em>
-                                                        </span>
+                                                </span>
+                                                <span class="msg-option-button">
+                                                    <span class="icon icon-gray">
+                                                        <em class="ico icon-list-menu"></em>
                                                     </span>
-                                                    <span class="msg-option-button">
-                                                        <span class="icon icon-gray">
-                                                            <em class="ico icon-list-menu"></em>
-                                                        </span>
+                                                </span>
+                                                <span class="msg-option-button">
+                                                    <span class="icon icon-gray">
+                                                        <em class="ico icon-number-list"></em>
                                                     </span>
-                                                    <span class="msg-option-button">
-                                                        <span class="icon icon-gray">
-                                                            <em class="ico icon-number-list"></em>
-                                                        </span>
-                                                    </span>
-                                                </div>
-                                                <span onclick="toggleMentionBox()" class="msg-option-button">
+                                                </span>
+                                            </div>                                                  
+                                            <div class="message-options">
+                                                <span onclick="toggleMentionBox(this)" class="msg-option-button">
                                                     <span class="icon icon-gray">
                                                         <em class="ico icon-at-sign"></em>
                                                     </span>
@@ -662,8 +657,8 @@
                                                         <em class="ico icon-emoji"></em>
                                                     </span>
                                                 </span>
-                                                <span class="msg-option-button">
-                                                    <span class="icon mic icon-gray">
+                                                <span class="msg-option-button" onclick="showUploadFile()">
+                                                    <span class="icon icon-gray">
                                                         <em class="ico icon-attach-pin"></em>
                                                     </span>
                                                 </span>
@@ -1999,22 +1994,7 @@
                                             <div class="popup-container">
                                                 <ul>
                                                     <li class="item open-sidebar-by-id" data-open_id="your-files-popup-bar">All Favorites</li>  
-                                                    <li class="item open-sidebar-by-id" data-open_id="shared-files-popup-bar">Shared Files</li>
-                                                    <li class="item open-sidebar-by-id" data-open_id="downloads-popup-bar">Downloads</li>
-                                                    <li class="item open-sidebar-by-id" data-open_id="workspace-directory-popup-bar">Members</li>
-                                                    <li class="item open-sidebar-by-id" data-open_id="whats-new-popup-bar">About</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                    <div class="info-dropdown has-dropdown">
-                                        <div class="vertical-center header-large icon">
-                                            <em class="ico icon-notification-settings"></em>
-                                        </div>
-                                        <div class="popup bottom-right">
-                                            <div class="popup-container">
-                                                <ul>
-                                                    <li class="item open-sidebar-by-id" data-open_id="your-files-popup-bar">All Favorites</li>  
+                                                    <li class="item">Pinned Messages</li>
                                                     <li class="item open-sidebar-by-id" data-open_id="shared-files-popup-bar">Shared Files</li>
                                                     <li class="item open-sidebar-by-id" data-open_id="downloads-popup-bar">Downloads</li>
                                                     <li class="item open-sidebar-by-id" data-open_id="workspace-directory-popup-bar">Members</li>
@@ -2025,7 +2005,7 @@
                                     </div> 
                                     <div class="info-dropdown has-dropdown">
                                         <div class="vertical-center header-large icon open-sidebar-by-id" data-open_id="app-search-popup-bar">
-                                            <em class="ico icon-pinned-messages"></em>
+                                            <em class="ico icon-manage-user"></em>
                                         </div>
                                     </div>                                     
                                 </div>
@@ -2201,8 +2181,22 @@
                                                         </div>
                                                         <div class="attach-file attach-video">
                                                             <div class="file-detail">
-                                                                <img src="assets/images/mp4-file-gray.svg" alt="" />
+                                                                <em class="ico icon-file"></em>
                                                                 <span class="name">thevideotoo.mp4</span>
+                                                            </div>
+                                                            <span class="remove">
+                                                                <em class="ico icon-fill-close"></em>
+                                                            </span>
+                                                        </div>
+                                                        <div class="attach-file attach-video in-progress">
+                                                            <div class="progress-file-name">
+                                                                <span>thevideotoo.mp4</span>
+                                                                <span>59%</span>
+                                                            </div>
+                                                            <div class="progress-wrapper">
+                                                                <div class="progress-bar progress-bar-width" data-progress-bar-percent="100">
+                                                                  <div class="progress-bar-anim"></div>
+                                                                </div>
                                                             </div>
                                                             <span class="remove">
                                                                 <em class="ico icon-fill-close"></em>
@@ -2210,7 +2204,7 @@
                                                         </div>
                                                         <div class="attach-file attach-audio">
                                                             <div class="file-detail">
-                                                                <img src="assets/images/icons/icon-audio.svg" alt="" />
+                                                                <em class="ico icon-audio"></em>
                                                                 <div>
                                                                     <span class="name">File from iOS</span>
                                                                     <span class="play">
@@ -2238,39 +2232,34 @@
                                                     </div>
                                                 </div>
                                                 <div class="msg-option-block">                                                    
-                                                    <div class="message-options">
-                                                        <div class="write-option">
-                                                            <span class="msg-option-button">
-                                                                <span class="icon icon-gray">
-                                                                    <em class="ico bold"></em>
-                                                                </span>
-                                                            </span>
-                                                            <span class="msg-option-button">
-                                                                <span class="icon icon-gray">
-                                                                    <em class="ico italic"></em>
-                                                                </span>
-                                                            </span>
-                                                            <span class="msg-option-button">
-                                                                <span class="icon icon-gray">
-                                                                    <em class="ico icon-text-underline"></em>
-                                                                </span>
-                                                            </span>
-                                                            <span class="msg-option-button">
-                                                                <span class="icon icon-gray">
-                                                                    <em class="ico icon-list-menu"></em>
-                                                                </span>
-                                                            </span>
-                                                            <span class="msg-option-button">
-                                                                <span class="icon icon-gray">
-                                                                    <em class="ico icon-number-list"></em>
-                                                                </span>
-                                                            </span>
-                                                        </div> 
-                                                        <span class="msg-option-button text-edit-btn">
+                                                    <div class="message-options">  
+                                                        <span class="msg-option-button">
                                                             <span class="icon icon-gray">
-                                                                <em class="ico icon-type"></em>
+                                                                <em class="ico bold"></em>
                                                             </span>
                                                         </span>
+                                                        <span class="msg-option-button">
+                                                            <span class="icon icon-gray">
+                                                                <em class="ico italic"></em>
+                                                            </span>
+                                                        </span>
+                                                        <span class="msg-option-button">
+                                                            <span class="icon icon-gray">
+                                                                <em class="ico icon-text-underline"></em>
+                                                            </span>
+                                                        </span>
+                                                        <span class="msg-option-button">
+                                                            <span class="icon icon-gray">
+                                                                <em class="ico icon-list-menu"></em>
+                                                            </span>
+                                                        </span>
+                                                        <span class="msg-option-button">
+                                                            <span class="icon icon-gray">
+                                                                <em class="ico icon-number-list"></em>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="message-options">                                                        
                                                         <span onclick="toggleMentionBox(this)" class="msg-option-button">
                                                             <span class="icon icon-gray">
                                                                 <em class="ico icon-at-sign"></em>

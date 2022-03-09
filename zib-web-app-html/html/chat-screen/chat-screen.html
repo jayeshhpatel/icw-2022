@@ -682,11 +682,6 @@
                                                 </span>
                                             </div>                                                  
                                             <div class="message-options">
-                                                <span class="msg-option-button text-edit-btn">
-                                                    <span class="icon icon-gray">
-                                                        <em class="ico icon-type"></em>
-                                                    </span>
-                                                </span>
                                                 <span onclick="toggleMentionBox(this)" class="msg-option-button">
                                                     <span class="icon icon-gray">
                                                         <em class="ico icon-at-sign"></em>
@@ -2021,6 +2016,7 @@
                                     </div>  -->
                                 </div>
                                 <div class="channel-settings">                                                               
+                                      
                                     <div class="info-dropdown has-dropdown">
                                         <div class="vertical-center header-large icon">
                                             <em class="ico icon-info"></em>
@@ -2029,7 +2025,22 @@
                                             <div class="popup-container">
                                                 <ul>
                                                     <li class="item open-sidebar-by-id" data-open_id="your-files-popup-bar">All Favorites</li>  
-                                                    <li class="item">Pinned Messages</li>
+                                                    <li class="item open-sidebar-by-id" data-open_id="shared-files-popup-bar">Shared Files</li>
+                                                    <li class="item open-sidebar-by-id" data-open_id="downloads-popup-bar">Downloads</li>
+                                                    <li class="item open-sidebar-by-id" data-open_id="workspace-directory-popup-bar">Members</li>
+                                                    <li class="item open-sidebar-by-id" data-open_id="whats-new-popup-bar">About</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="info-dropdown has-dropdown">
+                                        <div class="vertical-center header-large icon">
+                                            <em class="ico icon-notification-settings"></em>
+                                        </div>
+                                        <div class="popup bottom-right">
+                                            <div class="popup-container">
+                                                <ul>
+                                                    <li class="item open-sidebar-by-id" data-open_id="your-files-popup-bar">All Favorites</li>  
                                                     <li class="item open-sidebar-by-id" data-open_id="shared-files-popup-bar">Shared Files</li>
                                                     <li class="item open-sidebar-by-id" data-open_id="downloads-popup-bar">Downloads</li>
                                                     <li class="item open-sidebar-by-id" data-open_id="workspace-directory-popup-bar">Members</li>
@@ -2040,9 +2051,9 @@
                                     </div> 
                                     <div class="info-dropdown has-dropdown">
                                         <div class="vertical-center header-large icon open-sidebar-by-id" data-open_id="app-search-popup-bar">
-                                            <em class="ico icon-manage-user"></em>
+                                            <em class="ico icon-pinned-messages"></em>
                                         </div>
-                                    </div>                             
+                                    </div>                           
                                 </div>
                                 <div class="channel-header-search-wrapper">
                                     <div class="info-dropdown vertical-center">
@@ -3884,8 +3895,8 @@
                         <div class="title">Rename # ux_design</div>
                         <form>
                             <div class="input-field has-data"> 
-                                <label>Display name</label>
-                                <input class="tBox" type="text" placeholder="#channel" value="#ux_design">
+                                <input class="tBox" type="text" id="name">
+                                <label for="name">Display name</label>
                                 <span class="error-msg">Names should be lowercase, with no spaces.</span>
                             </div>
                             <div class="buttons">
@@ -4231,7 +4242,7 @@
             <div id="channel6" class="jq-dropdown popup jq-dropdown-tip">
                 <div class="popup-container">
                     <ul>
-                        <li class="item">View Room Details</li>
+                        <li class="item"><em class="ico icon-view"></em> View Room Details</li>
                         <li class="item"><em class="ico icon-list-boxes"></em> Additional Options</li>
                         <li class="item mute-btn"><em class="ico icon-volume-mute"></em> Mute #general</li>
                         <li class="item unmute-btn"><em class="ico icon-volume"></em> Unmute #general</li>

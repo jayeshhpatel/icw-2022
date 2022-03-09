@@ -258,9 +258,22 @@ body.site-content {
         background: url(../images/facebook.svg) no-repeat center;
         background-size: contain;
     }
-    .icon-linkedin{
-        background: url(../images/linkedin.svg) no-repeat center;
+    .icon-apple{
+        background: url(../images/apple.svg) no-repeat center;
         background-size: contain;
+        height: 20px;
+    }
+    .icon-google{
+        background: url(../images/google.svg) no-repeat center;
+        background-size: contain;
+        width: 20px;
+        height: 20px;
+    }
+    .icon-lock{
+        background: url(../images/lock.svg) no-repeat center;
+        background-size: contain;
+        height: 20px;
+        width: 12px;
     }
     .main-header {
         position: sticky;
@@ -1476,4 +1489,177 @@ body.site-content {
         }
     }
     
+}
+.new-account-block {
+    margin-top: 15px;
+    .divider {
+        position: relative;
+        &::before {
+            position: absolute;
+            width: 100%;
+            max-width: 380px;
+            margin: auto;
+            content: '';
+            left: 0;
+            right: 0;
+            height: 1px;
+            top: 50%;
+            background: #E7E8EC;
+        }
+    }
+    .or-text {
+        margin-bottom: 15px;
+        span {
+            color: #ABAEBB;
+            font-size: 11px;
+            width: 22px;
+            height: 22px;
+            margin: auto;
+            position: relative;
+            background-color: $white;
+            border: 1px solid #E7E8EC;
+            @include border-radius(100px);
+            @include flexbox();
+            @include align-items(center);
+            @include justify-content(center);
+        }
+    }
+    .signing-option-block {
+        .inner-title {
+            color: #202028;
+            font-weight: 500;
+            font-size: 16px;
+            display: block;
+            text-align: center;
+            padding-bottom: 7px;
+            @media (max-width:767px) {
+                font-size: 14px;
+            }
+        }
+        .signing-option-btn {
+            @include flexbox();
+            @include align-items(center);
+            @include justify-content(center);
+            @include flex-wrap(wrap);
+            .web-btn {
+                border: 2px solid #E7E8EC;
+                background: #ffffff;
+                padding: 10px;
+                min-height: 48px;
+                color: #202028;
+                font-weight: 600;
+                font-size: 13px;
+                margin: 0 5px 10px;
+                white-space: nowrap;
+                @include border-radius(4px);
+                @include flexbox();
+                @include align-items(center);
+                @include justify-content(center);
+                @include transition(0.2s, ease-in-out);
+                &:hover, &:focus{
+                    cursor: pointer;
+                    border-color:#5056CA;
+                }
+                .icons {
+                    margin-right: 5px;
+                }
+                @media (max-width:767px) {
+                    font-size: 12px;
+                }
+                @media (max-width:575px) {
+                    min-width: 100%; 
+                }
+            }
+        }
+    }
+}
+
+.workspace-block {
+    .workspace-modal {
+        max-width: 475px;
+        margin: 20px auto;
+        padding: 45px 75px;
+        text-align: center;
+        background-color: $white;
+        @include border-radius(30px);
+        @include box-shadow(0px 2px 14px rgba(0, 0, 0, 0.25));
+        @media (max-width:767px) {
+            padding: 30px 40px;
+        }
+        @media (max-width:575px) {
+            padding: 25px 20px;
+        }
+        h1 {
+            font-weight: bold;
+            font-size: 22px;
+            background: -webkit-linear-gradient(312.01deg, #4E54C8 0.12%, #8F94FB 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+            vertical-align: middle;
+            margin-bottom: 40px;
+            @media (max-width:767px) {
+                font-size: 18px;
+                margin-bottom: 25px;
+            }
+        }
+        .btn {
+            width: 100%;
+            @include border-radius(8px);
+        }
+        .or-text {
+            display: block;
+            font-weight: 600;
+            font-size: 16px;
+            color: #454A60;
+            padding: 20px 0;
+            line-height: 100%;
+            @media (max-width:767px) {
+                font-size: 14px;
+                padding: 15px 0;
+            }
+        }
+        .workspace-name {
+            font-weight: 600;
+            font-size: 16px;color: #ADB3CC;display: block;
+            margin-top: 40px;
+            @media (max-width:767px) {
+                font-size: 14px;
+                margin-top: 25px;
+            }
+        }
+        .create-new-workspace {
+            font-weight: 600;
+            font-size: 16px;
+            background: -webkit-linear-gradient(312.01deg, #4E54C8 0.12%, #8F94FB 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            z-index: 1;
+            margin-top: 10px;
+            @media (max-width:767px) {
+                font-size: 14px;
+            }
+            &:hover, &:focus {
+                &:after {
+                    width: 100%;
+                    right: auto;
+                    left: 0;
+                }
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                right: 0;
+                bottom: 0px;
+                background: #5056CA;
+                width: 0;
+                height: 1px;
+                @include transition(0.3s, ease-in-out);
+            }
+        }
+    }
 }
