@@ -13,6 +13,7 @@
         <title>ZIB Messanger</title>
     </head>
     <body class="app-content">
+        <div id="loader" class="onload-loader-block"><img src="assets/images/loader.gif" alt="Loader"></div>
         <div id="root">
             <div class="message-layout has-multiple-workspace new-msg-layout">
                 <div class="main-new-sidebar new-sidebar">
@@ -4256,6 +4257,15 @@
         <script src="assets/js/wavesurfer.js"></script>
         <script src="assets/js/chat.js"></script>
         <script>
+
+                $(window).bind('load', function() {
+                    $('#loader').addClass('loaded');
+                    setTimeout(function() {
+                        $('#loader').css({'display':'none'})
+                    }, 5000)
+                });
+                
+
            $(".mute-btn").click(function() {
                 $(".unmute-btn").css('display', 'flex');
                 $(".mute-btn").css('display', 'none');

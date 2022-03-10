@@ -21,9 +21,6 @@ body.app-content.light-theme {
     background: $white; color: #4D5267;
 }
 .app-content{
-    i{
-        font-size: 16px;
-    }
     .text-blue {
         color: $blue !important;
     }
@@ -457,10 +454,18 @@ $hamburger-types: (spring) !default;
     top: 0;
     width: 100%;
     bottom: 0;
-    z-index: 10;
+    z-index: 9999;
     cursor: none;
     user-select: none;
     user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+
+    &.loaded {
+        height: 0px;
+        width: 0px;
+        display: none !important;
+        overflow: hidden !important;
+        z-index: -1 !important;
+    }
 }
