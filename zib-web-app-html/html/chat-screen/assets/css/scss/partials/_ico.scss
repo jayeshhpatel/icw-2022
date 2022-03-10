@@ -28,6 +28,7 @@
        
         &.icon-at-sign { height: 17px; width: 19px; background:url($iconpath + 'at-sign.svg') no-repeat center center; }
         &.icon-plus-circle { height: 18px; width: 24px; background:url($iconpath + 'plus-circle.svg') no-repeat center center; }
+        &.icon-plus-circle-white { height: 18px; width: 24px; background:url($iconpath + 'plus-circle-white.svg') no-repeat center center; }
         &.icon-send { height: 24px; width: 24px; background:url($iconpath + 'send.svg') no-repeat center center; }
         &.icon-drive { height: 16px; width: 20px; background:url($iconpath + 'icon-drive-black.svg') no-repeat center center; }
         &.icon-computer { height: 14px; width: 20px; background:url($iconpath + 'icon-computer-black.svg') no-repeat center center; }
@@ -36,6 +37,7 @@
         &.icon-close-blue { height: 16px; width: 16px; background:url($iconpath + 'close-blue.svg') no-repeat center center; }
         &.icon-arrow-right-big { height: 24px; width: 12px; background:url($iconpath + 'arrow-right-big.svg') no-repeat center center; }
         &.circle-close { height: 25px; width: 25px; background:url($iconpath + 'circle-close.svg') no-repeat center center; }
+        &.circle-close-white { height: 25px; width: 25px; background:url($iconpath + 'circle-close-white.svg') no-repeat center center; }
         &.icon-fill-arrow { height: 12px; width: 12px; background:url($iconpath + 'fill-arrow.svg') no-repeat center center; }
         &.icon-video { height: 30px; width: 25px; background:url($iconpath + 'icon-video.svg') no-repeat center center; }
         &.icon-word-file { height: 30px; width: 25px; background:url($iconpath + 'icon-word-file.svg') no-repeat center center; }        
@@ -65,6 +67,7 @@
         &.icon-search { height: 18px; width: 18px; background:url($iconpath + 'search.svg') no-repeat center center; }
         &.icon-circle-gray { height: 18px; width: 18px; background:url($iconpath + 'circle-gray.svg') no-repeat center center; }
         &.icon-check-circle { height: 18px; width: 18px; background:url($iconpath + 'check-circle.svg') no-repeat center center; }
+        &.icon-check-circle-white { height: 18px; width: 18px; background:url($iconpath + 'check-circle-white.svg') no-repeat center center; }
         &.icon-check { height: 7px; width: 9px; background:url($iconpath + 'icon-check.svg') no-repeat center center; }
         &.icon-ellipsis-v { height: 25px; width: 25px; background:url($iconpath + 'ellipsis-v.svg') no-repeat center center; }
         &.icon-cancel { height: 20px; width: 20px; background:url($iconpath + 'icon-cancel.svg') no-repeat center center; }
@@ -151,9 +154,11 @@
         &.icon-setting-billing { height: 18px; width: 18px; background: url($iconpath + 'settings-billings.svg') no-repeat center center; } 
         &.icon-setting-menu { height: 18px; width: 18px; background: url($iconpath + 'settings-icon.svg') no-repeat center center; } 
         &.icon-setting-signout { height: 18px; width: 18px; background: url($iconpath + 'settings-signout.svg') no-repeat center center; } 
+        &.icon-setting-signout-white { height: 18px; width: 18px; background: url($iconpath + 'settings-signout-white.svg') no-repeat center center; } 
         &.icon-setting-save { height: 18px; width: 18px; background: url($iconpath + 'settings-save.svg') no-repeat center center; } 
         &.icon-setting-save-white { height: 18px; width: 18px; background: url($iconpath + 'settings-save-white.svg') no-repeat center center; } 
         &.icon-setting-delete { height: 18px; width: 18px; background: url($iconpath + 'settings-trash.svg') no-repeat center center; } 
+        &.icon-settings-trash-white { height: 18px; width: 18px; background: url($iconpath + 'settings-trash-white.svg') no-repeat center center; }
         &.icon-setting-upgrade { height: 18px; width: 18px; background: url($iconpath + 'settings-upgrade.svg') no-repeat center center; } 
         &.icon-setting-downgrade-white { height: 18px; width: 18px; background: url($iconpath + 'settings-upgrade-white.svg') no-repeat center center; @include transform(translateY(-50%) rotate(180deg) !important); } 
         &.icon-setting-chat-launch { height: 18px; width: 18px; background: url($iconpath + 'settings-chat-launch.svg') no-repeat center center; } 
@@ -171,6 +176,7 @@
         &.icon-setting-database { height: 16px; width: 13px; background: url($iconpath + 'settigs-database.svg') no-repeat center center; } 
         &.icon-setting-sorting { height: 16px; width: 16px; background: url($iconpath + 'settings-sorting.svg') no-repeat center center; } 
         &.icon-setting-archive { height: 16px; width: 16px; background: url($iconpath + 'archive.svg') no-repeat center center; }
+        &.icon-setting-archive-dark { height: 16px; width: 16px; background: url($iconpath + 'archive-dark.svg') no-repeat center center; }
         &.icon-setting-unarchive { height: 16px; width: 16px; background: url($iconpath + 'unarchive.svg') no-repeat center center; }
         &.icon-apple { height: 25px; width: 20px; background: url($iconpath + 'apple.svg') no-repeat center center; }
         &.icon-google { height: 25px; width: 25px; background: url($iconpath + 'google-icon.svg') no-repeat center center; }
@@ -178,6 +184,10 @@
         &.icon-view { height: 12px; width: 16px; background: url($iconpath + 'view.svg') no-repeat center center; }
         &.icon-list-boxes { height: 12px; width: 16px; background: url($iconpath + 'list-boxes.svg') no-repeat center center; }
         &.icon-volume-mute { height: 16px; width: 16px; background: url($iconpath + 'volume-mute.svg') no-repeat center center; }
+        &.icon-magic-wand { height: 16px; width: 16px; background: url($iconpath + 'magic-wand.svg') no-repeat center center; }
+        &.icon-key-svgrepo { height: 16px; width: 16px; background: url($iconpath + 'key-svgrepo.svg') no-repeat center center; }
+        &.icon-disabled-circle { height: 16px; width: 16px; background: url($iconpath + 'disabled-circle.svg') no-repeat center center; }
+        &.icon-disabled-circle-red { height: 16px; width: 16px; background: url($iconpath + 'disabled-circle-red.svg') no-repeat center center; }
     }
 }
 

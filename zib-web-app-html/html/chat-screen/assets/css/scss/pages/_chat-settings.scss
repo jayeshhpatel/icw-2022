@@ -209,13 +209,13 @@
             }
             .input-block { @include flexbox; @include align-items(center); padding-bottom: 25px; 
                 .input-field { max-width: 350px; 
-                    // margin-bottom: 0; 
+                    margin-bottom: 0; 
                 }
                 .button { margin-left: 20px; }
                 &.two-filed-grid { display: block; padding-top: 3px;
                     .input-group { display: grid; grid-template-columns: repeat(2, 48%); grid-gap: 30px; color: $gray-2; }
                     .input-field {max-width: 100%; 
-                        // margin-bottom: 25px;
+                        margin-bottom: 25px;
                      }
                 }
                 .action { margin-top: 20px; }

@@ -4,10 +4,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/main.css">  
+    <link rel="stylesheet" href="assets/css/main-settings.css" />
     <title>ZIB Messanger</title>
 </head>
-<body class="app-content">
+<body class="settings-content app-content">
     <div class="onload-loader-block"><img src="assets/images/loader.gif" alt="Loader"></div>
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">        
+                <div class="page-logo-block">
+                    <a href="chat-screen.html" class="avatar-logo">
+                        <em class="ico icon-settings-arrow-left"></em>
+                        <div class="avatar">
+                            <span><img src="assets/images/william.jpg" alt="William"></span>
+                        </div>
+                        <span class="name">Settings</span>
+                    </a>
+                </div>
+                <a href="#" class="navbar-brand">
+                    <img src="assets/images/zib-logo.svg" alt="ZIB Messenger" />
+                </a> 
+                <div class="main-menu no-visible">
+                    <button class="button btn-primary with-icon" type="button">Upgrade to Pro <em class="ico icon-setting-upgrade"></em></button>
+                </div>             
+            </nav>
+        </div>
+    </header>
+    <main class="main-content-wrapper">
+        <div class="container">
+            <div class="page-not-found-block">
+                <div class="img-block">
+                    <img src="assets/images/404-dark-img.png" alt="Page Not Found" class="img-fluid" />
+                    <img src="assets/images/404-img.png" alt="Page Not Found" class="img-fluid light-img" />
+                </div>
+                <p>We're unable to find the page you're looking for.</p>
+                <button type="button" onclick="window.location.href='settings.html';" class="button btn-light">Back to Home</button>
+                <p>If you think this is an error, contact our support team at <a href="#" class="link">support@zib.com</a></p>
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/chat-settings.js"></script>
 </body>
 </html>

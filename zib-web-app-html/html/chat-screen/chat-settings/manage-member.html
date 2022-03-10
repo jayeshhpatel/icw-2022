@@ -7,7 +7,7 @@
         <meta name="Googlebot" content="noindex,nofollow">
         <meta name="author" content="ZIB">
         <meta name="description" content="ZIB">
-
+        <link href="//cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
         <link rel="shortcut icon" href="../../favicon.ico" type="images/x-icon" sizes="16x16">
         <link rel="stylesheet" href="../assets/css/main-settings.css" />
         <title>Manage Member | Settings</title>
@@ -128,7 +128,7 @@
                                                     <td class="with-dropdown">
                                                         <div><span class="status billing"></span>Billing</div>
                                                         <div class="more-dropdown">
-                                                            <a href="javascript:void(0)" class="more-info"><em class="ico icon-dot"></em></a> 
+                                                            <a href="javascript:void(0)" class="more-info" data-jq-dropdown="#channel1"><em class="ico icon-dot"></em></a> 
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -139,7 +139,7 @@
                                                     <td class="with-dropdown">
                                                         <div><span class="status online"></span>Active</div>
                                                         <div class="more-dropdown">
-                                                            <a href="javascript:void(0)" class="more-info"><em class="ico icon-dot"></em></a> 
+                                                            <a href="javascript:void(0)" class="more-info" data-jq-dropdown="#channel1"><em class="ico icon-dot"></em></a> 
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -150,7 +150,7 @@
                                                     <td class="with-dropdown">
                                                         <div><span class="status online"></span>Active</div>
                                                         <div class="more-dropdown">
-                                                            <a href="javascript:void(0)" class="more-info"><em class="ico icon-dot"></em></a> 
+                                                            <a href="javascript:void(0)" class="more-info" data-jq-dropdown="#channel1"><em class="ico icon-dot"></em></a> 
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -161,7 +161,7 @@
                                                     <td class="with-dropdown">
                                                         <div><span class="status online"></span>Active</div>
                                                         <div class="more-dropdown">
-                                                            <a href="javascript:void(0)" class="more-info"><em class="ico icon-dot"></em></a> 
+                                                            <a href="javascript:void(0)" class="more-info" data-jq-dropdown="#channel1"><em class="ico icon-dot"></em></a> 
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -179,7 +179,7 @@
                 <div class="popup-container">
                     <ul>
                         <li class="item" data-popup="deactivateAccountModal">Deactivate account</li>
-                        <li class="item" data-popup="removeUserModal">Remove user</li>
+                        <li class="item text-red" data-popup="removeUserModal">Remove user</li>
                         <li class="item" data-popup="removeAdministratorModal">Remove as administrator</li>
                     </ul>
                 </div>
@@ -212,7 +212,7 @@
                             </div>
                         </div>
                         <div class="action">
-                            <button type="button" class="button btn-primary">Add Member</button>
+                            <button type="button" class="button btn-outline-primary with-icon m-l-auto">Add Member <em><i class="ri-add-line"></i></em></button>
                         </div>
                     </div>
                 </div>
@@ -224,7 +224,7 @@
                         <div class="title">Deactivate account?</div>
                         <p class="info">This user will no longer be able to access your workspace until they are reactivated.</p>
                         <div class="action">
-                            <button type="button" class="button btn-primary medium">Deactivate</button>
+                            <button type="button" class="button btn-outline-primary with-icon m-l-auto">Deactivate <em class="ico icon-disabled-circle"></em></button>
                         </div>
                     </div>
                 </div>
@@ -236,7 +236,7 @@
                         <div class="title">Remove member?</div>
                         <p class="info">This user will no longer be able to access your workspace.</p>
                         <div class="action">
-                            <button type="button" class="button btn-primary medium">Remove</button>
+                            <button type="button" class="button btn-danger with-icon m-l-auto">Remove <em class="ico circle-close-white"></em></button>
                         </div>
                     </div>
                 </div>
@@ -245,10 +245,10 @@
                 <div class="modal-wrapper modal-sm">
                     <div class="closer"><em class="ico icon-close-gray"></em></div>
                     <div class="modal-body">
-                        <div class="title">Set as administrator?</div>
+                        <div class="title">Remove as administrator?</div>
                         <p class="info">This user will be granted full administrator priviliges.</p>
                         <div class="action">
-                            <button type="button" class="button btn-primary medium">Confirm</button>
+                            <button type="button" class="button btn-outline-primary with-icon m-l-auto">Confirm <em class="ico icon-check-circle"></em></button>
                         </div>
                     </div>
                 </div>
