@@ -7,7 +7,7 @@
         <meta name="Googlebot" content="noindex,nofollow">
         <meta name="author" content="ZIB">
         <meta name="description" content="ZIB">
-
+        <link href="//cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
         <link rel="shortcut icon" href="../../favicon.ico" type="images/x-icon" sizes="16x16">
         <link rel="stylesheet" href="../assets/css/main-settings.css" />
         <title>Profile | Settings</title>
@@ -82,29 +82,29 @@
                             <div class="input-block two-filed-grid m-t-20">
                                 <div class="input-group">
                                     <div class="input-field has-data"> 
-                                        <input type="text" class="tBox" id="email">
                                         <label for="email">Email Address *</label>
+                                        <input type="text" class="tBox" id="email" placeholder="Email Address">
                                     </div>
                                     <div class="input-field has-data"> 
-                                        <input type="text" class="tBox" id="name">
                                         <label for="name">User Name</label>
+                                        <input type="text" class="tBox" id="name" placeholder="William|">
                                     </div>
                                 </div>
                                 <div class="input-group">
                                     <div class="input-field has-data"> 
-                                        <input type="text" class="tBox" id="designation">
                                         <label for="designation">Designation</label>
+                                        <input type="text" class="tBox" placeholder="e.g. Designer">
                                     </div>
                                     <div class="input-field has-data post-icon-input"> 
-                                        <input type="password" class="tBox" id="password">
                                         <label for="password">Password</label>
+                                        <input type="password" class="tBox" placeholder="*********">
                                         <span class="post-icon link" data-popup="changePasswordModal">CHANGE</span>
                                     </div>
                                 </div>
                                 <div class="input-group">
                                     <div class="input-field has-data post-icon-input"> 
-                                        <input type="text" class="tBox" id="number">
                                         <label for="number">Phone Number</label>
+                                        <input type="text" class="tBox" placeholder="e.g. +1 234 567 890">
                                         <span class="post-icon link" data-popup="changePhoneModal">CHANGE</span>
                                     </div>
                                     <div class="input-field has-data post-icon-input select-input"> 
@@ -139,7 +139,7 @@
                             <p class="desc">This change will take effect immediately. An administrator of your workspace will need to re-enable your account if you would like to rejoin this workspace. Your messages and files will be kept safe if your account is ever reactivated. Any other ZIB workspaces you belong to will not be affected. </p>
                             <span class="title"><strong>Note:</strong></span> 
                             <p class="desc">Do not deactivate your account if you just want to change your email address or username.</p>
-                            <button class="button btn-outline-danger with-icon m-l-0 m-t-10" type="button" data-popup="deactivateAccountModal">Deactivate</button>
+                            <button class="button btn-outline-danger with-icon m-l-0 m-t-10" type="button" data-popup="deactivateAccountModal">Deactivate <em><i class="ri-forbid-line"></i></em></button>
                         </div>
                     </div>
                 </div>
@@ -154,15 +154,15 @@
                     <form class="m-t-20">
                         <div class="input-field has-data"> 
                             <label for="current-Password">Current Password</label>
-                            <input type="password" class="tBox" id="current-Password">
+                            <input type="password" class="tBox"  placeholder="*********">
                         </div>
                         <div class="input-field has-data"> 
                             <label for="new-password">New Password</label>
-                            <input type="password" class="tBox" id="new-password">
+                            <input type="password" class="tBox" placeholder="*********">
                         </div>
                         <div class="input-field has-data">
                             <label for="confirm-password">Confirm Password</label>
-                            <input type="password" class="tBox" id="confirm-password">
+                            <input type="password" class="tBox"  placeholder="*********">
                         </div>
                         <div class="action">
                             <button type="button" class="button btn-light">Continue</button>

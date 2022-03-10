@@ -19,29 +19,29 @@ select:-webkit-autofill:focus { -webkit-text-fill-color: $black; -webkit-box-sha
             &:last-of-type { margin-right: 0; }
         }
     }
-    .input-field { width: 100%; position: relative;margin-bottom: 0; margin-top: 35px;
-        &.no-focus {
-            label {
-                top: -20px; left: 0; padding: 0;
-            }
-        }
-        &.focused {
-            label {
-                position: absolute;
-                top: -20px;
-                left: 0;
-                padding: 0;
-            }
-        }
-        &.select-input {
-            label{
-                top: -20px;
-                left: 0;
-                padding: 0;
-            }
-        }
+    .input-field { width: 100%; position: relative;margin-bottom: 25px;
+        // &.no-focus {
+        //     label {
+        //         top: -20px; left: 0; padding: 0;
+        //     }
+        // }
+        // &.focused {
+        //     label {
+        //         position: absolute;
+        //         top: -20px;
+        //         left: 0;
+        //         padding: 0;
+        //     }
+        // }
+        // &.select-input {
+        //     label{
+        //         top: -20px;
+        //         left: 0;
+        //         padding: 0;
+        //     }
+        // }
         &.has-error{ margin-top: 48px; }
-        label { font-size: 11px !important; color: $gray-2 !important; margin-bottom: 5px; font-weight: 400 !important; text-shadow: none !important; display: block;position: absolute; top: 13px; left: 15px; padding: 5px; @include transition(0.3s, ease-in-out);z-index: 1;}
+        label { font-size: 11px !important; color: $gray-2 !important; margin-bottom: 5px; font-weight: 400 !important; text-shadow: none !important; display: block; @include transition(0.3s, ease-in-out);z-index: 1;}
         .error-msg { color: $red; font-size: 12px; display: inline-block; position: absolute; bottom: -20px; left: 0; }
         .tBox { width: 100%; height: 38px; background: $light-black-3; border: 1px solid transparent; border-bottom-color: #404253; @include border-radius(1px); padding: 8px 10px 8px 15px; font-size:14px; line-height: 1.5; color: $gray-2; font-family: 'IBM Plex Sans', sans-serif; z-index: 1; outline: none;
             input:-webkit-autofill,
@@ -141,16 +141,16 @@ select:-webkit-autofill:focus { -webkit-text-fill-color: $black; -webkit-box-sha
     .radio-field { position: relative; overflow: hidden;
         input[type="radio"] { appearance: none; width: 1px; height: 1px; position: absolute; left: -10px; }
         & > label { line-height: 1.5; padding-left: 28px; min-height: auto; cursor: pointer; font-size: 16px; font-weight: 400 !important; position: relative; color: $gray-6;
-            &::before, &::after { width: 19px; height: 19px; content: ''; position: absolute; border-radius: 50%; left: 0; top: 2px; background: $dark-black-1; border: 1px solid $dark-black-1; }
-            &::after { width: 9px; height: 9px; background: $primary; left: 5px; top: 7px; transform: scale(0); border: none; }
+            &::before, &::after { width: 19px; height: 19px; content: ''; position: absolute; border-radius: 50%; left: 0; top: 2px; background: #33333F; border: 0.5px solid #70758B; }
+            &::after { width: 9px; height: 9px; background: #8C91F9; left: 5px; top: 7px; transform: scale(0); border: none; }
             &:hover {  
                 &::before { border-color: $light-black; }
             }
         }
         input[type="radio"]:checked + label::after { transform: scale(1); }
-        input[type="radio"]:checked + label::before { border-color: $primary; }
-        input[type="radio"]:checked + label:hover::after { background: $primary-hover; }
-        input[type="radio"]:checked + label:hover::before { border-color: $primary-hover; }
+        input[type="radio"]:checked + label::before { border-color: #8C91F9; }
+        input[type="radio"]:checked + label:hover::after { background: #8C91F9; }
+        input[type="radio"]:checked + label:hover::before { border-color: #8C91F9; }
         input[type="radio"]:disabled + label { color: $light-black-3; pointer-events: none; }
         input[type="radio"]:disabled + label::before { background: $light-black-3; border-color: $light-black-3; }
         input[type="radio"]:checked:disabled + label { pointer-events: none; color: rgba(#EBEDEF, 0.4); }
@@ -292,13 +292,13 @@ select:-webkit-autofill:focus { -webkit-text-fill-color: $black; -webkit-box-sha
 
     .radio-field { 
         & > label { color: #202028;
-            &::before, &::after { background: $white; border-color: #202028; }
+            &::before, &::after { background: #E2E5E9; border-color: #E2E5E9; }
             &::after { background: $primary; }
             &:hover {  
                 &::before { border-color: #5056CA; }
             }
         }
-        input[type="radio"]:checked + label::before { border-color: #5056CA; }
+        input[type="radio"]:checked + label::before { border-color: #5056CA; background-color: transparent; }
         input[type="radio"]:checked + label:hover::after { background: #3339B0; }
         input[type="radio"]:checked + label:hover::before { border-color: #3339B0; }
         input[type="radio"]:disabled + label { color: #E2E5E9; }

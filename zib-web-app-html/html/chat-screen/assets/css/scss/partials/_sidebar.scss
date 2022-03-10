@@ -132,7 +132,7 @@
                                         .lists {  
                                             li { padding: 8px 10px 8px 32px; @include flexbox(); @include align-items(center); @include justify-content(space-between); position: relative;
                                                 .channel-name { font-size: 16px; color: $light-blue; font-weight: normal; cursor: pointer; @include flexbox(); @include align-items(center); @include transition(0.3s, ease-in-out);
-                                                    span.img { min-width: 16px; margin-right: 2px; 
+                                                    span.img { min-width: 16px; margin-right: 2px; @include flexbox();
                                                         em { margin-bottom: -3px; @include transition(0.3s, ease-in-out); }
                                                         &.lock {  
                                                             .icon-hashtag { display: none; }
@@ -172,9 +172,9 @@
                                                         }
                                                     }
                                                 }
-                                                .count { background: rgba(#8C91F9, 0.3); @include border-radius(10px); @include inline-flex; @include align-items(center); @include justify-content(center); color: #8C91F9; font-size: 14px; font-weight: 600; padding: 1px 10px; margin-left: auto; @include transition(0.3s, ease-in-out); margin-right: 5px; }
+                                                .count { background: rgba(#8C91F9, 0.3); @include border-radius(10px); @include inline-flex; @include align-items(center); @include justify-content(center); color: #8C91F9; font-size: 14px; font-weight: 600; padding: 1px 10px; margin-left: auto; @include transition(0.3s, ease-in-out);@include transform(translateX(-15px)); position: absolute; right: 0; }
                                                 .more-dropdown { line-height: 0.7; 
-                                                    // visibility: hidden; opacity: 0; 
+                                                    visibility: hidden; opacity: 0; 
                                                     transition: all 0.3s ease-in-out;
                                                     .more-info { line-height: 0.7; display: inline-block; position: relative;@include transform(rotate(90deg)); }
                                                 }
@@ -187,8 +187,8 @@
                                                     }
                                                 }
                                                 &:hover, &.active {
-                                                    // .more-dropdown { visibility: visible; opacity: 1; }
-                                                    // .count { right: 40px; }
+                                                    .more-dropdown { visibility: visible; opacity: 1; }
+                                                    .count { right: 30px;@include transform(translateX(0)); }
                                                 }
                                                 &:hover {
                                                     background-color: #111116;
@@ -275,6 +275,11 @@
                 label { color: $gray-2; font-weight: 600; font-size: 14px; margin-bottom: 8px; display: inline-block; text-shadow: 5px 0px 20px rgba(0, 0, 0, 0.08); }                 
                 .field {
                     margin-bottom: 25px;
+                }
+                .radio-field {
+                    label {
+                        font-size: 16px;
+                    }
                 }
             }  
             .member { display: flex; align-items: center; margin-bottom: 5px; cursor: pointer; transition: all 0.3s ease-in-out; padding: 5px; justify-content: space-between;

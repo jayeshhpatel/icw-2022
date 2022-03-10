@@ -21,6 +21,9 @@ body.app-content.light-theme {
     background: $white; color: #4D5267;
 }
 .app-content{
+    i{
+        font-size: 16px;
+    }
     .text-blue {
         color: $blue !important;
     }
@@ -428,7 +431,7 @@ $hamburger-types: (spring) !default;
     @include justify-content(center);
     min-height: 100vh;
     width: 100%;
-    background: #202028;
+    background: rgba(32, 32, 40, .4);
     pointer-events: none;
     cursor: none;
     user-select: none;
