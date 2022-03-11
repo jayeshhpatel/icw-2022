@@ -550,14 +550,14 @@
                     }
                 }
             }
-            &.app-search-box-bar { top: 50px; height: calc(100vh - 50px); background-color: $dark-black; z-index: 999; max-width: 230px;     transform: translateX(150%); right: 0px; left: auto;
+            &.app-search-box-bar { top: 50px; height: calc(100vh - 50px); background-color: $dark-black; z-index: 2; max-width: 230px;     transform: translateX(150%); right: 0px; left: auto !important;
                 &.open { transform: translateX(0%); }
                 .close-action { width: 25px; height: 25px; 
                     .action em { width: 12px; height: 12px; }
                 }
                 .channel-search { width: 100%; max-height: calc(100vh - 50px); overflow: hidden; overflow-y: auto;
-                    @media(max-width: 1200px) { left: 50%; transform: translateX(-50%); }
-                    @media(max-width: 575px) { left: 0%; transform: translateX(-50%); }
+                    // @media(max-width: 1200px) { left: 50%; transform: translateX(-50%); }
+                    // @media(max-width: 575px) { left: 0%; transform: translateX(-50%); }
                     .channel-person { margin-top: 10px; width: 100%;
                         .heading { color: $gray-2; font-size: 11px; padding: 5px 10px; }
                         ul {

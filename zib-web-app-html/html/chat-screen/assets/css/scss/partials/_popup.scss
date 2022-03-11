@@ -164,6 +164,9 @@
                     .message-row {
                         &::before { content: ''; height: auto; min-width: 4px; background: #C4C4C4; display: block; border-radius: 4px; margin-right: 10px; }
                     }
+                    .message-write-container {
+                        padding: 20px 0 0;
+                    }
                     .conversation-info { color: $gray-5; font-size: 14px; margin: 15px 0 20px; 
                         strong { font-weight: 600; }
                     }
