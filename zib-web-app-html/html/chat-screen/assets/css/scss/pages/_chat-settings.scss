@@ -501,7 +501,8 @@
             }
         }             
         .file-upload { margin-left: 30px;
-            position: relative; overflow: hidden; width:100%; max-width: 180px; text-align: left; color:$gray-4; font-size:14px; background: $light-black-3; padding: 10px 15px; display:inline-block; border-color: transparent; @include transition(0.3s, ease-in-out); @include box-shadow(0px 3px 3px rgba(0, 0, 0, 0.2));
+            position: relative; overflow: hidden; width:100%; max-width: 180px; text-align: left; color:$gray-4; font-size:14px; background: $light-black-3; padding: 10px 15px; border-color: transparent; @include transition(0.3s, ease-in-out); @include box-shadow(0px 3px 3px rgba(0, 0, 0, 0.2)); @include flexbox(); @include align-items(center); @include justify-content(space-between);
+            .ico {filter: brightness(100);width: 16px;height: 16px;}
             &:hover { background: $dark-black-1; }
         }            
         .file-upload input.file-input { position: absolute; top: 0; right: 0; margin: 0; padding: 0; font-size: 20px; cursor: pointer; @include opacity(0); filter: alpha(opacity=0); height:100%; }
@@ -588,14 +589,16 @@
                     .signing-option-btn {
                         @include flexbox();@include align-items(center);@include justify-content(center);
                         .web-btn {
-                            border: 1px solid #484855;background: #33333F;padding: 10px;min-width: 50px;min-height: 50px;@include border-radius(4px);@include flexbox();@include align-items(center);@include justify-content(center);color: #E8E8E9;font-size: 16px;margin: 0 5px;text-decoration: none;
+                            border: 1px solid #484855;background: #33333F;padding: 10px;min-width: 50px;min-height: 50px;@include border-radius(4px);@include flexbox();@include align-items(center);@include justify-content(center);color: #E8E8E9;font-size: 14px;margin: 0 5px;text-decoration: none;
                             &:hover , &:focus {background-color: rgba(51, 51, 63 ,0.8); cursor: pointer;
                                 @include opacity(0.8);
                             }
                             &.active, &:active {
                                 @include transform(translateY(2px));
                             }
-                            .icon-lock-white{margin-right: 5px;}
+                            .icon-lock-dark-blue{
+                                filter: brightness(100);
+                            }
                             @media (max-width:767px) {
                                 font-size: 14px; padding: 5px 7px;min-width: 44px;min-height: 44px;
                             }
@@ -750,6 +753,9 @@
         .include { margin-left: 15px; background: #111116;  @include flexbox(); @include align-items(center); padding: 0px 10px 0 0;
             .button { background: #111116; border-color: #111116; min-width: auto; padding: calc(0.375rem - 3px) 12px calc(0.375rem - 3px) 12px; }
             span { letter-spacing: 0.36px; color: #ABAEBB; font-size: 12px; padding-left: 15px; border-left: 1px solid #33333f; height: 100%; @include inline-flex; @include align-items(center); }
+        }
+        .icon-download-csv {
+            filter: brightness(100);
         }
         @media (max-width: 575px) { display: block;
             .include { margin-left: 0; margin-top: 10px; @include inline-flex() }
@@ -1316,7 +1322,8 @@
             }
         }             
         .file-upload { 
-            color:#5056CA; background: transparent; border-color: #5056CA; border-width: 1px; box-shadow: 0px 3px 3px rgba(255, 255, 255, 0.2);
+            color:#5056CA; background: transparent; border-color: #5056CA; border-width: 1px; min-height: 50px;@include box-shadow(0px 3px 3px rgba(0,0,0,0.03));
+            .ico {filter: inherit;}
             &:hover { background: #5056CA; color: $white; }
         }   
     }
@@ -1335,7 +1342,45 @@
                     .otp-input { background: #F2F5F9; border-bottom-color: #ADB3CC; color: #33333F; }
                 }
             }
-            .link-action { color: $primary; 
+            .new-account-block {
+                .or-text {
+                    &.divider {
+                        &::before {
+                            background-color: #E7E8EC;
+                        }
+                    }
+                    span {
+                        background-color: #FFFFFF;
+                        border:1px solid #E7E8EC;
+                        color: #ABAEBB;
+                    }
+                }
+                .signing-option-block {
+                    .inner-title {
+                        color: #202028;
+                    }
+                    .signing-option-btn {
+                        .web-btn {
+                            border-color: #E7E8EC;
+                            background-color: #FFFFFF;
+                            color: #202028;
+                            .ico {
+                                &.icon-apple {
+                                    filter: brightness(0);
+                                }
+                                &.icon-lock-dark-blue{
+                                    filter: inherit;
+                                }
+                            }
+                           
+                        }
+                    }
+                }
+                .account-register-link {
+                    color: #2A2A2A;
+                }
+            }
+            .link-action { color: #4D5267; 
                 &:hover, &:focus { color: $blue; }
             }
             .back-link { color: $light-black;
@@ -1403,10 +1448,12 @@
     }  
     .download-csv-block { 
         .btn-outline-white { border-color: $primary; color: $primary;
-            em { background: url(../images/icons/icon-upload-blue.svg) no-repeat center center; }
             &:hover { background-color: $primary-hover; border-color: $primary-hover; color: $white; }
             &:focus { background-color: $primary-hover; color: $white; border-color: $primary-hover;}
             &.active, &:active { background-color: $primary-hover; border-color: $primary-hover; color: $white; }
+        }
+        .icon-download-csv {
+            filter: inherit;
         }
         .include { background: #F2F5F9;
             .button { background: $primary; border-color: $primary; color: $white; 
@@ -1580,6 +1627,11 @@
             .modal-body {  
                 .title { color: #202028; }
                 .action { 
+                    .btn-light {
+                        .icon-setting-archive {
+                            filter: brightness(100);
+                        }
+                    }
                     .total-block {  
                         small { color: $gray-5; }
                         div { color: #F85353;

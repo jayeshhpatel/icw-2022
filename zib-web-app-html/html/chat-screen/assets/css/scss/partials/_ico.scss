@@ -123,7 +123,8 @@
         &.icon-type { height: 16px; width: 16px; background:url($iconpath + 'type.svg') no-repeat center center; }
         &.icon-emoji { height: 16px; width: 16px; background:url($iconpath + 'emoji.svg') no-repeat center center; }
         &.icon-upload-blue { height: 14px; width: 14px; background: url($iconpath + 'icon-upload-blue.svg') no-repeat center center; } 
-        &.icon-upload-white { height: 13px; width: 16px; background: url($iconpath + 'icon-upload-white.svg') no-repeat center center; } 
+        &.icon-upload-white { height: 13px; width: 16px; background: url($iconpath + 'icon-upload-white.svg') no-repeat center center; }
+        &.icon-download-csv { height: 13px; width: 16px; background: url($iconpath + 'download-csv.svg') no-repeat center center; } 
         &.icon-pin { height: 20px; width: 20px; background: url($iconpath + 'pin.svg') no-repeat center center; } 
         &.icon-chat-pin { height: 15px; width: 15px; background: url($iconpath + 'pin.svg') no-repeat center center; } 
         &.icon-chat-saved { height: 15px; width: 15px; background: url($iconpath + 'star-fill.svg') no-repeat center center; } 
@@ -181,6 +182,7 @@
         &.icon-apple { height: 25px; width: 20px; background: url($iconpath + 'apple.svg') no-repeat center center; }
         &.icon-google { height: 25px; width: 25px; background: url($iconpath + 'google-icon.svg') no-repeat center center; }
         &.icon-lock-white { height: 20px; width: 20px; background: url($iconpath + 'lock-white.svg') no-repeat center center; }
+        &.icon-lock-dark-blue { height: 16px; width: 12px; background: url($iconpath + 'lock-dark-blue.svg') no-repeat center center; }
         &.icon-view { height: 12px; width: 16px; background: url($iconpath + 'view.svg') no-repeat center center; }
         &.icon-list-boxes { height: 12px; width: 16px; background: url($iconpath + 'list-boxes.svg') no-repeat center center; }
         &.icon-volume-mute { height: 16px; width: 16px; background: url($iconpath + 'volume-mute.svg') no-repeat center center; }
@@ -188,6 +190,7 @@
         &.icon-key-svgrepo { height: 16px; width: 16px; background: url($iconpath + 'key-svgrepo.svg') no-repeat center center; }
         &.icon-disabled-circle { height: 16px; width: 16px; background: url($iconpath + 'disabled-circle.svg') no-repeat center center; }
         &.icon-disabled-circle-red { height: 16px; width: 16px; background: url($iconpath + 'disabled-circle-red.svg') no-repeat center center; }
+        &.icon-lock-open { height: 16px; width: 16px; background: url($iconpath + 'lock-open.svg') no-repeat center center; }
     }
 }
 
