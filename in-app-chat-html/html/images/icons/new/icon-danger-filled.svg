@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+  <g id="icon-danger-filled" transform="translate(-141)">
+    <path id="Polygon_3" data-name="Polygon 3" d="M12.021,0,17,4.979v7.042L12.021,17H4.979L0,12.021V4.979L4.979,0Z" transform="translate(141)" fill="#ff4e4e"/>
+    <path id="Icon_awesome-exclamation" data-name="Icon awesome-exclamation" d="M4.352,8.712A1.613,1.613,0,1,1,2.738,7.1,1.615,1.615,0,0,1,4.352,8.712ZM1.312.508l.274,5.485a.484.484,0,0,0,.483.46H3.407a.484.484,0,0,0,.483-.46L4.165.508A.484.484,0,0,0,3.681,0H1.8A.484.484,0,0,0,1.312.508Z" transform="translate(146.713 3.337)" fill="#fff"/>
+  </g>
+</svg>
