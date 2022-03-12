@@ -66,6 +66,16 @@
                                     <span class="play-btn circle-ripple"><img src="images/icons/play-btn.svg" alt="Play" /></span>
                                 </div>
                             </div>
+                            <div class="play-video-block icw-video-block">   
+                                <div class="video-wrap-container">
+                                    <div class="play-iframe" data-videosrc="https://www.youtube.com/embed/2DXB_LI3rIc">
+                                        <img src="images/website/video.png" alt=""/>
+                                        <span class="play-btn circle-ripple">
+                                            <img src="images/icons/play-btn.svg" alt="Play" />
+                                        </span>
+                                    </div>
+                                </div> 
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -231,10 +241,18 @@
         <script src="js/all-jquery.js"></script>
         <script src="js/main-website.js"></script>
         <script>
-            if($('.play-video-block').length) {
-                $(".play-video-block .play-btn").on('click', function() { 
-                    $(this).addClass('d-none');
-                    $('.iframe-video').attr('src', "https://www.youtube.com/embed/2DXB_LI3rIc?rel=0&autoplay=1")
+            // if($('.play-video-block').length) {
+            //     $(".play-video-block .play-btn").on('click', function() { 
+            //         $(this).addClass('d-none');
+            //         $('.iframe-video').attr('src', "https://www.youtube.com/embed/2DXB_LI3rIc?rel=0&autoplay=1")
+            //     });
+            // }
+            if ($('.play-iframe').length){
+                $('.play-iframe').click(function(ev){	
+                    videourl = $(this).data('videosrc')+"?api=1&autoplay=1&muted=1&rel=0&enablejsapi=1";
+                    video = '<div class="video-wrap"><iframe class="embed-responsive-item play-in_iframe" src="'+videourl+'" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';
+                    $(this).parents('.play-video-block').html(video);
+                    ev.preventDefault();
                 });
             }
             if($('.contactForm').length) {

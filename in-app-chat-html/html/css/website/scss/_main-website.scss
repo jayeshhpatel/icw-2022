@@ -4497,4 +4497,40 @@ html .website {
             }
         }
     }
+    .video-wrap {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+    .icw-video-block{
+        .play-iframe {
+            position: relative;
+            img {
+                @include transition(0.3s, ease-in-out);
+            }
+            &:hover, &:focus {
+                cursor: pointer;
+                img {
+                    @include transform(scale(1.05));
+                    @include opacity(0.8);
+                }
+                .play-btn{
+                    svg{
+                        @include transform(scale(1.2));
+                    }
+                }
+            }
+        }
+        @media (max-width:767px) {
+            @include border-radius(20px);
+        }
+    }
 }
