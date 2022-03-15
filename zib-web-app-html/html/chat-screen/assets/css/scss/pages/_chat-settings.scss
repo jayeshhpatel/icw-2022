@@ -74,9 +74,14 @@
                 &.d-none { display: none; } 
                 li { padding: 6px 0;                    
                     a { text-decoration: none; color: $gray-5; font-size: 16px; font-weight: 500; @include flexbox; @include align-items(center); padding: 6px 30px; @include transition(0.3s, ease-in-out);
-                        em { margin-right: 15px; @include transition(0.3s, ease-in-out); }
+                        em { margin-right: 15px; @include transition(0.3s, ease-in-out); 
+                            &::before {
+                                font-size: 18px;
+                            }
+                        }
                         &:hover, &.active { background: $dark-black; color: $gray-2;
                             em { filter: brightness(0) invert(1);
+                                
                                 // &.icon-setting-profile { background: url($iconpath + 'settings-user-white.svg') no-repeat center center; } 
                                 // &.icon-setting-workspace { background: url($iconpath + 'settings-portfolio-white.svg') no-repeat center center; } 
                                 // &.icon-setting-member { background: url($iconpath + 'settings-manage-members-white.svg') no-repeat center center; } 
@@ -1151,7 +1156,11 @@
                     a { color: #202028; 
                         .ico { filter: brightness(0) invert(0); }
                         &:hover, &.active { background: #F2F5F9; color: #5056CA; 
-                            .ico { filter: unset; }
+                            .ico { filter: unset; 
+                                &::before{
+                                    color: #5056CA;
+                                }
+                            }
                         }
                     }
                 }
