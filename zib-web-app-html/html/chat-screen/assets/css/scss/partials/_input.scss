@@ -6,9 +6,9 @@ textarea:-webkit-autofill:hover,
 textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
-select:-webkit-autofill:focus { -webkit-text-fill-color: $black; -webkit-box-shadow: 0 0 0px 1000px #ffffff inset; transition: all 250ms ease-in-out, background-color 5000s ease-in-out 0s; }
+select:-webkit-autofill:focus { -webkit-text-fill-color: #adb3c3; -webkit-box-shadow: 0 0 0px 1000px #ffffff inset; transition: all 250ms ease-in-out, background-color 5000s ease-in-out 0s; }
 .app-content {
-    input { font-family: 'IBM Plex Sans', sans-serif !important; }
+    input { font-family: 'IBM Plex Sans', sans-serif !important;-webkit-text-fill-color: #adb3c3; }
     form, .form {  width: 100%; }
     .form-row{ display: flex;
         .field-box { flex-grow: 1; }
