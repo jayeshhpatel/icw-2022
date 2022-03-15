@@ -73,7 +73,7 @@
                     }
                 }
                 .invite-btn { line-height: 0.7; 
-                    .invite-action { line-height: 0.7; padding-right: 0; padding-bottom: 5px; @include transition(0.3s, ease-in-out); cursor: pointer; display: inline-block;
+                    .invite-action { line-height: 0.7; padding-right: 0; @include transition(0.3s, ease-in-out); cursor: pointer; display: inline-block;
                         &:focus { outline: none; }
                         &:hover { @include opacity(0.7); }
                     }
@@ -82,15 +82,24 @@
             .sidebar-icon-box { @include flexbox(); @include align-items(center); @include justify-content(space-between); padding: 18px 20px; border-bottom: 1px solid #454A60; background: $dark-black-1;
                 .icon-box { display: inline-block; text-align: center; text-decoration: none; line-height: 0.7;
                     .icon { @include inline-flex; @include align-items(center); @include justify-content(center); @include transition(0.3s, ease-in-out); position: relative;       
-                        span { line-height: 0.7; }
+                        span { line-height: 0.7;}
+                        .threads, .icon-files {
+                            &::before {
+                                font-size: 24px;
+                            }
+                        }
+                        .icon-at-sign , .icon-star{
+                            &::before {
+                                font-size: 20px;
+                            }
+                        }
                     }
                     .name { font-weight: 300; font-size: 0px; color: #ADB3CC; padding-top: 0px; @include transition(0.3s, ease-in-out); }
                     &:hover, &.active {
                         span {
-                            svg {
-                                .fill-color,
-                                path {
-                                    fill: #8C91F9 !important;
+                            .ico{
+                                &::before{
+                                    color: #8C91F9 !important;
                                 }
                             }
                         }
@@ -145,6 +154,11 @@
                                                 .msg-name { font-size: 16px; color: $light-blue; font-weight: normal; display: inline-flex; align-items: center; cursor: pointer; @include transition(0.3s, ease-in-out); 
                                                     .avatar { width: 18px; height: 18px; border-radius: 50%; margin-right: 10px; background: #ADB3CC;
                                                         span { @include flexbox(); @include align-items(center); @include justify-content(center); height: 100%;
+                                                            .icon-hashtag {
+                                                                &::before{
+                                                                    color: #4b5680;
+                                                                }
+                                                            }
                                                             &.letter { font-size: 12px; line-height: 0.7; }
                                                             img { min-width: 18px; height: 18px; border-radius: 50%; }
                                                         }
@@ -246,8 +260,12 @@
             &::before { display: inline-block; margin-right: 5px; vertical-align: middle; content: ""; border-top: 11px solid transparent; border-right: 11px solid #282832; border-bottom: 11px solid transparent; border-left: 0; border-radius: 2px; box-shadow: 5px 0px 20px #0000004D; position: absolute; top: 0; left: -11px; }        
             &.open { transform: translateX(0); left: 250px; }
             .close-action { display: block; position: absolute; top: 0; right: 0px; cursor: pointer; width: 50px; height: 50px;
-                .action { @include flexbox(); @include align-items(center); @include justify-content(center); height: 100%; @include transition(0.3s, ease-in-out);
-                    em { @include transition(0.3s, ease-in-out); }
+                .action { @include flexbox(); @include align-items(center); @include justify-content(center); height: 100%; @include transition(0.3s, ease-in-out); text-decoration: none;
+                    em { @include transition(0.3s, ease-in-out);
+                        &::before {
+                            color: #7a7f93;
+                        }
+                    }
                     &:hover { background: $gray-4; 
                         em { filter: brightness(0); }
                     }
@@ -308,6 +326,13 @@
                 }
                 &:hover { background: $dark-black-1; 
                     .option-box { display: inline-block; }  
+                }
+                .option-box {
+                    .ico {
+                        &::before {
+                            font-size: 14px;
+                        }
+                    }
                 }
             }
             .chat-thread-info-block { padding: 0 20px;
@@ -553,7 +578,7 @@
             &.app-search-box-bar { top: 50px; height: calc(100vh - 50px); background-color: $dark-black; z-index: 2; max-width: 230px;     transform: translateX(150%); right: 0px; left: auto !important;
                 &.open { transform: translateX(0%); }
                 .close-action { width: 25px; height: 25px; 
-                    .action em { width: 12px; height: 12px; }
+                    // .action em { width: 12px; height: 12px; }
                 }
                 .channel-search { width: 100%; max-height: calc(100vh - 50px); overflow: hidden; overflow-y: auto;
                     // @media(max-width: 1200px) { left: 50%; transform: translateX(-50%); }
@@ -896,38 +921,37 @@
                 }
                 .invite-btn { 
                     .invite-action { 
-                        .ico.icon-settings { background: url(../images/icons/settings-white.svg) no-repeat center center; }
+                        .ico.icon-settings { color: #ffffff; }
                     }
                 }
             }
             .sidebar-icon-box { border-bottom: 1px solid #454A60; background: $dark-black;
                 .icon-box { 
                     span{
-                        svg{
-                            .fill-color,
-                            path{
-                                fill: #ffffff;
-                            }
-                        }
-                    }
-                    .icon { 
                         .ico {
-                            &.threads { background:url($iconpath + 'thread-white.svg') no-repeat center center; }
-                            &.files { background:url($iconpath + 'icon-files-white.svg') no-repeat center center; }
-                            &.mentions { background:url($iconpath + 'mention-white.svg') no-repeat center center; }
-                            &.saved { background:url($iconpath + 'saved-white.svg') no-repeat center center; }
-                        }  
-                    }
-                    &:hover, &.active {
-                        .icon { 
-                            .ico { @include transition(0.3s, ease-in-out);
-                                &.threads { background:url($iconpath + 'thread-blue.svg') no-repeat center center; }
-                                &.files { background:url($iconpath + 'icon-files-blue.svg') no-repeat center center; }
-                                &.mentions { background:url($iconpath + 'mention-blue.svg') no-repeat center center; }
-                                &.saved { background:url($iconpath + 'saved-blue.svg') no-repeat center center; }
+                            &::before {
+                                color: #ffffff;
                             }
                         }
                     }
+                    // .icon { 
+                    //     .ico {
+                    //         &.threads { background:url($iconpath + 'thread-white.svg') no-repeat center center; }
+                    //         &.files { background:url($iconpath + 'icon-files-white.svg') no-repeat center center; }
+                    //         &.mentions { background:url($iconpath + 'mention-white.svg') no-repeat center center; }
+                    //         &.saved { background:url($iconpath + 'saved-white.svg') no-repeat center center; }
+                    //     }  
+                    // }
+                    // &:hover, &.active {
+                    //     .icon { 
+                    //         .ico { @include transition(0.3s, ease-in-out);
+                    //             &.threads { background:url($iconpath + 'thread-blue.svg') no-repeat center center; }
+                    //             &.files { background:url($iconpath + 'icon-files-blue.svg') no-repeat center center; }
+                    //             &.mentions { background:url($iconpath + 'mention-blue.svg') no-repeat center center; }
+                    //             &.saved { background:url($iconpath + 'saved-blue.svg') no-repeat center center; }
+                    //         }
+                    //     }
+                    // }
                 }
             }
             .message__sidebar { 

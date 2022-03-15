@@ -171,7 +171,13 @@ select:-webkit-autofill:focus { -webkit-text-fill-color: $black; -webkit-box-sha
             &.active { border-color: #457FCA; }
             &:hover { background: rgba($light-black-3, 0.8); }
             .tag { padding: 8px 25px 8px 8px; font-size: 14px; line-height: 1rem; background: $primary; color: $white; position: relative; margin-right: 6px; @include border-radius(1px); flex-shrink: 0; margin-bottom: 4px; position: relative; z-index: 1; 
-                span.tag-remover { position: absolute; display: inline-block; right: 8px; top: 50%; cursor: pointer; line-height: 0.7; transform: translateY(-50%); }                
+                span.tag-remover { position: absolute; display: inline-block; right: 8px; top: 50%; cursor: pointer; line-height: 0.7; transform: translateY(-50%); 
+                    .icon-close-white {
+                        &::before {
+                            font-size: 8px;
+                        }
+                    }
+                }                
             }            
             &.error {
                 .error-tag { background: #F03D3E; }

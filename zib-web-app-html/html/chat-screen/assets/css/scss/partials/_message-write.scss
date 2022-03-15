@@ -19,7 +19,11 @@
                         a { line-height: 0.7;
                             em { margin-right: 0px; @include transition(0.3s, ease-in-out); }
                             &:hover {  
-                                em { background: url($iconpath + 'fill-send-blue.svg'); height: 20px; width: 20px; }
+                                em { 
+                                    &::before {
+                                        color: #5056CA;
+                                    }
+                                }
                             }
                         }
                         .meeting-switch {@include flexbox();@include align-items(center);margin-right: 20px;
@@ -84,7 +88,13 @@
                             &.file-upload-box { position: relative;min-width: 28px; float: left;
                                 input[type="file"] { width: 1px; height: 1px; position: absolute; opacity: 0; top: 0; left: 0; }
                             }
-                            .icon { width: 28px; height: 28px; @include flexbox(); @include align-items(center); justify-content: center; }
+                            .icon { width: 28px; height: 28px; @include flexbox(); @include align-items(center); justify-content: center; 
+                                .ico {
+                                    &.icon-at-sign::before {
+                                        color: #70758b;
+                                    }
+                                }
+                            }
                             &:hover, &.active { 
                                 .ico { @include opacity(0.7); } 
                             }                                           
@@ -168,12 +178,12 @@
                         &::placeholder { color: #ACACAE; }
                     }
                     .send-action { 
-                        a { 
-                            em { background: url($iconpath + 'fill-send-gray.svg'); height: 20px; width: 20px; }
-                            &:hover {  
-                                em { background: url($iconpath + 'fill-send-blue.svg'); height: 20px; width: 20px; }
-                            }
-                        }
+                        // a { 
+                        //     em { background: url($iconpath + 'fill-send-gray.svg'); height: 20px; width: 20px; }
+                        //     &:hover {  
+                        //         em { background: url($iconpath + 'fill-send-blue.svg'); height: 20px; width: 20px; }
+                        //     }
+                        // }
                         .meeting-switch {
                             span {color: #202028;}
                         }
@@ -216,20 +226,29 @@
                 }
                 .msg-option-block { background: #F2F5F9;
                     .message-options {
-                        .msg-option-button {       
-                            .icon {
+                        .msg-option-button { 
+                            .icon { 
                                 .ico {
-                                    &.icon-type { background:url($iconpath + 'type-black.svg') no-repeat center center; }
-                                    &.icon-emoji { background:url($iconpath + 'emoji-black.svg') no-repeat center center; }
-                                    &.icon-attach-pin { background: url($iconpath + 'attch-pin-black.svg') no-repeat center center; } 
-                                    &.bold { background:url($iconpath + 'icon-bold-black.svg') no-repeat center center; }
-                                    &.italic { background:url($iconpath + 'icon-italic-black.svg') no-repeat center center; }
-                                    &.icon-text-underline { background:url($iconpath + 'text-center-underline-black.svg') no-repeat center center;  }
-                                    &.icon-list-menu { background:url($iconpath + 'list-menu-black.svg') no-repeat center center; }
-                                    &.icon-number-list { background:url($iconpath + 'number-list-black.svg') no-repeat center center; }
-                                    &.icon-at-sign { background:url($iconpath + 'at-sign-black.svg') no-repeat center center; }
+                                    &::before {
+                                        color: #4D5267;
+                                    }
                                 }
-                            }     
+                            }      
+                            // .icon {
+                            //     .ico {
+                                    
+                            //         &.icon-type { background:url($iconpath + 'type-black.svg') no-repeat center center; }
+                            //         &.icon-emoji { background:url($iconpath + 'emoji-black.svg') no-repeat center center; }
+                            //         &.icon-attach-pin { background: url($iconpath + 'attch-pin-black.svg') no-repeat center center; } 
+                            //         &.bold { background:url($iconpath + 'icon-bold-black.svg') no-repeat center center; }
+                            //         &.italic { background:url($iconpath + 'icon-italic-black.svg') no-repeat center center; }
+                            //         &.icon-text-underline { background:url($iconpath + 'text-center-underline-black.svg') no-repeat center center;  }
+                            //         &.icon-list-menu { background:url($iconpath + 'list-menu-black.svg') no-repeat center center; }
+                            //         &.icon-number-list { background:url($iconpath + 'number-list-black.svg') no-repeat center center; }
+                            //         &.icon-at-sign { background:url($iconpath + 'at-sign-black.svg') no-repeat center center; }
+                                    
+                            //     }
+                            // }     
                             .popup { bottom: 40px; 
                                 .popup-container {
                                     ul {

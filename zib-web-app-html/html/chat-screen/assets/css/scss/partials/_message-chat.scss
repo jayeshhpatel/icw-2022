@@ -132,7 +132,11 @@
             .has-blue-tooltip { background: transparent; width: 31px; height: 31px; display: flex; align-items: center; justify-content: center; vertical-align: middle; cursor: pointer; float: left;position: relative; margin: 0 1px;
                 &:last-child { border-left: 1px solid $dark-black; }
                 .icon { display: flex; align-items: center; justify-content: center;
-                    .ico { width: 18px; height: 18px; background-size: contain !important; }
+                    .ico { width: 18px; height: 18px; background-size: contain !important;@include flexbox(); @include align-items(center); @include justify-content(center);
+                            &::before {
+                                color: #abaebb;
+                            }
+                         }
                 }
                 &:hover { 
                     .icon { @include opacity(0.7); }
@@ -153,7 +157,13 @@
                                 &.file-upload-box { position: relative;min-width: 28px; float: left;
                                     input[type="file"] { width: 1px; height: 1px; position: absolute; opacity: 0; top: 0; left: 0; }
                                 }
-                                .icon { width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; }
+                                .icon { width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; 
+                                    .icon-at-sign {
+                                        &::before {
+                                            color: #70758b;
+                                        }
+                                    }
+                                }
                                 &:hover, &.active { 
                                     .ico { @include opacity(0.7); } 
                                 }                                           
@@ -330,6 +340,13 @@
         .options-box { background: #FFFFFF; border-color: #FFFFFF; 
             .has-blue-tooltip { background: transparent; 
                 &:last-child { border-left-color: #F2F5F9; }
+                .icon {
+                    .ico{
+                        &::before {
+                            color: #4D5267;
+                        }
+                    }
+                }
             }
         }
         .edit-mode {

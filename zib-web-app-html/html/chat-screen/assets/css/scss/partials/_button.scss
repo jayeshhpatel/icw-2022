@@ -103,9 +103,9 @@
         }
         &.full-width { width: 100%; }
         &.small { min-height: 32px; font-size: 14px; padding: calc(0.375rem - 3px) 45px calc(0.375rem - 3px) 12px; 
-            em {width: 10px !important; height: 10px !important; }
+            em {width: 10px !important; }
             &:focus, &:hover, &:active, &.active {   
-                em { width: 10px !important; height: 10px !important; }
+                em { width: 10px !important; }
             }
         }
     }

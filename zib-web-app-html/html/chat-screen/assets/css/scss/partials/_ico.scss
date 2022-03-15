@@ -1,240 +1,928 @@
-.app-content{
-    .ico { display: inline-block; background-size: contain !important; align-content: center !important;
-        &.arrow-down-black { height: 4px; width: 7px;  padding: 7px; background:url($iconpath + 'arrow-down-black.svg') no-repeat center center; }
-        &.icon-chat-circle { height: 16px; width: 16px; background:url($iconpath + 'icon-chat-circle.svg') no-repeat center center; }
-        &.icon-share { height: 16px; width: 14px; background:url($iconpath + 'share.svg') no-repeat center center;  }
-        
-        &.icon-download { height: 16px; width: 20px; background:url($iconpath + 'download.svg') no-repeat center center; }
-        &.icon-star { height: 16px; width: 14px; background:url($iconpath + 'star-line.svg') no-repeat center center; }
-        &.icon-ellipsis-v { height: 16px; width: 16px; background:url($iconpath + 'icon-ellipsis-v.svg') no-repeat center center; }
-        &.more-info { height: 13px; width: 13px; background:url($iconpath + 'vertical-dots-menu.svg') no-repeat center center; }
-        &.plus-black { height: 24px; width: 24px; background:url($iconpath + 'plus-black.svg') no-repeat center center; }
-        &.search { height: 20px; width: 19px; background:url($iconpath + 'search.svg') no-repeat center center; }
-        &.icon-search-black { height: 20px; width: 20px; background:url($iconpath + 'search-black.svg') no-repeat center center; }
-        &.icon-search-recent { height: 12px; width: 12px; background:url($iconpath + 'search-recent.svg') no-repeat center center; }
-        &.icon-close-black { height: 10px; width: 10px; background:url($iconpath + 'close-black.svg') no-repeat center center; }
-        &.chat-settings { height: 25px; width: 23px; background:url($iconpath + 'chat-settings.svg') no-repeat center center; }
-        // &.icon-settings { height: 20px; width: 16px; background:url($iconpath + 'icon-notification.svg') no-repeat center center; }
-        &.fill-dropdown-arrow { height: 10px; width: 12px; background:url($iconpath + 'fill-dropdown-arrow.svg') no-repeat center center; }
-        &.icon-add { height: 25px; width: 25px; background:url($iconpath + 'icon-add.svg') no-repeat center center; }
-        &.write-pencil { height: 23px; width: 21px; background:url($iconpath + 'write-msg.svg') no-repeat center center; }
-        
-        &.icon-laughing-emoji { height: 12px; width: 12px; background:url($iconpath + 'laughing-emoji.svg') no-repeat center center; }
-        &.icon-hand-emoji { height: 14px; width: 14px; background:url($iconpath + 'hand-emoji.svg') no-repeat center center; }
-        &.icon-face-emoji { height: 14px; width: 14px; background:url($iconpath + 'face-emoji.svg') no-repeat center center; }
-        &.icon-add-emoji { height: 16px; width: 16px; background:url($iconpath + 'add-emoji.svg') no-repeat center center; }
-        &.icon-add-emoji-black { height: 16px; width: 14px; background:url($iconpath + 'add-emoji-black.svg') no-repeat center center; }
-        &.icon-thread-chat { height: 16px; width: 14px; background:url($iconpath + 'thread-chat.svg') no-repeat center center; }
-       
-        &.icon-at-sign { height: 17px; width: 19px; background:url($iconpath + 'at-sign.svg') no-repeat center center; }
-        &.icon-plus-circle { height: 18px; width: 24px; background:url($iconpath + 'plus-circle.svg') no-repeat center center; }
-        &.icon-plus-circle-white { height: 18px; width: 24px; background:url($iconpath + 'plus-circle-white.svg') no-repeat center center; }
-        &.icon-send { height: 24px; width: 24px; background:url($iconpath + 'send.svg') no-repeat center center; }
-        &.icon-drive { height: 16px; width: 20px; background:url($iconpath + 'icon-drive-black.svg') no-repeat center center; }
-        &.icon-computer { height: 14px; width: 20px; background:url($iconpath + 'icon-computer-black.svg') no-repeat center center; }
-        &.icon-fill-close { height: 24px; width: 24px; background:url($iconpath + 'fill-close.png') no-repeat center center; }
-        &.icon-close-white { height: 15px; width: 15px; background:url($iconpath + 'close-white.svg') no-repeat center center; }
-        &.icon-close-blue { height: 16px; width: 16px; background:url($iconpath + 'close-blue.svg') no-repeat center center; }
-        &.icon-arrow-right-big { height: 24px; width: 12px; background:url($iconpath + 'arrow-right-big.svg') no-repeat center center; }
-        &.circle-close { height: 25px; width: 25px; background:url($iconpath + 'circle-close.svg') no-repeat center center; }
-        &.circle-close-white { height: 25px; width: 25px; background:url($iconpath + 'circle-close-white.svg') no-repeat center center; }
-        &.icon-fill-arrow { height: 12px; width: 12px; background:url($iconpath + 'fill-arrow.svg') no-repeat center center; }
-        &.icon-video { height: 30px; width: 25px; background:url($iconpath + 'icon-video.svg') no-repeat center center; }
-        &.icon-word-file { height: 30px; width: 25px; background:url($iconpath + 'icon-word-file.svg') no-repeat center center; }        
-        &.icon-dot { height: 5px; width: 23px; background:url($iconpath + 'dot.svg') no-repeat center center; }
-        &.icon-mute { height: 19px; width: 23px; background:url($iconpath + 'mute.svg') no-repeat center center; }
-        &.icon-leave { height: 18px; width: 18px; background:url($iconpath + 'leave.svg') no-repeat center center; }
-        &.icon-delete { height: 20px; width: 18px; background:url($iconpath + 'delete.svg') no-repeat center center; }
-        &.icon-celender { height: 18px; width: 16px; background:url($iconpath + 'icon-celender.svg') no-repeat center center; }
-        &.icon-megaphone { height: 12px; width: 12px; background:url($iconpath + 'megaphone.svg') no-repeat center center; }
-        &.icon-adjust { height: 44px; width: 44px; background:url($iconpath + 'adjust.svg') no-repeat center center; }
-        &.icon-circle { height: 44px; width: 44px; background:url($iconpath + 'circle.svg') no-repeat center center; }
-        &.icon-eye { height: 20px; width: 20px; background:url($iconpath + 'eye.svg') no-repeat center center; }
-        &.icon-eye-slash { height: 20px; width: 20px; background:url($iconpath + 'eye-slash.svg') no-repeat center center; }
-        &.icon-exclamation { height: 20px; width: 20px; background:url($iconpath + 'exclamation.svg') no-repeat center center; }
-        &.icon-user { height: 20px; width: 20px; background:url($iconpath + 'user.svg') no-repeat center center; }
-        &.icon-lock { height: 20px; width: 20px; background:url($iconpath + 'lock.svg') no-repeat center center; }
-        &.icon-sitemap { height: 20px; width: 20px; background:url($iconpath + 'sitemap.svg') no-repeat center center; }
-        &.icon-link { height: 20px; width: 20px; background:url($iconpath + 'link.svg') no-repeat center center; }
-        &.icon-spinner-third { height: 20px; width: 20px; background:url($iconpath + 'spinner-third.svg') no-repeat center center; }
-        &.icon-spinner-third-white { height: 20px; width: 20px; background:url($iconpath + 'spinner-third-white.svg') no-repeat center center; }
-        &.icon-long-arrow-right { height: 8px; width: 8px; background:url($iconpath + 'icon-long-arrow-right.svg') no-repeat center center; }
-        &.icon-long-arrow-left { height: 30px; width: 24px; background:url($iconpath + 'long-arrow-left.svg') no-repeat center center; }
-        &.icon-long-arrow-left-gray { height: 30px; width: 24px; background:url($iconpath + 'long-arrow-left-gray.svg') no-repeat center center; }
-        &.icon-circle-arrow-left { height: 34px; width: 34px; background:url($iconpath + 'circle-arrow-left.svg') no-repeat center center; }
-        &.icon-circle-arrow-right { height: 34px; width: 34px; background:url($iconpath + 'circle-arrow-right.svg') no-repeat center center; }
-        &.icon-angle-right { height: 25px; width: 25px; background:url($iconpath + 'angle-right.svg') no-repeat center center; }
-        &.icon-search { height: 18px; width: 18px; background:url($iconpath + 'search.svg') no-repeat center center; }
-        &.icon-circle-gray { height: 18px; width: 18px; background:url($iconpath + 'circle-gray.svg') no-repeat center center; }
-        &.icon-check-circle { height: 18px; width: 18px; background:url($iconpath + 'check-circle.svg') no-repeat center center; }
-        &.icon-check-circle-white { height: 18px; width: 18px; background:url($iconpath + 'check-circle-white.svg') no-repeat center center; }
-        &.icon-check { height: 7px; width: 9px; background:url($iconpath + 'icon-check.svg') no-repeat center center; }
-        &.icon-ellipsis-v { height: 25px; width: 25px; background:url($iconpath + 'ellipsis-v.svg') no-repeat center center; }
-        &.icon-cancel { height: 20px; width: 20px; background:url($iconpath + 'icon-cancel.svg') no-repeat center center; }
-        &.icon-done { height: 20px; width: 20px; background:url($iconpath + 'icon-done.svg') no-repeat center center; }
-        &.icon-angle-down { height: 20px; width: 20px; background:url($iconpath + 'arrow-dropdown.svg') no-repeat center center; }
-        &.icon-map-marker-alt { height: 25px; width: 25px; background:url($iconpath + 'map-marker-alt-solid.svg') no-repeat center center; }    
-        &.icon-mute-notificaion { height: 16px; width: 20px; background: url($iconpath + 'mute-notification.svg') no-repeat center center; } 
-        &.comments { height: 25px; width: 29px; background: url($iconpath + 'comments.svg') no-repeat center center; }  
-        &.icon-up-arrow { height: 13px; width: 12px; background: url($iconpath + 'icon-up-arrow.svg') no-repeat center center; }  
-        &.icon-warning { height: 20px; width: 20px; background: url($iconpath + 'icon-warning.svg') no-repeat center center; } 
-        &.icon-fill-add { height: 14px; width: 14px; background: url($iconpath + 'icon-fill-add.svg') no-repeat center center; } 
-        &.icon-dot-white { height: 14px; width: 14px; background: url($iconpath + 'dot-white.svg') no-repeat center center; } 
-         
-        &.icon-lock-white { height: 12px; width: 11px; background: url($iconpath + 'icon-lock-white.svg') no-repeat center center; } 
-        
-        
-        &.icon-upload { height: 17px; width: 17px; background: url($iconpath + 'icon-upload.svg') no-repeat center center; } 
-       
-        &.icon-fill-close-gray { height: 16px; width: 16px; background: url($iconpath + 'fill-close.svg') no-repeat center center; } 
+@font-face {
+    font-family: "icomoon";
+    src: url("../fonts/icomoon.eot?c0ogbg");
+    src: url("../fonts/icomoon.eot?c0ogbg#iefix") format("embedded-opentype"),
+        url("../fonts/icomoon.ttf?c0ogbg") format("truetype"), url("../fonts/icomoon.woff?c0ogbg") format("woff"),
+        url("../fonts/icomoon.svg?c0ogbg#icomoon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
 
+.app-content {
+    [class^="ico"],
+    [class*=" ico"] {
+        /* use !important to prevent issues with browser extensions that change fonts */
+        font-family: "icomoon" !important;
+        speak: never;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
 
+    .ico {
+        display: inline-block; background-size: contain !important; align-content: center !important;
+        &.arrow-down-black{height:4px;width:7px;padding:7px;background:url($iconpath + "arrow-down-black.svg") no-repeat center center}
+        &.icon-laughing-emoji{height:12px;width:12px;background:url($iconpath + "laughing-emoji.svg") no-repeat center center}
+        &.icon-hand-emoji{height:14px;width:14px;background:url($iconpath + "hand-emoji.svg") no-repeat center center}
+        &.icon-face-emoji{height:14px;width:14px;background:url($iconpath + "face-emoji.svg") no-repeat center center}
+        &.icon-add-emoji-black{height:16px;width:14px;background:url($iconpath + "add-emoji-black.svg") no-repeat center center}
+        &.icon-fill-arrow{height:12px;width:12px;background:url($iconpath + "fill-arrow.svg") no-repeat center center}
+        &.icon-settings-resend-white{height:24px;width:24px;background:url($iconpath + "settings-reset-white.svg") no-repeat center center}
+        &.icon-mute{height:19px;width:23px;background:url($iconpath + "mute.svg") no-repeat center center}
+        &.icon-leave{height:18px;width:18px;background:url($iconpath + "leave.svg") no-repeat center center}
+        &.icon-eye{height:20px;width:20px;background:url($iconpath + "eye.svg") no-repeat center center}
+        &.icon-eye-slash{height:20px;width:20px;background:url($iconpath + "eye-slash.svg") no-repeat center center}
+        &.icon-exclamation{height:20px;width:20px;background:url($iconpath + "exclamation.svg") no-repeat center center}
+        &.icon-user{height:20px;width:20px;background:url($iconpath + "user.svg") no-repeat center center}
+        &.icon-lock{height:20px;width:20px;background:url($iconpath + "lock.svg") no-repeat center center}
+        &.icon-sitemap{height:20px;width:20px;background:url($iconpath + "sitemap.svg") no-repeat center center}
+        &.icon-link{height:20px;width:20px;background:url($iconpath + "link.svg") no-repeat center center}
+        &.icon-spinner-third{height:20px;width:20px;background:url($iconpath + "spinner-third.svg") no-repeat center center}
+        &.icon-spinner-third-white{height:20px;width:20px;background:url($iconpath + "spinner-third-white.svg") no-repeat center center}
+        &.icon-long-arrow-right{height:8px;width:8px;background:url($iconpath + "icon-long-arrow-right.svg") no-repeat center center}
+        &.icon-long-arrow-left{height:30px;width:24px;background:url($iconpath + "long-arrow-left.svg") no-repeat center center}
+        &.icon-long-arrow-left-gray{height:30px;width:24px;background:url($iconpath + "long-arrow-left-gray.svg") no-repeat center center}
+        &.icon-circle-arrow-left{height:34px;width:34px;background:url($iconpath + "circle-arrow-left.svg") no-repeat center center}
+        &.icon-circle-arrow-right{height:34px;width:34px;background:url($iconpath + "circle-arrow-right.svg") no-repeat center center}
+        &.icon-angle-right{height:25px;width:25px;background:url($iconpath + "angle-right.svg") no-repeat center center}
+        &.icon-circle-gray{height:18px;width:18px;background:url($iconpath + "circle-gray.svg") no-repeat center center}
+        &.icon-check{height:7px;width:9px;background:url($iconpath + "icon-check.svg") no-repeat center center}
+        &.icon-cancel{height:20px;width:20px;background:url($iconpath + "icon-cancel.svg") no-repeat center center}
+        &.icon-done{height:20px;width:20px;background:url($iconpath + "icon-done.svg") no-repeat center center}
+        &.icon-angle-down{height:20px;width:20px;background:url($iconpath + "arrow-dropdown.svg") no-repeat center center}
+        &.icon-map-marker-alt{height:25px;width:25px;background:url($iconpath + "map-marker-alt-solid.svg") no-repeat center center}
+        &.icon-mute-notificaion{height:16px;width:20px;background:url($iconpath + "mute-notification.svg") no-repeat center center}
+        &.comments{height:25px;width:29px;background:url($iconpath + "comments.svg") no-repeat center center}
+        &.icon-up-arrow{height:13px;width:12px;background:url($iconpath + "icon-up-arrow.svg") no-repeat center center}
+        &.icon-warning{height:20px;width:20px;background:url($iconpath + "icon-warning.svg") no-repeat center center}
+        &.icon-fill-add{height:14px;width:14px;background:url($iconpath + "icon-fill-add.svg") no-repeat center center}
+        &.icon-lock-white{height:12px;width:11px;background:url($iconpath + "icon-lock-white.svg") no-repeat center center}
+        &.icon-upload{height:17px;width:17px;background:url($iconpath + "icon-upload.svg") no-repeat center center}
+        &.icon-fill-close-gray{height:16px;width:16px;background:url($iconpath + "fill-close.svg") no-repeat center center}
+        &.icon-upload-white { height: 13px; width: 16px; background: url($iconpath + "icon-upload-white.svg") no-repeat center center;}
+        &.icon-hashtag-blue {height: 12px;width: 12px;background: url($iconpath + "icon-hashtag-blue.svg") no-repeat center center;}
+        &.icon-invite-user{height:12px;width:12px;background:url($iconpath + "icon-user-follow.svg") no-repeat center center}
+        &.more-info-white{height:13px;width:13px;background:url($iconpath + "vertical-dots-menu-white.svg") no-repeat center center}
+        &.icon-warning{height:32px;width:32px;background:url($iconpath + "icon-warning-square.svg") no-repeat center center}
+        &.icon-notification-settings {height: 18px;width: 20px;background: url($iconpath + "icon-notification-settings.svg") no-repeat center center; }
+        &.icon-pinned-messages {height: 18px;width: 22px;background: url($iconpath + "pinned-messages.svg") no-repeat center center;}
+        &.icon-audio {height: 20px;width: 20px;background: url($iconpath + "icon-audio.svg") no-repeat center center;}
+        &.icon-setting-office {height: 18px;width: 18px;background: url($iconpath + "settings-3d-office.svg") no-repeat center center;}
+        &.icon-setting-billing {height: 18px;width: 18px;background: url($iconpath + "settings-billings.svg") no-repeat center center;}
+        &.icon-google { height: 25px; width: 25px; background: url($iconpath + "google-icon.svg") no-repeat center center; }
+        &.icon-setting-visa { height: 16px; width: 24px; background: url($iconpath + "icon-visa.png") no-repeat center center; }
+        &.icon-setting-archive { height: 16px; width: 16px; background: url($iconpath + "archive.svg") no-repeat center center; }
+        &.icon-setting-archive-dark { height: 16px; width: 16px; background: url($iconpath + "archive-dark.svg") no-repeat center center; }
+        &.icon-plus-circle-white { height: 18px; width: 24px;background: url($iconpath + "plus-circle-white.svg") no-repeat center center;}
+        &.icon-chat-circle{
+            &:before {
+                content: "\e986";
+                color: #454a60;
+                font-size: 16px;
+            }
+        }
+        &.circle-close{
+            &:before {
+                content: "\e922";
+                color: #adb3cc;
+                font-size: 18px;
+            }
+        }
+        &.circle-close-white{
+            &:before {
+                content: "\e922";
+                color: #ffffff;
+                font-size: 18px;
+            }
+        }
+        &.icon-video{
+            &:before {
+                content: "\e9b3";
+                color: #33b6ff;
+                font-size: 24px;
+            }
+        }
+        &.icon-word-file{
+            &:before {
+                content: "\e9b6";
+                color: #1160d7;
+                font-size: 24px;
+            }
+        }
+        &.icon-share {
+            &:before {
+                content: "\ea23";
+                color: #7a7f93;
+                font-size: 14px;
+            }
+        }
+        &.icon-download {
+            &:before {
+                content: "\e934";
+                color: #7a7f93;
+                font-size: 14px;
+            }
+        }
+        &.icon-star {
+            &:before {
+                content: "\ea2e";
+                color: #abaebb;
+                font-size: 16px;
+            }
+        }
+        &.icon-ellipsis-v {
+            &:before {
+                content: "\e93b";
+                color: #abaebb;
+                font-size: 16px;
+            }
+        }
+        &.more-info {
+            &:before {
+                content: "\ea40";
+                color: #454a60;
+                font-size: 8px;
+            }
+        }
+        &.plus-black {
+            &:before {
+                content: "\e9e3";
+                font-size: 16px;
+            }
+        }
+        &.search {
+            &:before {
+                content: "\e9e9";
+                font-size: 16px;
+            }
+        }
+        &.icon-search-black {
+            &:before {
+                content: "\e9e9";
+                font-size: 16px;
+                color: #000000;
+            }
+        }
+        &.icon-search-recent {
+            &:before {
+                content: "\e9e9";
+                font-size: 16px;
+                color: #abaebb;
+            }
+        }
+        &.icon-close-black {
+            &:before {
+                content: "\e925";
+                color: #000000;
+            }
+        }
+        &.chat-settings {
+            &:before {
+                content: "\e916";
+                color: #adb3cc;
+                font-size: 16px;
+            }
+        }
+        &.fill-dropdown-arrow {
+            &:before {
+                content: "\e95b";
+                color: #fff;
+                font-size: 12px;
+            }
+        }
+        &.write-pencil {
+            &:before {
+                content: "\ea47";
+                font-size: 16px;
+            }
+        }
+        
+        &.icon-add-emoji {
+            &:before {
+                content: "\e902";
+                color: #abaebb;
+            }
+        }
+        &.icon-thread-chat {
+            &:before {
+                content: "\ea35";
+                color: #454a60;
+                font-size: 16px;
+            }
+        }
+        &.icon-at-sign {
+            &:before {
+                content: "\e90f";
+                color: #abaebb;
+                font-size: 16px;
+            }
+        }
+        &.icon-plus-circle {
+            &::before {
+                content: "\e9e4";
+            }
+        }
+        
+        &.icon-send {
+            &:before {
+                content: "\e9ed";
+                font-size: 16px;
+            }
+        }
+        &.icon-drive {
+            &:before {
+                content: "\e98f";
+                font-size: 16px;
+                color: #454a60;
+            }
+        }
+        &.icon-computer {
+            &:before {
+                content: "\e98a";
+                color: #454a60;
+                font-size: 16px;
+            }
+        }
+        &.icon-fill-close {
+            &:before {
+                content: "\e959";
+                color: #abaebb;
+                font-size: 16px;
+            }
+        }
+        &.icon-close-white {
+            &:before {
+                content: "\e925";
+                color: #ffffff;
+                font-size: 12px;
+            }
+        }
+        &.icon-close-blue {
+            &:before {
+                content: "\e926";
+                color: #556ee6;
+                font-size: 16px;
+            }
+        }
+        &.icon-arrow-right-big {
+            &:before {
+                content: "\e90e";
+            }
+        }
+        &.icon-dot {
+            width: 13px;
+            height: 13px;
+            @include flexbox();
+            @include align-items(center);
+            &:before {
+                content: "\e933";
+                color: #fff;
+                font-size: 3px;
+            }
+        }
+        
+        &.icon-delete {
+            &:before {
+                content: "\e92d";
+                color: #f85353;
+            }
+        }
+        &.icon-celender {
+            &:before {
+                content: "\e985";
+                color: #abaebb;
+            }
+        }
+        &.icon-megaphone {
+            &:before {
+                content: "\e9d0";
+                color: #abaebb;
+                font-size: 12px;
+            }
+        }
+        &.icon-adjust {
+            &:before {
+                content: "\e905";
+                color: #eebb56;
+                font-size: 44px;
+            }
+        }
+        &.icon-circle {
+            &:before {
+                content: "\e919";
+                color: #53d340;
+                font-size: 44px;
+            }
+        }
+        
+        &.icon-check-circle {
+            &:before {
+                content: "\e917";
+                color: #556ee6;
+                font-size: 16px;
+            }
+        }
+        &.icon-check-circle-white {
+            &:before {
+                content: "\e917";
+                color: #ffffff;
+                font-size: 16px;
+            }
+        }
+        &.icon-dot-white {
+            &:before {
+                content: "\e933";
+                color: #fff;
+                font-size: 3px;
+            }
+        }
         // New screen icon
-        &.icon-settings { height: 24px; width: 24px; background: url($iconpath + 'settings.svg') no-repeat center center; }
-        &.icon-settings-black { height: 16px; width: 16px; background: url($iconpath + 'settings-black.svg') no-repeat center center; }
-        &.icon-profile { height: 16px; width: 16px; background: url($iconpath + 'icon-profile.svg') no-repeat center center; }
-        &.icon-signout { height: 16px; width: 16px; background: url($iconpath + 'icon-signout.svg') no-repeat center center; }
-        &.icon-color-palette { height: 16px; width: 16px; background: url($iconpath + 'color-palette.svg') no-repeat center center; }
-        &.icon-help { height: 16px; width: 16px; background: url($iconpath + 'help.svg') no-repeat center center; }
-        &.icon-bell { height: 16px; width: 16px; background: url($iconpath + 'icon-bell.svg') no-repeat center center; }
-        &.icon-add-black { height: 16px; width: 16px; background: url($iconpath + 'add-black.svg') no-repeat center center; }
-        &.icon-add-white { height: 16px; width: 16px; background: url($iconpath + 'add-white.svg') no-repeat center center; }
-        &.threads { height: 24px; width: 24px; background:url($iconpath + 'thread.svg') no-repeat center center; }        
-        &.files { height: 24px; width: 24px; background:url($iconpath + 'icon-files.svg') no-repeat center center; }
-        &.mentions { height: 24px; width: 24px; background:url($iconpath + 'mention.svg') no-repeat center center; }
-        &.saved { height: 24px; width: 24px; background:url($iconpath + 'saved.svg') no-repeat center center; }
-        &.icon-add { height: 16px; width: 16px; background:url($iconpath + 'icon-add-blue.svg') no-repeat center center; }
-        &.icon-create { height: 18px; width: 18px; background: url($iconpath + 'icon-create.svg') no-repeat center center; }
-        &.icon-hashtag { height: 16px; width: 16px; background:url($iconpath + 'icon-hashtag.svg') no-repeat center center; }
-        &.icon-hashtag-blue { height: 12px; width: 12px; background:url($iconpath + 'icon-hashtag-blue.svg') no-repeat center center; }
-        &.icon-search { height: 16px; width: 16px; background: url($iconpath + 'icon-search.svg') no-repeat center center; } 
-        &.icon-invite-user { height: 12px; width: 12px; background: url($iconpath + 'icon-user-follow.svg') no-repeat center center; } 
-        &.icon-close-gray { height: 16px; width: 16px; background:url($iconpath + 'close-black.svg') no-repeat center center; }
-        &.more-info-white { height: 13px; width: 13px; background:url($iconpath + 'vertical-dots-menu-white.svg') no-repeat center center; }
-        &.icon-warning { height: 32px; width: 32px; background:url($iconpath + 'icon-warning-square.svg') no-repeat center center; }
-        &.icon-send-fill { height: 20px; width: 20px; background: url($iconpath + 'fill-send.svg') no-repeat center center; } 
-        &.icon-send-fill-blue { height: 20px; width: 20px; background: url($iconpath + 'fill-send-blue.svg') no-repeat center center; } 
-        &.icon-attach-pin { height: 16px; width: 16px; background: url($iconpath + 'attch-pin.svg') no-repeat center center; } 
-        &.bold { height: 16px; width: 11px; background:url($iconpath + 'icon-bold.svg') no-repeat center center; }
-        &.italic { height: 16px; width: 9px; background:url($iconpath + 'icon-italic.svg') no-repeat center center; }
-        &.icon-text-underline { height: 16px; width: 11px; background:url($iconpath + 'text-center-underline.svg') no-repeat center center;  }
-        &.icon-list-menu { height: 16px; width: 15px; background:url($iconpath + 'list-menu.svg') no-repeat center center; }
-        &.icon-number-list { height: 16px; width: 15px; background:url($iconpath + 'number-list.svg') no-repeat center center; }
-        &.icon-type { height: 16px; width: 16px; background:url($iconpath + 'type.svg') no-repeat center center; }
-        &.icon-emoji { height: 16px; width: 16px; background:url($iconpath + 'emoji.svg') no-repeat center center; }
-        &.icon-upload-blue { height: 14px; width: 14px; background: url($iconpath + 'icon-upload-blue.svg') no-repeat center center; } 
-        &.icon-upload-white { height: 13px; width: 16px; background: url($iconpath + 'icon-upload-white.svg') no-repeat center center; }
-        &.icon-download-csv { height: 13px; width: 16px; background: url($iconpath + 'download-csv.svg') no-repeat center center; } 
-        &.icon-pin { height: 20px; width: 20px; background: url($iconpath + 'pin.svg') no-repeat center center; } 
-        &.icon-chat-pin { height: 15px; width: 15px; background: url($iconpath + 'pin.svg') no-repeat center center; } 
-        &.icon-chat-saved { height: 15px; width: 15px; background: url($iconpath + 'star-fill.svg') no-repeat center center; } 
-        &.icon-notification-settings { height: 18px; width: 20px; background: url($iconpath + 'icon-notification-settings.svg') no-repeat center center; } 
-        &.icon-pinned-messages { height: 18px; width: 22px; background: url($iconpath + 'pinned-messages.svg') no-repeat center center; } 
-        &.icon-info { height: 18px; width: 20px; background: url($iconpath + 'icon-info.svg') no-repeat center center; } 
-        &.icon-manage-user { height: 16px; width: 16px; background: url($iconpath + 'manage-members-lightgray.svg') no-repeat center center; } 
-        &.icon-fill-user { height: 10px; width: 8px; background: url($iconpath + 'fill-user.svg') no-repeat center center; }
-        &.icon-edit-user { height: 14px; width: 14px; background: url($iconpath + 'edit-user-blue.svg') no-repeat center center; }
-        &.icon-file { height: 20px; width: 18px; background: url($iconpath + 'icon-file-gray.svg') no-repeat center center; }
-        &.icon-audio { height: 20px; width: 20px; background: url($iconpath + 'icon-audio.svg') no-repeat center center; }
-        &.icon-volume { height: 24px; width: 20px; background: url($iconpath + 'volume-down.svg') no-repeat center center; }
-        &.icon-play { height: 16px; width: 16px; background: url($iconpath + 'play-filled.svg') no-repeat center center; }
-        &.icon-pdf { height: 24px; width: 19px; background: url($iconpath + 'document-pdf.svg') no-repeat center center; }
-        &.icon-doc { height: 24px; width: 19px; background: url($iconpath + 'document-word.svg') no-repeat center center; }
-        &.icon-file { height: 24px; width: 19px; background: url($iconpath + 'file.svg') no-repeat center center; }
+        &.icon-settings {
+            &:before {
+                content: "\e9f2";
+                font-size: 24px;
+            }
+        }
+        &.icon-settings-user-white {
+            &:before {
+                content: "\ea20";
+                font-size: 16px;
+            }
+        }
+        &.icon-settings-black {
+            &:before {
+                content: "\e9fe";
+                color: #abaebb;
+                font-size: 16px;
+            }
+        }
+        &.icon-profile {
+            &:before {
+                content: "\e9aa";
+                color: #abaebb;
+                font-size: 16px;
+            }
+        }
+        &.icon-signout {
+            &:before {
+                content: "\e9ad";
+                color: #f85353;
+                font-size: 16px;
+            }
+        }
+        &.icon-color-palette {
+            &:before {
+                content: "\e929";
+                font-size: 16px;
+            }
+        }
+        &.icon-help {
+            &:before {
+                content: "\e968";
+                font-size: 16px;
+            }
+        }
+        &.icon-bell {
+            &:before {
+                content: "\e980";
+                font-size: 16px;
+            }
+        }
+        &.icon-add-black {
+            &:before {
+                content: "\e901";
+                color: #4d5267;
+                font-size: 16px;
+            }
+        }
+        &.icon-add-white {
+            content: "\e901";
+            color: #ffffff;
+            font-size: 16px;
+        }
+        &.threads {
+            &:before {
+                content: "\ea32";
+                color: #abaebb;
+                font-size: 16px;
+            }
+        }
+        &.icon-files {
+            &:before {
+                content: "\e995";
+                color: #abaebb;
+                font-size: 16px;
+            }
+        }
+        &.mentions {
+            &:before {
+                content: "\e9d2";
+                color: #abaebb;
+                font-size: 16px;
+            }
+        }
+        &.saved {
+            &:before {
+                content: "\e9e6";
+                color: #abaebb;
+                font-size: 16px;
+            }
+        }
+        &.icon-add {
+            &:before {
+                content: "\e901";
+                color: #8c91f9;
+                font-size: 16px;
+            }
+        }
+        &.icon-create {
+            &:before {
+                content: "\e98c";
+                color: #8c91f9;
+                font-size: 16px;
+            }
+        }
+        &.icon-hashtag {
+            &:before {
+                content: "\e999";
+            }
+        }
+        &.icon-search {
+            &:before {
+                content: "\e9ac";
+                color: #adb3cc;
+            }
+        }
+        &.icon-close-gray {
+            &:before {
+                content: "\e925";
+                color: #7a7f93;
+            }
+        }
         
+        &.icon-send-fill {
+            &:before {
+                content: "\e95c";
+                color: #4d5267;
+            }
+        }
+        &.icon-send-fill-blue {
+            &:before {
+                content: "\e95c";
+                color: #5056ca;
+            }
+        }
+        &.icon-attach-pin {
+            &:before {
+                content: "\e911";
+                color: #70758b;
+            }
+        }
+        &.bold {
+            &:before {
+                content: "\e982";
+                color: #adb3cc;
+                font-size: 14px;
+            }
+        }
+        &.italic {
+            &:before {
+                content: "\e99e";
+                color: #adb3cc;
+                font-size: 14px;
+            }
+        }
+        &.icon-text-underline {
+            &:before {
+                content: "\ea30";
+                color: #adb3cc;
+                font-size: 14px;
+            }
+        }
+        &.icon-list-menu {
+            &:before {
+                content: "\e9c3";
+                color: #adb3cc;
+                font-size: 14px;
+            }
+        }
+        &.icon-number-list {
+            &:before {
+                content: "\e9d7";
+                color: #adb3cc;
+                font-size: 14px;
+            }
+        }
+        &.icon-type {
+            &:before {
+                content: "\ea37";
+                color: #70758b;
+            }
+        }
+        &.icon-emoji {
+            &:before {
+                content: "\e93d";
+                color: #70758b;
+            }
+        }
+        &.icon-upload-blue {height: 14px;width: 14px;background: url(../images/icons/icon-upload-blue.svg) no-repeat center center;
+            &::before {
+                content: "\e9e5";
+                color: #5056ca;
+                font-size: 16px;
+            }
+        }
         
+        &.icon-download-csv {
+            &:before {
+                content: "\e936";
+                color: #5056ca;
+            }
+        }
+        &.icon-pin {
+            &:before {
+                content: "\e9a9";
+                color: #abaebb;
+            }
+        }
+        &.icon-chat-pin {
+            &:before {
+                content: "\e9d9";
+                color: #adb3cc;
+            }
+        }
+        &.icon-chat-saved {
+            &:before {
+                content: "\ea2b";
+                color: #abaebb;
+            }
+        }
         
-        &.icon-setting-profile { height: 18px; width: 18px; background: url($iconpath + 'settings-user.svg') no-repeat center center; } 
-        &.icon-setting-workspace { height: 18px; width: 18px; background: url($iconpath + 'settings-portfolio.svg') no-repeat center center; } 
-        &.icon-setting-member { height: 18px; width: 18px; background: url($iconpath + 'settings-manage-members.svg') no-repeat center center; } 
-        &.icon-setting-member-blue { height: 18px; width: 18px; background: url($iconpath + 'settings-manage-members-blue.svg') no-repeat center center; } 
-        &.icon-setting-invitation { height: 18px; width: 18px; background: url($iconpath + 'settings-invitations.svg') no-repeat center center; } 
-        &.icon-setting-channel-list { height: 18px; width: 18px; background: url($iconpath + 'channel-list.svg') no-repeat center center; } 
-        &.icon-setting-invitation-white { height: 18px; width: 18px; background: url($iconpath + 'settings-invitations-light.svg') no-repeat center center; } 
-        &.icon-setting-office { height: 18px; width: 18px; background: url($iconpath + 'settings-3d-office.svg') no-repeat center center; } 
-        &.icon-setting-billing { height: 18px; width: 18px; background: url($iconpath + 'settings-billings.svg') no-repeat center center; } 
-        &.icon-setting-menu { height: 18px; width: 18px; background: url($iconpath + 'settings-icon.svg') no-repeat center center; } 
-        &.icon-setting-signout { height: 18px; width: 18px; background: url($iconpath + 'settings-signout.svg') no-repeat center center; } 
-        &.icon-setting-signout-white { height: 18px; width: 18px; background: url($iconpath + 'settings-signout-white.svg') no-repeat center center; } 
-        &.icon-setting-save { height: 18px; width: 18px; background: url($iconpath + 'settings-save.svg') no-repeat center center; } 
-        &.icon-setting-save-white { height: 18px; width: 18px; background: url($iconpath + 'settings-save-white.svg') no-repeat center center; } 
-        &.icon-setting-delete { height: 18px; width: 18px; background: url($iconpath + 'settings-trash.svg') no-repeat center center; } 
-        &.icon-settings-trash-white { height: 18px; width: 18px; background: url($iconpath + 'settings-trash-white.svg') no-repeat center center; }
-        &.icon-setting-upgrade { height: 18px; width: 18px; background: url($iconpath + 'settings-upgrade.svg') no-repeat center center; } 
-        &.icon-setting-downgrade-white { height: 18px; width: 18px; background: url($iconpath + 'settings-upgrade-white.svg') no-repeat center center; @include transform(translateY(-50%) rotate(180deg) !important); } 
-        &.icon-setting-chat-launch { height: 18px; width: 18px; background: url($iconpath + 'settings-chat-launch.svg') no-repeat center center; } 
-        &.icon-setting-add { height: 18px; width: 18px; background: url($iconpath + 'settings-add.svg') no-repeat center center; } 
-        &.icon-setting-add-blue { height: 18px; width: 18px; background: url($iconpath + 'settings-add-blue.svg') no-repeat center center; } 
-        &.icon-settings-view-password { height: 14px; width: 14px; background: url($iconpath + 'settings-view-password.svg') no-repeat center center; } 
-        &.icon-settings-back { height: 24px; width: 24px; background: url($iconpath + 'settings-back.svg') no-repeat center center; } 
-        &.icon-settings-resend { height: 24px; width: 24px; background: url($iconpath + 'settings-reset.svg') no-repeat center center; } 
-        &.icon-settings-arrow-right { height: 24px; width: 24px; background: url($iconpath + 'settings-arrow-left.svg') no-repeat center center; @include transform(translateY(-50%) rotate(180deg) !important); } 
-        &.icon-settings-arrow-left { height: 24px; width: 24px; background: url($iconpath + 'settings-arrow-left.svg') no-repeat center center; } 
-        &.icon-setting-cube { height: 15px; width: 15px; background: url($iconpath + 'setting-cube-white.svg') no-repeat center center; } 
-        &.icon-setting-user { height: 15px; width: 15px; background: url($iconpath + 'settings-user-light.svg') no-repeat center center; } 
-        &.icon-setting-csv { height: 24px; width: 24px; background: url($iconpath + 'icon-csv.svg') no-repeat center center; } 
-        &.icon-setting-visa { height: 16px; width: 24px; background: url($iconpath + 'icon-visa.png') no-repeat center center; } 
-        &.icon-setting-database { height: 16px; width: 13px; background: url($iconpath + 'settigs-database.svg') no-repeat center center; } 
-        &.icon-setting-sorting { height: 16px; width: 16px; background: url($iconpath + 'settings-sorting.svg') no-repeat center center; } 
-        &.icon-setting-archive { height: 16px; width: 16px; background: url($iconpath + 'archive.svg') no-repeat center center; }
-        &.icon-setting-archive-dark { height: 16px; width: 16px; background: url($iconpath + 'archive-dark.svg') no-repeat center center; }
-        &.icon-setting-unarchive { height: 16px; width: 16px; background: url($iconpath + 'unarchive.svg') no-repeat center center; }
-        &.icon-apple { height: 25px; width: 20px; background: url($iconpath + 'apple.svg') no-repeat center center; }
-        &.icon-google { height: 25px; width: 25px; background: url($iconpath + 'google-icon.svg') no-repeat center center; }
-        &.icon-lock-white { height: 20px; width: 20px; background: url($iconpath + 'lock-white.svg') no-repeat center center; }
-        &.icon-lock-dark-blue { height: 16px; width: 12px; background: url($iconpath + 'lock-dark-blue.svg') no-repeat center center; }
-        &.icon-view { height: 12px; width: 16px; background: url($iconpath + 'view.svg') no-repeat center center; }
-        &.icon-list-boxes { height: 12px; width: 16px; background: url($iconpath + 'list-boxes.svg') no-repeat center center; }
-        &.icon-volume-mute { height: 16px; width: 16px; background: url($iconpath + 'volume-mute.svg') no-repeat center center; }
-        &.icon-magic-wand { height: 16px; width: 16px; background: url($iconpath + 'magic-wand.svg') no-repeat center center; }
-        &.icon-key-svgrepo { height: 16px; width: 16px; background: url($iconpath + 'key-svgrepo.svg') no-repeat center center; }
-        &.icon-disabled-circle { height: 16px; width: 16px; background: url($iconpath + 'disabled-circle.svg') no-repeat center center; }
-        &.icon-disabled-circle-red { height: 16px; width: 16px; background: url($iconpath + 'disabled-circle-red.svg') no-repeat center center; }
-        &.icon-lock-open { height: 16px; width: 16px; background: url($iconpath + 'lock-open.svg') no-repeat center center; }
+        &.icon-info {
+            &:before {
+                content: "\e99d";
+                color: #adb3cc;
+                font-size: 18px;
+            }
+        }
+        &.icon-manage-user {
+            &:before {
+                content: "\e9cf";
+                color: #adb3cc;
+            }
+        }
+        &.icon-fill-user {
+            &:before {
+                content: "\e95f";
+                color: #8c91f9;
+                font-size: 11px;
+            }
+        }
+        &.icon-edit-user {
+            &:before {
+                content: "\e939";
+                color: #8c91f9;
+                font-size: 14px;
+            }
+        }
+        &.icon-file {
+            &:before {
+                content: "\e994";
+                color: #e8e8e9;
+            }
+        }
+        
+        &.icon-volume {
+            &:before {
+                content: "\ea45";
+                color: #e2e5e9;
+            }
+        }
+        &.icon-play {
+            &:before {
+                content: "\e9e2";
+                color: #8c91f9;
+            }
+        }
+        &.icon-pdf {
+            &:before {
+                content: "\e930";
+                color: #e2e5e9;
+                font-size: 19px;
+            }
+        }
+        &.icon-doc {
+            &:before {
+                content: "\e931";
+                color: #e2e5e9;
+                font-size: 19px;
+            }
+        }
+        &.icon-file {
+            &:before {
+                content: "\e957";
+                color: #e8e8e9;
+                font-size: 20px;
+            }
+        }
+        &.icon-setting-profile {
+            &:before {
+                content: "\ea1d";
+                color: #abaebb;
+                font-size: 18px;
+            }
+        }
+        &.icon-setting-workspace {
+            &:before {
+                content: "\ea0d";
+                color: #abaebb;
+                font-size: 16px;
+            }
+        }
+        &.icon-setting-member {
+            &:before {
+                content: "\ea09";
+                color: #abaebb;
+            }
+        }
+        &.icon-setting-member-blue {
+            &:before {
+                content: "\ea09";
+                color: #8c91f9;
+            }
+        }
+        &.icon-setting-invitation {
+            &::before {
+                content: "\ea05";
+                color: #abaebb;
+            }
+        }
+        &.icon-setting-channel-list {
+            &:before {
+                content: "\e913";
+                color: #abaebb;
+            }
+        }
+        &.icon-setting-invitation-white {
+            &::before {
+                content: "\ea05";
+                color: #ffffff;
+            }
+        }
+        
+        &.icon-setting-menu {
+            &:before {
+                content: "\e9f2";
+                font-size: 18px;
+            }
+        }
+        &.icon-setting-signout {
+            &:before {
+                content: "\ea14";
+                font-size: 16px;
+            }
+        }
+        &.icon-setting-signout-white {
+            &:before {
+                content: "\ea15";
+                color: #fff;
+            }
+        }
+        &.icon-setting-save {
+            &:before {
+                content: "\ea12";
+                color: #8c91f9;
+            }
+        }
+        &.icon-setting-save-white {
+            &:before {
+                content: "\ea12";
+                color: #ffffff;
+            }
+        }
+        &.icon-setting-delete {
+            &:before {
+                content: "\ea18";
+                color: #f85353;
+                font-size: 18px;
+            }
+        }
+        &.icon-settings-trash-white {
+            &:before {
+                content: "\ea18";
+                color: #ffffff;
+                font-size: 16px;
+            }
+        }
+        &.icon-setting-upgrade {
+            &:before {
+                content: "\ea1a";
+                color: #e8e8e9;
+                font-size: 16px;
+            }
+        }
+        &.icon-setting-downgrade-white {
+            @include transform(translateY(-50%) rotate(180deg) !important);
+            &:before {
+                content: "\ea1c";
+                color: #fff;
+            }
+        }
+        &.icon-setting-chat-launch {
+            &:before {
+                content: "\e9ff";
+                color: #8c91f9;
+                font-size: 16px;
+            }
+        }
+        &.icon-setting-add {
+            &::before {
+                content: "\e9f6";
+                color: #fff;
+                font-size: 10px;
+            }
+        }
+        &.icon-setting-add-blue {
+            &::before {
+                content: "\e9f6";
+                color: #8c91f9;
+                font-size: 11px;
+            }
+        }
+        &.icon-settings-view-password {
+            &:before {
+                content: "\ea21";
+                color: #abaebb;
+            }
+        }
+        &.icon-settings-back {
+            &:before {
+                content: "\e9f9";
+                color: #4d5267;
+            }
+        }
+        &.icon-settings-resend {
+            &:before {
+                content: "\ea10";
+                color: #4d5267;
+            }
+        }
+        &.icon-settings-arrow-right {
+            height: 24px;
+            width: 24px;
+            @include transform(translateY(-50%) rotate(180deg) !important);
+            &:before {
+                content: "\e9f8";
+                color: #fff;
+            }
+        }
+        &.icon-settings-arrow-left {
+            &:before {
+                content: "\e9f8";
+                color: #fff;
+            }
+        }
+        &.icon-setting-cube {
+            &:before {
+                content: "\e9f1";
+                color: #fff;
+            }
+        }
+        &.icon-setting-user {
+            &:before {
+                content: "\ea1f";
+                color: #fff;
+            }
+        }
+        &.icon-setting-csv {
+            &:before {
+                content: "\e98d";
+                color: #8c91f9;
+            }
+        }
+        
+        &.icon-setting-database {
+            &:before {
+                content: "\e9ef";
+                color: #8c91f9;
+            }
+        }
+        &.icon-setting-sorting {
+            &:before {
+                content: "\ea16";
+                color: #fff;
+            }
+        }
+        
+        &.icon-setting-unarchive {
+            &:before {
+                content: "\ea3a";
+            }
+        }
+        &.icon-apple {
+            &:before {
+                content: "\e907";
+                color: #fff;
+            }
+        }
+        
+        &.icon-lock-white {
+            &:before {
+                content: "\e9c9";
+                color: #ffffff;
+            }
+        }
+        &.icon-lock-dark-blue {
+            &:before {
+                content: "\e9c9";
+                color: #5056ca;
+            }
+        }
+        &.icon-view {
+            &:before {
+                content: "\ea44";
+                color: #fff;
+                font-size: 12px;
+            }
+        }
+        &.icon-list-boxes {
+            &:before {
+                content: "\e9c2";
+                color: #fff;
+                font-size: 12px;
+            }
+        }
+        &.icon-volume-mute {
+            &:before {
+                content: "\ea46";
+                color: #fff;
+            }
+        }
+        &.icon-magic-wand {
+            &:before {
+                content: "\e9ce";
+                color: #fff;
+                font-size: 16px;
+            }
+        }
+        &.icon-key-svgrepo {
+            &:before {
+                content: "\e9b7";
+                color: #fff;
+            }
+        }
+        &.icon-disabled-circle {
+            &:before {
+                content: "\e92e";
+                color: #8c91f9;
+                font-size: 16px;
+            }
+        }
+        &.icon-disabled-circle-red {
+            &:before {
+                content: "\e92e";
+                color: #f85353;
+                font-size: 16px;
+            }
+        }
+        &.icon-lock-open {
+            &:before {
+                content: "\e9ca";
+                color: #fff;
+            }
+        }
     }
 }
 
-
 .app-content.light-theme {
-    .ico { display: inline-block; background-size: contain !important; align-content: center !important; 
-        &.icon-pin { background:url($iconpath + 'pin-black.svg') no-repeat center center; }
-        &.icon-add-emoji { background:url($iconpath + 'add-emoji-black.svg') no-repeat center center; }
-        &.threads { background:url($iconpath + 'thread-black.svg') no-repeat center center; }
-        &.icon-share { background:url($iconpath + 'share-black.svg') no-repeat center center; }
-        &.icon-star { background:url($iconpath + 'star-line-black.svg') no-repeat center center; }
-        &.icon-ellipsis-v { background:url($iconpath + 'ellipsis-v-black.svg') no-repeat center center; }
-        &.icon-type { background:url($iconpath + 'type-black.svg') no-repeat center center; }
-        &.icon-emoji { background:url($iconpath + 'emoji-black.svg') no-repeat center center; }
-        &.icon-attach-pin { background: url($iconpath + 'attch-pin-black.svg') no-repeat center center; } 
-        &.bold { background:url($iconpath + 'icon-bold-black.svg') no-repeat center center; }
-        &.italic { background:url($iconpath + 'icon-italic-black.svg') no-repeat center center; }
-        &.icon-text-underline { background:url($iconpath + 'text-center-underline-black.svg') no-repeat center center;  }
-        &.icon-list-menu { background:url($iconpath + 'list-menu-black.svg') no-repeat center center; }
-        &.icon-number-list { background:url($iconpath + 'number-list-black.svg') no-repeat center center; }
-        &.icon-at-sign { background:url($iconpath + 'at-sign-black.svg') no-repeat center center; }
-        &.icon-close-gray { background:url($iconpath + 'close-dark-black.svg') no-repeat center center; }
-        &.icon-hashtag { background:url($iconpath + 'icon-hashtag-black.svg') no-repeat center center; }
-        &.icon-download { background:url($iconpath + 'download-black.svg') no-repeat center center; }
-        &.icon-circle-arrow-left { background:url($iconpath + 'circle-arrow-left-white.svg') no-repeat center center; }
-        &.icon-circle-arrow-right { background:url($iconpath + 'circle-arrow-right-white.svg') no-repeat center center; }
-        &.icon-profile { background: url($iconpath + 'icon-profile-black.svg') no-repeat center center; }
-        &.icon-color-palette { background: url($iconpath + 'color-palette-black.svg') no-repeat center center; }
-        &.icon-help { background: url($iconpath + 'help-black.svg') no-repeat center center; }
-        &.icon-bell { background: url($iconpath + 'icon-bell-black.svg') no-repeat center center; }
-        &.icon-settings-black { background: url($iconpath + 'settings-dark.svg') no-repeat center center; }
-        &.icon-edit-user { background: url($iconpath + 'edit-user-darkblue.svg') no-repeat center center; }
-
-        &.icon-setting-profile { height: 18px; width: 18px; background: url($iconpath + 'settings-user-blue.svg') no-repeat center center; } 
-        &.icon-setting-workspace { height: 18px; width: 18px; background: url($iconpath + 'settings-portfolio-blue.svg') no-repeat center center; } 
-        &.icon-setting-member { height: 18px; width: 18px; background: url($iconpath + 'settings-manage-members-blue.svg') no-repeat center center; } 
-        &.icon-setting-member-blue { height: 18px; width: 18px; background: url($iconpath + 'settings-manage-members-darkblue.svg') no-repeat center center; } 
-        &.icon-setting-invitation { height: 18px; width: 18px; background: url($iconpath + 'settings-invitations-blue.svg') no-repeat center center; } 
-        &.icon-setting-channel-list { height: 18px; width: 18px; background: url($iconpath + 'channel-list-blue.svg') no-repeat center center; } 
-        &.icon-setting-office { height: 18px; width: 18px; background: url($iconpath + 'settings-3d-office-blue.svg') no-repeat center center; } 
-        &.icon-setting-billing { height: 18px; width: 18px; background: url($iconpath + 'settings-billings-blue.svg') no-repeat center center; } 
-        &.icon-setting-menu { height: 18px; width: 18px; background: url($iconpath + 'settings-icon-blue.svg') no-repeat center center; } 
-        &.icon-setting-sorting { height: 16px; width: 16px; background: url($iconpath + 'settings-sorting-black.svg') no-repeat center center; } 
-        &.icon-setting-archive { height: 16px; width: 16px; background: url($iconpath + 'archive-blue.svg') no-repeat center center; } 
-        &.icon-setting-unarchive { height: 16px; width: 16px; background: url($iconpath + 'unarchive-blue.svg') no-repeat center center; }
+    .ico {
+        display: inline-block; background-size: contain !important; align-content: center !important;
+        &.icon-settings-black {
+            &:before {
+                color: #33333f;
+            }
+        }
+        &.icon-profile {
+            &:before {
+                color: #33333f;
+            }
+        }
+        &.icon-setting-sorting {
+            &:before {
+                color: #000000;
+            }
+        }
+        &.icon-circle-arrow-left { background: url($iconpath + "circle-arrow-left-white.svg") no-repeat center center; }
+        &.icon-circle-arrow-right { background: url($iconpath + "circle-arrow-right-white.svg") no-repeat center center; }
+        &.icon-setting-office{height:18px;width:18px;background:url($iconpath + "settings-3d-office-blue.svg") no-repeat center center}
+        &.icon-setting-billing{height:18px;width:18px;background:url($iconpath + "settings-billings-blue.svg") no-repeat center center}
+        &.icon-setting-menu{height:18px;width:18px;background:url($iconpath + "settings-icon-blue.svg") no-repeat center center}
+        &.icon-setting-archive{height:16px;width:16px;background:url($iconpath + "archive-blue.svg") no-repeat center center}
+        &.icon-setting-unarchive{height:16px;width:16px;background:url($iconpath + "unarchive-blue.svg") no-repeat center center}
     }
 }
