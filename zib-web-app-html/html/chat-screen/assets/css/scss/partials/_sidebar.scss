@@ -504,10 +504,15 @@
                 .chat-info-collapse { background: $dark-black-1; border-bottom: 1px solid #404253; z-index: 1; position: relative;
                     .chat-info-collapse-title-box { padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; cursor: pointer;            
                         .title { font-weight: 600; font-size: 14px; color: $light-blue; }
-                        .arrow-icon { width: 10px; height: 11px; display: inline-flex; align-items: center;
-                            .ico { transform: rotate(0deg); transition: all 0.3s ease-in-out; }
+                        .arrow-icon { display: inline-flex; align-items: center;
+                            .ico { @include transform(rotate(180deg)); transition: all 0.3s ease-in-out;
+                                &::before {
+                                    font-size: 14px;
+                                    color: #adb3cc;
+                                }
+                            }
                         }
-                        &.open { .arrow-icon .ico { transform: rotate(90deg); } }
+                        &.open { .arrow-icon .ico { transform: rotate(270deg); } }
                     }
                     .chat-info-collapse-body { background: $dark-black-1; overflow: hidden; height: 0; transition: height 300ms ease-in-out;
                         .inner { padding: 8px 20px; }     
