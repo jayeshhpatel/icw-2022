@@ -1022,6 +1022,12 @@
                 color: #fff;
             }
         }
+        &.icon-chevron-right {
+            &:before {
+                content: "\eae1";
+                color: #adb3cc;
+            }
+        }
         &.icon-settings-arrow-left {
             &:before {
                 content: "\e9f8";
