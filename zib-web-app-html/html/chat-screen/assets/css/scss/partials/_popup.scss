@@ -758,6 +758,24 @@
                 }
             }
         }
+        &.leave-channel-container {
+            .custom-modal {
+                .content {
+                    .action {
+                        .circle-close-white {
+                            filter: brightness(0);
+                        }
+                        .btn-outline-secondary {
+                            &:hover {
+                                .circle-close-white {
+                                    filter: brightness(100);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
         &.direct-message-container {
             .wrapper { 
                 .label { color: #ADB3CC; }

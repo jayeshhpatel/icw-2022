@@ -542,6 +542,23 @@
                         }
                     }
                 }
+                #more-options-card {
+                    .more-option-block {
+                        .ico {
+                            &.icon-dot {
+                                width: auto;
+                                height: auto;@include flexbox();
+                                &::before {
+                                    font-size: 4px;
+                                }
+                            }
+                            &::before {
+                                color: #adb3cc;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
             }
             &.your-files-bar {  
                 .file-info-block { 
@@ -1142,6 +1159,9 @@
             &.channel-info-bar {
                 .channel-details { 
                     .date { color: #ADB3CC; }
+                    .title {
+                        color: #202028;
+                    }
                 }
                 .chat-info-collapse { background: #F9FAFB; border-bottom: 1px solid rgba(69, 74, 96, 0.2);
                     .chat-info-collapse-title-box {   
@@ -1164,6 +1184,15 @@
                             .delete-channel { 
                                 .link { color: #F03D3E; }
                             }
+                        }
+                    }
+                }
+            }
+            #more-options-card {
+                .more-option-block {
+                    .ico {
+                        &::before {
+                            color: #202028;
                         }
                     }
                 }
