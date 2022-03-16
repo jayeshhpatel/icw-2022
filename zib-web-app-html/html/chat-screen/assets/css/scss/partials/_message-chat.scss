@@ -134,7 +134,7 @@
                 .icon { display: flex; align-items: center; justify-content: center;
                     .ico { width: 18px; height: 18px; background-size: contain !important;@include flexbox(); @include align-items(center); @include justify-content(center);
                             &::before {
-                                color: #abaebb;
+                                color: #abaebb;font-size: 18px;
                             }
                          }
                 }
@@ -208,7 +208,7 @@
                 .message-content { background: $light-black-3; }
             }
             .pin-note { position: absolute; top: 8px; right: 20px; display: flex; font-weight: 600; font-size: 12px; color: $light-blue; align-items: center; line-height: 1; background: $light-black; padding: 5px;
-                em { margin-right: 5px; }
+                em { margin-right: 5px; font-size: 14px; }
             }
         }
         &.star-marked {
@@ -394,7 +394,11 @@
                 .message-content { background: #F8F0D3; }
             }
             .pin-note { color: #202028; background: #F1E7C3; 
-                .ico.icon-chat-pin { background: url(../images/icons/pin-yellow.svg) no-repeat center center; }
+                .ico.icon-chat-pin { 
+                    &::before {
+                        color: #BBA96A;
+                    }
+                 }
             }
         }
         .chat-reaction { 

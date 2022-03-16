@@ -779,9 +779,15 @@
                 color: #5056ca;
             }
         }
-        &.icon-pin {
+        &.icon-pin-filled {
             &:before {
-                content: "\e9a9";
+                content: "\eae0";
+                color: #abaebb;
+            }
+        }
+        &.icon-pin{
+            &:before {
+                content: "\eadf";
                 color: #abaebb;
             }
         }

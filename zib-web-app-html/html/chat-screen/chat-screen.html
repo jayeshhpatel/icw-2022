@@ -4242,13 +4242,12 @@
         <script src="assets/js/chat.js"></script>
         <script>
 
-                $(window).bind('load', function() {
-                    $('#loader').addClass('loaded');
-                    setTimeout(function() {
-                        $('#loader').css({'display':'none'})
-                    }, 5000)
-                });
-                
+            $(window).bind('load', function() {
+                $('#loader').addClass('loaded');
+                setTimeout(function() {
+                    $('#loader').css({'display':'none'})
+                }, 5000)
+            });
 
            $(".mute-btn").click(function() {
                 $(".unmute-btn").css('display', 'flex');
@@ -4485,6 +4484,7 @@
                     $(".suggestions-dropdown").slideToggle();
                     $(this).parents('.tag-box').toggleClass('active');
                 });
+                
                 $(".suggestions-dropdown .suggestion-item").click(function(){
                     $(".suggestions-dropdown").slideToggle();
                     $(".tag-box .tag").css('display', 'block');
