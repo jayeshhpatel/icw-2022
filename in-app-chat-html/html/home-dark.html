@@ -546,6 +546,16 @@
                     </div>
                     <div class="modal-dec-block">
                         <div class="title">Documentation</div>
+                        <input type="text" class="live-search-box" placeholder="search here" />
+
+<ul class="live-search-list">
+<li>Lorem</li>
+<li>ipsum</li>
+<li>dolor</li>
+<li>sit</li>
+<li>amet</li>
+</ul>
+
                         <ul class="docsearch-list">
                             <li>
                                 <a href="#!">
@@ -657,6 +667,30 @@
                     $(this).parents('.form-group').find('.success-msg').show(); 
                     $(this).parents('.form-group').find('.require-msg').hide(); 
                 }
+            });
+
+            jQuery(document).ready(function($){
+
+                $('.live-search-list li').each(function(){
+                $(this).attr('data-search-term', $(this).text().toLowerCase());
+                });
+
+                $('.live-search-box').on('keyup', function(){
+
+                var searchTerm = $(this).val().toLowerCase();
+
+                    $('.live-search-list li').each(function(){
+
+                        if ($(this).filter('[data-search-term *= ' + searchTerm + ']').length > 0 || searchTerm.length < 1) {
+                            $(this).show();
+                        } else {
+                            $(this).hide();
+                        }
+
+                    });
+
+                });
+
             });
         </script>
     </body>
