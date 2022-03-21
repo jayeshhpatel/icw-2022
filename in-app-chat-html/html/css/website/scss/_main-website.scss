@@ -1692,7 +1692,7 @@ html .website {
                 @include border-radius(20px);
                 @include box-shadow(0px 3px 8px rgba(0, 0, 0, 0.26));
                 .modal-body {
-                    padding: 20px;
+                    padding: 10px 20px 20px;
                     .prefix-search-block {
                         padding: 5px 0;
                         width: 100%;
@@ -1729,6 +1729,13 @@ html .website {
                                 text-decoration: none;
                                 @include flexbox();
                                 @include align-items(center);
+                                &:hover {
+                                    .docsearch-content-item {
+                                        .docsearch-content {
+                                            color: #4A4BFF;
+                                        }
+                                    }
+                                }
                             }
                             .docsearch-content-item {
                                 @include flexbox();
@@ -2027,6 +2034,10 @@ html .website {
                         font-size: 16px;
                         min-height: 50px;
                         margin-bottom: 20px;
+                        @include transition(0.3s, ease-in-out);
+                        &:hover , &:focus {
+                            background-color: #3c3d43;
+                        }
                         .title-text {
                             padding: 0 20px 0 15px;
                         }

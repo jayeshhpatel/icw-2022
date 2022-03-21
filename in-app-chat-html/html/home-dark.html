@@ -540,22 +540,12 @@
                 <div class="modal-body">
                     <div class="modal-title-content">
                         <div class="prefix-search-block">
-                            <input type="text" placeholder="Search..."/>
+                            <input type="text" placeholder="Search..." class="live-search-box"/>
                         </div>
                         <a href="#" class="close-btn" data-dismiss="modal"><em class="ri-close-fill"></em></a>
                     </div>
                     <div class="modal-dec-block">
                         <div class="title">Documentation</div>
-                        <input type="text" class="live-search-box" placeholder="search here" />
-
-<ul class="live-search-list">
-<li>Lorem</li>
-<li>ipsum</li>
-<li>dolor</li>
-<li>sit</li>
-<li>amet</li>
-</ul>
-
                         <ul class="docsearch-list">
                             <li>
                                 <a href="#!">
@@ -563,9 +553,7 @@
                                         <div class="docsearch-file-icon">
                                             <img src="images/website/document-blank.svg" alt=""/>
                                         </div>
-                                        <div class="docsearch-content">
-                                            <span>Plugins</span> How can I find a starting guide for In-App Chat?
-                                        </div>
+                                        <div class="docsearch-content"> <span>Plugins</span> How can I find a starting guide for In-App Chat? </div>
                                     </div>
                                     <div class="docsearch-action-icon">
                                         <img src="images/website/link-external.svg" alt=""/>
@@ -642,55 +630,49 @@
             <img src="images/icons/chat.svg" alt="chat icon">
         </div>
         <script src="js/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/all-jquery.js"></script>
         <script src="js/main-website.js"></script>
         <script>
-            $('.form-button').on('click', function() {
-                if(!$('.custom-input').val()) {
-                    $('.custom-input').parents('.form-group').addClass('error');
-                    $('.custom-input').parents('.form-group').find('.error-msg').show(); 
-                    $('.custom-input').parents('.form-group').find('.require-msg').show(); 
-                } else {
-                    $(this).attr({"data-toggle": "modal", "data-target": "#successModal"});
-                }
-            });
-            $('.custom-input').change(function(){
-                if(!$('.custom-input').val()) {
-                    $(this).parents('.form-group').addClass('error');
-                    $(this).parents('.form-group').find('.error-msg').show(); 
-                    $(this).parents('.form-group').find('.require-msg').show(); 
-                } else {
-                    $(this).parents('.form-group').removeClass('error').addClass('success');
-                    $(this).parents('.form-group').find('.error-msg').hide(); 
-                    $(this).parents('.form-group').find('.success-msg').show(); 
-                    $(this).parents('.form-group').find('.require-msg').hide(); 
-                }
-            });
-
             jQuery(document).ready(function($){
+                $('.form-button').on('click', function() {
+                    if(!$('.custom-input').val()) {
+                        $('.custom-input').parents('.form-group').addClass('error');
+                        $('.custom-input').parents('.form-group').find('.error-msg').show(); 
+                        $('.custom-input').parents('.form-group').find('.require-msg').show(); 
+                    } else {
+                        $(this).attr({"data-toggle": "modal", "data-target": "#successModal"});
+                    }
+                });
+                $('.custom-input').change(function(){
+                    if(!$('.custom-input').val()) {
+                        $(this).parents('.form-group').addClass('error');
+                        $(this).parents('.form-group').find('.error-msg').show(); 
+                        $(this).parents('.form-group').find('.require-msg').show(); 
+                    } else {
+                        $(this).parents('.form-group').removeClass('error').addClass('success');
+                        $(this).parents('.form-group').find('.error-msg').hide(); 
+                        $(this).parents('.form-group').find('.success-msg').show(); 
+                        $(this).parents('.form-group').find('.require-msg').hide(); 
+                    }
+                });
 
-                $('.live-search-list li').each(function(){
-                $(this).attr('data-search-term', $(this).text().toLowerCase());
+                $('.docsearch-list li').each(function(){
+                    $(this).attr('data-search-term', $(this).text().toLowerCase());
                 });
 
                 $('.live-search-box').on('keyup', function(){
-
                 var searchTerm = $(this).val().toLowerCase();
-
-                    $('.live-search-list li').each(function(){
-
+                    $('.docsearch-list li').each(function(){
                         if ($(this).filter('[data-search-term *= ' + searchTerm + ']').length > 0 || searchTerm.length < 1) {
                             $(this).show();
                         } else {
                             $(this).hide();
                         }
-
                     });
-
                 });
-
             });
         </script>
     </body>
