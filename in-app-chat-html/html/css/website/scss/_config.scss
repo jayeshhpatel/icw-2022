@@ -196,8 +196,26 @@ html .website {
                 &.text-blue { color: $gray; }
             }
         }
-        &.btn-outline-primary { background: #FFFFFF; border: 1px solid $blue; color: $blue; 
+        &.btn-outline-primary { background: #FFFFFF; border: 1px solid $blue; color: $blue;@include inline-flex; @include align-items(center);@include justify-content(center);
             &:hover, &:focus, &:active { background: $blue; border-color: $blue; color: $white; }
+        }
+        &.btn-outline-orange { background: transparent; color: #FF6F00; border-color: #FF6F00;@include inline-flex; @include align-items(center);@include justify-content(center);
+            &:hover, &:focus, &:active { background: #FF6F00; border-color: #FF6F00;color: $white;
+                svg{
+                    * {
+                        fill: $white;
+                    }
+                }
+            }
+        }
+        &.btn-outline-yellow { background: transparent; color: #FFB300; border-color: #FFB300;
+            &:hover, &:focus, &:active { background: #FFB300; border-color: #FFB300;color: $white; 
+                svg{
+                    * {
+                        fill: $white;
+                    }
+                }
+            }
         }
         &.btn-outline-secondary { background: #FFFFFF; border: 1px solid #C3C6D1; color: $blue; 
             &:hover, &:focus, &:active { background: $lightgray !important; border-color: $lightgray !important; color: $white; }

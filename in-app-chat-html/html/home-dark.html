@@ -30,7 +30,7 @@
         <header class="main-header main-header-dark fixed-top">
             <nav class="navbar navbar-expand-lg">               
                 <div class="container">
-                    <a class="navbar-brand" href="home.html"><img src="images/logo.svg" alt="In-App Chat" /></a> 
+                    <a class="navbar-brand" href="home.html"><img src="images/logo-white.svg" alt="In-App Chat" /></a> 
                     <div class="collapse navbar-collapse">                        
                         <ul class="navbar-nav ml-auto">
                             <li><a href="home.html" class="active">Home</a></li>
@@ -45,8 +45,8 @@
                                 </ul>
                             </li>
                             <li><a href="contact.html">Contact</a></li>
-                            <li class="btn-primary"><a href="#">Sign Up</a></li>
                             <li class="btn-white"><a href="#">Login</a></li>
+                            <li class="btn-primary"><a href="#">Sign Up</a></li>
                         </ul>
                     </div>
                     <div class="bar-icon toggle-sidebar">
@@ -58,18 +58,35 @@
         <main class="content-wrapper main-content">  
             <div class="banner-section home-section home-section-dark">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-7 order-2 order-md-1">
                             <div class="content">
-                                <h1 class="wow fadeInDown"><span class="text-orange">Channels</span>, <span class="text-orange">ChatBots</span>, and <span class="text-orange">Threads</span>…OH MY!</h1>
-                                <p class="wow fadeInUp">Step into the future with chat APIs and SDKs built for the 4th industrial revolution! From peer-to-peer, peer-to- machine, and machine-to-machine interactions, you can do more with In-App Chat!</p>
+                                <button type="button" class="search-btn wow fadeInDown" data-toggle="modal" data-target="#search-modal">
+                                    <span><img src="images/website/search.svg" alt=""/></span>
+                                    <span class="title-text">Search...</span>
+                                    <span class="ctrl-btn">Ctrl K</span>
+                                </button>
+                                <h1 class="wow fadeInDown">Connecting AI Assistants with Integration Hubs</h1>
+                                <p class="wow fadeInUp">ERT Communication Fabric significantly reduces AI assistant<br class="d-none d-md-block"/> integration time, getting bots into more marketplaces and hubs.</p>
                                 <div class="action wow fadeInUp" data-wow-delay="0.4s">
-                                    <a href="#" class="btn btn-primary ">Schedule a Demo</a>
-                                    <a href="#" class="btn btn-outline-gray ">Try Now</a>
+                                    <a href="#" class="btn btn-outline-yellow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.99" viewBox="0 0 16 15.99">
+                                        <g id="bx-bot" transform="translate(-2.985 -3)">
+                                          <path id="Path_6670" data-name="Path 6670" d="M18.925,10.68a.836.836,0,0,0-.742-.506V7.8a1.6,1.6,0,0,0-1.6-1.6h-4.8V5.087a1.2,1.2,0,1,0-1.6,0V6.2h-4.8a1.6,1.6,0,0,0-1.6,1.6v2.4l-.066,0a.8.8,0,0,0-.742.8v1.6a.8.8,0,0,0,.8.8h.008v4a1.6,1.6,0,0,0,1.6,1.6H16.584a1.6,1.6,0,0,0,1.6-1.6v-4a.8.8,0,0,0,.8-.8V11.044a.8.8,0,0,0-.058-.364ZM5.391,17.391V7.8H16.584V17.39H5.391Z" transform="translate(0)" fill="#ffb300"/>
+                                          <path id="Path_6671" data-name="Path 6671" d="M12.9,16.6c0,.883-.537,1.6-1.2,1.6s-1.2-.716-1.2-1.6.537-1.6,1.2-1.6S12.9,15.716,12.9,16.6Z" transform="translate(-3.51 -5.604)" fill="#ffb300"/>
+                                          <path id="Path_6672" data-name="Path 6672" d="M23.4,16.6c0,.883-.537,1.6-1.2,1.6S21,17.482,21,16.6s.537-1.6,1.2-1.6S23.4,15.716,23.4,16.6Z" transform="translate(-8.413 -5.604)" fill="#ffb300"/>
+                                          <path id="Path_6673" data-name="Path 6673" d="M12,24h6.4v1.6H12Z" transform="translate(-4.21 -9.807)" fill="#ffb300"/>
+                                        </g>
+                                      </svg>Get Started</a>
+                                    <a href="#" class="btn btn-outline-orange">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14.4" height="16" viewBox="0 0 14.4 16">
+                                            <path id="calendar" d="M8.5,4.6h6.4V3h1.6V4.6h.8a1.6,1.6,0,0,1,1.6,1.6V17.4A1.6,1.6,0,0,1,17.3,19H6.1a1.6,1.6,0,0,1-1.6-1.6V6.2A1.6,1.6,0,0,1,6.1,4.6h.8V3H8.5ZM6.1,7.8v9.6H17.3V7.8Zm1.6,2.4H9.3v1.6H7.7Zm3.2,0h1.6v1.6H10.9Zm3.2,0h1.6v1.6H14.1Zm0,3.2h1.6V15H14.1Zm-3.2,0h1.6V15H10.9Zm-3.2,0H9.3V15H7.7Z" transform="translate(-4.5 -3)" fill="#ff6f00"/>
+                                        </svg>Schedule a Demo</a>
                                 </div>
-                                <div class="img-block d-block d-md-none wow fadeIn">
-                                    <img src="images/website/banner-img.png" alt="Banner" />
-                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-5 order-1 order-md-2">
+                            <div class="img-block wow fadeIn text-center text-md-right mb-5 mb-md-0">
+                                <img src="images/website/banner-squre.png" alt="Banner" />
                             </div>
                         </div>
                     </div>                    
@@ -81,13 +98,15 @@
                     <span class="shape4"></span>
                     <span class="shape5"></span>
                 </div>
-                <div class="tag-line">
-                    <div class="container">
-                        <p class="wow fadeInUp">Build texting features your customers will love inside their favorite apps</p>
-                    </div>
-                </div>
+                
             </div> 
+            <div class="tag-line px-50">
+                <div class="container">
+                    <p class="wow fadeInUp">Build texting features your customers will love inside their favorite apps</p>
+                </div>
+            </div>
             <div class="bg-gray">
+                
                 <div class="content-left-block">
                     <div class="container">
                         <div class="row">
@@ -515,6 +534,100 @@
                 </div>
             </div>
         </div>
+        <div class="modal fade" id="search-modal" tabindex="-1" aria-labelledby="searchLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal-title-content">
+                        <div class="prefix-search-block">
+                            <input type="text" placeholder="Search..."/>
+                        </div>
+                        <a href="#" class="close-btn" data-dismiss="modal"><em class="ri-close-fill"></em></a>
+                    </div>
+                    <div class="modal-dec-block">
+                        <div class="title">Documentation</div>
+                        <ul class="docsearch-list">
+                            <li>
+                                <a href="#!">
+                                    <div class="docsearch-content-item">
+                                        <div class="docsearch-file-icon">
+                                            <img src="images/website/document-blank.svg" alt=""/>
+                                        </div>
+                                        <div class="docsearch-content">
+                                            <span>Plugins</span> How can I find a starting guide for In-App Chat?
+                                        </div>
+                                    </div>
+                                    <div class="docsearch-action-icon">
+                                        <img src="images/website/link-external.svg" alt=""/>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!">
+                                    <div class="docsearch-content-item">
+                                        <div class="docsearch-file-icon">
+                                            <img src="images/website/document-blank.svg" alt=""/>
+                                        </div>
+                                        <div class="docsearch-content">
+                                            <span>Get Command</span> A command to get started with getting APIs for your desired platform.
+                                        </div>
+                                    </div>
+                                    <div class="docsearch-action-icon">
+                                        <img src="images/website/link-external.svg" alt=""/>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!">
+                                    <div class="docsearch-content-item">
+                                        <div class="docsearch-file-icon">
+                                            <img src="images/website/document-blank.svg" alt=""/>
+                                        </div>
+                                        <div class="docsearch-content">
+                                            <span>Build Command</span> Building an easy app with foundation of your business' knowledge base.
+                                        </div>
+                                    </div>
+                                    <div class="docsearch-action-icon">
+                                        <img src="images/website/link-external.svg" alt=""/>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!">
+                                    <div class="docsearch-content-item">
+                                        <div class="docsearch-file-icon">
+                                            <img src="images/website/document-blank.svg" alt=""/>
+                                        </div>
+                                        <div class="docsearch-content">
+                                            <span>Debugger</span> Clearance of all the bugs starts with the debugger that one requires.
+                                        </div>
+                                    </div>
+                                    <div class="docsearch-action-icon">
+                                        <img src="images/website/link-external.svg" alt=""/>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!">
+                                    <div class="docsearch-content-item">
+                                        <div class="docsearch-file-icon">
+                                            <img src="images/website/document-blank.svg" alt=""/>
+                                        </div>
+                                        <div class="docsearch-content">
+                                            <span>Project Configuration</span> Project Configuration
+                                        </div>
+                                    </div>
+                                    <div class="docsearch-action-icon">
+                                        <img src="images/website/link-external.svg" alt=""/>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
         <div class="chat-btn">
             <img src="images/icons/chat.svg" alt="chat icon">
         </div>
