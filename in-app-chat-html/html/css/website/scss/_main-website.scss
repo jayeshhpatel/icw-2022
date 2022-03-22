@@ -1789,8 +1789,14 @@ html .website {
                             .docsearch-content-item {
                                 @include flexbox();
                                 @include align-items(center);
+                                @media (max-width:767px) {
+                                    @include align-items(flex-start);
+                                }
                                 .docsearch-file-icon {
                                     flex: none;
+                                    @media (max-width:767px) {
+                                        margin-top: 4px;
+                                    }
                                     img {
                                         max-width: 18px;
                                     }
