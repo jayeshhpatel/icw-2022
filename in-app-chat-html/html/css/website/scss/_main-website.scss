@@ -81,13 +81,13 @@ html .website {
                     li {
                         &.btn-white {
                             a {
-                                background-color: #30313A;
-                                border-color: #30313A;
+                                background-color: rgba(255, 255, 255, 0.1);
+                                border: 1px solid rgba(255, 255, 255, 0.1);
                                 color: $white;
                                 &:hover {
-                                    background: #2d2e38;
+                                    background: #30313A;
                                     color: $white;
-                                    border-color: #2d2e38;
+                                    border-color: #30313A;
                                 }
                             }
                         }
