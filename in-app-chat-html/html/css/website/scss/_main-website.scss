@@ -30,6 +30,7 @@ html .website {
     .main-header { background: rgba(255, 255, 255, 0.75); z-index: 1031; 
         &.main-header-dark {
             background: transparent;
+            &.bg-dark,
             &.bg-white {
                 background: transparent linear-gradient(128deg, #30313A 0%, #131520 100%) 0% 0% no-repeat padding-box !important;
             }
@@ -78,6 +79,18 @@ html .website {
                 }
                 .navbar-nav {
                     li {
+                        &.btn-white {
+                            a {
+                                background-color: #30313A;
+                                border-color: #30313A;
+                                color: $white;
+                                &:hover {
+                                    background: #2d2e38;
+                                    color: $white;
+                                    border-color: #2d2e38;
+                                }
+                            }
+                        }
                         a {
                             @media (min-width:992px) {
                                 color: #DCDCDC;
