@@ -34,10 +34,35 @@ html .website {
                 background: transparent linear-gradient(128deg, #30313A 0%, #131520 100%) 0% 0% no-repeat padding-box !important;
             }
             .navbar {
-                @media (max-width:992px) {
-                    // .navbar-collapse {
-                    //     background: transparent linear-gradient(128deg, #30313A 0%, #131520 100%) 0% 0% no-repeat padding-box !important;
-                    // }
+                .navbar-brand {
+                    margin-right: 10px;
+                    @media (max-width:575px) {
+                        img {
+                            max-width: 135px;
+                        }
+                    }
+                }
+                .search-user-icon {
+                    @include flexbox();
+                    @include align-items(center);
+                    margin-left: auto;
+                    .icons {
+                        background-color: #454650;
+                        width: 40px;
+                        height: 40px;
+                        border: 0.25px solid #292A34A3;
+                        cursor: pointer;
+                        margin-right: 10px;
+                        @include flexbox();
+                        @include align-items(center);
+                        @include justify-content(center);
+                        @include box-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+                        @include border-radius(40px);
+                        @include transition(0.3s, ease-in-out);
+                    }
+                    @media (min-width:992px) {
+                        display: none;
+                    }
                 }
                 @media (max-width:991px) {
                     .bar-icon {
@@ -1688,6 +1713,21 @@ html .website {
                     max-width: 660px;
                 }
             }
+            @media (max-width:575px) {
+                .modal-dialog {
+                    max-width: 325px;
+                    margin: 5px auto;
+                    .modal-content {
+                        margin: 0 5px;
+                        min-height: 670px;
+                        .modal-body {
+                            .docsearch-list {
+                                max-height: 575px;
+                            }
+                        }
+                    }
+                }
+            }
             .modal-content {
                 @include border-radius(20px);
                 @include box-shadow(0px 3px 8px rgba(0, 0, 0, 0.26));
@@ -1698,7 +1738,7 @@ html .website {
                         padding: 5px 0;
                         width: 100%;
                         input {
-                            background: transparent url(../../images/website/search.svg) no-repeat left center;
+                            background: transparent url(../../images/icons/search.svg) no-repeat left center;
                             border: none;padding: 5px 5px 5px 35px;
                             background-size: 24px;
                             width: 100%;
@@ -1721,6 +1761,11 @@ html .website {
                         list-style: none;
                         padding: 0;
                         margin: 0;
+                        max-height: 310px;
+                        overflow-y: auto;
+                        &::-webkit-scrollbar { width:6px;background-color:#F5F5F5; }
+                        &::-webkit-scrollbar-thumb { background-color:rgba(0,0,0,0.3); }
+                        &::-webkit-scrollbar-track { -webkit-box-shadow:inset 0 0 3px rgba(0,0,0,0.1);background-color:transparent; }
                         li {
                             padding: 10px 8px;
                             ~ li{
@@ -1730,6 +1775,9 @@ html .website {
                                 text-decoration: none;
                                 @include flexbox();
                                 @include align-items(center);
+                                @media (max-width:767px) {
+                                    display: block;
+                                }
                                 &:hover {
                                     .docsearch-content-item {
                                         .docsearch-content {
@@ -1760,6 +1808,21 @@ html .website {
                             }
                             .docsearch-action-icon{
                                 margin-left: auto;
+                                @include flexbox();
+                                @include align-items(center);
+                                @media (max-width:767px) {
+                                    margin-left: 28px;
+                                    margin-top: 4px;
+                                }
+                                .mobile-text{
+                                    color: #5351FB;
+                                    font-size: 12px;
+                                    padding-right: 4px;
+                                    display: block;
+                                    @media (min-width:768px) {
+                                        display: none;
+                                    }
+                                }
                                 img {
                                     max-width: 18px;
                                 }
@@ -2015,20 +2078,34 @@ html .website {
             &.chatops-section { background: $white url(../../images/website/chatops-banner-bg.png) no-repeat center right; background-size: 90%; }
             &.home-section-dark { 
                 background: transparent linear-gradient(128deg, #30313A 0%, #131520 100%) 0% 0% no-repeat padding-box !important;
-                min-height: 70vh;
+                @media (min-width:768px) {
+                    min-height: 70vh;
+                }
+                @media (max-width:767px) {
+                    padding: 60px 0 40px;
+                }
                 .img-block {
-                    @media (max-width:767px) {
+                    @media (min-width:576px) and (max-width:767px) {
                         img {
                             max-width: 80%;
                         }
                     }
+                    @media (max-width:575px) {
+                        margin: 0 -15px -70px;
+                        img {
+                            position: relative;
+                            z-index: -1;
+                        }
+                    }
                 }
                 .content {
-                    
+                    @media (max-width:767px) {
+                        text-align: center;
+                    }
                     .search-btn {
                         background-color: #454650;box-shadow: 0px 1px 2px #00000030;
                         border-radius: 40px;
-                        display: inline-block;
+                        display: none;
                         padding: 12px 20px;
                         border: none;
                         color: rgba(255, 255, 255, 0.35);
@@ -2036,6 +2113,9 @@ html .website {
                         min-height: 50px;
                         margin-bottom: 20px;
                         @include transition(0.3s, ease-in-out);
+                        @media (min-width:992px) {
+                            display: inline-block;
+                        }
                         &:hover , &:focus {
                             background-color: #3c3d43;
                         }
@@ -2046,14 +2126,29 @@ html .website {
                             background: #30313A;
                             padding: 2px 8px;font-size: 14px;
                         }
+                        
                     }
                     h1 {
                         color: #ffffff;
                     }
                     p {
                         color: #ffffff;
+                        @media (max-width:767px) {
+                            font-size: 16px;
+                        }
                     }
                     .action {
+                        @media (max-width:767px) {
+                            margin-top: 30px;
+                            .btn {
+                                max-width: 210px;
+                                display: block;
+                                width: 100%;
+                                text-align: left;
+                                padding: 0 15px;
+                                margin: 0 auto 10px !important;
+                            }
+                        }
                         .btn {
                             svg {
                                 margin-right: 7px;
