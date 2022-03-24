@@ -1,0 +1,101 @@
+.main-header {
+    position: fixed; top: 0; width: 100%; left: 0; right: 0; z-index: 10; box-shadow: 0px 2px 4px rgba($black, 0.08); background-color: $white; min-height: 80px;
+   .navbar {    
+        @include flexbox(); @include align-items(center); width: 100%; height: 80px;
+        .logo-block {
+            min-width: 300px; padding: 25px 20px; @include flexbox(); height: 100%;
+            .navbar-brand {
+                @include inline-flex;
+                .mobile-logo { display: none }
+            }
+        }
+        .title-block {
+            @include flexbox(); width: calc(100% - 300px); @include flexbox(); @include align-items(center); @include justify-content(space-between); padding: 0 20px;
+            .title{
+                @include inline-flex; @include align-items(center); margin-bottom: -3px;
+                .icon {
+                    margin-right: 10px;
+                }
+                h1 {
+                    color: #333333; font-size: 24px; font-weight: 500;
+                    span { line-height: 0.7; padding: 0 10px; display: inline-block;
+                        .icon { margin-right: 0; }
+                    }
+                }
+            }
+            .close {
+                line-height: 0.7; cursor: pointer; @include transition(0.3s, ease-in-out); margin-left: 15px; @include inline-flex; @include align-items(center);
+                &:hover {
+                    @include opacity(0.7);
+                }
+            }
+        }
+        .menu-icon {
+            display: none; margin-right: 20px;
+            &.ml-auto { 
+                margin-left: auto; 
+            }
+            span {
+                position: relative; z-index: 101; cursor: pointer; display: block; background-color: transparent; width: 25px; height: 3px; margin: 4px 0px; display: block; @include transition(0.3s, ease-in-out); background-color: #000000; @include border-radius(3px);
+            }
+            &.is-active {
+                span {
+                    &.line1 {
+                        @include transform(rotate(-45deg) translate(-4px, 6px)); background-color: #000000;
+                    }
+                    &.line2 {
+                        opacity: 0;
+                    }
+                    &.line3 {
+                        @include transform(rotate(45deg) translate(-4px, -6px)); background-color: #000000;
+                    }
+                }
+            }
+        }
+        @media (max-width:991px) {
+            .menu-icon {
+                display: inline-block;
+            }
+            .logo-block {
+                min-width: auto;
+            }
+            .title-block {
+                width: 100%;
+            }
+        }
+        @media (max-width: 767px) { 
+            .logo-block { 
+                padding: 20px 0 20px 15px;               
+                .navbar-brand {
+                    .desc-logo { max-width: 174px; }
+                }
+            }
+            .title-block {
+               padding: 0 15px 0 15px;
+                .title {                    
+                    .icon {
+                        margin-right: 5px;
+                    }
+                    h1 {
+                        font-size: 18px; 
+                        span { padding: 0 5px; }
+                    }
+                }
+                .close {
+                    margin-left: 8px; 
+                }
+            }
+            .menu-icon {
+                margin-right: 15px;
+            }
+        }
+        @media (max-width: 575px) { 
+            .logo-block {                
+                .navbar-brand {
+                    .desc-logo { display: none; }
+                    .mobile-logo { display: block; }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,92 @@
+.form-group {
+    margin-bottom: 15px;
+    &.mt-6 { 
+        margin-top: -6px; 
+    }
+    label { 
+        font-size: 14px; font-weight: bold; letter-spacing: 0.14px; color: #333333; margin-bottom: 3px; display: inline-block;
+    }
+    .form-control {
+        border: 1px solid #E5E7EB; @include border-radius(8px); height: 38px; font-size: 14px; font-weight: 500; width: 100%; padding: 0 10px;
+        &.input-lg {  
+            height: 48px;
+        }
+        &::-webkit-input-placeholder { 
+            color: #D5D7DB; 
+        }      
+        &:-ms-input-placeholder { 
+            color: #D5D7DB; 
+        }      
+        &::placeholder { 
+            color: #D5D7DB; 
+        }
+    }
+   
+    textarea.form-control {
+        padding: 10px;
+        &.h-auto {
+            height: auto; resize: none;
+        }
+    }
+    .radio-group {
+        .label-radio-btn {
+            cursor: pointer; display: block; margin-bottom: 15px;
+            input[type="radio"] {
+                position: absolute; opacity: 0;
+            }
+            .radio-label-content {
+                @include flexbox; padding: 10px; border: 1px solid #B2B5BA; @include border-radius(4px); background: $white; position: relative; @include transition(0.3s, ease-in-out);
+                .radio-label-details {
+                    ul { 
+                        list-style-type: none; padding: 0; margin: 0;
+                        li { 
+                            letter-spacing: 0.12px; color: #616264; font-size: 12px;
+                        }
+                    }
+                    .label-title{
+                        margin-bottom: 10px; display: block; font-size: 16px; font-weight: 500; letter-spacing: 0.16px; color: #333333; position: relative; padding-left: 20px; @include transition(0.3s, ease-in-out);
+                        &::before {
+                            content: ""; position: absolute; height: 14px; width: 14px; background: $white; top: 6px; left: 0; @include border-radius(50%); border: 1px solid #333333; @include transition(0.3s, ease-in-out);
+                        }
+                        &::after {
+                            content: ""; position: absolute; height: 8px; width: 8px; background: #2B7AD5; top: 9px; left: 3px; @include border-radius(50%); @include transition(0.3s, ease-in-out); @include transform(scale(0));
+                        }
+                    }
+                }
+                &:hover {
+                    @include box-shadow(0px 3px 5px 0px #e8e8e8);
+                }              
+            }
+            input[type="radio"]:checked + .radio-label-content {
+                border-color: #2B7AD5; @include transition(0.3s, ease-in-out);
+                .radio-label-details {                
+                    .label-title{
+                        color: #2B7AD5;
+                        &::before {
+                            border-color: #2B7AD5;
+                        }
+                        &::after {
+                            @include transform(scale(1));
+                        }
+                    }
+                }
+            }
+        } 
+    } 
+    .profile-input {
+        @include flexbox; @include align-items(center);
+        input {
+            display:none;
+        }
+        label {
+            display:block; text-align:left; letter-spacing: 0.2px; color: #A7A7A7; font-size: 20px; font-weight:600; cursor:pointer; margin-left: 20px;
+        }
+        .profile-preview {
+            max-width: 60px; min-width: 60px; height: 60px; @include flexbox; @include align-items(center); @include justify-content(center);
+            img { 
+                max-width: 100%; width: 100%; height: 100%;
+            }
+        }  
+    }
+}
+.form-action { margin-top: 20px; }

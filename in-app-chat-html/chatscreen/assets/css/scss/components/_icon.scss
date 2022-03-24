@@ -1,0 +1,96 @@
+.icon {
+    display: inline-block; background-size: contain !important; align-content: center !important;
+    &.icon-threads {
+        height: 20px; width: 20px; background: url(../images/icons/message.svg) no-repeat center center;
+    }
+    &.icon-favorites {
+        height: 20px; width: 20px; background: url(../images/icons/star.svg) no-repeat center;
+    }
+    &.icon-start-fill {
+        height: 20px; width: 20px; background: url(../images/icons/star-fill.svg) no-repeat center;
+    }
+    &.icon-settings {
+        height: 20px; width: 20px; background: url(../images/icons/settings.svg) no-repeat center center;
+    }
+    &.icon-plus {
+        width: 16px; height: 16px; background: url(../images/icons/plus.svg) no-repeat center;
+    }
+    &.icon-gif {
+        width: 30px; height: 30px; background: url(../images/icons/gif.png) no-repeat center;
+    }
+    &.icon-pin {
+        width: 30px; height: 30px; background: url(../images/icons/pin.png) no-repeat center;
+    }
+    &.icon-emoji {
+        width: 30px; height: 30px; background: url(../images/icons/emoji.png) no-repeat center;
+    }
+    &.icon-send-fill {
+        width: 30px; height: 30px; background: url(../images/icons/fill-send.png) no-repeat center;
+    }
+    &.icon-audio {
+        width:  12px; height: 11px; background: url(../images/icons/icon-audio.png) no-repeat center;
+    }
+    &.icon-video {
+        width: 12px; height: 8px; background: url(../images/icons/icon-video.png) no-repeat center;
+    }
+    &.icon-image {
+        width: 12px; height: 12px; background: url(../images/icons/icon-image.png) no-repeat center;
+    }
+    &.icon-lg-close {
+        width: 20px; height: 20px; background: url(../images/icons/icon-close.svg) no-repeat center;
+    }
+    &.icon-black-close {
+        width: 18px; height: 18px; background: url(../images/icons/icon-black-close.svg) no-repeat center;
+    }
+    &.icon-dots {
+        width: 24px; height: 6px; background: url(../images/icons/dots-horizontal-rounded.svg) no-repeat center;
+    }
+    &.icon-leave-channel {
+        width: 16px; height: 16px; background: url(../images/icons/leave-channel.png) no-repeat center;
+    }
+    &.icon-right {
+        width: 10px; height: 16px; background: url(../images/icons/icon-right-arrow.svg) no-repeat center;
+    }
+    &.icon-dots-horizontal-white {
+        width: 12px; height: 3px; background: url(../images/icons/dots-horizontal-white.svg) no-repeat center;
+    }
+    &.icon-dots-horizontal {
+        width: 18px; height: 5px; background: url(../images/icons/dots-horizontal-rounded.svg) no-repeat center;
+    }
+    &.icon-forward {
+        width: 16px; height: 15px; background: url(../images/icons/forward.svg) no-repeat center;
+    }
+    &.icon-delete {
+        width: 13px; height: 15px; background: url(../images/icons/delete.svg) no-repeat center;
+    }
+    &.icon-play {
+        width: 30px; height: 30px; background: url(../images/icons/play.svg) no-repeat center;
+    }
+    &.icon-unfollow-thread {
+        width: 20px; height: 19px; background: url(../images/icons/unfollow-thread.svg) no-repeat center;
+    }
+    &.icon-face-satisfied {
+        width: 20px; height: 19px; background: url(../images/icons/face-satisfied.svg) no-repeat center;
+    }
+    &.icon-ellipsisv-v {
+        width: 20px; height: 19px; background: url(../images/icons/ellipsisv-v.svg) no-repeat center;
+    }
+    &.icon-copy {
+        width: 20px; height: 19px; background: url(../images/icons/copy.svg) no-repeat center;
+    }
+    &.icon-laughing-emoji {
+        width: 20px; height: 20px; background: url(../images/icons/laughing-emoji.svg) no-repeat center;
+    }
+    &.icon-check {
+        width: 16px; height: 16px; background: url(../images/icons/check.png) no-repeat center;
+    }
+    &.icon-dubble-check {
+        width: 19px; height: 16px; background: url(../images/icons/dubble-check.png) no-repeat center;
+    }
+    &.icon-file {
+        width: 21px; height: 24px; background: url(../images/icons/file.svg) no-repeat center;
+    }
+    &.icon-video {
+        width: 30px; height: 30px; background: url(../images/icons/play-orange.svg) no-repeat center;
+    }
+}

@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="theme-color" content="#000000">
+        <meta name="Googlebot" content="noindex,nofollow">
+        <meta name="author" content="In-App Chat">
+        <meta name="description" content="In-App Chat">
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" href="../images/favicons/apple-touch-icon.png" sizes="180x180">
+        <link rel="shortcut icon" type="images/x-icon" href="../favicon.ico">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/main.css">
+
+        <title>All Media | In-App Chat</title>
+    </head>
+
+    <body>
+        <!-- HEADER SECTION -->
+        <header class="main-header">
+            <nav class="navbar">                
+                <div class="logo-block">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/logo.svg" class="desc-logo" alt="In-App Chat"/>
+                        <img src="assets/images/logo-mark.svg" class="mobile-logo" alt="In-App Chat"/>
+                    </a>
+                </div>
+                <div class="title-block">
+                    <div class="title">
+                        <h1>Design Channel<span><em class="icon icon-right"></em></span>All Media</h1>
+                    </div>
+                    <a href="chatscreen.html" class="close"><em class="icon icon-black-close"></em></a>
+                </div>
+                <a href="javascript:void(0)" class="menu-icon" onclick="toggleSidebar()">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                    <span class="line3"></span>
+                </a>
+            </nav>
+        </header>
+        <div class="bg-overlay"></div>
+
+        <main class="main-content-wrapper">
+            <div class="main-sidebar">
+                <div class="search-bar">
+                    <div class="form-group mb-0">
+                        <input type="text" class="form-control" placeholder="Search"/>
+                    </div>
+                </div>
+                <div class="sidebar-menu-block">
+                    <a href="#" class="menu-item">
+                        <em class="icon icon-threads"></em>Threads
+                    </a>
+                    <a href="#" class="menu-item">
+                        <em class="icon icon-favorites"></em>Favorites
+                    </a>
+                    <div class="collapse-info-block">
+                        <div class="collapse-card">
+                            <div class="collaspe-header active">
+                                <div class="collapse-action" data-collapse="channels">
+                                    Channels
+                                </div>
+                                <a href="#" class="add-channel" data-popup="create-channel"><em class="icon icon-plus"></em></a>
+                            </div>
+                            <div class="collapse-body show" id="channels">
+                                <div class="user-name active">
+                                    <div class="avatar-img" data-chatbar="channel-info-bar">
+                                        <img src="assets/images/icons/group-icon.svg" alt="group"/>
+                                    </div>
+                                    <div class="user-title">
+                                        Design Channel <span>Hello Tushar</span>
+                                    </div>
+                                </div>
+                                <div class="user-name">
+                                    <div class="avatar-img">
+                                        <img src="assets/images/icons/group-icon.svg" alt="group"/>
+                                    </div>
+                                    <div class="user-title">
+                                        Developer's Channel <span><em class="icon icon-image"></em>nature.jpg</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse-card">
+                            <div class="collaspe-header">
+                                <div class="collapse-action" data-collapse="direct-messages">
+                                    Direct Messages
+                                </div>
+                            </div>
+                            <div class="collapse-body" id="direct-messages">
+                                <div class="user-name">
+                                    <div class="avatar-img">
+                                        <img src="assets/images/icons/user.svg" alt="user"/>
+                                        <span class="status online"></span>
+                                    </div>
+                                    <div class="user-title">
+                                        Rohit <span><em class="icon icon-image"></em>nature.jpg</span>
+                                    </div>
+                                </div>
+                                <div class="user-name">
+                                    <div class="avatar-img">
+                                        <img src="assets/images/icons/user.svg" alt="user"/>
+                                        <span class="status billing"></span>
+                                    </div>
+                                    <div class="user-title">
+                                        Brandon <span>Hello Tushar</span>
+                                    </div>
+                                </div>
+                                <div class="user-name">
+                                    <div class="avatar-img">
+                                        <img src="assets/images/icons/user.svg" alt="user"/>
+                                    </div>
+                                    <div class="user-title">
+                                        William <span><em class="icon icon-audio"></em>nature.mp3</span>
+                                    </div>
+                                </div>
+                                <div class="user-name">
+                                    <div class="avatar-img">
+                                        <img src="assets/images/icons/user.svg" alt="user"/>
+                                        <span class="status online"></span>
+                                    </div>
+                                    <div class="user-title">
+                                        Kishan <span><em class="icon icon-video"></em>current_discussion.mp4</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+                <div class="user-setting-block">
+                    <div class="main-user-block">
+                        <span class="user-name"><img src="assets/images/icons/user.svg" alt="user"/>Tushar</span>
+                        <div class="user-dropdown custom-dropdown user-status-dropdown drop-top">
+                            <div class="user-available-icon custom-dropdown-toggle">
+                                <span class="status online"></span>
+                            </div>
+                            <ul class="custom-dropdown-menu">
+                                <li><span class="status online"></span>Available</li>
+                                <li><span class="status billing"></span>Away</li>
+                                <li><span class="status offline"></span>Offline</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="login-dropdown custom-dropdown drop-top drop-left">
+                        <div class="invite-action menu-toggle">
+                            <em class="icon icon-settings"></em>
+                        </div>
+                        <ul class="custom-dropdown-menu">
+                            <li><a href="#!">Account Settings</a></li>
+                            <li><a href="#!" class="text-red">Logout</a></li>
+                        </ul>                     
+                    </div>
+                </div>
+            </div>
+            <div class="content-block">
+                <div class="message-block">
+                    <div class="search-media-block">
+                        <div class="custom-dropdown input-dropdown">
+                            <a href="#" class="input-block"><span>All Media</span></a>
+                            <ul class="custom-dropdown-menu">
+                                <li><a href="#!">Images</a></li>
+                                <li><a href="#!">Audio</a></li>
+                                <li><a href="#!">Video</a></li>
+                                <li><a href="#!">File</a></li>
+                            </ul>                     
+                        </div>
+                        <div class="form-group mb-0">
+                            <input type="text" class="form-control input-lg" placeholder="Search all media files"/>
+                        </div>
+                    </div>
+                    <div class="result-block">
+                        <div class="result-count">4 Results</div>
+                        <div class="result-items-block">
+                            <div class="media-item">
+                                <img src="assets/images/media1.png" alt="" />
+                                <div class="custom-dropdown drop-left more-action">
+                                    <div class="menu-toggle">
+                                        <em class="icon icon-dots-horizontal-white"></em>
+                                    </div>
+                                    <ul class="custom-dropdown-menu">
+                                        <li><a href="#!"><em class="icon icon-forward"></em>Forward</a></li>
+                                        <li><a href="#!"><em class="icon icon-delete"></em>Delete File</a></li>
+                                    </ul>                     
+                                </div>
+                            </div>
+                            <div class="media-item">
+                                <img src="assets/images/media2.png" alt="" />
+                                <div class="custom-dropdown drop-left more-action">
+                                    <div class="menu-toggle">
+                                        <em class="icon icon-dots-horizontal-white"></em>
+                                    </div>
+                                    <ul class="custom-dropdown-menu">
+                                        <li><a href="#!"><em class="icon icon-forward"></em>Forward</a></li>
+                                        <li><a href="#!"><em class="icon icon-delete"></em>Delete File</a></li>
+                                    </ul>                     
+                                </div>
+                            </div>
+                            <div class="media-item video">
+                                <img src="assets/images/media3.png" alt="" />
+                                <span class="play-btn"><em class="icon icon-play"></em></span>
+                                <div class="custom-dropdown drop-left more-action">
+                                    <div class="menu-toggle">
+                                        <em class="icon icon-dots-horizontal-white"></em>
+                                    </div>
+                                    <ul class="custom-dropdown-menu">
+                                        <li><a href="#!"><em class="icon icon-forward"></em>Forward</a></li>
+                                        <li><a href="#!"><em class="icon icon-delete"></em>Delete File</a></li>
+                                    </ul>                     
+                                </div>
+                            </div>
+                            <div class="media-item">
+                                <img src="assets/images/media4.png" alt="" />
+                                <div class="custom-dropdown drop-left more-action">
+                                    <div class="menu-toggle">
+                                        <em class="icon icon-dots-horizontal-white"></em>
+                                    </div>
+                                    <ul class="custom-dropdown-menu">
+                                        <li><a href="#!"><em class="icon icon-forward"></em>Forward</a></li>
+                                        <li><a href="#!"><em class="icon icon-delete"></em>Delete File</a></li>
+                                    </ul>                     
+                                </div>
+                            </div>
+                            <div class="media-item">
+                                <img src="assets/images/media1.png" alt="" />
+                                <div class="custom-dropdown drop-left more-action">
+                                    <div class="menu-toggle">
+                                        <em class="icon icon-dots-horizontal-white"></em>
+                                    </div>
+                                    <ul class="custom-dropdown-menu">
+                                        <li><a href="#!"><em class="icon icon-forward"></em>Forward</a></li>
+                                        <li><a href="#!"><em class="icon icon-delete"></em>Delete File</a></li>
+                                    </ul>                     
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="message-write-block">
+                    <div class="message-write-box">
+                        <div class="form-group mb-0">
+                            <textarea class="form-control" placeholder="Send a message..." oninput="autoGrow(this)"></textarea>
+                        </div>
+                        <div class="msg-option-block">
+                            <div class="message-options">
+                                <span class="msg-option-button">
+                                    <em class="icon icon-gif"></em>
+                                </span>
+                                <span class="msg-option-button">
+                                    <em class="icon icon-pin"></em>
+                                </span>
+                                <span class="msg-option-button">
+                                    <em class="icon icon-emoji"></em>
+                                </span>
+                                <span class="msg-option-button">
+                                    <em class="icon icon-send-fill"></em>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- chat-info-bar -->
+        <div class="chat-info-bar" id="channel-info-bar">
+            <div class="info-header">
+                <div class="info-title">Channel Info</div>
+                <div class="action">
+                    <div class="custom-dropdown drop-left">
+                        <div class="more-info menu-toggle">
+                            <em class="icon icon-dots"></em>
+                        </div>
+                        <ul class="custom-dropdown-menu">
+                            <li><a href="#!"><em class="icon icon-leave-channel"></em>Leave Channel</a></li>
+                        </ul>                     
+                    </div>
+                    <div class="close-info-bar"><em class="icon icon-black-close"></em></div>
+                </div>
+            </div>
+            <div class="info-body">
+                <div class="channel-desc">
+                    <div class="channel-img">
+                        <img src="assets/images/channel-no-img.png" alt="" />
+                    </div>
+                    <span class="channel-name">Design Channel</span>
+                    <p>This channel is the group of all designers in the company. Please share all the details related to design resources here...</p>
+                </div>
+                <div class="channel-media">
+                    <div class="media-title">
+                        <div class="title">Media & Attachments</div>
+                        <div class="action">
+                            <a href="#!">See All ></a>
+                        </div>
+                    </div>
+                    <div class="media-img-block">
+                        <div class="img"><img src="assets/images/media3.png" alt="" /></div>
+                        <div class="img"><img src="assets/images/media2.png" alt="" /></div>
+                        <div class="img"><img src="assets/images/media1.png" alt="" /></div>
+                        <div class="img"><img src="assets/images/media4.png" alt="" /></div>
+                    </div>
+                </div>
+                <div class="channel-member">
+                    <div class="member-title">
+                        <div class="title">Channel Members</div>
+                    </div>
+                    <div class="member-block">
+                        <div class="member">
+                            <div class="member-img"><img src="assets/images/media1.png" alt="" /></div>
+                            <div class="member-name">
+                                <span class="name">Rohit</span>
+                            </div>
+                        </div>
+                        <div class="member">
+                            <div class="member-img"><img src="assets/images/icons/user.svg" alt="" /></div>
+                            <div class="member-name">
+                                <span class="name">Tushar</span>
+                                <span class="occupation">Administrator</span>
+                            </div>
+                        </div>
+                        <div class="member">
+                            <div class="member-img"><img src="assets/images/icons/user.svg" alt="" /></div>
+                            <div class="member-name">
+                                <span class="name">Brandon</span>
+                                <span class="occupation">Administrator</span>
+                            </div>
+                        </div>
+                        <div class="member">
+                            <div class="member-img"><img src="assets/images/icons/user.svg" alt="" /></div>
+                            <div class="member-name">
+                                <span class="name">Vijay</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pop-up -->
+        <div class="popup" id="create-channel">
+            <div class="popup-content">
+                <div class="popup-header">
+                    <div class="title">Create Channel</div>
+                    <div class="close-popup"><em class="icon icon-lg-close"></em></div>
+                </div>
+                <div class="popup-body">
+                    <form method="post">
+                        <div class="form-group">
+                            <label>Channel Icon</label>
+                            <div class="profile-input">
+                                <div class="profile-preview">
+                                    <img id="profile-img" src="assets/images/upload-file-img.png" />
+                                </div>
+                                <label for="upload-profile">Upload Image</label>
+                                <input type="file" id="upload-profile" accept="image/*" onchange="showPreview(event);">
+                            </div>                            
+                        </div>
+                        <div class="form-group">
+                            <label>Name your channel <span class="text-red">*</span></label>
+                            <input type="text" class="form-control" placeholder="e.g. marketing group"/>
+                        </div>
+                        <div class="form-group">
+                            <label>Got channel description in mind?</label>
+                            <textarea rows="4" class="form-control h-auto" placeholder="e.g. Define rules or purpose"></textarea>
+                        </div>
+                        <div class="form-group mt-6">
+                            <label>Add users to make it lively</label>
+                            <input type="text" class="form-control" placeholder="Start typing names..."/>
+                        </div>
+                        <div class="form-group">
+                            <label>Set Channel Privacy</label>
+                            <div class="radio-group">
+                                <label class="label-radio-btn" for="public-channel">
+                                    <input checked type="radio" name="channel-privacy" id="public-channel" />
+                                    <div class="radio-label-content">                                  
+                                        <div class="radio-label-details">
+                                            <div class="label-title">Public Channel</div>
+                                            <ul>
+                                                <li>- Allows for a maximum 1000 users <small>( Can be increased per request )</small></li>
+                                                <li>- Any member can add and invite other users</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </label>                              
+                                <label class="label-radio-btn" for="private-channel">
+                                    <input type="radio" id="private-channel" name="channel-privacy" />
+                                    <div class="radio-label-content">                                  
+                                        <div class="radio-label-details">
+                                            <div class="label-title">Private Channel</div>
+                                            <ul>
+                                                <li>- Allows for a maximum 100 users</li>
+                                                <li>- Only channel admins can add or invite other users</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-action text-right mb-0">
+                            <button type="button" class="btn btn-primary">Create Channel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- JS -->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="36" viewBox="0 0 70 36">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.043" x2="0.767" y2="0.943" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f90"/>
+      <stop offset="1" stop-color="#f63838"/>
+    </linearGradient>
+  </defs>
+  <g id="GIF" transform="translate(-118 -71)">
+    <rect id="Rectangle_160" data-name="Rectangle 160" width="70" height="36" rx="5" transform="translate(118 71)" fill="#333" opacity="0.5"/>
+    <rect id="Rectangle_161" data-name="Rectangle 161" width="64" height="32" rx="5" transform="translate(121 73)" fill="#fff"/>
+    <path id="gif-2" data-name="gif" d="M13.031,12h3V24h-3ZM7.968,12a2,2,0,0,1,2.063,1.968V15H3v6H7.031V18h3V22.03A2.005,2.005,0,0,1,7.969,24h-6a1.833,1.833,0,0,1-1.406-.609A1.962,1.962,0,0,1,0,22.031V13.968a1.955,1.955,0,0,1,.563-1.359A1.835,1.835,0,0,1,1.969,12h6Zm20.063,3h-6v1.969h3.938v3H22.031V24h-3V12h9Z" transform="translate(139 71)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

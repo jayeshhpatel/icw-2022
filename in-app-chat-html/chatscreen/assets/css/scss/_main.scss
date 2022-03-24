@@ -1,0 +1,105 @@
+*,
+::after,
+::before {
+    box-sizing: border-box; list-style: none; text-decoration: none;
+}
+html {
+    font-family: sans-serif; -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: transparent;
+}
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+    display: block;
+}
+::-webkit-scrollbar {
+    width: 4px; background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px; background-color: rgba(0,0,0,0.4);
+}
+body {
+    margin: 0; padding: 0; font-family: $bodyfont; color: $bodyfontcolor; font-size: $bodyfontsize; background-color: $bodybg; position: relative; min-height: 100vh; line-height: 1.5; @include flexbox(); @include flex-direction(column);
+    &.is-visible {
+        overflow: hidden;
+    }
+}
+ul {
+    margin: 0; padding: 0;
+}
+a {
+    text-decoration: none;
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+}
+p {
+    font-size: 16px;
+    @media (max-width: 991px) {
+        font-size: 14px;
+    }
+}
+img {
+    max-width:100%; image-rendering:-moz-crisp-edges; image-rendering:-o-crisp-edges; image-rendering:-webkit-optimize-contrast; image-rendering:crisp-edges; -ms-interpolation-mode:nearest-neighbor;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0; line-height: 1.3;
+}
+.main-content-wrapper {
+    min-height: calc(100vh - 80px);  margin-top: 80px;
+    .content-block {
+        height: calc(100vh - 80px); margin-left: 300px; @include flexbox; @include flex-direction(column);
+    }
+    @media(max-width: 992px) {
+        .content-block {
+            margin-left: 0px;
+        }
+    }
+}
+.bg-overlay {
+    position: fixed; top: 0px; right: 0px; bottom: 0px; left: 0px; @include transitionValue(opacity, 0.3s, ease-in-out); @include opacity(0); background: black; visibility: hidden; z-index: 9;
+    &.is-visible {
+        @include opacity(0.4); visibility: visible;
+    }
+}
+.status{
+    width: 10px; height: 10px; @include border-radius(100px); background-color: transparent; display: inline-block; vertical-align: middle;
+    &.online {
+        background-color: #00E65C;
+    }
+    &.offline {
+        background-color: #B2B5BA;
+    }
+    &.billing {
+        background-color: #FF9900;
+    }
+}
+.text-red { 
+    color: #FF0000 !important; 
+}
+.text-right { 
+    text-align: right !important; 
+}
+.mb-0 { 
+    margin-bottom: 0 !important; 
+}
+
+.d-none { display: none !important; }
