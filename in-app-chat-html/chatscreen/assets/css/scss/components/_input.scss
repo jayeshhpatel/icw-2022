@@ -7,7 +7,7 @@
         font-size: 14px; font-weight: bold; letter-spacing: 0.14px; color: #333333; margin-bottom: 3px; display: inline-block;
     }
     .form-control {
-        border: 1px solid #E5E7EB; @include border-radius(8px); height: 38px; font-size: 14px; font-weight: 500; width: 100%; padding: 0 10px;
+        border: 1px solid #E5E7EB; @include border-radius(4px); height: 40px; font-size: 14px; font-weight: 500; width: 100%; padding: 0 10px;
         &.input-lg {  
             height: 48px;
         }
@@ -41,6 +41,9 @@
                         list-style-type: none; padding: 0; margin: 0;
                         li { 
                             letter-spacing: 0.12px; color: #616264; font-size: 12px;
+                            small {
+                                font-size: 7px;
+                            }
                         }
                     }
                     .label-title{
@@ -79,7 +82,7 @@
             display:none;
         }
         label {
-            display:block; text-align:left; letter-spacing: 0.2px; color: #A7A7A7; font-size: 20px; font-weight:600; cursor:pointer; margin-left: 20px;
+            display:block; text-align:left; letter-spacing: 0.2px; color: #A7A7A7; font-size: 20px; font-weight:400; cursor:pointer; margin-left: 20px;
         }
         .profile-preview {
             max-width: 60px; min-width: 60px; height: 60px; @include flexbox; @include align-items(center); @include justify-content(center);

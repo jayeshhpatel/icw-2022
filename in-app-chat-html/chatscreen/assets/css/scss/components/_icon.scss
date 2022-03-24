@@ -93,4 +93,10 @@
     &.icon-video {
         width: 30px; height: 30px; background: url(../images/icons/play-orange.svg) no-repeat center;
     }
+    &.icon-user {
+        width: 30px; height: 30px; background: url(../images/icons/user.svg) no-repeat center;
+    }
+    &.icon-remove-favorites {
+        height: 19px; width: 16px; background: url(../images/icons/remove-star.svg) no-repeat center;
+    }
 }

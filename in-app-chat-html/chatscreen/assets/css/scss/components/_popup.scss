@@ -21,4 +21,40 @@
     &.show { 
         @include flexbox; 
     }
+    &#create-channel {
+        .popup-content {
+            max-width: 715px;
+            .popup-header {
+                padding: 30px 30px 10px;
+            }
+            .popup-body {
+                padding: 0 30px 30px;
+                .radio-grid {
+                    display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 15px;
+                }
+            }
+        }
+    }
+    &#clear-history {
+        .popup-content {
+            max-width: 500px;
+            .popup-body {
+                .dec-text {
+                    p {
+                        color: #616264;
+                        margin: 0 0 10px 0;
+                        line-height: normal;
+                    }
+                    span {
+                        font-size: 14px;
+                        color: #616264;
+                        display: block;
+                        strong {
+                            color: #333333;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

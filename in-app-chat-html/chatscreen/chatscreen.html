@@ -186,7 +186,7 @@
                                                 </div>
                                                 <ul class="custom-dropdown-menu">
                                                     <li><a href="#!"><em class="icon icon-copy"></em>Copy</a></li>
-                                                    <li><a href="#!"><em class="icon icon-delete"></em>Delete</a></li>
+                                                    <li data-popup="clear-history"><a href="#!"><em class="icon icon-delete"></em>Delete</a></li>
                                                     <li><a href="#!"><em class="icon icon-threads"></em>Follow Thread</a></li>
                                                 </ul>
                                             </div>
@@ -233,7 +233,7 @@
                                                 </div>
                                                 <ul class="custom-dropdown-menu">
                                                     <li><a href="#!"><em class="icon icon-copy"></em>Copy</a></li>
-                                                    <li><a href="#!"><em class="icon icon-delete"></em>Delete</a></li>
+                                                    <li data-popup="clear-history"><a href="#!"><em class="icon icon-delete"></em>Delete</a></li>
                                                     <li><a href="#!"><em class="icon icon-threads"></em>Follow Thread</a></li>
                                                 </ul>
                                             </div>
@@ -277,7 +277,7 @@
                                                 </div>
                                                 <ul class="custom-dropdown-menu">
                                                     <li><a href="#!"><em class="icon icon-copy"></em>Copy</a></li>
-                                                    <li><a href="#!"><em class="icon icon-delete"></em>Delete</a></li>
+                                                    <li data-popup="clear-history"><a href="#!"><em class="icon icon-delete"></em>Delete</a></li>
                                                     <li><a href="#!"><em class="icon icon-threads"></em>Follow Thread</a></li>
                                                 </ul>
                                             </div>
@@ -698,7 +698,7 @@
                         </div>
                         <div class="form-group">
                             <label>Set Channel Privacy</label>
-                            <div class="radio-group">
+                            <div class="radio-group radio-grid">
                                 <label class="label-radio-btn" for="public-channel">
                                     <input checked type="radio" name="channel-privacy" id="public-channel" />
                                     <div class="radio-label-content">                                  
@@ -725,10 +725,30 @@
                                 </label>
                             </div>
                         </div>
-                        <div class="form-action text-right mb-0">
+                        <div class="form-action text-center mb-0">
                             <button type="button" class="btn btn-primary">Create Channel</button>
                         </div>
                     </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- clear-history -->
+        <div class="popup" id="clear-history">
+            <div class="popup-content">
+                <div class="popup-header">
+                    <div class="title">Are you sure?</div>
+                    <div class="close-popup"><em class="icon icon-lg-close"></em></div>
+                </div>
+                <div class="popup-body">
+                    <div class="dec-text">
+                        <p>Are you sure you want to clear chat history for this channel?</p>
+                        <span><strong>Note:</strong> The conversation will only be cleared for you</span>
+                    </div>
+                    <div class="form-action text-right mb-0">
+                        <button type="button" class="btn btn-white close-popup">Cancel</button>
+                        <button type="button" class="btn btn-red">Yes, Clear it</button>
+                    </div>
                 </div>
             </div>
         </div>

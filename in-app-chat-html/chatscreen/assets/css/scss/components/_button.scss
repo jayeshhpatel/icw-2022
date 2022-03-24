@@ -1,5 +1,5 @@
 .btn { 
-    font-weight: 400; font-size: 16px; text-align: center; height: 40px; padding: 5px 20px; @include border-radius(4px); @include transition(0.3s, ease-in-out); white-space: nowrap; @include box-shadow(none); font-family: $bodyfont; border: 1px solid transparent;
+    font-weight: 400; cursor: pointer; font-size: 16px; text-align: center; height: 40px; padding: 5px 20px; @include border-radius(4px); @include transition(0.3s, ease-in-out); white-space: nowrap; @include box-shadow(none); font-family: $bodyfont; border: 1px solid transparent;
     &:focus { 
         outline: none !important; box-shadow: none !important; 
     }
@@ -7,6 +7,18 @@
         background: #2B7AD5; color: $white; border-color: #2B7AD5;
         &:hover, &:focus { 
             background: #3d3bf3; border-color: #3d3bf3; 
+        }
+    }
+    &.btn-red { 
+        background: #F63838; color: $white; border-color: #F63838;
+        &:hover, &:focus { 
+            background: #c23737; border-color: #c23737; 
+        }
+    }
+    &.btn-white { 
+        background: #fff; color: #616264; border-color: #fff;
+        &:hover, &:focus { 
+            background: #fff; border-color: #fff; 
         }
     }
 }
