@@ -198,7 +198,8 @@ html .website {
                     }
                     &.btn-primary { background: transparent;
                         a { background: $blue; border: 1px solid $blue; @include transition(0.3s, ease-in-out); text-decoration: none; padding: 11px 20px; font-size: 14px; font-weight: 500; @include box-shadow(0px 6px 20px rgba(0, 0, 0, 0.10)); color: $white; min-width: 150px; display: inline-block; text-align: center;
-                            &:hover { background: $darkblue; border-color: $darkblue; color: $white; @include box-shadow(0px 6px 20px rgba(0, 0, 0, 0.25)); }
+                            &:hover { background: #3D3BF3; border-color: #3D3BF3; color: $white; @include box-shadow(0px 6px 20px rgba(0, 0, 0, 0.25)); 
+                            }
                         }
                     }
                     &.btn-white {  
