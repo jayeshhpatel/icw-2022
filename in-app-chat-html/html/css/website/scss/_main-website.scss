@@ -2171,6 +2171,9 @@ html .website {
                             margin: 0 0 15px 0;
                         }
                     }
+                    .info-btn-group {
+                        max-width: 500px;
+                    }
                     .info-btn {
                         @include flexbox();
                         text-decoration: none;
@@ -2206,11 +2209,7 @@ html .website {
                             min-width: 76px;
                             min-height: 76px;
                             flex: none;
-                            background: rgb(31,31,31);
-                            background: -moz-linear-gradient(90deg, rgba(31,31,31,1) 0%, rgba(31,31,31,0) 100%);
-                            background: -webkit-linear-gradient(90deg, rgba(31,31,31,1) 0%, rgba(31,31,31,0) 100%);
-                            background: linear-gradient(90deg, rgba(31,31,31,1) 0%, rgba(31,31,31,0) 100%);
-                            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1f1f1f",endColorstr="#1f1f1f",GradientType=1);
+                            background: rgba(0, 0, 0, 0.40);
                             @include flexbox();
                             @include align-items(center);
                             @include justify-content(center);
@@ -2226,7 +2225,7 @@ html .website {
                             }
                         }
                         .dec-text {
-                            padding: 15px 20px;
+                            padding: 10px 15px;
                             position: relative;
                             text-align: left;
                             @include flexbox();
@@ -2236,9 +2235,7 @@ html .website {
                             background: -webkit-linear-gradient(90deg, rgba(31,31,31,1) 0%, rgba(31,31,31,0) 100%);
                             background: linear-gradient(90deg, rgba(31,31,31,1) 0%, rgba(31,31,31,0) 100%);
                             filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1f1f1f",endColorstr="#1f1f1f",GradientType=1);
-                            @media (max-width:575px) {
-                                padding: 10px 15px;
-                            }
+                           
                             &:after {
                                 content: "";
                                 position: absolute;
@@ -2267,7 +2264,7 @@ html .website {
                             }
                             p{
                                 color: #ffffff;
-                                font-size: 14px;
+                                font-size: 15px;
                                 font-weight: 300;
                                 margin: 0 20px 0 0;
                                 @include opacity(0);
@@ -2418,23 +2415,24 @@ html .website {
                         font-weight: 500;
                         text-decoration: none;
                         color: #FF6F00;
-                        min-height: 44px;
+                        min-height: 50px;
                         @include inline-flex;
                         @include align-items(center);
-                        padding: 5px 20px;
+                        padding: 5px 20px;@include transition(0.3s, ease-in-out);
+                        
                         &:hover, &:focus {
                             background-color: #FF6F001A;
                             .plug-icon {
                                 .left-plug{
-                                    -webkit-animation:bounce-left 1s alternate infinite;
-                                    animation:bounce-left 1s alternate infinite;
+                                    -webkit-animation:bounce-left 0.3s alternate infinite;
+                                    animation:bounce-left 0.3s alternate infinite;
                                     path {
                                         fill: #ffb300;
                                     }
                                 }
                                 .right-plug{
-                                    -webkit-animation:bounce-right 1s alternate infinite;
-                                    animation:bounce-right 1s alternate infinite;
+                                    -webkit-animation:bounce-right 0.3s alternate infinite;
+                                    animation:bounce-right 0.3s alternate infinite;
                                     path {
                                         fill: #ffb300;
                                     }
@@ -2444,7 +2442,8 @@ html .website {
                         .plug-icon {
                             @include flexbox();
                             @include align-items(center);
-                            margin-right: 8px;
+                            margin-right: 10px;
+                            @include transition(0.3s, ease-in-out);
                             svg {
                                 margin: 0 -3px;
                                 path {
