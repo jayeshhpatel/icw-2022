@@ -37,6 +37,13 @@ html .website {
                     }
                     .navbar-nav {
                         li {
+                            &.nav-dropdown {
+                                &:hover {
+                                    >a {
+                                        color: #FF6F00 !important;
+                                    }
+                                }
+                            }
                             a {
                                 font-weight: 400;
                                 &:hover, &.active { color: #FF6F00; }
