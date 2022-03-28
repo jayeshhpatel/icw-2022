@@ -38,7 +38,8 @@ html .website {
                     .navbar-nav {
                         li {
                             a {
-                                font-weight: 300;
+                                font-weight: 400;
+                                &:hover, &.active { color: #FF6F00; }
                             }
                         }
                     }
