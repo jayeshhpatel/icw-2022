@@ -404,6 +404,8 @@ html .website {
         &.icon-new-technical-support { background: url(../../images/icons/new/icon-technical-support.svg) no-repeat center center; width: 16px; height: 16px; }
         &.icon-new-suggest-feature { background: url(../../images/icons/new/icon-suggestion.svg) no-repeat center center; width: 16px; height: 16px; }
         &.icon-angle-down { background: url($fa-angle-down) no-repeat center center; width: 14px; height: 8px; }
+        &.icon-lock { background: url(../../images/icons/lock.svg) no-repeat center center; width: 16px; height: 16px; }
+        &.icon-pen { background: url(../../images/icons/pen.svg) no-repeat center center; width: 16px; height: 16px; }
     }
     .far, .fal, .fad { background-size: contain !important; display: inline-block;
         &.fa-times { background: url($fa-times) no-repeat center center; width: 20px; height: 20px; @include transition(0.3s, ease-in-out); }
