@@ -7,7 +7,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    font-family: 'IBM Plex Sans', sans-serif;
+    overflow: hidden;
 
     ::-webkit-scrollbar-thumb {
         background-color: rgba(27, 27 ,27 ,0.4);
@@ -58,6 +58,9 @@
         padding: 25px;
         @include flexbox();
         @include align-items(center);@include justify-content(space-between);
+        @media (max-width:767px) {
+            padding: 15px;
+        }
         .info-block {
             position: relative;
             &.open-popup {
@@ -186,6 +189,7 @@
             @include flexbox();
             @include align-items(center);
             @include justify-content(center);
+            padding: 0 10px;
             .headphone-content {
                 background-color: #ffffff;
                 padding: 6px;
@@ -204,6 +208,7 @@
                     color: #6C757D; font-size: 10px;
                     font-weight: 500;
                     padding-left: 7px;
+                    white-space: nowrap;
                 }
                 .content-text {
                     color: #343434;
@@ -346,6 +351,9 @@
         @include flexbox();
         @include align-items(center);
         @include justify-content(center);
+        @media (max-width:767px) {
+            bottom: 40px;
+        }
         .has-blue-tooltip {
             .tool-tip-blue {
                 bottom: calc(100% + 8px);
@@ -361,6 +369,7 @@
         }
         .has-blue-tooltip {
             position: relative;
+            display: flex;
         }
         .user-block {
             position: relative;
@@ -374,6 +383,13 @@
             @include border-radius(100px);
             @include transition(0.3s, ease-in-out);
             background-color: rgba(0,0,0,0.6);
+            @include flexbox();
+            @include align-items(center);
+            @include justify-content(center);
+            @media (max-width:767px) {
+                margin: 0;
+                @include transform(scale(0.8));
+            }
             &.active {
                 background-color: rgba(80 ,86, 202 ,0.9) !important;  
             }
@@ -546,6 +562,14 @@
                     &::before {
                         font-size: 8px;
                     }
+                }
+            }
+        }
+        .collapse-card {
+            &.open {
+                height: calc(100% - 58px);
+                .collapse-body {
+                    height: calc(100% - 58px);
                 }
             }
         }
