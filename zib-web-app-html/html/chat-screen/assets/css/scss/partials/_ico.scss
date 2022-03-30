@@ -43,6 +43,119 @@
         &.icon-laughing-emoji{height:12px;width:12px;background:url($iconpath + "laughing-emoji.svg") no-repeat center center}
         &.icon-hand-emoji{height:14px;width:14px;background:url($iconpath + "hand-emoji.svg") no-repeat center center}
         &.icon-face-emoji{height:14px;width:14px;background:url($iconpath + "face-emoji.svg") no-repeat center center}
+        &.icon-screen-1 {
+            height: 18px; width:18px; background: url($iconpath + "screen-1.svg") no-repeat center;
+        }
+        &.icon-screen-2 {
+            height: 18px; width:18px; background: url($iconpath + "screen-2.svg") no-repeat center;
+        }
+        &.icon-info-line {
+            &:before {
+                content: "\eae7";
+                color: #fff;
+                font-size: 14px;
+            }
+        }
+        &.icon-headphones {
+            &:before {
+                content: "\eafc";
+                font-size: 18px;
+                color: #000000;
+            }
+        }
+        &.icon-copy-outline {
+           &:before {
+            content: "\eae3";
+            color: #fff;
+          }
+        }
+        
+        &.icon-grid {
+            &:before {
+                content: "\eae6";
+                color: #fff;
+              }
+        }
+        &.icon-video-outline {
+            &:before {
+                content: "\eafa";
+                color: #fff;
+                font-size: 22px;
+              }
+        }
+        &.icon-phone {
+            &:before {
+                content: "\eaea";
+                color: #fff;
+                font-size: 22px;
+              }
+        }
+        &.icon-dots-white {
+            &:before {
+                content: "\e933";
+                color: #fff;
+                font-size: 5px;
+              }
+        }
+        &.icon-microphone {
+            &:before {
+                content: "\eae8";
+                color: #fff;font-size: 26px;
+              }
+        }
+        &.icon-comments {
+            &:before {
+                content: "\eae2";
+                color: #fff;
+                font-size: 20px;
+              }
+        }
+        &.icon-user-multiple {
+            &:before {
+                content: "\eaf9";
+                color: #fff;
+                font-size: 22px;
+              }
+        }
+        &.icon-user-follow {
+            &:before {
+                content: "\eaf8";
+                color: #fff;
+                font-size: 22px;
+              }
+        }
+        &.icon-screen-share {
+           &:before {
+            content: "\eaf4";
+            color: #fff;
+            font-size: 22px;
+          }
+        }
+        &.icon-chevron-arrow {
+            &:before {
+                content: "\eae1";
+                color: #adb3cc;
+              }
+        }
+        &.icon-video-call {
+            &:before {
+                content: "\eafb";
+                color: #5056ca;
+              }
+        }
+        &.icon-turn-microphone {
+            &:before {
+                content: "\eaf7";
+                color: #e92424;
+              }
+        }
+        &.icon-headset {
+            &:before {
+                content: "\eae5";
+                font-size: 12px;
+                color: #000000;
+              }
+        }
         &.icon-add-emoji-black{
             &:before {
                 content: "\ea4c";
