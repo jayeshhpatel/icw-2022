@@ -16,6 +16,16 @@
         width: 5px;
     }
 
+    button {
+        outline: none !important;
+        &:focus:not(:focus-visible) {
+            outline: none !important;
+        }
+        &:focus-visible {
+            outline: 3px solid #f0ab2e !important;
+        }
+    }
+
     .video-wrapper {
         position: fixed;
         height: 100vh;
