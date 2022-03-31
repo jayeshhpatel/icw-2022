@@ -1,8 +1,11 @@
 body.app-content { background: transparent !important; }
 .app-content { background: transparent;
-    .circle-loading {
+
+    .message-loading {
         margin-top: 20px;
+        padding: 5px 20px 5px 20px;
         svg {
+            height: 15px;
             overflow: visible;
         }
     }
@@ -225,6 +228,15 @@ body.app-content { background: transparent !important; }
     }     
 }
 .app-content.light-theme { 
+
+    .message-loading {
+        svg {
+            circle {
+                fill: #000000;
+            }
+        }
+    }
+
     .custom-switch-block { 
         .info-block {
             label { color: #33333f; }

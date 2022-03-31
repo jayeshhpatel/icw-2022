@@ -1002,7 +1002,6 @@
                                                 }
                                                 .msg-name { color: $white; }
                                                 &:hover {
-                                                    
                                                     .channel-name { @include opacity(0.7); }  
                                                     .msg-name { @include opacity(0.7); }  
                                                 }

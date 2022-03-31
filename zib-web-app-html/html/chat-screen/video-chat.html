@@ -387,7 +387,21 @@
                     $(this).closest(".collaspe-header").addClass("active");
                     $(this).closest(".collapse-card").find(".collapse-body").slideDown();
                 }
-            })
+            });
+
+            $(".video-wrapper").click(function() {
+                
+                if($('.add-user-sidebar').hasClass('is-active')) {
+                    $("#adduser").removeClass('active');
+                    $("#comments-chat").removeClass('active');
+                    $(".add-user-sidebar").removeClass('is-active');
+                }
+
+                if($('.info-popup').hasClass('open-popup')) {
+                    $(".info-icon").removeClass('active');
+                    $(".info-popup").removeClass('open-popup');
+                }
+            });
 
         </script>
     </body>

@@ -7,17 +7,24 @@
     left: 0;
     right: 0;
     bottom: 0;
-    overflow: hidden;
 
+    @media (max-width:767px) {
+        overflow: hidden;
+    }
+    
     ::-webkit-scrollbar-thumb {
         background-color: rgba(27, 27 ,27 ,0.4);
     }
     ::-webkit-scrollbar {
         width: 5px;
+        height: 5px;
     }
 
     button {
         outline: none !important;
+        &:hover {
+            @include opacity(0.8);
+        }
         &:focus:not(:focus-visible) {
             outline: none !important;
         }
@@ -54,8 +61,10 @@
         .video-block {
             width: 100%;
             height: 100%;
+            -o-object-fit: cover;
             object-fit: cover;
-            object-position: top;
+            -o-object-position: top;
+               object-position: top;
         }
     }
 
@@ -99,6 +108,11 @@
                 @include opacity(0);
                 @include transition(0.2s, ease-in-out); 
                 @include border-radius(5px);
+
+                @media (max-width:575px) {
+                    min-width: 240px;
+                }
+
                 &.open-popup {
                     @include opacity(1);
                     visibility: visible;
@@ -108,6 +122,9 @@
                 .inner-info-content {
                     overflow-y: auto;
                     max-height: 480px;
+                    @media (max-width:767px) {
+                        max-height: 440px;
+                    }
                 }
                 &:after {
                     content: "";
@@ -167,9 +184,18 @@
                             font-size: 15px;
                             font-weight: 500;
                             line-height: normal;
+                            word-break: break-word;
                         }
                         .two-grid {
-                            display: grid;grid-template-columns: repeat(2, 1fr);grid-gap: 10px; margin: 5px 0;
+                            display: -ms-grid;display: grid; 
+                            -ms-grid-columns: 1fr 10px 1fr; 
+                            grid-template-columns: repeat(2, 1fr); 
+                            grid-gap: 10px; 
+                            margin: 5px 0;
+
+                            @media (max-width:575px) {
+                                grid-template-columns: repeat(1, 1fr);
+                            }
                             .info-dec {
                                 span {
                                     color: #2A2A2A;
@@ -218,7 +244,11 @@
                     max-width: 100px;
                     white-space: nowrap;
                     overflow: hidden;
+                    -o-text-overflow: ellipsis;
                     text-overflow: ellipsis;
+                    @media (max-width:575px) {
+                        max-width: 80px;
+                    }
                 }
             }
             .icon-pin-block {
@@ -356,6 +386,7 @@
         @include justify-content(center);
         @media (max-width:767px) {
             bottom: 40px;
+            @include flex-wrap(wrap);
         }
         .has-blue-tooltip {
             .tool-tip-blue {
@@ -426,7 +457,13 @@
             margin-bottom: 25px;
             position: absolute;
             @include opacity(0);
-            @include transition(0.2s, ease-in-out); 
+            @include transition(0.2s, ease-in-out);
+
+            @media (max-width:575px) {
+                min-width: 250px;
+                padding: 15px;
+            }
+
             &.open-popup {
                 @include opacity(1);
                 visibility: visible;
@@ -473,7 +510,8 @@
                     padding-left: 36px;
                     height: 38px;
                     font-size: 16px;
-                    color: #ABAEBB;
+                    color: #000;
+                    -webkit-text-fill-color:#000;
                     width: 100%;
                     background-position: 10px;
                     @include border-radius(0);
@@ -493,6 +531,10 @@
                     overflow-y: auto;   
                     padding-right: 5px;
                     margin-right: -5px;
+                    @media (max-width:575px) {
+                        max-height: 240px;
+                    }
+
                     .member-item {
                         @include flexbox();
                         @include align-items(center);
@@ -557,7 +599,13 @@
         background-color: #FFFFFF;
         max-width: 360px;
         width: 100%;
-        z-index: 10;@include transition(300ms, ease);
+        z-index: 10;
+        @include transition(300ms, ease);
+
+        @media (max-width:575px) {
+            max-width: 280px;
+        }
+
         &.is-active {
             right: 0;
             @include opacity(1);
@@ -581,7 +629,8 @@
                 text-transform: uppercase;
                 .ico {
                     @include transform(rotate(-90deg));
-                    margin-right: 10px;@include transition(0.3s, ease-in-out);
+                    margin-right: 10px;
+                    @include transition(0.3s, ease-in-out);
                     &::before {
                         font-size: 8px;
                     }
@@ -607,9 +656,22 @@
                     padding-left: 25px;
                     height: 38px;
                     font-size: 14px;
-                    color: #9C9C9C;
+                    color: #000;
+                    -webkit-text-fill-color:#000;
                     width: 100%;
                     @include border-radius(0);
+                    &::-webkit-input-placeholder {
+                        color: #9C9C9C;
+                    }
+                    &::-moz-placeholder {
+                        color: #9C9C9C;
+                    }
+                    &:-ms-input-placeholder {
+                        color: #9C9C9C;
+                    }
+                    &::-ms-input-placeholder {
+                        color: #9C9C9C;
+                    }
                     &::placeholder {
                         color: #9C9C9C;
                     }
@@ -709,8 +771,10 @@
                 .form-control {
                     border: none;
                     padding: 0;
-                    color: #9C9C9C;
-                    font-size: 16px;font-family: 'IBM Plex Sans', sans-serif;    resize: none;
+                    color: #000;
+                    -webkit-text-fill-color:#000;
+                    font-size: 16px;
+                    font-family: 'IBM Plex Sans', sans-serif;    resize: none;
                     height: auto;
                     width: 100%;
                     background-color: transparent;

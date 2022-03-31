@@ -2266,41 +2266,43 @@
                                                             <span class="size">4356 KB</span>
                                                         </span>
                                                     </div>
-                                                    <div class="circle-loading">
-                                                        <svg version="1.1" id="L5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                                        viewBox="0 0 500 30" enable-background="new 0 0 0 0" xml:space="preserve">
-                                                        <circle fill="#fff" stroke="none" cx="6" cy="10" r="6">
-                                                            <animateTransform 
-                                                            attributeName="transform" 
-                                                            dur="1s" 
-                                                            type="translate" 
-                                                            values="0 15 ; 0 -15; 0 15" 
-                                                            repeatCount="indefinite" 
-                                                            begin="0.1"/>
-                                                        </circle>
-                                                        <circle fill="#fff" stroke="none" cx="30" cy="10" r="6">
-                                                            <animateTransform 
-                                                            attributeName="transform" 
-                                                            dur="1s" 
-                                                            type="translate" 
-                                                            values="0 10 ; 0 -10; 0 10" 
-                                                            repeatCount="indefinite" 
-                                                            begin="0.2"/>
-                                                        </circle>
-                                                        <circle fill="#fff" stroke="none" cx="54" cy="10" r="6">
-                                                            <animateTransform 
-                                                            attributeName="transform" 
-                                                            dur="1s" 
-                                                            type="translate" 
-                                                            values="0 5 ; 0 -5; 0 5" 
-                                                            repeatCount="indefinite" 
-                                                            begin="0.3"/>
-                                                        </circle>
-                                                        </svg>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>  
+                                        <div class="message-loading">
+                                            <div class="circle-loading">
+                                                <svg version="1.1" id="L5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                viewBox="0 0 500 30" enable-background="new 0 0 0 0" xml:space="preserve">
+                                                <circle fill="#fff" stroke="none" cx="6" cy="10" r="6">
+                                                    <animateTransform 
+                                                    attributeName="transform" 
+                                                    dur="1s" 
+                                                    type="translate" 
+                                                    values="0 15 ; 0 -15; 0 15" 
+                                                    repeatCount="indefinite" 
+                                                    begin="0.1"/>
+                                                </circle>
+                                                <circle fill="#fff" stroke="none" cx="30" cy="10" r="6">
+                                                    <animateTransform 
+                                                    attributeName="transform" 
+                                                    dur="1s" 
+                                                    type="translate" 
+                                                    values="0 10 ; 0 -10; 0 10" 
+                                                    repeatCount="indefinite" 
+                                                    begin="0.2"/>
+                                                </circle>
+                                                <circle fill="#fff" stroke="none" cx="54" cy="10" r="6">
+                                                    <animateTransform 
+                                                    attributeName="transform" 
+                                                    dur="1s" 
+                                                    type="translate" 
+                                                    values="0 5 ; 0 -5; 0 5" 
+                                                    repeatCount="indefinite" 
+                                                    begin="0.3"/>
+                                                </circle>
+                                                </svg>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="message-write-container action-popular">
                                         <form >
@@ -4274,12 +4276,13 @@
         <script src="assets/js/chat.js"></script>
         <script>
 
-            $(window).bind('load', function() {
-                $('#loader').addClass('loaded');
-                setTimeout(function() {
-                    $('#loader').css({'display':'none'})
-                }, 5000)
-            });
+                $(window).bind('load', function() {
+                    $('#loader').addClass('loaded');
+                    setTimeout(function() {
+                        $('#loader').css({'display':'none'})
+                    }, 5000)
+                });
+                
 
            $(".mute-btn").click(function() {
                 $(".unmute-btn").css('display', 'flex');
@@ -4516,7 +4519,6 @@
                     $(".suggestions-dropdown").slideToggle();
                     $(this).parents('.tag-box').toggleClass('active');
                 });
-                
                 $(".suggestions-dropdown .suggestion-item").click(function(){
                     $(".suggestions-dropdown").slideToggle();
                     $(".tag-box .tag").css('display', 'block');

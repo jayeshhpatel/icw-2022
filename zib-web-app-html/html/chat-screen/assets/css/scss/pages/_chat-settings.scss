@@ -81,7 +81,6 @@
                         }
                         &:hover, &.active { background: $dark-black; color: $gray-2;
                             em { filter: brightness(0) invert(1);
-                                
                                 // &.icon-setting-profile { background: url($iconpath + 'settings-user-white.svg') no-repeat center center; } 
                                 // &.icon-setting-workspace { background: url($iconpath + 'settings-portfolio-white.svg') no-repeat center center; } 
                                 // &.icon-setting-member { background: url($iconpath + 'settings-manage-members-white.svg') no-repeat center center; } 
