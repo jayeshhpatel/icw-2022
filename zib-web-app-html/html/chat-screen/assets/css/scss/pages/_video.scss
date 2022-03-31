@@ -229,6 +229,7 @@
                     background-color: #fff;
                     @include border-radius(100px);
                     padding: 5px;
+                    cursor: pointer;
                     border: none;
                     @include flexbox();
                     @include align-items(center);
@@ -494,6 +495,7 @@
                     margin-right: -5px;
                     .member-item {
                         @include flexbox();
+                        @include align-items(center);
                         padding: 5px 0;
                         .user-name {
                             color: #2A2A2A;
@@ -513,10 +515,29 @@
                         .invite-link {
                             color: #5056CA;
                             font-weight: 500;
-                            font-size: 16px;
+                            font-size: 14px;
                             cursor: pointer;
                             text-decoration: none;
                             margin-left: auto;
+                            position: relative;
+                            &:hover {
+                                &::before {
+                                    width: 100%;
+                                    right: auto;
+                                    left: 0;
+                                }
+                            }
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                z-index: -1;
+                                right: 0;
+                                bottom: 0;
+                                background: #5056CA;
+                                width: 0;
+                                height: 1px;
+                                @include transition(0.2s, ease-in-out);
+                            }
                         }
                     }
                 }

@@ -60,7 +60,7 @@
                             <em class="ico icon-headphones"></em> <p class="content-text">Teressa Scott</p> <span>( Host )</span>
                         </div>
                         <div class="icon-pin-block">
-                            <button type="button" class="ico icon-pin-filled"></button>
+                            <button type="button" id="pinfilled" class="ico icon-pin-filled"></button>
                         </div>
                     </div>
                     <div class="comments-block">
@@ -302,6 +302,9 @@
 
 
         <script type="text/javascript">
+            $('#pinfilled').click(function() {
+                $("#pinfilled").css("display", "none");
+            });
             $('#microphone').click(function() {
                 $(this).toggleClass('is-mute');
             });
@@ -355,6 +358,15 @@
 
             $('#adduser').click(function() {
                 if($('#adduser').hasClass('active')) {       
+                    $(this).removeClass('active');
+                    $(".add-user-sidebar").removeClass('is-active');
+                } else{
+                    $(this).addClass('active');
+                    $(".add-user-sidebar").addClass('is-active');
+                }
+            });
+            $('#comments-chat').click(function() {
+                if($('#comments-chat').hasClass('active')) {       
                     $(this).removeClass('active');
                     $(".add-user-sidebar").removeClass('is-active');
                 } else{
