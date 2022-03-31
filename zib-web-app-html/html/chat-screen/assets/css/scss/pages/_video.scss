@@ -73,16 +73,6 @@
         }
         .info-block {
             position: relative;
-            &.open-popup {
-                .info-popup {
-                    @include opacity(1);
-                    visibility: visible;
-                    display: block;
-                }
-                .info-icon {
-                    
-                }
-            }
             .info-icon {
                 width: 32px;
                 height: 32px;
@@ -113,6 +103,7 @@
                     @include opacity(1);
                     visibility: visible;
                     display: block;
+                    z-index: 99;
                 }
                 .inner-info-content {
                     overflow-y: auto;
@@ -238,6 +229,7 @@
                     background-color: #fff;
                     @include border-radius(100px);
                     padding: 5px;
+                    border: none;
                     @include flexbox();
                     @include align-items(center);
                     @include justify-content(center);
@@ -252,7 +244,7 @@
             @include flexbox();
             @include align-items(center);
             @include justify-content(flex-end);
-            min-width: 150px;
+            position: relative;
             .ico {
                 border: none !important;
             }
@@ -260,13 +252,9 @@
                 @include flexbox();
                 @include align-items(center);@include border-radius(100px);
                 padding-left: 7px;
-                &.active {
-                    background-color: rgba(0,0,0,0.6);
-                    .screen-block {
-                        @include opacity(1);
-                        width: auto;
-                    }
-                }
+                // &.active {
+                //     background-color: rgba(0,0,0,0.6);
+                // }
                 .ico {
                     height: 32px;
                     width: 32px;
@@ -280,12 +268,16 @@
                     width: 0;
                     @include transition(0.3s, ease-in-out);
                     @include opacity(0);
+                    position: absolute;
+                    right: 50%;@include border-radius(100px);
                     .ico {
                         padding: 0;
                     }
                     &.open-popup {
                         @include opacity(1);
+                        padding-right: 40px;
                         width: auto;
+                        background-color: rgba(0,0,0,0.6);
                     }
                 }
                 .comment-icon {

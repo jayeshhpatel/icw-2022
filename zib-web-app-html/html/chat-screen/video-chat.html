@@ -311,6 +311,11 @@
             $('#invitecopy').click(function() {
                 $(".copy-list").toggleClass('open');
             });
+            $('.screen-block').click(function() {
+                $(".comment-icon").removeClass('active');
+                $(".screen-block").removeClass('open-popup');
+                $(".comment-icon-list").removeClass('active');
+            });
 
             $('#addusers').click(function() {
                 if($('#addusers').hasClass('active')) {       
