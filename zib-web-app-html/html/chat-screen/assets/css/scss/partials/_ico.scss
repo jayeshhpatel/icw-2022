@@ -469,6 +469,13 @@
                 font-size: 14px;
             }
         }
+        &.icon-share-white {
+            &:before {
+                content: "\ea23";
+                color: #ffffff;
+                font-size: 14px;
+            }
+        }
         &.icon-download {
             &:before {
                 content: "\e934";
@@ -890,6 +897,12 @@
             &:before {
                 content: "\e936";
                 color: #5056ca;
+            }
+        }
+        &.icon-pin-white {
+            &:before {
+                content: "\eadf";
+                color: #ffffff;
             }
         }
         &.icon-pin-filled {

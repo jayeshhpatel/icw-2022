@@ -96,6 +96,10 @@ body.app-content.light-theme {
     .table-responsive {
         max-width: 100%; overflow: hidden; overflow-x: auto;
     }
+    .my-auto {
+        margin-left: auto;
+        margin-right: auto;
+    }
     .m-l-auto { margin-left: auto; }
     .m-l-0 { margin-left: 0 !important; }
     .m-b-medium {
