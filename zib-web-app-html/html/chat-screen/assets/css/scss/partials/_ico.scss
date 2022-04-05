@@ -756,9 +756,11 @@
             }
         }
         &.icon-add-white {
-            content: "\e901";
-            color: #ffffff;
-            font-size: 16px;
+            &::before {
+                content: "\e901";
+                color: #ffffff;
+                font-size: 16px;
+            }
         }
         &.threads {
             &:before {

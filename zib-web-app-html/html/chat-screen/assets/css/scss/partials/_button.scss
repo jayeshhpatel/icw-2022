@@ -108,6 +108,20 @@
                 em { width: 10px !important; }
             }
         }
+        &.workspace-btn {
+            .hover-text{
+                display: none;
+            }
+            &:focus,
+            &:hover {
+                .default-text{
+                    display: none;
+                }
+                .hover-text{
+                    display: block;
+                }
+            }
+        }
     }
     a.button { text-decoration: none; }
 }
