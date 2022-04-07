@@ -22,12 +22,20 @@
                     </div>
                     <h1 class="title m-b-16">Launch Workspace</h1>
                     <div class="action p-t-0">
-                        <button class="button btn-light with-icon workspace-btn" type="button"><span class="default-text">Create Workspace</span> <span class="hover-text">Upload</span> <em class="ico icon-add-white"></em></button>
+                        <button class="button btn-light with-icon" id="action-create-workspace" type="button">Create Workspace <em class="ico icon-add-white"></em></button>
+                        <button class="button btn-light with-icon" id="action-upload" type="button">Upload<em class="ico icon-upload-white"></em></button>
                     </div>
                 </div>
             </div>
         </main>
         <script src="../assets/js/jquery.min.js"></script>
-        <script src="../assets/js/chat-settings.js"></script>    
+        <script src="../assets/js/chat-settings.js"></script> 
+        <script>
+            $("#action-upload").hide();
+            $("#action-create-workspace").hover(function(){
+                $(this).hide();
+                $("#action-upload").show();
+            });
+        </script> 
     </body>
 </html>
