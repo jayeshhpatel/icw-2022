@@ -1,0 +1,427 @@
+<!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, expand-on-scroll=no, initial-containing-block=min, vh-unit=min">
+       <script src='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+        <link href="//cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/main.css">  
+        <title>ZIB Messanger</title>
+    </head>
+
+    <body class="app-content">
+        <div id="root">
+            <div class="video-chat-wrapper">
+                <div class="video-wrapper">
+                    <div class="video-screen-block">
+                        <div class="video-screen-inner mw-33">
+                            <div class="video-screen-item">
+                                <div class="headphone-content">
+                                    <em class="ico icon-headphones"></em> <p class="content-text">Teressa Scott</p>
+                                </div>
+                                <div class="video-screen-bg-image">
+                                    <img class="video-bg-img" src="assets/images/girl-img.png" alt=""/>
+                                </div>
+                            </div>
+                            <div class="video-screen-item">
+                                <div class="headphone-content">
+                                    <em class="ico icon-headphones"></em> <p class="content-text">Terry Scott</p>
+                                </div>
+                                <div class="video-screen-bg bg-darkgray">
+                                    <span class="user-info-name">TS</span>
+                                </div>
+                            </div>
+                            <div class="video-screen-item">
+                                <div class="headphone-content">
+                                    <em class="ico icon-headphones"></em> <p class="content-text">Kishan Thanki</p>
+                                </div>
+                                <div class="video-screen-bg bg-darkgreen">
+                                    <span class="user-info-name">KT</span>
+                                </div>
+                            </div>
+                            <div class="video-screen-item">
+                                <div class="headphone-content">
+                                    <em class="ico icon-headphones"></em> <p class="content-text">Scott Montgomery</p>
+                                </div>
+                                <div class="video-screen-bg-image">
+                                    <img class="video-bg-img" src="assets/images/girl-img-01.png" alt=""/>
+                                </div>
+                            </div>
+                            <div class="video-screen-item">
+                                <div class="headphone-content">
+                                    <em class="ico icon-headphones"></em> <p class="content-text">Arnold Smith</p>
+                                </div>
+                                <div class="video-screen-bg bg-darkpink">
+                                    <span class="user-info-name">AS</span>
+                                </div>
+                            </div>
+                            <div class="video-screen-item">
+                                <div class="headphone-content">
+                                    <em class="ico icon-headphones"></em> <p class="content-text">Terry Scott</p>
+                                </div>
+                                <div class="video-screen-bg bg-darkred">
+                                    <span class="user-info-name">TS</span>
+                                </div>
+                            </div>
+                            <div class="video-screen-item">
+                                <div class="headphone-content">
+                                    <em class="ico icon-headphones"></em> <p class="content-text">Teressa Scott</p>
+                                </div>
+                                <div class="video-screen-bg bg-darkgray">
+                                    <span class="user-info-name">TS</span>
+                                </div>
+                            </div>
+                            <div class="video-screen-item">
+                                <div class="headphone-content">
+                                    <em class="ico icon-headphones"></em> <p class="content-text">Kishan Thanki</p>
+                                </div>
+                                <div class="video-screen-bg bg-darkgreen">
+                                    <span class="user-info-name">KT</span>
+                                </div>
+                            </div>
+                            <div class="video-screen-item">
+                                <div class="headphone-content">
+                                    <em class="ico icon-headphones"></em> <p class="content-text">Teressa Scott</p>
+                                </div>
+                                <div class="video-screen-bg-image">
+                                    <img class="video-bg-img" src="assets/images/girl-img.png" alt=""/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-wrapper-bottom">
+                    <div class="microphone-block has-blue-tooltip" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
+                        <button type="button" id="microphone" class="ico icon-microphone"></button>
+                        <div class="tool-tip-blue common-anim common-anim-pseudo from-top">Mute Audio</div>
+                    </div>
+                    <div class="video-block has-blue-tooltip" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
+                        <button type="button" id="video" class="ico icon-video-outline"></button>
+                        <div class="tool-tip-blue common-anim common-anim-pseudo from-top">Video ON</div>
+                    </div>
+                    <div class="user-block has-blue-tooltip" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
+                        <button type="button" id="addusers" class="ico icon-user-follow"></button>
+                        <div class="tool-tip-blue common-anim common-anim-pseudo from-top">Invite</div>
+                        <div class="user-invite-popup">
+                            <div class="invite-title">
+                                Invite people to join meeting 
+                                <button type="button" class="ico icon-close-black popup-close"></button></div>
+                            <div class="search-input form-group">
+                                <label>Search for the member to add</label>
+                                <input type="text" class="form-control" placeholder="Search"/>
+                            </div>
+                            <div class="user-channel-block">
+                                <div class="channel-title">Members in the channel</div>
+                                <div class="member-items">
+                                    <div class="member-item">
+                                        <div class="user-name">
+                                            <img src="assets/images/kishan.jpg" alt="" class="user-img"/> William
+                                        </div>
+                                        <a href="#!" class="invite-link">+ Invite</a>
+                                    </div>
+                                    <div class="member-item">
+                                        <div class="user-name">
+                                            <img src="assets/images/kishan.jpg" alt="" class="user-img"/> Jayesh
+                                        </div>
+                                        <a href="#!" class="invite-link">+ Invite</a>
+                                    </div>
+                                    <div class="member-item">
+                                        <div class="user-name">
+                                            <img src="assets/images/kishan.jpg" alt="" class="user-img"/> Vikas
+                                        </div>
+                                        <a href="#!" class="invite-link">+ Invite</a>
+                                    </div>
+                                    <div class="member-item">
+                                        <div class="user-name">
+                                            <img src="assets/images/kishan.jpg" alt="" class="user-img"/> William
+                                        </div>
+                                        <a href="#!" class="invite-link">+ Invite</a>
+                                    </div>
+                                    <div class="member-item">
+                                        <div class="user-name">
+                                            <img src="assets/images/kishan.jpg" alt="" class="user-img"/> Jayesh
+                                        </div>
+                                        <a href="#!" class="invite-link">+ Invite</a>
+                                    </div>
+                                    <div class="member-item">
+                                        <div class="user-name">
+                                            <img src="assets/images/kishan.jpg" alt="" class="user-img"/> Vikas
+                                        </div>
+                                        <a href="#!" class="invite-link">+ Invite</a>
+                                    </div>
+                                    <div class="member-item">
+                                        <div class="user-name">
+                                            <img src="assets/images/kishan.jpg" alt="" class="user-img"/> William
+                                        </div>
+                                        <a href="#!" class="invite-link">+ Invite</a>
+                                    </div>
+                                    <div class="member-item">
+                                        <div class="user-name">
+                                            <img src="assets/images/kishan.jpg" alt="" class="user-img"/> Jayesh
+                                        </div>
+                                        <a href="#!" class="invite-link">+ Invite</a>
+                                    </div>
+                                    <div class="member-item">
+                                        <div class="user-name">
+                                            <img src="assets/images/kishan.jpg" alt="" class="user-img"/> Vikas
+                                        </div>
+                                        <a href="#!" class="invite-link">+ Invite</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screen-share-block has-blue-tooltip" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
+                        <button type="button" class="ico bg-purple icon-screen-share"></button>
+                        <div class="tool-tip-blue common-anim common-anim-pseudo from-top">Share Screen</div>
+                    </div>
+                    <div class="add-user-block">
+                        <button type="button" id="adduser" class="ico icon-user-multiple"></button>
+                    </div>
+                    <div class="screen-layout-block">
+                        <button type="button" id="screen-layout-grid" class="ico icon-screen-grid dropdown-box"></button>
+                        <div class="has-blue-tooltip" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
+                            <button type="button" id="screen-layout" class="ico icon-screen-layout"></button>
+                            <div class="tool-tip-blue common-anim common-anim-pseudo from-top">Screen Layout</div>
+                        </div>
+                    </div>
+                    <div class="user-dropdown-block has-blue-tooltip" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
+                        <button type="button" class="ico icon-dots-white"></button>
+                        <div class="tool-tip-blue common-anim common-anim-pseudo from-top">More Option</div>
+                    </div>
+                    <div class="call-end-block has-blue-tooltip" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
+                        <button type="button" class="ico bg-red icon-phone"></button>
+                        <div class="tool-tip-blue common-anim common-anim-pseudo from-top">Leave Meeting</div>
+                    </div>
+                </div>
+                <div class="add-user-sidebar">
+                    <div class="collapse-card">
+                        <div class="collaspe-header">
+                            <div class="collapse-action" data-collapse="participants">
+                                <em class="ico arrow-down-black"></em>
+                                PARTICIPANTS ( 3 )
+                            </div>
+                        </div>
+                        <div class="collapse-body" id="participants">
+                            <div class="inner-collapse">
+                                <div class="search-input form-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                </div>
+                                <div class="participants-items">
+                                    <div class="participants-item">
+                                        <div class="user-img">
+                                            <div class="info-name">T</div>
+                                            <em class="ico icon-headset"></em>
+                                        </div>
+                                        <div class="info-content">
+                                            Tom <span>Me</span>
+                                        </div>
+                                        <div class="icon-group">
+                                            <em class="ico icon-video-call"></em>
+                                            <em class="ico icon-turn-microphone"></em>
+                                        </div>
+                                    </div>
+                                    <div class="participants-item">
+                                        <div class="user-img">
+                                            <div class="info-name">SM</div>
+                                            <em class="ico icon-headset"></em>
+                                        </div>
+                                        <div class="info-content">
+                                            Scott Montgomery <span>Host</span>
+                                        </div>
+                                        <div class="icon-group">
+                                            <em class="ico icon-video-call"></em>
+                                            <em class="ico icon-turn-microphone"></em>
+                                        </div>
+                                    </div>
+                                    <div class="participants-item">
+                                        <div class="user-img">
+                                            <div class="info-name">SJ</div>
+                                            <em class="ico icon-headset"></em>
+                                        </div>
+                                        <div class="info-content">
+                                            Steve J
+                                        </div>
+                                        <div class="icon-group">
+                                            <em class="ico icon-video-call"></em>
+                                            <em class="ico icon-turn-microphone"></em>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse-card">
+                        <div class="collaspe-header">
+                            <div class="collapse-action" data-collapse="chat">
+                                <em class="ico arrow-down-black"></em>
+                                Chat
+                            </div>
+                        </div>
+                        <div class="collapse-body" id="chat">
+                            <div class="inner-collapse">
+                                <div class="chat-block">
+                                    <div class="message-row-chat chat-send">
+                                        <div class="message-content">
+                                            <p class="sender-info">Kishan</p>
+                                            <div class="text-item">
+                                                <p class="message-text">Hi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="message-row-chat chat-recive">
+                                        <div class="message-content">
+                                            <p class="sender-info">William</p>
+                                            <div class="text-item">
+                                                <p class="message-text">Did you get chance to see the design ?</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="message-row-chat chat-send">
+                                        <div class="message-content">
+                                            <p class="sender-info">Kishan</p>
+                                            <div class="text-item">
+                                                <p class="message-text">Are you able to hear me ?</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="message-write-wrapper">
+                                    <div class="send-message-block">
+                                        <span class="send-title">SEND TO</span>
+                                        <select class="form-select">
+                                            <option selected>Everyone</option>
+                                            <option value="1">All</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Write here something..."/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- JS -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.dropdown.min.js"></script>
+        <script src="assets/js/wavesurfer.js"></script>
+        <script src="assets/js/chat.js"></script>
+
+
+        <script type="text/javascript">
+            $('#pinfilled').click(function() {
+                $("#pinfilled").css("display", "none");
+            });
+            $('#microphone').click(function() {
+                $(this).toggleClass('is-mute');
+            });
+            $('#video').click(function() {
+                $(this).toggleClass('no-video');
+            });
+            $('#invitecopy').click(function() {
+                $(".copy-list").toggleClass('open');
+            });
+            $('#screen-layout').click(function() {
+                $(".screen-layout-block").toggleClass('open');
+            });
+            $('#screen-layout-grid').click(function() {
+                $(".screen-layout-block").removeClass('open');
+            });
+            $('.screen-block').click(function() {
+                $(".comment-icon").removeClass('active');
+                $(".screen-block").removeClass('open-popup');
+                $(".comment-icon-list").removeClass('active');
+            });
+
+            $('#addusers').click(function() {
+                if($('#addusers').hasClass('active')) {       
+                    $(this).removeClass('active');
+                    $(".user-invite-popup").removeClass('open-popup');
+                } else{
+                    $(this).addClass('active');
+                    $(".user-invite-popup").addClass('open-popup');
+                }
+            });
+
+            $('.popup-close').click(function() {
+                $("#addusers").removeClass('active');
+                $(".user-invite-popup").removeClass('open-popup');
+            });
+
+            $('.info-icon').click(function() {
+                if($('.info-icon').hasClass('active')) {       
+                    $(this).removeClass('active');
+                    $(".info-popup").removeClass('open-popup');
+                } else{
+                    $(this).addClass('active');
+                    $(".info-popup").addClass('open-popup');
+                }
+            });
+            $('.comment-icon').click(function() {
+                if($('.comment-icon').hasClass('active')) {       
+                    $(this).removeClass('active');
+                    $(".screen-block").removeClass('open-popup');
+                    $(".comment-icon-list").removeClass('active');
+                } else{
+                    $(this).addClass('active');
+                    $(".screen-block").addClass('open-popup');
+                    $(".comment-icon-list").addClass('active');
+                }
+            });
+
+            $('#adduser').click(function() {
+                if($('#adduser').hasClass('active')) {       
+                    $(this).removeClass('active');
+                    $(".add-user-sidebar").removeClass('is-active');
+                } else{
+                    $(this).addClass('active');
+                    $(".add-user-sidebar").addClass('is-active');
+                }
+            });
+            $('#comments-chat').click(function() {
+                if($('#comments-chat').hasClass('active')) {       
+                    $(this).removeClass('active');
+                    $(".add-user-sidebar").removeClass('is-active');
+                } else{
+                    $(this).addClass('active');
+                    $(".add-user-sidebar").addClass('is-active');
+                }
+            });
+           
+            $(".collapse-card .collaspe-header").click(function () {
+                if ($(this).closest(".collapse-card").hasClass("open")) {
+                    $(this).closest(".collapse-card").removeClass("open");
+                    $(this).closest(".collaspe-header").removeClass("active");
+                    $(this).closest(".collapse-card").find(".collapse-body").slideUp();
+                } else {
+                    $(".collapse-card").removeClass("open");
+                    $(".collapse-card").find(".collapse-body").slideUp();
+                    $(this).closest(".collapse-card").addClass("open");
+                    $(this).closest(".collaspe-header").addClass("active");
+                    $(this).closest(".collapse-card").find(".collapse-body").slideDown();
+                }
+            });
+
+            $(".video-wrapper").click(function() {
+                
+                if($('.add-user-sidebar').hasClass('is-active')) {
+                    $("#adduser").removeClass('active');
+                    $("#comments-chat").removeClass('active');
+                    $(".add-user-sidebar").removeClass('is-active');
+                }
+
+                if($('.info-popup').hasClass('open-popup')) {
+                    $(".info-icon").removeClass('active');
+                    $(".info-popup").removeClass('open-popup');
+                }
+            });
+
+        </script>
+    </body>
+</html>

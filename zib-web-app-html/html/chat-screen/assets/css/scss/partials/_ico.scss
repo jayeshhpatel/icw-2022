@@ -49,6 +49,14 @@
         &.icon-screen-2 {
             height: 18px; width:18px; background: url($iconpath + "screen-2.svg") no-repeat center;
         }
+        &.icon-screen-layout {
+            height: 18px; width:18px; background: url($iconpath + "screen-layout.svg") no-repeat center;
+            background-size: 20px !important;
+        }
+        &.icon-screen-grid {
+            height: 18px; width:18px; background: url($iconpath + "grid-icon.svg") no-repeat center;
+            background-size: 20px !important;
+        }
         &.icon-info-line {
             &:before {
                 content: "\eae7";
