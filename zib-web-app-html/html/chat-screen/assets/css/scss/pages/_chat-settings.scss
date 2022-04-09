@@ -755,8 +755,38 @@
     }   
     .download-csv-block { margin-top: 15px; margin-bottom: 30px; @include flexbox; flex-wrap: wrap;
         .include { margin-left: 15px; background: #111116;  @include flexbox(); @include align-items(center); padding: 0px 10px 0 0;
-            .button { background: #111116; border-color: #111116; min-width: auto; padding: calc(0.375rem - 3px) 12px calc(0.375rem - 3px) 12px; }
+            .button { background: #111116; border-color: #111116;color: #ABAEBB; min-width: auto; padding: calc(0.375rem - 3px) 12px calc(0.375rem - 3px) 12px; }
             span { letter-spacing: 0.36px; color: #ABAEBB; font-size: 12px; padding-left: 15px; border-left: 1px solid #33333f; height: 100%; @include inline-flex; @include align-items(center); }
+            .dots-list {
+                @include flexbox(); @include align-items(center);
+                border-left: 1px solid #33333f;
+                min-height: 32px;
+                padding-left: 15px;
+                li {
+                    letter-spacing: 0.36px; color: #4D5267; font-size: 12px;
+                    ~li {
+                        padding-left: 25px;
+                        @media (max-width:575px) {
+                            padding-left: 15px;
+                        }
+                    }
+                    &:before {
+                        content: "";
+                        width: 6px;
+                        height: 6px;
+                        @include border-radius(100px);
+                        background-color: #ADB3CC;
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 5px;
+                    } 
+                }
+            }
+        }
+        button {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            min-height: 34px;
         }
         .icon-download-csv {
             filter: brightness(100);
@@ -773,7 +803,7 @@
             }
         }
         .upload-csv-block { @include flexbox; flex-wrap: wrap; @include align-items(flex-start);
-            .csv-file { background: #33333F; position: relative; padding: 10px 15px; color: #E8E8E9; font-size: 14px; @include inline-flex; @include align-items(center); margin-right: 10px; margin-bottom: 10px; 
+            .csv-file { background: #33333F; position: relative; padding: 10px 25px 10px 15px; color: #E8E8E9; font-size: 14px; @include inline-flex; @include align-items(center); margin-right: 10px; margin-bottom: 10px; 
                 em.icon-setting-csv { margin-right: 10px; }
                 span.close { line-height: 0.7; display: inline-block; position: absolute; top: 2px; right: 6px; cursor: pointer; @include transition(0.3s, ease-in-out);
                     .ico{
@@ -1272,7 +1302,15 @@
             }
             tbody {  
                 tr {
-                    td { color: #202028; background-color: #F2F5F9; border-bottom-color: #E2E5E9; }
+                    td { color: #202028; background-color: #F2F5F9; border-bottom-color: #E2E5E9; 
+                        .ico {
+                            &.icon-setting-archive {
+                                &::before {
+                                    color: #5056CA;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -1468,11 +1506,14 @@
         .icon-download-csv {
             filter: inherit;
         }
-        .include { background: #F2F5F9;
-            .button { background: $primary; border-color: $primary; color: $white; 
+        .include { background: transparent;
+            .button { background: $primary; border-color: $primary; color: $white;display: none; 
                 &:hover { background: $primary-hover; color: $white; border-color: $primary-hover; }
             }
-            span { color: #33333f; border-left: 1px solid #ADB3CC; }
+            span { color: #4D5267; border: none; }
+            .dots-list {
+                border: none;
+            }
         }
     }
     .drag-file-block { 
