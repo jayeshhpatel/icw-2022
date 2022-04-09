@@ -763,7 +763,7 @@
                 min-height: 32px;
                 padding-left: 15px;
                 li {
-                    letter-spacing: 0.36px; color: #4D5267; font-size: 12px;
+                    letter-spacing: 0.36px; color: #ABAEBB; font-size: 12px;
                     ~li {
                         padding-left: 25px;
                         @media (max-width:575px) {
@@ -1513,6 +1513,9 @@
             span { color: #4D5267; border: none; }
             .dots-list {
                 border: none;
+                li {
+                    color: #4D5267;
+                }
             }
         }
     }
