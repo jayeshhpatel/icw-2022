@@ -5329,7 +5329,11 @@ html .website {
                 height: 40px;
                 line-height: 40px;
                 border: none ;font-size: 14px;
+                @include transition(0.2s, ease-in-out);
                 background: transparent linear-gradient(123deg, #F4A121 0%, #F36F29 55%, #F24D23 99%) 0% 0% no-repeat padding-box;
+                &:hover, &:focus, &:active{
+                    @include opacity(0.8);
+                }
             }
         }
         .or-text {
@@ -5364,15 +5368,14 @@ html .website {
         .signing-option-btn {
             text-align: center;
             .web-btn {
-                border: 1px solid #E7E8EC;
                 color: #1F1F1F;
-                background-color: #ffffff;
                 padding: 12px;
                 margin: auto;
                 @include border-radius(4px);
                 @include flexbox();
                 @include align-items(center);
                 @include justify-content(center);
+                @include transition(0.2s, ease-in-out);
                 .i-icon {
                     margin-right: 15px;
                 }
