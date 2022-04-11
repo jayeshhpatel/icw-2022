@@ -4322,12 +4322,15 @@
         <script src="assets/js/wavesurfer.js"></script>
         <script src="assets/js/chat.js"></script>
         <script>
-            $(window).bind('load', function() {
-                $('#loader').addClass('loaded');
-                setTimeout(function() {
-                    $('#loader').css({'display':'none'})
-                }, 5000)
-            });
+
+                $(window).bind('load', function() {
+                    $('#loader').addClass('loaded');
+                    setTimeout(function() {
+                        $('#loader').css({'display':'none'})
+                    }, 5000)
+                });
+                
+
            $(".mute-btn").click(function() {
                 $(".unmute-btn").css('display', 'flex');
                 $(".mute-btn").css('display', 'none');
