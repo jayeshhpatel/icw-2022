@@ -59,7 +59,7 @@
                             <a href="#!" class="icons transparent-bg"><img src="images/icons/user-icon.svg" alt="" /></a>
                             <ul class="custom-dropdown">
                                 <li><a href="#!"><em class="i-icon icon-lock"></em>Sign in</a></li>
-                                <li><a href="#!"><em class="i-icon icon-pen"></em>Create Account</a></li>
+                                <li><a href="register-account.html"><em class="i-icon icon-pen"></em>Create Account</a></li>
                             </ul>
                         </div>
                         <div class="bar-icon toggle-sidebar">
@@ -82,7 +82,7 @@
                                         <img src="images/start-here.png" alt=""/>
                                     </div>
                                     <div class="info-btn-group">
-                                        <a href="#!" class="info-btn">
+                                        <a href="#create-project" class="info-btn">
                                             <span class="chat-icon"> <img src="images/icons/chat-orange.svg" alt=""/></span>
                                             <div class="dec-text">
                                                 <span class="sub-title">In-App Chat</span>
@@ -143,7 +143,7 @@
                 </div>
             </div>
             <div class="bg-gray">
-                <div class="content-left-block">
+                <div class="content-left-block" id="create-project">
                     <div class="container">
                         <div class="row">
                             <div class="col-12 col-sm-12 col-md-6 col-lg-6">
@@ -153,7 +153,16 @@
                                         <h2 class="wow fadeInUp">Peer-to-Peer Chat</h2>
                                     </div>                                    
                                     <p class="wow fadeInUp">With Peer-to-Peer Chat, give your users access to an extensive variety of features that they deserve. With our chat APIs and SDKs, you’re on your way to launching your application faster while creating a more secure environment for communication.</p>
-                                    <p class="wow fadeInUp">In-App Chat works with additional plugins to help you build your perfect application and enable more capabilities than if built from scratch. In-App Chat is white-label capable and ready to help you start building lasting customer relationships.</p>
+                                    <div class="more-block">
+                                        <div class="more-link wow fadeInUp">More...</div>
+                                        <div class="info-content">
+                                            <p>In-App Chat works with additional plugins to help you build your perfect application and enable more capabilities than if built from scratch. In-App Chat is white-label capable and ready to help you start building lasting customer relationships.</p>
+                                        </div>
+                                    </div>
+                                    <div class="project-action-button">
+                                        <a href="register-account.html" type="button" class="btn btn-orange">Create Free Project</a>
+                                        <a href="#!" type="button" class="btn btn-only-text">Show me plans</a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-12 col-md-6 col-lg-6">
@@ -678,6 +687,19 @@
         <script src="js/main-website.js"></script>
         <script>
             jQuery(document).ready(function($){
+
+                $(".more-block .more-link").click(function () {
+                    if ($(this).closest(".more-block").hasClass("open")) {
+                        $(this).closest(".more-block").removeClass("open");
+                        $(this).closest(".more-link").removeClass("d-none");
+                        $(this).closest(".more-block").find(".info-content").slideUp();
+                    } else {
+                        $(".more-block").removeClass("open");
+                        $(this).closest(".more-block").addClass("open");
+                        $(this).closest(".more-link").addClass("d-none");
+                        $(this).closest(".more-block").find(".info-content").slideDown();
+                    }
+                });
                 $('.form-button').on('click', function() {
                     if(!$('.custom-input').val()) {
                         $('.custom-input').parents('.form-group').addClass('error');

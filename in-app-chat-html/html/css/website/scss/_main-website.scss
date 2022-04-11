@@ -19,6 +19,9 @@ html body.website {
 .link { color: $darkblue; text-decoration: none; @include transition(0.3s, ease-in-out); white-space: nowrap;
     &:hover { color: $darkblack; }
 }
+html {
+    scroll-behavior: smooth;
+}
 html .website {
     .font-weight-500 {font-weight: 500 !important;}
     .text-black { color: $black; }
@@ -5230,6 +5233,159 @@ html .website {
         }
         @media (max-width:767px) {
             @include border-radius(20px);
+        }
+    }
+    .more-block {
+        .more-link {
+            color: #5351FB;
+            font-size: 18px;
+            cursor: pointer;
+            display: inline-block;
+        }
+        .info-content {
+            display: none;
+            p {
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .project-action-button {
+        margin-top: 20px;
+        .btn-orange {
+            background-color: #FF6F00;
+            border-color: #FF6F00;
+            &:hover, &:focus, &:active{
+                background-color: #EC6700;
+                border-color: #EC6700;
+            }
+        }
+        .btn-only-text {
+            font-weight: 600;
+        }
+    }
+    .register-flow-block {
+        padding: 50px 0;
+        background: transparent linear-gradient(132deg, #FFCF5D 0%, #FF8324 100%) 0% 0% no-repeat padding-box;
+        .form-block {
+            padding: 30px;
+            max-width: 560px;
+            @include border-radius(0px);
+            @include box-shadow(0px 10px 30px rgba(255, 255, 255 , 0.1));
+        }
+        .title-content {
+            text-align: center;
+            h2 {
+                color: #444444;
+                font-size: calc(22px + (30 - 22) * ((100vw - 320px) / (1900 - 320)));
+                font-weight: 600;
+            }
+            .sub-title {
+                color: #7C7C7C;
+                font-size: 12px;
+                display: block;
+            }
+        }
+        .form-group {
+            label {
+                color: #444444;
+                font-size: 14px;
+                font-weight: 600;
+                margin-bottom: 5px;
+            }
+            .form-control {
+                min-height: 40px;
+                border-color: #D1D1D1;
+                font-size: 14px;@include border-radius(0px);
+                &::placeholder {
+                    color: #D9D9D9;
+                }
+            }
+            .custom-checkbox {
+                text-align: center;
+                .custom-control-label {
+                    font-size: 14px;
+                }
+                label {
+                    &:before, &:after {
+                        width: 20px;
+                        height: 20px;@include border-radius(0);
+                    }
+                }
+            }
+        }
+        .form-action {
+            .btn-orange {
+                min-width: 120px;
+                height: 40px;
+                line-height: 40px;
+                border: none ;font-size: 14px;
+                background: transparent linear-gradient(123deg, #F4A121 0%, #F36F29 55%, #F24D23 99%) 0% 0% no-repeat padding-box;
+            }
+        }
+        .or-text {
+            text-align: center;
+            position: relative;
+            margin: 15px auto;
+            max-width: 380px;
+            &:before {
+                position: absolute;
+                width: 100%;
+                content: '';
+                left: 0;
+                height: 1px;
+                top: 50%;
+                background: #E7E8EC;
+            }
+            span {
+                color: #ABAEBB;
+                font-size: 11px;
+                width: 22px;
+                height: 22px;
+                background-color: #ffffff;
+                border: 1px solid #E7E8EC;
+                margin: auto;
+                position: relative;
+                @include flexbox();
+                @include align-items(center);
+                @include justify-content(center);
+                @include border-radius(100px);
+            }
+        }
+        .signing-option-btn {
+            text-align: center;
+            .web-btn {
+                border: 1px solid #E7E8EC;
+                color: #1F1F1F;
+                background-color: #ffffff;
+                padding: 12px;
+                margin: auto;
+                @include border-radius(4px);
+                @include flexbox();
+                @include align-items(center);
+                @include justify-content(center);
+                .i-icon {
+                    margin-right: 15px;
+                }
+            }
+        }
+        .account-register-link {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 30px;
+            span {
+                color: #ECECEC;
+            }
+            .link-action{
+                color: #1F1F1F;
+            }
+        }
+        .verify-address-content {
+            color: #1F1F1F;
+            strong {
+                font-size: 20px;
+            }
         }
     }
 }
