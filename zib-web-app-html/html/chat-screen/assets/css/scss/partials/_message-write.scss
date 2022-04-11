@@ -31,7 +31,7 @@
                             -ms-flex: none;
                             flex: none;
                             @media (max-width:767px) {
-                                padding: 0 15px 15px;
+                                padding: 0 15px 0;
                             }
                             .invited-title {
                                 font-size: 13px;
@@ -39,7 +39,6 @@
                                 margin-right: 10px;
                                 @media (max-width:575px) {
                                     width: 100%;
-                                    padding-bottom: 10px;
                                 }
                             }
                             .join-btn {
@@ -67,6 +66,7 @@
                             }
                             .invited-people-block {
                                 position: relative;
+                                padding: 10px 0;
                                 .people-popup {
                                     border: 1px solid #E0E0E0;
                                     background-color: #ffffff;
