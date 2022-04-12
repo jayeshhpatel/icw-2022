@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="theme-color" content="#40D4F4">
+        <meta name="Googlebot" content="noindex,nofollow">        
+        <meta name="author" content="In-App Chat">
+        <meta name="description" content="In-App Chat">    
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" href="../images/favicons/apple-touch-icon.png" sizes="180x180">
+        <link rel="mask-icon" href="../images/favicons/safari-pinned-tab.svg" color="#000000">
+        <link rel="shortcut icon" type="images/x-icon" href="../favicon.ico">
+
+        <link rel="stylesheet" href="../css/portal-v2/main-portal.css">
+        <title>Infrastructure | In-App Chat</title> 
+    </head>
+    <body class="portal">
+        <header class="main-dashboard-header">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <div class="container-fluid">    
+                    <div class="bar-icon toggle-sidebar">
+                        <div class="line1"></div><div class="line2"></div><div class="line3"></div>
+                    </div>  
+                    <a href="#" class="logo"><img src="../images/gradient-logo-mark.svg" class="d-md-none d-block" alt="In-App Chat" /></a>     
+                    <div class="form-group">
+                        <div class="custom-dropdown input-dropdown">
+                            <button class="dropdown-input dropdown-toggle" type="button" id="project-select" data-toggle="dropdown" aria-expanded="false"><span>Project ABC</span></button>
+                            <ul class="dropdown-menu" aria-labelledby="project-select">
+                                <li><button type="button" class="dropdown-item active" data-value="Project ABC">Project ABC</button></li>
+                                <li><button type="button" class="dropdown-item" data-value="Transport Web Portal">Transport Web Portal</button></li>
+                                <li><button type="button" class="dropdown-item" data-value="Healthcare Communication">Healthcare Communication</button></li>
+                            </ul>
+                        </div>
+                    </div>        
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav ml-auto">                            
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-orange" href="#"><em class="i-icon icon-upgrade"></em><span>Upgrade Plan</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="my-project.html"><em class="i-icon icon-projects"></em><span>My Projects</span></a>
+                            </li>
+                            <li class="nav-item profile-dropdown dropdown">
+                                <a class="nav-link" href="#" id="profile-dropdown" data-toggle="dropdown">
+                                    <div class="img"><img src="../images/portal/new/user.png" class="profile-img" alt="user" /></div>
+                                    <div class="info d-none d-md-block">
+                                        <span class="name">John Doe</span>
+                                        <span class="email">johndoe@gmail.com</span>
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="profile-dropdown">                                   
+                                    <li class="pb-0 d-block d-md-none">
+                                        <div class="dropdown-item org-box border-0">
+                                            <strong>John Doe</strong>
+                                            <span>johndoe@gmail.com</span>                                            
+                                        </div> 
+                                    </li>
+                                    <li class="dropdown organization-dropdown">
+                                        <div class="org-box dropdown-item " id="organizations-dropdown" data-toggle="dropdown">
+                                            <span>Organizations</span>
+                                            <strong>Cool Inc.</strong>
+                                        </div> 
+                                        <ul class="dropdown-menu" aria-labelledby="organizations-dropdown">                                   
+                                            <li class="heading"><span>Owner</span></li>
+                                            <li><a class="dropdown-item active" href="#">MyTestOrg</a></li>
+                                            <li><a class="dropdown-item" href="#">MyTestOrg1</a></li>
+                                            <li><a class="dropdown-item" href="#">MyTestOrg2</a></li>
+                                            <li><a class="dropdown-item" href="#">MyTestOrg3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="account-profile.html">Account and Profile</a></li>
+                                    <li><a class="dropdown-item" href="organization.html">Organization Settings</a></li>
+                                    <li><a class="dropdown-item" href="billing.html">Billing</a></li>
+                                    <li><a class="dropdown-item" href="#" class="text-orange">Log Out</a></li>
+                                </ul>                                 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="content-wrapper">
+            <aside class="main-icon-sidebar">
+                <div class="sidebar-wrapper">
+                    <a href="#" class="logo">
+                        <span class="logo-img">
+                            <img src="../images/gradient-logo-mark.svg" alt="In-App Chat" />
+                        </span>
+                        <span class="logo-text">
+                            <img src="../images/logo-text.svg" alt="In-App Chat" />
+                        </span>
+                    </a>
+                    <div class="sidebar-menu-block">
+                        <ul class="sidebar-menu">
+                            <li class="menu-item line-item mt-0 pt-0">
+                                <span class="title">OVERVIEW</span>
+                            </li>
+                            <li class="menu-item">
+                                <a href="project-overview.html" class="menu-link">
+                                    <span class="icon"><em class="i-icon icon-dashboard"></em></span>
+                                    <span class="text">Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="analytics.html" class="menu-link">
+                                    <span class="icon"><em class="i-icon icon-analytics"></em></span>
+                                    <span class="text">Analytics</span>
+                                </a>
+                            </li>
+                            <li class="menu-item line-item">
+                                <span class="line"></span><span class="title">CHAT & USERS</span>
+                            </li>
+                            <li class="menu-item">
+                                <a href="messages.html" class="menu-link">
+                                    <span class="icon"><em class="i-icon icon-messages"></em></span>
+                                    <span class="text">Messages</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="users.html" class="menu-link">
+                                    <span class="icon"><em class="i-icon icon-users"></em></span>
+                                    <span class="text">Users</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="moderation.html" class="menu-link">
+                                    <span class="icon"><em class="i-icon icon-moderation"></em></span>
+                                    <span class="text">Moderation</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="bots.html" class="menu-link">
+                                    <span class="icon"><em class="i-icon icon-bots"></em></span>
+                                    <span class="text">Bots</span>
+                                </a>
+                            </li>
+                            <li class="menu-item line-item">
+                                <span class="line"></span><span class="title">STRUCTURE & SAFETY</span>
+                            </li>
+                            <li class="menu-item">
+                                <a href="infrastructure.html" class="menu-link active">
+                                    <span class="icon"><em class="i-icon icon-infrastructure"></em></span>
+                                    <span class="text">Infrastructure</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="security.html" class="menu-link">
+                                    <span class="icon"><em class="i-icon icon-security"></em></span>
+                                    <span class="text">Security</span>
+                                </a>
+                            </li>
+                            
+                            <li class="menu-item">
+                                <a href="usage.html" class="menu-link">
+                                    <span class="icon"><em class="i-icon icon-usage"></em></span>
+                                    <span class="text">Usage</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="billing.html" class="menu-link">
+                                    <span class="icon"><em class="i-icon icon-billing"></em></span>
+                                    <span class="text">Billing</span>
+                                </a>
+                            </li>
+                            <li class="menu-item line-item">
+                                <span class="line"></span><span class="title">DOCUMENTS</span>
+                            </li>
+                            <li class="menu-item">
+                                <a href="compliance.html" class="menu-link">
+                                    <span class="icon"><em class="i-icon icon-compliance"></em></span>
+                                    <span class="text">Compliance</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="documents.html" class="menu-link">
+                                    <span class="icon"><em class="i-icon icon-documents"></em></span>
+                                    <span class="text">Documents</span>
+                                </a>
+                            </li>
+                            <li class="menu-item line-item">
+                                <span class="line"></span><span class="title">SETTINGS & SUPPORT</span>
+                            </li>
+                            <li class="menu-item">
+                                <a href="settings.html" class="menu-link">
+                                    <span class="icon"><em class="i-icon icon-settings"></em></span>
+                                    <span class="text">Settings</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="support.html" class="menu-link">
+                                    <span class="icon"><em class="i-icon icon-support"></em></span>
+                                    <span class="text">Support</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <div class="main-content-wrapper">               
+                <div class="content">
+                    <div class="title-box">
+                        <div class="title">
+                            <h1>Infrastructure</h1>
+                        </div>
+                    </div>
+                <!--  
+
+                    <div class="overview-boxes">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 m-30">
+                                <div class="overview-box">
+                                    <div class="title">
+                                        <h2 class="h4">Server Status</h2>
+                                    </div>
+                                    <div class="overview-info infrastructure-box">
+                                        <div class="status-info-box">
+                                            <div class="icon"><em class="i-icon icon-up"></em></div>
+                                            <span>3 Online</span>
+                                        </div>
+                                        <div class="status-info-box">
+                                            <div class="icon red-bg"><em class="i-icon icon-down"></em></div>
+                                            <span>3 Online</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 m-30">
+                                <div class="overview-box">
+                                    <div class="title">
+                                        <h2 class="h4">POD Status</h2>
+                                    </div>
+                                    <div class="overview-info infrastructure-box">
+                                        <div class="status-info-box">
+                                            <div class="icon"><em class="i-icon icon-up"></em></div>
+                                            <span>3 Online</span>
+                                        </div>
+                                        <div class="status-info-box">
+                                            <div class="icon red-bg"><em class="i-icon icon-down"></em></div>
+                                            <span>3 Online</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-6 m-30">
+                                <div class="overview-box">
+                                    <div class="title">
+                                        <h2 class="h4">Cluster Status</h2>                                    
+                                    </div>
+                                    <div class="overview-info infrastructure-box">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-4 col-md-4 col-lg-4 p-sm-0">
+                                                <div class="pie-chart-block border-right">
+                                                    <div class="chart">
+                                                        <svg viewBox="0 0 36 36" class="circular-chart red">
+                                                            <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                            <path class="circle" stroke-dasharray="80, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                        </svg> 
+                                                        <div class="chart-info-center">
+                                                            <h2>80%</h2>
+                                                        </div>                                                          
+                                                    </div>
+                                                    <div class="chart-info">
+                                                        <span>CPU</span>
+                                                        <small><strong>1</strong> out of <strong>6</strong> Reserved</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-4 col-lg-4 p-sm-0">
+                                                <div class="pie-chart-block border-right">
+                                                    <div class="chart">
+                                                        <svg viewBox="0 0 36 36" class="circular-chart yellow">
+                                                            <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                            <path class="circle" stroke-dasharray="80, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                        </svg> 
+                                                        <div class="chart-info-center">
+                                                            <h2>80%</h2>
+                                                        </div>                                                       
+                                                    </div>
+                                                    <div class="chart-info">
+                                                        <span>Memory</span>
+                                                        <small><strong>0.1</strong> of <strong>1.3</strong> GB Reserved</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-4 col-lg-4 p-sm-0">
+                                                <div class="pie-chart-block pb-0">
+                                                    <div class="chart">
+                                                        <svg viewBox="0 0 36 36" class="circular-chart green">
+                                                            <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                                            <path class="circle" stroke-dasharray="80, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                                        </svg>
+                                                        <div class="chart-info-center">
+                                                            <h2>80%</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="chart-info">
+                                                        <span>Pods</span>
+                                                        <small><strong>22</strong> of <strong>330</strong> of  Used</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                -->
+
+                    <div class="overview-boxes">
+                        <div class="row">
+                            <div class="col-12 m-30">
+                                <div class="overview-box">
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+
+                                    <div class="title">
+                                        <h2 class="h4">Cluster Status</h2>
+                                    </div>
+                                    <div class="overview-info infrastructure-box">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-4 col-md-4 col-lg-4 p-sm-0">
+                                                <div class="pie-chart-block border-right">
+                                                    <div class="chart">
+                                                        <svg viewBox="0 0 36 36" class="circular-chart red">
+                                                            <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                            <path class="circle" stroke-dasharray="80, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                        </svg>
+                                                        <div class="chart-info-center">
+                                                            <h2>80%</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="chart-info">
+                                                        <span>CPU</span>
+                                                        <small><strong>1</strong> out of <strong>6</strong> Reserved</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-4 col-lg-4 p-sm-0">
+                                                <div class="pie-chart-block border-right">
+                                                    <div class="chart">
+                                                        <svg viewBox="0 0 36 36" class="circular-chart yellow">
+                                                            <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                            <path class="circle" stroke-dasharray="80, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                        </svg>
+                                                        <div class="chart-info-center">
+                                                            <h2>80%</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="chart-info">
+                                                        <span>Memory</span>
+                                                        <small><strong>0.1</strong> of <strong>1.3</strong> GB Reserved</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-4 col-lg-4 p-sm-0">
+                                                <div class="pie-chart-block pb-0">
+                                                    <div class="chart">
+                                                        <svg viewBox="0 0 36 36" class="circular-chart green">
+                                                            <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                                            <path class="circle" stroke-dasharray="80, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                                        </svg>
+                                                        <div class="chart-info-center">
+                                                            <h2>80%</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="chart-info">
+                                                        <span>Pods</span>
+                                                        <small><strong>22</strong> of <strong>330</strong> of  Used</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 m-30">
+                            <div class="accordion" id="accordionInfrastructure">
+                                <div class="collapse-card active">
+                                    <div class="card-header" id="headingNode1" data-toggle="collapse" data-target="#collapseNode1" aria-expanded="true" aria-controls="collapseNode1">
+                                        <h2>Node 1</h2>
+                                        <span class="status offline">Offline</span>
+                                        <span class="arrow-icon"><em class="i-icon icon-right-arrow"></em></span>
+                                    </div>                                
+                                    <div id="collapseNode1" class="collapse show" aria-labelledby="headingNode1" data-parent="#accordionInfrastructure">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                    <div class="details-box mb-2 mb-lg-0">
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                                                                <div class="info-row">
+                                                                    <span>Docker Version</span>
+                                                                    <strong>2.17</strong>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                                                                <div class="info-row">
+                                                                    <span>OS Name</span>
+                                                                    <strong>Linux</strong>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                                                                <div class="info-row">
+                                                                    <span>Kernel Version</span>
+                                                                    <strong>2.17</strong>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                                                                <div class="info-row">
+                                                                    <span>K83 Version</span>
+                                                                    <strong>2.17</strong>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                    <div class="details-box mb-2 mb-lg-0">
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                                                                <div class="info-row">
+                                                                    <span>Disk Pressure</span>
+                                                                    <strong class="icon"><em class="i-icon icon-check-success"></em></strong>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                                                                <div class="info-row">
+                                                                    <span>Mem Pressure</span>
+                                                                    <strong class="icon"><em class="i-icon icon-danger-filled"></em></strong>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                                                                <div class="info-row">
+                                                                    <span>Max POD Support</span>
+                                                                    <strong>55</strong>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                                                                <div class="info-row">
+                                                                    <span>MEM</span>
+                                                                    <strong>10 G</strong>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6"></div>
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                                                                <div class="info-row">
+                                                                    <span>PID Pressure</span>
+                                                                    <strong class="icon"><em class="i-icon icon-danger-filled"></em></strong>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="warning-action text-right">
+                                                        <div class="warning-text text-danger">
+                                                            <em class="i-icon icon-danger-filled"></em> Mem and Pid Pressure critical please raise maintenance ticket to the eRTC Support
+                                                        </div>
+                                                        <button class="btn btn-outline-primary btn-md" type="button">Go To Support</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="collapse-card">
+                                    <div class="card-header" id="headingNode2" data-toggle="collapse" data-target="#collapseNode2" aria-expanded="false" aria-controls="collapseNode2">
+                                        <h2>Node 2</h2>
+                                        <span class="status">Online</span>
+                                        <span class="arrow-icon"><em class="i-icon icon-right-arrow"></em></span>
+                                    </div>
+                                    <div id="collapseNode2" class="collapse" aria-labelledby="headingNode2" data-parent="#accordionInfrastructure">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                    <div class="details-box mb-2 mb-lg-0">
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                                                                <div class="info-row">
+                                                                    <span>Docker Version</span>
+                                                                    <strong>2.17</strong>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                                                                <div class="info-row">
+                                                                    <span>OS Name</span>
+                                                                    <strong>Linux</strong>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                                                                <div class="info-row">
+                                                                    <span>Kernel Version</span>
+                                                                    <strong>2.17</strong>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                                                                <div class="info-row">
+                                                                    <span>K83 Version</span>
+                                                                    <strong>2.17</strong>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                    <div class="details-box mb-2 mb-lg-0">
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                                                                <div class="info-row">
+                                                                    <span>Disk Pressure</span>
+                                                                    <strong class="icon"><em class="i-icon icon-check-success"></em></strong>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                                                                <div class="info-row">
+                                                                    <span>Mem Pressure</span>
+                                                                    <strong class="icon"><em class="i-icon icon-danger-filled"></em></strong>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                                                                <div class="info-row">
+                                                                    <span>Max POD Support</span>
+                                                                    <strong>55</strong>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                                                                <div class="info-row">
+                                                                    <span>MEM</span>
+                                                                    <strong>10 G</strong>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6"></div>
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                                                                <div class="info-row">
+                                                                    <span>PID Pressure</span>
+                                                                    <strong class="icon"><em class="i-icon icon-danger-filled"></em></strong>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="warning-action text-right">
+                                                        <div class="warning-text text-danger">
+                                                            <em class="i-icon icon-danger-filled"></em> Mem and Pid Pressure critical please raise maintenance ticket to the eRTC Support
+                                                        </div>
+                                                        <button class="btn btn-outline-primary btn-md" type="button">Go To Support</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="collapse-card">
+                                    <div class="card-header" id="headingNode3" data-toggle="collapse" data-target="#collapseNode3" aria-expanded="false" aria-controls="collapseNode3">
+                                        <h2>Node 3</h2>
+                                        <span class="status">Online</span>
+                                        <span class="arrow-icon"><em class="i-icon icon-right-arrow"></em></span>
+                                    </div>
+                                    <div id="collapseNode3" class="collapse" aria-labelledby="headingNode3" data-parent="#accordionInfrastructure">
+                                        <div class="card-body pt-0">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                    <div class="details-box mb-2 mb-lg-0">
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                                                                <div class="info-row">
+                                                                    <span>Docker Version</span>
+                                                                    <strong>2.17</strong>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                                                                <div class="info-row">
+                                                                    <span>OS Name</span>
+                                                                    <strong>Linux</strong>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                                                                <div class="info-row">
+                                                                    <span>Kernel Version</span>
+                                                                    <strong>2.17</strong>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                                                                <div class="info-row">
+                                                                    <span>K83 Version</span>
+                                                                    <strong>2.17</strong>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                    <div class="details-box mb-2 mb-lg-0">
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                                                                <div class="info-row">
+                                                                    <span>Disk Pressure</span>
+                                                                    <strong class="icon"><em class="i-icon icon-check-success"></em></strong>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                                                                <div class="info-row">
+                                                                    <span>Mem Pressure</span>
+                                                                    <strong class="icon"><em class="i-icon icon-danger-filled"></em></strong>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                                                                <div class="info-row">
+                                                                    <span>Max POD Support</span>
+                                                                    <strong>55</strong>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                                                                <div class="info-row">
+                                                                    <span>MEM</span>
+                                                                    <strong>10 G</strong>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6"></div>
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                                                                <div class="info-row">
+                                                                    <span>PID Pressure</span>
+                                                                    <strong class="icon"><em class="i-icon icon-danger-filled"></em></strong>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="warning-action text-right">
+                                                        <div class="warning-text text-danger">
+                                                            <em class="i-icon icon-danger-filled"></em> Mem and Pid Pressure critical please raise maintenance ticket to the eRTC Support
+                                                        </div>
+                                                        <button class="btn btn-outline-primary btn-md" type="button">Go To Support</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/popper.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/all-jquery.js"></script>
+        <script src="../js/main-portal-v2.js"></script><script>
+            $('.collapse-card .card-header').on('click', function(){
+                if($(this).parents('.collapse-card').hasClass('active')) {
+                    $(this).parents('.collapse-card').removeClass('active');
+                } else { 
+                    $('.collapse-card').removeClass('active');
+                    $(this).parents('.collapse-card').addClass('active')
+                }
+            })
+        </script>
+    </body>
+</html>

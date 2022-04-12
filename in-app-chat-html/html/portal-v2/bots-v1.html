@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="theme-color" content="#40D4F4">
+        <meta name="Googlebot" content="noindex,nofollow">        
+        <meta name="author" content="In-App Chat">
+        <meta name="description" content="In-App Chat">    
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" href="../images/favicons/apple-touch-icon.png" sizes="180x180">
+        <link rel="mask-icon" href="../images/favicons/safari-pinned-tab.svg" color="#000000">
+        <link rel="shortcut icon" type="images/x-icon" href="../favicon.ico">
+
+        <link rel="stylesheet" href="../css/portal-v2/main-portal.css">
+        <title>Chat Bots | In-App Chat</title> 
+    </head>
+    <body class="portal">
+        <header class="main-dashboard-header">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <div class="container-fluid">    
+                    <div class="bar-icon toggle-sidebar">
+                        <div class="line1"></div><div class="line2"></div><div class="line3"></div>
+                    </div>  
+                    <a href="#" class="logo"><img src="../images/gradient-logo-mark.svg" class="d-md-none d-block" alt="In-App Chat" /></a>     
+                    <div class="form-group">
+                        <div class="custom-dropdown input-dropdown">
+                            <button class="dropdown-input dropdown-toggle" type="button" id="project-select" data-toggle="dropdown" aria-expanded="false"><span>Project ABC</span></button>
+                            <ul class="dropdown-menu" aria-labelledby="project-select">
+                                <li><button type="button" class="dropdown-item active" data-value="Project ABC">Project ABC</button></li>
+                                <li><button type="button" class="dropdown-item" data-value="Transport Web Portal">Transport Web Portal</button></li>
+                                <li><button type="button" class="dropdown-item" data-value="Healthcare Communication">Healthcare Communication</button></li>
+                            </ul>
+                        </div>
+                    </div>        
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav ml-auto">                            
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-orange" href="#"><em class="i-icon icon-upgrade"></em><span>Upgrade Plan</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="my-project.html"><em class="i-icon icon-projects"></em><span>My Projects</span></a>
+                            </li>
+                            <li class="nav-item profile-dropdown dropdown">
+                                <a class="nav-link" href="#" id="profile-dropdown" data-toggle="dropdown">
+                                    <div class="img"><img src="../images/portal/new/user.png" class="profile-img" alt="user" /></div>
+                                    <div class="info d-none d-md-block">
+                                        <span class="name">John Doe</span>
+                                        <span class="email">johndoe@gmail.com</span>
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="profile-dropdown">                                   
+                                    <li class="pb-0 d-block d-md-none">
+                                        <div class="dropdown-item org-box border-0">
+                                            <strong>John Doe</strong>
+                                            <span>johndoe@gmail.com</span>                                            
+                                        </div> 
+                                    </li>
+                                    <li class="dropdown organization-dropdown">
+                                        <div class="org-box dropdown-item " id="organizations-dropdown" data-toggle="dropdown">
+                                            <span>Organizations</span>
+                                            <strong>Cool Inc.</strong>
+                                        </div> 
+                                        <ul class="dropdown-menu" aria-labelledby="organizations-dropdown">                                   
+                                            <li class="heading"><span>Owner</span></li>
+                                            <li><a class="dropdown-item active" href="#">MyTestOrg</a></li>
+                                            <li><a class="dropdown-item" href="#">MyTestOrg1</a></li>
+                                            <li><a class="dropdown-item" href="#">MyTestOrg2</a></li>
+                                            <li><a class="dropdown-item" href="#">MyTestOrg3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="account-profile.html">Account and Profile</a></li>
+                                    <li><a class="dropdown-item" href="organization.html">Organization Settings</a></li>
+                                    <li><a class="dropdown-item" href="billing.html">Billing</a></li>
+                                    <li><a class="dropdown-item" href="#" class="text-orange">Log Out</a></li>
+                                </ul>                                 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="content-wrapper">
+            <aside class="main-icon-sidebar">
+                <div class="sidebar-wrapper">
+                    <a href="#" class="logo">
+                        <span class="logo-img">
+                            <img src="../images/gradient-logo-mark.svg" alt="In-App Chat" />
+                        </span>
+                        <span class="logo-text">
+                            <img src="../images/logo-text.svg" alt="In-App Chat" />
+                        </span>
+                    </a>
+                    <div class="sidebar-menu-block">
+                        <ul class="sidebar-menu">
+                            <li class="menu-item line-item mt-0 pt-0">
+                                <span class="title">OVERVIEW</span>
+                            </li>
+                            <li class="menu-item">
+                                <a href="project-overview.html" class="menu-link">
+                                    <span class="icon"><em class="i-icon icon-dashboard"></em></span>
+                                    <span class="text">Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="analytics.html" class="menu-link">
+                                    <span class="icon"><em class="i-icon icon-analytics"></em></span>
+                                    <span class="text">Analytics</span>
+                                </a>
+                            </li>
+                            <li class="menu-item line-item">
+                                <span class="line"></span><span class="title">CHAT & USERS</span>
+                            </li>
+                            <li class="menu-item">
+                                <a href="messages.html" class="menu-link">
+                                    <span class="icon"><em class="i-icon icon-messages"></em></span>
+                                    <span class="text">Messages</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="users.html" class="menu-link">
+                                    <span class="icon"><em class="i-icon icon-users"></em></span>
+                                    <span class="text">Users</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="moderation.html" class="menu-link">
+                                    <span class="icon"><em class="i-icon icon-moderation"></em></span>
+                                    <span class="text">Moderation</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="bots.html" class="menu-link active">
+                                    <span class="icon"><em class="i-icon icon-bots"></em></span>
+                                    <span class="text">Bots</span>
+                                </a>
+                            </li>
+                            <li class="menu-item line-item">
+                                <span class="line"></span><span class="title">STRUCTURE & SAFETY</span>
+                            </li>
+                            <li class="menu-item">
+                                <a href="infrastructure.html" class="menu-link">
+                                    <span class="icon"><em class="i-icon icon-infrastructure"></em></span>
+                                    <span class="text">Infrastructure</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="security.html" class="menu-link">
+                                    <span class="icon"><em class="i-icon icon-security"></em></span>
+                                    <span class="text">Security</span>
+                                </a>
+                            </li>
+                            
+                            <li class="menu-item">
+                                <a href="usage.html" class="menu-link">
+                                    <span class="icon"><em class="i-icon icon-usage"></em></span>
+                                    <span class="text">Usage</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="billing.html" class="menu-link">
+                                    <span class="icon"><em class="i-icon icon-billing"></em></span>
+                                    <span class="text">Billing</span>
+                                </a>
+                            </li>
+                            <li class="menu-item line-item">
+                                <span class="line"></span><span class="title">DOCUMENTS</span>
+                            </li>
+                            <li class="menu-item">
+                                <a href="compliance.html" class="menu-link">
+                                    <span class="icon"><em class="i-icon icon-compliance"></em></span>
+                                    <span class="text">Compliance</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="documents.html" class="menu-link">
+                                    <span class="icon"><em class="i-icon icon-documents"></em></span>
+                                    <span class="text">Documents</span>
+                                </a>
+                            </li>
+                            <li class="menu-item line-item">
+                                <span class="line"></span><span class="title">SETTINGS & SUPPORT</span>
+                            </li>
+                            <li class="menu-item">
+                                <a href="settings.html" class="menu-link">
+                                    <span class="icon"><em class="i-icon icon-settings"></em></span>
+                                    <span class="text">Settings</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="support.html" class="menu-link">
+                                    <span class="icon"><em class="i-icon icon-support"></em></span>
+                                    <span class="text">Support</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <div class="main-content-wrapper">               
+                <div class="content">
+                    <div class="title-box">
+                        <div class="title">
+                            <h1>Chat Bots</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-12">
+                            <div class="bots-block">
+                                <div class="add-bot-block">
+                                    <div class="add-bot-action">
+                                        <label class="font-16">Add Bots</label>
+                                        <div class="action-block">
+                                            <div class="group-action-block">
+                                                <div class="action-info add-action">
+                                                    <div class="icon"><img src="../images/icons/new/icon-in-app-chat.svg" alt="In-App Chat" /><span>In-App ChatBot</span></div>
+                                                    <a href="javascript:void(0)" class="link add-link">Add</a>
+                                                </div>
+                                                <div class="action-info loading-action d-none">
+                                                    <div class="icon">
+                                                        <img src="../images/icons/new/icon-loader.svg" alt="" />
+                                                        <span><span class="text-blue">Deploying</span> In-App Chat Bot</span>
+                                                    </div>
+                                                </div>
+                                                <div class="action-info success-action d-none">                                                
+                                                    <a href="javascript:void(0)" class="link go-link">Go to Chatbot Studio <em class="icon-go-chatbot"></em></a>
+                                                </div>
+                                                <div class="action-info error-action d-none">
+                                                    <div class="icon"><img src="../images/icons/new/icon-modal-close-red.svg" alt="In-App Chat" /><span>Deployment Failed!</span></div>
+                                                    <a href="javascript:void(0)" class="link retry-link">Retry</a>
+                                                </div>
+                                            </div>
+                                            <div class="note d-none">It may take a while!</div>
+                                        </div>                                        
+                                    </div> 
+                                    <div class="other-bot">
+                                        <label class="font-16">Other Bots</label>
+                                        <div class="form-group pre-icon-input with-label custom-dropdown">     
+                                            <span class="pre-icon"><em class="i-icon icon-bots-gray"></em></span>
+                                            <input type="text" class="form-control custom-input bot-input" id="add-bots" placeholder="Search bots to add" />
+                                            <ul class="dropdown-menu add-bots-dropdown" aria-labelledby="add-bots-dropdown"> 
+                                                <li><a class="dropdown-item active" href="#"  data-toggle="modal" data-target="#amazon-lex-modal"><span><em class="i-icon icon-amazon"></em>Amazon Lex</span> <span class="action"><em class="i-icon icon-add-gray"></em></span></a></li>
+                                                <li><a class="dropdown-item" href="#" data-toggle="modal" data-target="#google-dialog-bot-modal"><span><em class="i-icon icon-google"></em>Google DialogFlow</span> <span class="action"><em class="i-icon icon-add-gray"></em></span></a></li>
+                                                <li><a class="dropdown-item" href="#" data-toggle="modal" data-target="#IBM-watson-modal"><span><em class="i-icon icon-ibm"></em>IBM Watson Assist</span> <span class="action"><em class="i-icon icon-add-gray"></em></span></a></li>
+                                                <li><a class="dropdown-item" href="#" data-toggle="modal" data-target="#inApp-chatbot-modal"><span><em class="i-icon icon-in-app-chat-gray"></em>In-App ChatBot</span> <span class="action"><em class="i-icon icon-add-gray"></em></span></a></li>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="added-bots-block">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-12 m-30">
+                                            <div class="overview-box">                                    
+                                                <div class="title border-bottom pb-3">
+                                                    <h2 class="h3">Added Bots</h2>   
+                                                    <div class="action-block">
+                                                        <div class="search-input-block">
+                                                            <div class="search-input">
+                                                                <div class="form-group pre-icon-input">
+                                                                    <span class="pre-icon"><em class="i-icon icon-search"></em></span>
+                                                                    <input class="form-control custom-input input-light" type="text" id="search" placeholder="Search" />                                    
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>                                 
+                                                </div>  
+                                                <div class="pagination-block">
+                                                    <div class="total">Total Bots: <span>57</span></div>
+                                                    <div class="pagination">
+                                                        <div class="pages">1 - 1 of 1</div>
+                                                        <div class="action">
+                                                            <span class="left-arrow"><em class="i-icon icon-left-arrow"></em></span>
+                                                            <span class="right-arrow"><em class="i-icon icon-left-arrow"></em></span>
+                                                        </div>
+                                                    </div>
+                                                </div>     
+                                                <div class="record-table-list">
+                                                    <div class="table-responsive">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Bot Name</th>
+                                                                    <th>API Key</th>
+                                                                    <th>Created On</th>
+                                                                    <th class="text-center">Status</th>
+                                                                    <th class="text-center">Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td><div class="icon"><em class="i-icon icon-google filter-contrast"></em>Google DialogFlow</div></td>
+                                                                    <td>xhdui39cld8</td>
+                                                                    <td>Oct. 23rd, 2021</td>
+                                                                    <td class="text-center"><span class="text-blue">Active</span></td>
+                                                                    <td class="text-center">
+                                                                        <a href="#" class="link text-orange">Delete</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><div class="icon"><em class="i-icon icon-amazon filter-contrast"></em>Amazon Lex</div></td>
+                                                                    <td>xhdui39cld8</td>
+                                                                    <td>Oct. 23rd, 2021</td>
+                                                                    <td class="text-center"><span class="text-gray">Paused</span></td>
+                                                                    <td class="text-center">
+                                                                        <a href="#" class="link text-orange">Delete</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><div class="icon"><em class="i-icon icon-amazon filter-contrast"></em>Amazon Lex</div></td>
+                                                                    <td>xhdui39cld8</td>
+                                                                    <td>Oct. 23rd, 2021</td>
+                                                                    <td class="text-center"><span class="text-orange">Suspended</span></td>
+                                                                    <td class="text-center">
+                                                                        <a href="#" class="link text-orange">Delete</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><div class="icon"><em class="i-icon icon-google filter-contrast"></em>Google DialogFlow</div></td>
+                                                                    <td>xhdui39cld8</td>
+                                                                    <td>Oct. 23rd, 2021</td>
+                                                                    <td class="text-center"><span class="text-blue">Active</span></td>
+                                                                    <td class="text-center">
+                                                                        <a href="#" class="link text-orange">Delete</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><div class="icon"><em class="i-icon icon-amazon filter-contrast"></em>Amazon Lex</div></td>
+                                                                    <td>xhdui39cld8</td>
+                                                                    <td>Oct. 23rd, 2021</td>
+                                                                    <td class="text-center"><span class="text-gray">Paused</span></td>
+                                                                    <td class="text-center">
+                                                                        <a href="#" class="link text-orange">Delete</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><div class="icon"><em class="i-icon icon-amazon filter-contrast"></em>Amazon Lex</div></td>
+                                                                    <td>xhdui39cld8</td>
+                                                                    <td>Oct. 23rd, 2021</td>
+                                                                    <td class="text-center"><span class="text-orange">Suspended</span></td>
+                                                                    <td class="text-center">
+                                                                        <a href="#" class="link text-orange">Delete</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><div class="icon"><em class="i-icon icon-google filter-contrast"></em>Google DialogFlow</div></td>
+                                                                    <td>xhdui39cld8</td>
+                                                                    <td>Oct. 23rd, 2021</td>
+                                                                    <td class="text-center"><span class="text-blue">Active</span></td>
+                                                                    <td class="text-center">
+                                                                        <a href="#" class="link text-orange">Delete</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><div class="icon"><em class="i-icon icon-amazon filter-contrast"></em>Amazon Lex</div></td>
+                                                                    <td>xhdui39cld8</td>
+                                                                    <td>Oct. 23rd, 2021</td>
+                                                                    <td class="text-center"><span class="text-gray">Paused</span></td>
+                                                                    <td class="text-center">
+                                                                        <a href="#" class="link text-orange">Delete</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><div class="icon"><em class="i-icon icon-amazon filter-contrast"></em>Amazon Lex</div></td>
+                                                                    <td>xhdui39cld8</td>
+                                                                    <td>Oct. 23rd, 2021</td>
+                                                                    <td class="text-center"><span class="text-orange">Suspended</span></td>
+                                                                    <td class="text-center">
+                                                                        <a href="#" class="link text-orange">Delete</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><div class="icon"><em class="i-icon icon-google filter-contrast"></em>Google DialogFlow</div></td>
+                                                                    <td>xhdui39cld8</td>
+                                                                    <td>Oct. 23rd, 2021</td>
+                                                                    <td class="text-center"><span class="text-blue">Active</span></td>
+                                                                    <td class="text-center">
+                                                                        <a href="#" class="link text-orange">Delete</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><div class="icon"><em class="i-icon icon-amazon filter-contrast"></em>Amazon Lex</div></td>
+                                                                    <td>xhdui39cld8</td>
+                                                                    <td>Oct. 23rd, 2021</td>
+                                                                    <td class="text-center"><span class="text-gray">Paused</span></td>
+                                                                    <td class="text-center">
+                                                                        <a href="#" class="link text-orange">Delete</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><div class="icon"><em class="i-icon icon-amazon filter-contrast"></em>Amazon Lex</div></td>
+                                                                    <td>xhdui39cld8</td>
+                                                                    <td>Oct. 23rd, 2021</td>
+                                                                    <td class="text-center"><span class="text-orange">Suspended</span></td>
+                                                                    <td class="text-center">
+                                                                        <a href="#" class="link text-orange">Delete</a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>                                     
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </main>
+        <!-- modal -->
+        <div class="modal fade" id="amazon-lex-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered mw-700">
+                <div class="modal-content">   
+                    <div class="modal-header">
+                        <div class="modal-title"><em class="i-icon icon-amazon"></em>Amazon Lex</div>
+                        <span class="modal-close" data-dismiss="modal"><em class="i-icon icon-modal-close"></em></span>
+                    </div>                 
+                    <div class="modal-body">                        
+                        <form class="amazonLexForm"> 
+                            <div class="row">
+                                <div class="form-group col-12 col-sm-12 col-md-6">
+                                    <label>Assistant ID</label>
+                                    <input type="text" class="form-control custom-input" id="assistantID" placeholder="Assistant ID" />
+                                </div>
+                                <div class="form-group col-12 col-sm-12 col-md-6">
+                                    <label>Service URL</label>
+                                    <input type="text" class="form-control custom-input" id="serviceURL" placeholder="Service URL" />
+                                </div>
+                                <div class="form-group col-12 col-sm-12 col-md-6">
+                                    <label>Version</label>
+                                    <input type="text" class="form-control custom-input" id="version" placeholder="Version" />
+                                </div>
+                                <div class="form-group col-12 col-sm-12 col-md-6">
+                                    <label>API Key</label>
+                                    <input type="text" class="form-control custom-input" id="APIKey" placeholder="API Key" />
+                                </div>
+                                <div class="form-group col-12 col-sm-12 col-md-6">
+                                    <label>SSL Verification</label>
+                                    <div class="custom-dropdown input-dropdown">
+                                        <button class="dropdown-input dropdown-toggle" type="button" id="SSL-verification" data-toggle="dropdown" aria-expanded="false"><span>Disable</span></button>
+                                        <ul class="dropdown-menu" aria-labelledby="SSL-verification">
+                                            <li><button type="button" class="dropdown-item active" data-value="Disable">Disable</button></li>
+                                            <li><button type="button" class="dropdown-item" data-value="Enable">Enable</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="form-group col-12 col-sm-12 col-md-6">
+                                    <label>Parse Response</label>
+                                    <div class="custom-dropdown input-dropdown">
+                                        <button class="dropdown-input dropdown-toggle" type="button" id="parse-response" data-toggle="dropdown" aria-expanded="false"><span>Yes</span></button>
+                                        <ul class="dropdown-menu" aria-labelledby="parse-response">
+                                            <li><button type="button" class="dropdown-item active" data-value="Yes">Yes</button></li>
+                                            <li><button type="button" class="dropdown-item" data-value="No">No</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="form-group col-12 col-sm-12 col-md-6">
+                                    <label>Orchestrator</label>
+                                    <div class="custom-dropdown input-dropdown">
+                                        <button class="dropdown-input dropdown-toggle" type="button" id="orchestrator" data-toggle="dropdown" aria-expanded="false"><span>Yes</span></button>
+                                        <ul class="dropdown-menu" aria-labelledby="orchestrator">
+                                            <li><button type="button" class="dropdown-item active" data-value="Yes">Yes</button></li>
+                                            <li><button type="button" class="dropdown-item" data-value="No">No</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="modal-action col-12">
+                                    <button class="btn btn-primary btn-md" type="button">Save</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="google-dialog-bot-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered mw-700">
+                <div class="modal-content">   
+                    <div class="modal-header">
+                        <div class="modal-title"><em class="i-icon icon-google"></em>Google Dialog Bot</div>
+                        <span class="modal-close" data-dismiss="modal"><em class="i-icon icon-modal-close"></em></span>
+                    </div>                 
+                    <div class="modal-body">                        
+                        <form class="googleDialogBotForm"> 
+                            <div class="row">
+                                <div class="form-group col-12 col-sm-12 col-md-6">
+                                    <label>Type</label>
+                                    <input type="text" class="form-control custom-input" id="type" placeholder="Type" value="Service Account" />
+                                </div>
+                                <div class="form-group col-12 col-sm-12 col-md-6">
+                                    <label>Authentication URI</label>
+                                    <input type="text" class="form-control custom-input" id="authenticationURI" placeholder="Authentication URI" />
+                                </div>
+                                <div class="form-group col-12 col-sm-12 col-md-6">
+                                    <label>Project ID</label>
+                                    <input type="text" class="form-control custom-input" id="projectID" placeholder="Project ID" />
+                                </div>
+                                <div class="form-group col-12 col-sm-12 col-md-6">
+                                    <label>Token URI</label>
+                                    <input type="text" class="form-control custom-input" id="tokenURI" placeholder="Token URI" />
+                                </div>
+                                <div class="form-group col-12 col-sm-12 col-md-6">
+                                    <label>Private Key ID</label>
+                                    <input type="text" class="form-control custom-input" id="privateKeyID" placeholder="Private Key ID" />
+                                </div>
+                                <div class="form-group col-12 col-sm-12 col-md-6">
+                                    <label>Authentication Provider Certified URI</label>
+                                    <input type="text" class="form-control custom-input" id="authenticationcertifiedURI" placeholder="Authentication Provider Certified URI" />
+                                </div>
+                                <div class="form-group col-12 col-sm-12 col-md-6">
+                                    <label>Private Key</label>
+                                    <input type="text" class="form-control custom-input" id="privateKey" placeholder="Private Key" />
+                                </div>
+                                <div class="form-group col-12 col-sm-12 col-md-6">
+                                    <label>Client Certified URI</label>
+                                    <input type="text" class="form-control custom-input" id="clientCertifiedURI" placeholder="Client Certified URI" />
+                                </div>
+                                <div class="form-group col-12 col-sm-12 col-md-6">
+                                    <label>Client Email</label>
+                                    <input type="email" class="form-control custom-input" id="clientEmail" placeholder="Client Email" />
+                                </div>
+                                <div class="form-group col-12 col-sm-12 col-md-6">
+                                    <label>Orchestrator</label>
+                                    <div class="custom-dropdown input-dropdown">
+                                        <button class="dropdown-input dropdown-toggle" type="button" id="orchestrator" data-toggle="dropdown" aria-expanded="false"><span>Yes</span></button>
+                                        <ul class="dropdown-menu" aria-labelledby="orchestrator">
+                                            <li><button type="button" class="dropdown-item active" data-value="Yes">Yes</button></li>
+                                            <li><button type="button" class="dropdown-item" data-value="No">No</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="form-group col-12 col-sm-12 col-md-6">
+                                    <label>Client ID</label>
+                                    <input type="text" class="form-control custom-input" id="clientID" placeholder="Client ID" />
+                                </div>
+                                <div class="modal-action col-12">
+                                    <button class="btn btn-primary btn-md" type="button">Save</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="IBM-watson-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered mw-700">
+                <div class="modal-content">   
+                    <div class="modal-header">
+                        <div class="modal-title"><em class="i-icon icon-ibm"></em>IBM Watson</div>
+                        <span class="modal-close" data-dismiss="modal"><em class="i-icon icon-modal-close"></em></span>
+                    </div>                 
+                    <div class="modal-body">                        
+                        <form class="amazonLexForm"> 
+                            <div class="row">
+                                <div class="form-group col-12 col-sm-12 col-md-6">
+                                    <label>Assistant ID</label>
+                                    <input type="text" class="form-control custom-input" id="assistantID" placeholder="Assistant ID" />
+                                </div>
+                                <div class="form-group col-12 col-sm-12 col-md-6">
+                                    <label>Service URL</label>
+                                    <input type="text" class="form-control custom-input" id="serviceURL" placeholder="Service URL" />
+                                </div>
+                                <div class="form-group col-12 col-sm-12 col-md-6">
+                                    <label>Version</label>
+                                    <input type="text" class="form-control custom-input" id="version" placeholder="Version" />
+                                </div>
+                                <div class="form-group col-12 col-sm-12 col-md-6">
+                                    <label>API Key</label>
+                                    <input type="text" class="form-control custom-input" id="APIKey" placeholder="API Key" />
+                                </div>
+                                <div class="form-group col-12 col-sm-12 col-md-6">
+                                    <label>SSL Verification</label>
+                                    <div class="custom-dropdown input-dropdown">
+                                        <button class="dropdown-input dropdown-toggle" type="button" id="SSL-verification" data-toggle="dropdown" aria-expanded="false"><span>Disable</span></button>
+                                        <ul class="dropdown-menu" aria-labelledby="SSL-verification">
+                                            <li><button type="button" class="dropdown-item active" data-value="Disable">Disable</button></li>
+                                            <li><button type="button" class="dropdown-item" data-value="Enable">Enable</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="form-group col-12 col-sm-12 col-md-6">
+                                    <label>Parse Response</label>
+                                    <div class="custom-dropdown input-dropdown">
+                                        <button class="dropdown-input dropdown-toggle" type="button" id="parse-response" data-toggle="dropdown" aria-expanded="false"><span>Yes</span></button>
+                                        <ul class="dropdown-menu" aria-labelledby="parse-response">
+                                            <li><button type="button" class="dropdown-item active" data-value="Yes">Yes</button></li>
+                                            <li><button type="button" class="dropdown-item" data-value="No">No</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="form-group col-12 col-sm-12 col-md-6">
+                                    <label>Orchestrator</label>
+                                    <div class="custom-dropdown input-dropdown">
+                                        <button class="dropdown-input dropdown-toggle" type="button" id="orchestrator" data-toggle="dropdown" aria-expanded="false"><span>Yes</span></button>
+                                        <ul class="dropdown-menu" aria-labelledby="orchestrator">
+                                            <li><button type="button" class="dropdown-item active" data-value="Yes">Yes</button></li>
+                                            <li><button type="button" class="dropdown-item" data-value="No">No</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="modal-action col-12">
+                                    <button class="btn btn-primary btn-md" type="button">Save</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="inApp-chatbot-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered mw-700">
+                <div class="modal-content">   
+                    <div class="modal-header">
+                        <div class="modal-title"><em class="i-icon icon-in-app-chat"></em>In-App Chatbot</div>
+                        <span class="modal-close" data-dismiss="modal"><em class="i-icon icon-modal-close"></em></span>
+                    </div>                 
+                    <div class="modal-body">                        
+                        <form class="amazonLexForm"> 
+                            <div class="row">
+                                <div class="form-group col-12 col-sm-12 col-md-6">
+                                    <label>Assistant ID</label>
+                                    <input type="text" class="form-control custom-input" id="assistantID" placeholder="Assistant ID" />
+                                </div>
+                                <div class="form-group col-12 col-sm-12 col-md-6">
+                                    <label>Service URL</label>
+                                    <input type="text" class="form-control custom-input" id="serviceURL" placeholder="Service URL" />
+                                </div>
+                                <div class="form-group col-12 col-sm-12 col-md-6">
+                                    <label>Version</label>
+                                    <input type="text" class="form-control custom-input" id="version" placeholder="Version" />
+                                </div>
+                                <div class="form-group col-12 col-sm-12 col-md-6">
+                                    <label>API Key</label>
+                                    <input type="text" class="form-control custom-input" id="APIKey" placeholder="API Key" />
+                                </div>
+                                <div class="form-group col-12 col-sm-12 col-md-6">
+                                    <label>SSL Verification</label>
+                                    <div class="custom-dropdown input-dropdown">
+                                        <button class="dropdown-input dropdown-toggle" type="button" id="SSL-verification" data-toggle="dropdown" aria-expanded="false"><span>Disable</span></button>
+                                        <ul class="dropdown-menu" aria-labelledby="SSL-verification">
+                                            <li><button type="button" class="dropdown-item active" data-value="Disable">Disable</button></li>
+                                            <li><button type="button" class="dropdown-item" data-value="Enable">Enable</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="form-group col-12 col-sm-12 col-md-6">
+                                    <label>Parse Response</label>
+                                    <div class="custom-dropdown input-dropdown">
+                                        <button class="dropdown-input dropdown-toggle" type="button" id="parse-response" data-toggle="dropdown" aria-expanded="false"><span>Yes</span></button>
+                                        <ul class="dropdown-menu" aria-labelledby="parse-response">
+                                            <li><button type="button" class="dropdown-item active" data-value="Yes">Yes</button></li>
+                                            <li><button type="button" class="dropdown-item" data-value="No">No</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="form-group col-12 col-sm-12 col-md-6">
+                                    <label>Orchestrator</label>
+                                    <div class="custom-dropdown input-dropdown">
+                                        <button class="dropdown-input dropdown-toggle" type="button" id="orchestrator" data-toggle="dropdown" aria-expanded="false"><span>Yes</span></button>
+                                        <ul class="dropdown-menu" aria-labelledby="orchestrator">
+                                            <li><button type="button" class="dropdown-item active" data-value="Yes">Yes</button></li>
+                                            <li><button type="button" class="dropdown-item" data-value="No">No</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="modal-action col-12">
+                                    <button class="btn btn-primary btn-md" type="button">Save</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/popper.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/all-jquery.js"></script>
+        <script src="../js/main-portal-v2.js"></script>
+        <script>
+            $('.bot-input').on("focus", function() {
+                $('.add-bots-dropdown').addClass('show');
+            }).on("blur", function() {
+                $('.add-bots-dropdown').removeClass('show');
+            });
+            $('.add-link').on('click', function(){
+                $(this).parents('.add-action').addClass('d-none');
+                $('.loading-action').removeClass('d-none');
+                $(this).parents('.action-block').find('.note').removeClass('d-none');
+                setTimeout(function(){
+                    $('.loading-action').addClass('d-none');
+                    $('.note').addClass('d-none');
+                    $('.success-action').removeClass('d-none');
+                }, 2000)
+            });
+            $('.go-link').on('click', function(){
+                $(this).parents('.success-action').addClass('d-none');
+                $('.error-action').removeClass('d-none');
+                $('.note').removeClass('d-none');
+            });
+            $('.retry-link').on('click', function(){
+                $(this).parents('.error-action').addClass('d-none');
+                $('.add-action').removeClass('d-none');
+                $('.note').addClass('d-none');
+            });
+        </script>
+    </body>
+</html>

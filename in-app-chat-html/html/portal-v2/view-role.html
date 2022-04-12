@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="theme-color" content="#40D4F4">
+        <meta name="Googlebot" content="noindex,nofollow">        
+        <meta name="author" content="In-App Chat">
+        <meta name="description" content="In-App Chat">    
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" href="../images/favicons/apple-touch-icon.png" sizes="180x180">
+        <link rel="mask-icon" href="../images/favicons/safari-pinned-tab.svg" color="#000000">
+        <link rel="shortcut icon" type="images/x-icon" href="../favicon.ico">
+
+        <link rel="stylesheet" href="../css/portal-v2/main-portal.css">
+        <title>View Role | In-App Chat</title> 
+    </head>
+    <body class="portal">
+        <header class="main-dashboard-header with-logo">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <div class="container-fluid p-0"> 
+                    <a href="#" class="logo"><img src="../images/logo.svg" class="d-none d-lg-block" alt="In-App Chat" /></a>     
+                    <a href="#" class="logo"><img src="../images/gradient-logo-mark.svg" class="d-lg-none d-block" alt="In-App Chat" /></a>  
+                    <div class="form-group ml-lg-5 ml-3">
+                        <div class="custom-dropdown input-dropdown">
+                            <button class="dropdown-input dropdown-toggle" type="button" id="project-select" data-toggle="dropdown" aria-expanded="false"><span>Project ABC</span></button>
+                            <ul class="dropdown-menu" aria-labelledby="project-select">
+                                <li><button type="button" class="dropdown-item active" data-value="Project ABC">Project ABC</button></li>
+                                <li><button type="button" class="dropdown-item" data-value="Transport Web Portal">Transport Web Portal</button></li>
+                                <li><button type="button" class="dropdown-item" data-value="Healthcare Communication">Healthcare Communication</button></li>
+                            </ul>
+                        </div>
+                    </div>        
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav ml-auto">                            
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-orange" href="#"><em class="i-icon icon-upgrade"></em><span>Upgrade Plan</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="my-project.html"><em class="i-icon icon-projects"></em><span>My Projects</span></a>
+                            </li>
+                            <li class="nav-item profile-dropdown dropdown">
+                                <a class="nav-link" href="#" id="profile-dropdown" data-toggle="dropdown">
+                                    <div class="img"><img src="../images/portal/new/user.png" class="profile-img" alt="user" /></div>
+                                    <div class="info d-none d-md-block">
+                                        <span class="name">John Doe</span>
+                                        <span class="email">johndoe@gmail.com</span>
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="profile-dropdown">                                   
+                                    <li class="pb-0 d-block d-md-none">
+                                        <div class="dropdown-item org-box border-0">
+                                            <strong>John Doe</strong>
+                                            <span>johndoe@gmail.com</span>                                            
+                                        </div> 
+                                    </li>
+                                    <li class="dropdown organization-dropdown">
+                                        <div class="org-box dropdown-item " id="organizations-dropdown" data-toggle="dropdown">
+                                            <span>Organizations</span>
+                                            <strong>Cool Inc.</strong>
+                                        </div> 
+                                        <ul class="dropdown-menu" aria-labelledby="organizations-dropdown">                                   
+                                            <li class="heading"><span>Owner</span></li>
+                                            <li><a class="dropdown-item active" href="#">MyTestOrg</a></li>
+                                            <li><a class="dropdown-item" href="#">MyTestOrg1</a></li>
+                                            <li><a class="dropdown-item" href="#">MyTestOrg2</a></li>
+                                            <li><a class="dropdown-item" href="#">MyTestOrg3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="account-profile.html">Account and Profile</a></li>
+                                    <li><a class="dropdown-item" href="organization.html">Organization Settings</a></li>
+                                    <li><a class="dropdown-item" href="billing.html">Billing</a></li>
+                                    <li><a class="dropdown-item" href="#" class="text-orange">Log Out</a></li>
+                                </ul>                                 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="content-wrapper without-sidebar">           
+            <div class="main-content-wrapper">  
+                <div class="content">
+                    <div class="title-box mb-1">
+                        <div class="title">
+                            <h1>Admin</h1>
+                        </div>
+                    </div>
+                    <a href="organization.html" class="back-link"><em class="i-icon icon-back-arrow"></em>Back to Roles</a> 
+                    <div class="overview-boxes">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 m-30">
+                                <div class="overview-box">   
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-5 col-lg-6">
+                                            <div class="title pb-0">
+                                                <h2 class="h5">Key Role</h2>
+                                            </div>
+                                            <p class="desc-black mb-md-0">Access to entire dashboard except for deleting organization</p>   
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-7 col-lg-6 text-right">
+                                            <button class="btn btn-outline-primary btn-w160 mr-2 mr-md-3">Duplicate Role</button>
+                                            <button class="btn btn-primary btn-w160">Send Invitation</button>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="title pb-0">
+                                        <h2 class="h5">Permissions</h2>
+                                    </div>
+                                    <div class="record-table-list">
+                                        <div class="table-responsive">
+                                            <table class="table padding-x">
+                                                <thead>
+                                                    <tr class="bg-gray">
+                                                        <th>Organization</th>
+                                                        <th class="text-center w300">Access</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>General</td>
+                                                        <td class="text-center w300">All</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Security</td>
+                                                        <td class="text-center w300">View</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Members</td>
+                                                        <td class="text-center w300">All</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Roles</td>
+                                                        <td class="text-center w300">View</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Applications</td>
+                                                        <td class="text-center w300">All</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Billing</td>
+                                                        <td class="text-center w300">View</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Usage</td>
+                                                        <td class="text-center w300">View</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="table padding-x mt-2">
+                                                <thead>
+                                                    <tr class="bg-gray">
+                                                        <th>Project</th>
+                                                        <th class="text-center w300">Access</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Open Channel</td>
+                                                        <td class="text-center w300">All</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Group Channel</td>
+                                                        <td class="text-center w300">View</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Data Export</td>
+                                                        <td class="text-center w300">All</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Message Search</td>
+                                                        <td class="text-center w300">View</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Users</td>
+                                                        <td class="text-center w300">All</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Billing</td>
+                                                        <td class="text-center w300">View</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>   
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-6">
+                                            <div class="title pb-0">
+                                                <h2 class="h5">Project Access</h2>
+                                            </div>
+                                            <p class="desc-gray font-14">This role can access the following projects.</p>   
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-3"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="title pb-0">
+                                                <h2 class="h5">Projects</h2>
+                                            </div>
+                                            <div class="select-project-block">
+                                                <div class="project-name-block">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="first-design" checked disabled>
+                                                        <label class="custom-control-label mb-0" for="first-design">First Design</label>
+                                                    </div>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="second-design" disabled>
+                                                        <label class="custom-control-label mb-0" for="second-design">Second Design</label>
+                                                    </div>
+                                                </div>
+                                                <div class="project-name-block">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="third-design" checked>
+                                                        <label class="custom-control-label mb-0" for="third-design">Third Design</label>
+                                                    </div>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="fourth-design">
+                                                        <label class="custom-control-label mb-0" for="fourth-design">Fourth Design</label>
+                                                    </div>
+                                                </div>
+                                                <div class="project-name-block">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="fifth-design">
+                                                        <label class="custom-control-label mb-0" for="fifth-design">Fifth Design</label>
+                                                    </div>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="sixth-design">
+                                                        <label class="custom-control-label mb-0" for="sixth-design">Sixth Design</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/popper.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/all-jquery.js"></script>
+        <script src="../js/main-portal-v2.js"></script>
+    </body>
+</html>
