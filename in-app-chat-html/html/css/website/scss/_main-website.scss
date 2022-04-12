@@ -1964,6 +1964,7 @@ html .website {
                 }
             }
         }
+        
     }
     .modal-backdrop.show {
         opacity: .75;
@@ -5267,7 +5268,7 @@ html .website {
     }
     .register-flow-block {
         padding: 130px 0 50px;
-        background: url(../../images/gradient-bg.png) no-repeat center;
+        background: #fe8a2a url(../../images/gradient-bg.png) no-repeat center;
         background-size: 100% 100%;
         min-height: 100vh;
         @include flexbox();
@@ -5308,6 +5309,12 @@ html .website {
                 &::placeholder {
                     color: #D9D9D9;
                 }
+            }
+            .country-input {
+                -webkit-appearance: none;-moz-appearance: none;appearance: none;
+                background: url(../../images/icons/icon-right-arrow-gray.svg) no-repeat right;
+                background-position: calc(100% - 15px);
+                background-size: 7px;
             }
             .custom-checkbox {
                 text-align: center;

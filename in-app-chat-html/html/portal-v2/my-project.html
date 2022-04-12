@@ -189,6 +189,8 @@
                             </div>
                         </div>
                     </div>
+                    <button class="btn btn-primary d-none" type="button" data-dismiss="modal" data-toggle="modal" data-target="#create-organization-modal">Create Organization
+                    </button>
                 </div>
             </div>
         </main>
@@ -235,6 +237,35 @@
                 </div>
             </div>
         </div>
+        <!-- Create Organization -->
+        <div class="modal fade" id="create-organization-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">   
+                    <div class="modal-header">
+                        <div class="modal-subtitle"><img src="../images/icons/new/icon-check-success.svg" alt=""/> Email Confirmed!</div>
+                        <div class="modal-title">Create Organization</div>
+                        <span class="modal-close" data-dismiss="modal"><em class="i-icon icon-modal-close"></em></span>
+                    </div>                 
+                    <div class="modal-body">                        
+                        <form class="amazonLexForm"> 
+                            <div class="row">
+                                <div class="form-group col-12 col-sm-12 col-md-6">
+                                    <label>Organization Name</label>
+                                    <input type="text" class="form-control custom-input" placeholder="e.g. Design Support" />
+                                </div>
+                                <div class="form-group col-12 col-sm-12 col-md-6">
+                                    <label>Phone Number ( Optional )</label>
+                                    <input type="text" class="form-control custom-input" placeholder="+1 ( 234 ) - 345 - 6754" />
+                                </div>
+                                <div class="modal-action col-12">
+                                    <button class="btn btn-orange" type="button"> Create Organization</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script src="../js/jquery.min.js"></script>
         <script src="../js/popper.min.js"></script>
         <script src="../js/bootstrap.min.js"></script>
@@ -242,12 +273,18 @@
         <script src="../js/jquery.dropdown.min.js"></script>
         <script src="../js/main-portal-v2.js"></script>
         <script>
+            // create-organization-modal   
+            $("document").ready(function() {
+                setTimeout(function() {
+                    $('[data-target="#create-organization-modal"]').trigger('click');
+                },10);
+            });
             $('.delete-project').on('click', function(){
                 $('.project-status-block').addClass('d-none');
                 $('.delete-project-block').addClass('active');
                 $('.title-box .title').addClass('d-none');
                 $('.delete-title').removeClass('d-none');
-            })
+            });
         </script>
     </body>
 </html>
