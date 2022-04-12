@@ -73,7 +73,7 @@
                                 <input type="text" class="form-control" placeholder="Search"/>
                             </div>
                             <div class="user-channel-block">
-                                <div class="channel-title">Members in the channel</div>
+                                <div class="channel-title">Members in the channel <a href="#!" class="invite-link user-invite-link">+ Invite All</a></div>
                                 <div class="member-items">
                                     <div class="member-item">
                                         <div class="user-name">
@@ -275,6 +275,14 @@
 
 
         <script type="text/javascript">
+            $(".user-invite-link").click(function(){
+                $(this).text($(this).text() == '+ Invite All' ? 'Invited' : '+ Invite All');
+                $(this).toggleClass('active');
+            });
+            $(".member-item .invite-link").click(function(){
+                $(this).text($(this).text() == '+ Invite' ? 'Invited' : '+ Invite');
+                $(this).toggleClass('active');
+            });
             $('#pinfilled').click(function() {
                 $("#pinfilled").css("display", "none");
             });

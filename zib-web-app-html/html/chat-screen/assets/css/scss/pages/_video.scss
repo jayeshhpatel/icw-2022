@@ -547,11 +547,48 @@
                     }
                 }
             }
+            .invite-link {
+                color: #5056CA;
+                font-weight: 500;
+                font-size: 14px;
+                cursor: pointer;
+                text-decoration: none;
+                margin-left: auto;
+                position: relative;
+                &.active {
+                    color: #ACACAE;font-style: italic;font-weight: 400;
+                    &::before {
+                        background-color: #ACACAE;
+                    }
+                } 
+                &:hover {
+                    &::before {
+                        width: 100%;
+                        right: auto;
+                        left: 0;
+                    }
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    z-index: -1;
+                    right: 0;
+                    bottom: 0;
+                    background: #5056CA;
+                    width: 0;
+                    height: 1px;
+                    @include transition(0.2s, ease-in-out);
+                }
+            }
             .user-channel-block {
                 .channel-title {
                     color: #33333F;
                     font-size: 11px;
                     margin-bottom: 5px;
+                    @include flexbox();
+                    .channel-title {
+                        margin-left: auto;
+                    }
                 }
                 .member-items {
                     max-height: 280px;
@@ -581,33 +618,7 @@
                                 -webkit-box-flex: 0;-ms-flex: none;flex: none;
                             }
                         }
-                        .invite-link {
-                            color: #5056CA;
-                            font-weight: 500;
-                            font-size: 14px;
-                            cursor: pointer;
-                            text-decoration: none;
-                            margin-left: auto;
-                            position: relative;
-                            &:hover {
-                                &::before {
-                                    width: 100%;
-                                    right: auto;
-                                    left: 0;
-                                }
-                            }
-                            &::before {
-                                content: "";
-                                position: absolute;
-                                z-index: -1;
-                                right: 0;
-                                bottom: 0;
-                                background: #5056CA;
-                                width: 0;
-                                height: 1px;
-                                @include transition(0.2s, ease-in-out);
-                            }
-                        }
+                        
                     }
                 }
             }
