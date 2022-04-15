@@ -235,6 +235,18 @@ html .website {
                 background: #c2c6d1; border-color: #c2c6d1; color: $white; 
             }
         }
+        &.btn-orange-gradient { 
+            color: $white;
+            height: 40px;
+            line-height: 40px;
+            min-width: auto !important;
+            font-weight: 400;
+            font-size: 14px;
+            padding-left: 35px;
+            padding-right: 35px;
+            background: transparent linear-gradient(123deg, #F4A121 0%, #F36F29 55%, #F24D23 99%) 0% 0% no-repeat padding-box; 
+            &:hover, &:focus, &:active { @include opacity(0.8); color: $white; }
+        }
         &.btn-md { min-width: 180px; }
         &.btn-w160 { min-width: 160px; }
         &.btn-w175 { min-width: 175px; }
