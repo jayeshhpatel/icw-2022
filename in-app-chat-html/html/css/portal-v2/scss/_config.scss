@@ -274,7 +274,21 @@ html .portal {
             // &.btn-w130 { min-width: auto; }
         }
     }
-
+    .with-icon {
+        position: relative;
+        z-index: 1;
+        &:after {
+            content: "";
+            position: absolute;
+            right: 2px;
+            bottom: 2px;
+            z-index: -1;
+            background: url(../../images/magic.png) no-repeat right bottom;
+            background-size: 35px;
+            width: 35px;
+            height: 35px;
+        }
+    }
     .badge { padding: 6px 15px; font-size: 14px; @include border-radius(4px); line-height: 1; font-weight: 400;
         &.badge-primary { background: #3276FF; color: #FFFFFF !important; }
         &.bg-danger { background-color: #EB2121 !important; color: $white; }
@@ -620,23 +634,8 @@ html .portal {
                         margin-left: 0;
                     }
                 }
-                .with-icon {
-                    position: relative;
-                    z-index: 1;
-                    &:after {
-                        content: "";
-                        position: absolute;
-                        right: 2px;
-                        bottom: 2px;
-                        z-index: -1;
-                        background: url(../../images/magic.png) no-repeat right bottom;
-                        background-size: 35px;
-                        width: 35px;
-                        height: 35px;
-                    }
-                }
+                
             }
-            
         }
     }
 
