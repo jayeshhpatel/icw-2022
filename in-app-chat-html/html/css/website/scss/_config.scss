@@ -247,6 +247,21 @@ html .website {
             background: transparent linear-gradient(123deg, #F4A121 0%, #F36F29 55%, #F24D23 99%) 0% 0% no-repeat padding-box; 
             &:hover, &:focus, &:active { @include opacity(0.8); color: $white; }
         }
+	&.with-bg-icon {
+        position: relative;
+        z-index: 1;
+        &:after {
+            content: "";
+            position: absolute;
+            right: 2px;
+            bottom: 2px;
+            z-index: -1;
+            background: url(../../images/magic.png) no-repeat right bottom;
+            background-size: 35px;
+            width: 35px;
+            height: 35px;
+        }
+    }
         &.btn-md { min-width: 180px; }
         &.btn-w160 { min-width: 160px; }
         &.btn-w175 { min-width: 175px; }
