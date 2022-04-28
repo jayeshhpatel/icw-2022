@@ -40,12 +40,12 @@
                                                         </div>
                                                         <div class="edit-info">
                                                             <div class="current-plan">
-                                                                <div class="plan">Current Plan: <span>Paid</span></div>
+                                                                <div class="plan">Current Plan: <span class="text-white">Free</span></div>
                                                                 <div class="action"><a href="#">View Plans</a></div>
                                                             </div>
                                                             <div class="member-info">
-                                                                <div class="count-member"><strong>36</strong> Members <a href="#">Edit</a></div>
-                                                                <div class="action"><a href="#">Invite +</a></div>
+                                                                <div class="count-member"><strong>36</strong> Members <a href="chat-settings/manage-member.html">Edit</a></div>
+                                                                <div class="action"><a href="#"><i class="ri-user-add-line"></i>Invite</a></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -71,7 +71,7 @@
                                                     </div>
                                                     <div class="workspace-info add-wrokspace">
                                                         <div class="name-info">
-                                                            <div class="img"><em class="ico icon-add-white"></em></div>
+                                                            <div class="img"><em class="ico icon-create"></em></div>
                                                             <div class="name">
                                                                 <div class="h3">Add New Workspace</div>
                                                             </div>
@@ -91,16 +91,16 @@
                                     <div class="popup-container">
                                         <ul>
                                             <li class="item open-sidebar-by-id" data-open_id="profile-popup-bar">
-                                                <span><em class="ico icon-profile"></em>Edit Profile</span>
+                                                <span><em class="ico icon-settings-user-white"></em> Edit Profile</span>
                                             </li>
                                             <li class="item">
-                                                <span><em class="ico icon-settings-black "></em>Workspace Settings</span>
+                                                <span onclick="window.location.href='chat-settings/settings.html';"><em class="ico icon-settings"></em>Workspace Settings</span>
                                             </li>
                                             <li class="item open-sidebar-by-id" data-open_id="notification-popup-bar">
                                                 <span><em class="ico icon-bell"></em>Notifications</span>
                                             </li>
                                             <li class="item">
-                                                <span><em class="ico icon-color-palette"></em>Dark Mode</span> 
+                                                <span><em class="ico icon-color-palette"></em><span class="text">Dark Mode</span></span> 
                                                 <div class="custom-switch switch-sm">
                                                     <input id="screen-mode" type="checkbox" class="switch-input" checked>
                                                     <label for="screen-mode" class="switch-label">Switch</label>
@@ -110,7 +110,7 @@
                                                 <span><em class="ico icon-help"></em>Help</span>
                                             </li>
                                             <li class="item text-red">
-                                                <span><em class="ico icon-signout"></em>Sign out</span>
+                                                <span><em class="ico icon-setting-signout"></em>Sign out</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -122,12 +122,7 @@
                         <a href="#" class="icon-box open-sidebar-by-id" data-open_id="new-thread-popup-bar">
                             <div class="icon has-blue-tooltip" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
                                 <span>
-                                    <svg id="chat" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path id="Path_11111" data-name="Path 11111" d="M13.805,23.5,12.5,22.75l3-5.25H20A1.5,1.5,0,0,0,21.5,16V7A1.5,1.5,0,0,0,20,5.5H5A1.5,1.5,0,0,0,3.5,7v9A1.5,1.5,0,0,0,5,17.5h6.75V19H5a3,3,0,0,1-3-3V7A3,3,0,0,1,5,4H20a3,3,0,0,1,3,3v9a3,3,0,0,1-3,3H16.37Z" transform="translate(-0.5 -1)" fill="#abaebb"/>
-                                    <rect id="Rectangle_2765" class="fill-color" data-name="Rectangle 2765" width="12" height="1.5" transform="translate(6 7.5)" fill="#abaebb"/>
-                                    <rect id="Rectangle_2766" class="fill-color" data-name="Rectangle 2766" width="7.5" height="1.5" transform="translate(6 12)" fill="#abaebb"/>
-                                    <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" width="24" height="24" fill="none"/>
-                                  </svg>
+                                    <em class="ico threads"></em>
                                 </span>
                                 <div class="tool-tip-blue common-anim common-anim-pseudo from-top">Threads</div>
                             </div>
@@ -135,12 +130,7 @@
                         <a href="#" class="icon-box open-sidebar-by-id" data-open_id="all-files-popup-bar">
                             <div class="icon has-blue-tooltip" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
                                 <span>
-                                    <svg id="document" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                        <path id="Path_11112" data-name="Path 11112" d="M20.775,7.475l-5.25-5.25A.681.681,0,0,0,15,2H7.5A1.5,1.5,0,0,0,6,3.5v18A1.5,1.5,0,0,0,7.5,23h12A1.5,1.5,0,0,0,21,21.5V8A.681.681,0,0,0,20.775,7.475ZM15,3.8,19.2,8H15Zm4.5,17.7H7.5V3.5h6V8A1.5,1.5,0,0,0,15,9.5h4.5Z" transform="translate(-1.5 -0.5)" fill="#abaebb"/>
-                                        <rect class="fill-color" id="Rectangle_2767" data-name="Rectangle 2767" width="9" height="1.5" transform="translate(7.5 16.5)" fill="#abaebb"/>
-                                        <rect class="fill-color" id="Rectangle_2768" data-name="Rectangle 2768" width="9" height="1.5" transform="translate(7.5 12)" fill="#abaebb"/>
-                                        <rect id="Rectangle_2769" data-name="Rectangle 2769" width="24" height="24" fill="none"/>
-                                      </svg>                                                                            
+                                    <em class="ico icon-files"></em>
                                 </span>
                                 <div class="tool-tip-blue common-anim common-anim-pseudo from-top">Files</div>
                             </div>
@@ -148,10 +138,7 @@
                         <a href="#" class="icon-box open-sidebar-by-id" id="mentions-bar" data-open_id="mentions-popup-bar">
                             <div class="icon has-blue-tooltip" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
                                 <span>
-                                    <svg id="at" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                        <path id="Path_11113" data-name="Path 11113" d="M12.75,3A9.69,9.69,0,0,0,3,12.749v.75a9.75,9.75,0,0,0,9.75,9.75H18v-1.5H12.75A8.25,8.25,0,0,1,4.5,13.5v-.75A8.2,8.2,0,0,1,12.75,4.5,7.98,7.98,0,0,1,21,12.749c0,2.692-1.05,3.75-2.745,3.75-1.185,0-1.755-.967-1.755-2.25v-6H15V9.7a2.88,2.88,0,0,0-2.625-1.455,4.11,4.11,0,0,0-4.125,4.08v1.59A4.11,4.11,0,0,0,12.375,18a3.21,3.21,0,0,0,3-1.845A3.262,3.262,0,0,0,18.307,18c2.3,0,4.193-1.5,4.193-5.25A9.54,9.54,0,0,0,12.75,3ZM15,13.919a2.625,2.625,0,1,1-5.25,0v-1.59a2.625,2.625,0,1,1,5.25,0Z" transform="translate(-0.75 -0.749)" fill="#abaebb"/>
-                                        <rect id="Rectangle_2770" data-name="Rectangle 2770" width="24" height="24" fill="none"/>
-                                    </svg>                                      
+                                    <em class="ico icon-at-sign"></em>                                     
                                 </span>
                                 <div class="tool-tip-blue common-anim common-anim-pseudo from-top">Mentions</div>
                             </div>
@@ -159,10 +146,7 @@
                         <a href="#" class="icon-box open-sidebar-by-id" id="saved-bar" data-open_id="saved-popup-bar">
                             <div class="icon has-blue-tooltip" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
                                 <span>
-                                    <svg id="star" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                        <path id="Path_11114" data-name="Path 11114" d="M12.32,5.39l2.07,4.185.345.75.75.112,4.62.668L16.82,14.33l-.562.548.135.75.788,4.6-4.133-2.167-.727-.307-.7.368L7.49,20.255l.75-4.6.135-.75L7.82,14.33,4.505,11.068l4.62-.668.75-.112.345-.75,2.1-4.148m0-3.39L8.907,8.915l-7.627,1.1L6.8,15.4,5.5,23l6.825-3.585L19.145,23,17.84,15.4l5.52-5.377-7.628-1.11Z" transform="translate(-0.32 -0.5)" fill="#abaebb"/>
-                                        <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" width="24" height="24" fill="none"/>
-                                    </svg>                                      
+                                    <em class="ico icon-star"></em>                                     
                                 </span> 
                                 <div class="tool-tip-blue common-anim common-anim-pseudo from-top">Saved</div>
                             </div>
@@ -175,14 +159,14 @@
                                     <div class="message__sidebar-channels body">  
                                         <div class="collapse-info-block">                                
                                             <div class="collapse-card">
-                                                <div class="collaspe-header active">
-                                                    <div class="name">Channels</div>                                                    
+                                                <div class="collaspe-header">
+                                                    <div class="name">Channels<span class="count">7</span></div>
                                                 </div>
-                                                <div class="collapse-body show">
+                                                <div class="collapse-body">
                                                     <ul class="lists">
                                                         <li class="add-action">
                                                             <div class="channel-name custom-underline">
-                                                                <span><em class="ico icon-add"></em>Add</span>
+                                                                <span><em class="ico icon-create"></em>Add</span>
                                                             </div>
                                                         </li>
                                                         <li class="active">
@@ -203,7 +187,7 @@
                                                                 <a href="javascript:void(0)" class="more-info" data-jq-dropdown="#channel2"><em class="ico icon-dot-white"></em></a> 
                                                             </div>
                                                         </li>
-                                                        <li>
+                                                        <li class="meeting-call-start">
                                                             <div class="channel-name">
                                                                 <span class="img"><span><em class="ico icon-hashtag"></em></span></span>
                                                                 <span class="name">ui/ux testing</span>
@@ -218,7 +202,7 @@
                                                                 <span class="name">developers team</span>
                                                             </div>
                                                             <div class="more-dropdown">
-                                                                <a href="javascript:void(0)" class="more-info" data-jq-dropdown="#channel4"><em class="ico icon-dot-white"></em></a> 
+                                                                <a href="javascript:void(0)" class="more-info" data-jq-dropdown="#channel7"><em class="ico icon-dot-white"></em></a> 
                                                             </div>
                                                         </li>
                                                         <li>
@@ -226,6 +210,7 @@
                                                                 <span class="img"><em class="ico icon-hashtag"></em></span>
                                                                 <span class="name">qa team</span>
                                                             </div>
+                                                            <span class="count">2</span>
                                                             <div class="more-dropdown">
                                                                 <a href="javascript:void(0)" class="more-info" data-jq-dropdown="#channel5"><em class="ico icon-dot-white"></em></a> 
                                                             </div>
@@ -235,6 +220,7 @@
                                                                 <span class="img"><em class="ico icon-hashtag"></em></span>
                                                                 <span class="name">zib_3d_office</span>
                                                             </div>
+                                                            <span class="count">5</span>
                                                             <div class="more-dropdown">
                                                                 <a href="javascript:void(0)" class="more-info" data-jq-dropdown="#channel6"><em class="ico icon-dot-white"></em></a> 
                                                             </div>
@@ -244,7 +230,7 @@
                                             </div>
                                             <div class="collapse-card">
                                                 <div class="collaspe-header active">
-                                                    <div class="name">Messages</div>
+                                                    <div class="name">Messages<span class="count">9</span></div>
                                                 </div>
                                                 <div class="collapse-body show">
                                                     <ul class="lists">
@@ -254,23 +240,38 @@
                                                             </div>
                                                         </li>
                                                         <li>
-                                                            <div class="msg-name">
+                                                            <div class="msg-name with-name-tooltip"> 
+                                                                <!-- IF need Tool tip add ^^ class -->
                                                                 <div class="avatar">
                                                                     <span><img src="assets/images/vikas.jpg" alt="Vikas" /></span>
                                                                 </div>
-                                                                <span class="name">Vikas</span>
+                                                                <span class="name">
+                                                                   <span class="name-ellipsis">Vikas</span>
+                                                                    <div class="has-blue-tooltip status-box" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
+                                                                        <span class="status online"></span>
+                                                                        <div class="tool-tip-blue common-anim common-anim-pseudo from-top">Online</div>
+                                                                    </div>
+                                                                </span>
                                                             </div>
+                                                            <span class="count">2</span>
                                                             <div class="more-dropdown">
                                                                 <a href="javascript:void(0)" class="more-info" data-jq-dropdown="#channel1"><em class="ico icon-dot-white"></em></a> 
                                                             </div>
                                                         </li>
                                                         <li>
-                                                            <div class="msg-name">
+                                                            <div class="msg-name with-name-tooltip">
                                                                 <div class="avatar">
                                                                     <span><img src="assets/images/william.jpg" alt="William" /></span>
                                                                 </div>
-                                                                <span class="name">William</span>
+                                                                <span class="name">
+                                                                    <span class="name-ellipsis">William</span>
+                                                                    <div class="has-blue-tooltip status-box" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
+                                                                        <span class="status billing"></span>
+                                                                        <div class="tool-tip-blue common-anim common-anim-pseudo from-top">Offline</div>
+                                                                    </div>
+                                                                </span>
                                                             </div>
+                                                            <span class="count">4</span>
                                                             <div class="more-dropdown">
                                                                 <a href="javascript:void(0)" class="more-info" data-jq-dropdown="#channel2"><em class="ico icon-dot-white"></em></a> 
                                                             </div>
@@ -278,42 +279,61 @@
                                                         <li>
                                                             <div class="msg-name">
                                                                 <div class="avatar">
-                                                                    <span><em class="ico icon-hashtag-blue"></em></span>
+                                                                    <span><em class="ico icon-hashtag"></em></span>
                                                                 </div>
                                                                 <span class="name">Brandon, Jayesh, Kishan</span>
                                                             </div>
+                                                            <span class="count">3</span>
                                                             <div class="more-dropdown">
                                                                 <a href="javascript:void(0)" class="more-info" data-jq-dropdown="#channel3"><em class="ico icon-dot-white"></em></a> 
                                                             </div>
                                                         </li>
                                                         <li>
-                                                            <div class="msg-name">
+                                                            <div class="msg-name with-name-tooltip">
                                                                 <div class="avatar gradient1">
                                                                     <span class="letter">J</span>
                                                                 </div>
-                                                                <span class="name">Jayesh</span>
+                                                                <span class="name">
+                                                                    <span class="name-ellipsis">Jayesh</span>
+                                                                    <div class="has-blue-tooltip status-box" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
+                                                                        <span class="status offline"></span>
+                                                                        <div class="tool-tip-blue common-anim common-anim-pseudo from-top">Do not disturb</div>
+                                                                    </div>
+                                                                </span>
                                                             </div>
                                                             <div class="more-dropdown">
                                                                 <a href="javascript:void(0)" class="more-info" data-jq-dropdown="#channel4"><em class="ico icon-dot-white"></em></a>
                                                             </div>
                                                         </li>
                                                         <li>
-                                                            <div class="msg-name">
+                                                            <div class="msg-name with-name-tooltip">
                                                                 <div class="avatar gradient2">
                                                                     <span class="letter">S</span>
                                                                 </div>
-                                                                <span class="name">Sagar</span>
+                                                                <span class="name">
+                                                                    <span class="name-ellipsis">Sagar</span>
+                                                                    <div class="has-blue-tooltip status-box" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
+                                                                        <span class="status billing"></span>
+                                                                        <div class="tool-tip-blue common-anim common-anim-pseudo from-top">Offline</div>
+                                                                    </div>
+                                                                </span>
                                                             </div>
                                                             <div class="more-dropdown">
                                                                 <a href="javascript:void(0)" class="more-info" data-jq-dropdown="#channel5"><em class="ico icon-dot-white"></em></a> 
                                                             </div>
                                                         </li>
                                                         <li>
-                                                            <div class="msg-name">
+                                                            <div class="msg-name with-name-tooltip">
                                                                 <div class="avatar gradient3">
                                                                     <span class="letter">K</span>
                                                                 </div>
-                                                                <span class="name">Krupesh</span>
+                                                                <span class="name">
+                                                                    <span class="name-ellipsis">Krupesh</span>
+                                                                    <div class="has-blue-tooltip status-box" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
+                                                                        <span class="status online"></span>
+                                                                        <div class="tool-tip-blue common-anim common-anim-pseudo from-top">Online</div>
+                                                                    </div>
+                                                                </span>
                                                             </div>
                                                             <div class="more-dropdown">
                                                                 <a href="javascript:void(0)" class="more-info" data-jq-dropdown="#channel6"><em class="ico icon-dot-white"></em></a>
@@ -322,7 +342,7 @@
                                                         <li>
                                                             <div class="msg-name">
                                                                 <div class="avatar">
-                                                                    <span><em class="ico icon-hashtag-blue"></em></span>
+                                                                    <span><em class="ico icon-hashtag"></em></span>
                                                                 </div>
                                                                 <span class="name">Brandon, William, Jayesh</span>
                                                             </div>
@@ -616,6 +636,7 @@
                                     <div class="message-write-wrapper focus">
                                         <div class="message-write-box">  
                                             <textarea class="message-new" oninput="autoGrow(this)" placeholder="Reply to thread..."></textarea>
+                                            
                                             <div class="send-action"><a href="#"><em class="ico icon-send-fill"></em></a></div>
                                         </div>
                                         <div class="msg-option-block">                                             
@@ -2036,6 +2057,14 @@
                                             <div class="message-write-wrapper focus">
                                                 <div class="message-write-box">  
                                                     <textarea class="message-new" oninput="autoGrow(this)" placeholder="Message General"></textarea>
+                                                    <div class="start-meeting-block">
+                                                        <span>Start Meeting</span>
+                                                        <div class="custom-switch">
+                                                            <input id="msg-signed-out" type="checkbox" class="switch-input" checked>
+                                                            <label for="msg-signed-out" class="switch-label">Switch</label>
+                                                            <span for="msg-signed-out" class="switch-text"></span>
+                                                        </div> 
+                                                    </div>
                                                     <div class="send-action"><a href="#"><em class="ico icon-send-fill"></em></a></div>
                                                     <div class="attach-file-block">
                                                         <div class="attach-img">
@@ -3998,6 +4027,17 @@
                     $('.message-input-block .group-message').css('display', 'block');
                     $('.search-member-dropdown').slideToggle();
                     $('.messageboard').css('display', 'block');
+                });
+            }
+            if($('.collapse-info-block').length) { 
+                $('.collapse-card .collaspe-header').on( 'click', function() { 
+                    if($(this).hasClass('active')) {
+                        $(this).removeClass('active');
+                        $(this).parents('.collapse-card').find('.collapse-body').slideUp().removeClass('show');
+                    } else {
+                        $(this).addClass('active');
+                        $(this).parents('.collapse-card').find('.collapse-body').slideDown().addClass('show');
+                    }
                 });
             }
         </script>
