@@ -233,7 +233,141 @@
                 } 
             }
         }
-    }   
+    }  
+    .meeting-item {
+        border: 1px solid #1f2028;
+        background: #202028;
+        color: #FFFFFF;
+        padding: 15px;
+        max-width: 245px;
+        margin: 10px 20px;
+        position: relative;
+        &.is-hover,&:hover {
+            .user-meeting-dropdown {
+                @include opacity(1);
+                visibility: visible;
+                pointer-events: all;
+            }
+        }
+        &.is-missed {
+            color: #2A2A2A;
+            border-color: #FFB1B1 !important;
+            background-color: #FFF2F2 !important;
+            .title-text {
+                .ico {
+                    &::before {
+                        color: #E73C3C !important;
+                    }
+                }
+            }
+        }
+        ~.meeting-item {
+            margin-top: 15px;
+        }
+        .title-time-block {
+            @include flexbox();
+            @include align-items(center);
+            @include justify-content(space-between);
+            margin-bottom: 10px;
+        }
+        .title-text {
+            font-size: 14px;
+            font-weight: 500;
+            @include flexbox();
+            @include align-items(center);
+            .ico {
+                margin-right: 5px;
+                &::before {
+                    color: #5056CA;
+                }
+            }
+        }
+        .time-text {
+            color: #7A7F93;
+            font-size: 10px;
+            margin-left: 5px;
+        }
+        .user-group-name {
+            @include flexbox();
+            @include align-items(center);
+            font-size: 14px;
+            font-weight: 500;
+            span{
+                font-style: italic;
+                font-size: 11px;
+                margin-right: 5px
+            }
+            .image-group {
+                @include flexbox();
+                -webkit-box-flex: 0;
+                -ms-flex: none;
+                flex: none;
+                margin-right: 5px;
+                .user-sort-name {
+                    background-color: var(--bg-color ,#797989);
+                    border: 1px solid #FFFFFF;
+                    width: 25px;
+                    height: 25px;
+                    font-size: 10px;
+                    font-weight: 700;
+                    color: #FFFFFF;
+                    -webkit-box-flex: 0;
+                    -ms-flex: none;
+                    flex: none;
+                    margin: 0;
+                    @include border-radius(100px);
+                    @include flexbox();
+                    @include align-items(center);
+                    @include justify-content(center);
+                    ~ .user-sort-name {
+                        margin-left: -12px;
+                    }
+                }
+                img {
+                    width: 24px;
+                    border: 1px solid #FFFFFF;
+                    border-radius: 100px;
+                    -moz-border-radius: 100px;
+                    -webkit-border-radius: 100px;
+                    ~img{
+                        margin-left: -12px;
+                    }
+                }
+            }
+        }
+        .user-meeting-dropdown {
+            position: absolute;
+            right: 15px;
+            max-width: 160px;
+            width: 100%;
+            border: 1px solid #5056CA;
+            background: #111116;
+            list-style: none;
+            padding: 6px 0;
+            margin: 0;
+            z-index: 10;
+            max-height: 210px;
+            overflow: hidden;
+            pointer-events: none;
+            overflow-y: auto;@include opacity(0);
+            color: #ABAEBB;
+            top: calc(100% - 15px);
+            visibility: hidden;
+            @include transition(0.3s, ease-in-out);
+            &::-webkit-scrollbar {
+                width: 3px;
+            }
+            li{
+                font-weight: 500;
+                font-size: 11px;
+                padding: 5px 15px;
+                cursor: pointer;
+                &:hover, &:focus {
+                    background: #33333F;
+                }
+            }
+        }
+    }
     @media (max-width: 992px) {
         .message-row { 
             .message-content {
@@ -254,6 +388,25 @@
     }   
 }
 .app-content.light-theme { 
+    .create-meeting-block {
+        padding: 5px 20px;
+        .meeting-item {
+            border-color: #E0E0E0;
+            background: #F2F5F9;
+            color: #2A2A2A;
+            .user-meeting-dropdown {
+                border-color: #EAEAEA;
+                background-color: #FFFFFF;
+                color: #2A2A2A;
+                li{
+                    &:hover ,&:focus {
+                        background: #F2F5F9;
+                    }
+                }
+            }
+        }
+    }
+
     .messageboard { background: transparent;       
         .start-chat { 
             .text { color: #454A60; }

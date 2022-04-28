@@ -2164,7 +2164,55 @@
                                                     <p class="message-text">I have logged in and I am available.</p>
                                                 </div>             
                                             </div>
-                                        </div>                                                         
+                                        </div>   
+                                        <div class="meeting-item">
+                                            <div class="title-time-block">
+                                                <div class="title-text"><em class="ico icon-video-outline"></em> Meeting is over</div>
+                                                <div class="time-text">5:58pm</div>
+                                            </div>
+                                            <div class="user-group-name">
+                                                <div class="image-group">
+                                                    <span class="user-sort-name" style="--bg-color:#797989;">WW</span>
+                                                    <span class="user-sort-name" style="--bg-color:#897985;">BG</span>
+                                                    <span class="user-sort-name" style="--bg-color:#798289;">KT</span>
+                                                </div>
+                                                <span>Started by</span> William Wright
+                                            </div>
+                                            <div class="user-meeting-dropdown">
+                                                <li>William Wright </li>
+                                                <li>Brandon Guetirezz </li>
+                                                <li>John Doe </li>
+                                                <li>Jane Doe </li>
+                                                <li>Nirav Vaghani </li>
+                                                <li>Jayesh Patel </li>
+                                                <li>Nam_QA </li>
+                                                <li>Hardik Patel</li>
+                                            </div>
+                                        </div>
+                                        <div class="meeting-item is-missed">
+                                            <div class="title-time-block">
+                                                <div class="title-text"><em class="ico icon-video-outline"></em> Meeting Missed</div>
+                                                <div class="time-text">5:58pm</div>
+                                            </div>
+                                            <div class="user-group-name">
+                                                <div class="image-group">
+                                                    <span class="user-sort-name" style="--bg-color:#797989;">WW</span>
+                                                    <span class="user-sort-name" style="--bg-color:#897985;">BG</span>
+                                                    <span class="user-sort-name" style="--bg-color:#798289;">KT</span>
+                                                </div>
+                                                <span>Started by</span> William Wright
+                                            </div>
+                                            <div class="user-meeting-dropdown">
+                                                <li>William Wright </li>
+                                                <li>Brandon Guetirezz </li>
+                                                <li>John Doe </li>
+                                                <li>Jane Doe </li>
+                                                <li>Nirav Vaghani </li>
+                                                <li>Jayesh Patel </li>
+                                                <li>Nam_QA </li>
+                                                <li>Hardik Patel</li>
+                                            </div>
+                                        </div>                                                      
                                         <div class="message-row with-avatar">
                                             <div class="avatar gradient3"><span class="letter">S</span></div>
                                             <div class="message-content">
@@ -2268,7 +2316,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>  
+                                        </div> 
+                                        
                                         <div class="message-loading">
                                             <div class="circle-loading">
                                                 <svg version="1.1" id="L5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -4405,6 +4454,14 @@
         <script src="assets/js/wavesurfer.js"></script>
         <script src="assets/js/chat.js"></script>
         <script>
+            // user-dropdown-box hover add class
+            if ($(".metting-item").length) {
+                $('.metting-item').mouseenter(function () {
+                    $(this).addClass("is-hover");
+                }).mouseleave(function () {
+                    $(this).removeClass("is-hover");
+                });
+            }
             $(window).bind('load', function() {
                 $('#loader').addClass('loaded');
                 setTimeout(function() {
