@@ -384,6 +384,18 @@
         .custom-switch{
             margin-left: 8px;
         }
+        &.disable-meeting {
+            opacity: 0.5;
+            cursor: default;
+            .custom-switch {
+                pointer-events: none;
+            }
+            &.has-blue-tooltip{
+                .tool-tip-blue {
+                    margin-top: -15px;
+                }
+            }
+        }
         @media (max-width:480px) {
             position: relative;
             right: auto;
@@ -401,8 +413,8 @@
             right: 0;
             bottom: 0;
             background-color: rgba(140,145,249,0.3);
-            animation: pulse 2s infinite;
-            -webkit-animation: pulse 2s infinite;
+            animation: meeting-pulse 2s infinite;
+            -webkit-animation: meeting-pulse 2s infinite;
             animation-direction: alternate-reverse;
         }
         &:before {
@@ -491,17 +503,17 @@
             -o-transform: scale(1);
         }
     }
-    @keyframes pulse {
+    @keyframes meeting-pulse {
         from {
-            @include opacity(0);
+            @include opacity(0.3);
         }
         to {
             @include opacity(1);
         }
     }
-    @-webkit-keyframes pulse {
+    @-webkit-keyframes meeting-pulse {
         from {
-            @include opacity(0);
+            @include opacity(0.3);
         }
         to {
             @include opacity(1);

@@ -2057,13 +2057,14 @@
                                             <div class="message-write-wrapper focus">
                                                 <div class="message-write-box">  
                                                     <textarea class="message-new" oninput="autoGrow(this)" placeholder="Message General"></textarea>
-                                                    <div class="start-meeting-block">
+                                                    <div class="start-meeting-block disable-meeting has-blue-tooltip" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
                                                         <span>Start Meeting</span>
                                                         <div class="custom-switch">
                                                             <input id="msg-signed-out" type="checkbox" class="switch-input" checked>
                                                             <label for="msg-signed-out" class="switch-label">Switch</label>
                                                             <span for="msg-signed-out" class="switch-text"></span>
                                                         </div> 
+                                                        <div class="tool-tip-blue common-anim common-anim-pseudo from-top">You'll need to end your current call if<br/> you wish to start a new one.</div>
                                                     </div>
                                                     <div class="send-action"><a href="#"><em class="ico icon-send-fill"></em></a></div>
                                                     <div class="attach-file-block">
