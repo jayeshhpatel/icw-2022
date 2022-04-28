@@ -235,9 +235,9 @@
         }
     }  
     .meeting-item {
-        border: 1px solid #1f2028;
+        border: 1px solid #33333F;
         background: #202028;
-        color: #FFFFFF;
+        color: #ABAEBB;
         padding: 15px;
         max-width: 245px;
         margin: 10px 20px;
@@ -250,10 +250,11 @@
             }
         }
         &.is-missed {
-            color: #2A2A2A;
-            border-color: #FFB1B1 !important;
-            background-color: #FFF2F2 !important;
+            color: #E8E8E9;
+            border-color: #E73C3C !important;
+            background-color: #111116 !important;
             .title-text {
+                color: #E73C3C;
                 .ico {
                     &::before {
                         color: #E73C3C !important;
@@ -261,6 +262,7 @@
                 }
             }
         }
+        
         ~.meeting-item {
             margin-top: 15px;
         }
@@ -295,7 +297,8 @@
             span{
                 font-style: italic;
                 font-size: 11px;
-                margin-right: 5px
+                margin-right: 5px;
+                color: #70758B;
             }
             .image-group {
                 @include flexbox();
@@ -305,7 +308,7 @@
                 margin-right: 5px;
                 .user-sort-name {
                     background-color: var(--bg-color ,#797989);
-                    border: 1px solid #FFFFFF;
+                    border: 1px solid #202028;
                     width: 25px;
                     height: 25px;
                     font-size: 10px;
@@ -539,20 +542,37 @@
     }   
 }
 .app-content.light-theme { 
-    .create-meeting-block {
-        padding: 5px 20px;
-        .meeting-item {
-            border-color: #E0E0E0;
-            background: #F2F5F9;
+    .meeting-item {
+        border-color: #E0E0E0;
+        background: #F2F5F9;
+        color: #2A2A2A;
+        &.is-missed {
             color: #2A2A2A;
-            .user-meeting-dropdown {
-                border-color: #EAEAEA;
-                background-color: #FFFFFF;
+            border-color: #FFB1B1 !important;
+            background-color: #FFF2F2 !important;
+            .title-text {
                 color: #2A2A2A;
-                li{
-                    &:hover ,&:focus {
-                        background: #F2F5F9;
+                .ico {
+                    &::before {
+                        color: #E73C3C !important;
                     }
+                }
+            }
+        }
+        .user-group-name{
+            .image-group{
+                .user-sort-name{
+                    border-color: #FFFFFF;
+                }
+            }
+        }
+        .user-meeting-dropdown {
+            border-color: #EAEAEA;
+            background-color: #FFFFFF;
+            color: #2A2A2A;
+            li{
+                &:hover ,&:focus {
+                    background: #F2F5F9;
                 }
             }
         }
