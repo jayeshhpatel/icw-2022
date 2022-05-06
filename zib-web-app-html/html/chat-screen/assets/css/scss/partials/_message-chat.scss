@@ -398,6 +398,11 @@
                     margin-top: -15px;
                 }
             }
+            &.open {
+                .tool-tip-blue {
+                    display: none !important;
+                }
+            }
         }
     }
     .meeting-content-block {
