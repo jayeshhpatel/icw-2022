@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
-  <g id="Play" transform="translate(-45 -45)">
-    <circle id="Ellipse_44" data-name="Ellipse 44" cx="15" cy="15" r="15" transform="translate(45 45)" fill="#333" opacity="0.6"/>
-    <path id="play-filled-alt" d="M7.417,20.5a.667.667,0,0,1-.667-.667V5.167a.667.667,0,0,1,1-.577l12.667,7.333a.667.667,0,0,1,0,1.153L7.751,20.41a.665.665,0,0,1-.334.09Z" transform="translate(48.25 47.5)" fill="#fff"/>
-  </g>
-</svg>
