@@ -384,6 +384,14 @@
             }
         }
     }
+    .alert-block {
+        position: absolute;
+        bottom: 150px;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        text-align: center;   
+    }
     .video-wrapper-bottom {
         position: absolute;
         bottom: 80px;

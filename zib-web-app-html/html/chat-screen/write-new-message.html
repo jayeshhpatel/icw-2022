@@ -2055,16 +2055,23 @@
                                     <div class="message-write-container action-popular">
                                         <form >
                                             <div class="message-write-wrapper focus">
-                                                <div class="message-write-box">  
+                                                <div class="message-write-box join-meeting-message-block">  
                                                     <textarea class="message-new" oninput="autoGrow(this)" placeholder="Message General"></textarea>
-                                                    <div class="start-meeting-block disable-meeting has-blue-tooltip" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
-                                                        <span>Start Meeting</span>
-                                                        <div class="custom-switch">
-                                                            <input id="msg-signed-out" type="checkbox" class="switch-input" checked>
-                                                            <label for="msg-signed-out" class="switch-label">Switch</label>
-                                                            <span for="msg-signed-out" class="switch-text"></span>
-                                                        </div> 
-                                                        <div class="tool-tip-blue common-anim common-anim-pseudo from-top">You'll need to end your current call if<br/> you wish to start a new one.</div>
+                                                    <div class="meeting-content-block">
+                                                        <div id="meeting-box" class="start-meeting-block disable-meeting has-blue-tooltip" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
+                                                            <span>Start Meeting</span>
+                                                            <div class="custom-switch">
+                                                                <input id="msg-signed-out" type="checkbox" class="switch-input" checked>
+                                                                <label for="msg-signed-out" class="switch-label">Switch</label>
+                                                                <span for="msg-signed-out" class="switch-text"></span>
+                                                            </div> 
+                                                            <div class="tool-tip-blue common-anim common-anim-pseudo from-top">You'll need to end your current call if<br/> you wish to start a new one.</div>
+                                                        </div>
+                                                        <div class="meeting-alert">
+                                                            <div class="alert-list"><em class="ico icon-camara-off"></em>Webcam not detected!</div>
+                                                            <div class="alert-list"><em class="ico icon-microphone-off"></em>Microphone not detected!</div>
+                                                            <div class="small-dec">Please check devices and start meeting again.</div>
+                                                        </div>
                                                     </div>
                                                     <div class="send-action"><a href="#"><em class="ico icon-send-fill"></em></a></div>
                                                     <div class="attach-file-block">
@@ -3843,6 +3850,11 @@
         <script src="assets/js/chat.js"></script>
         <script>            
             $(document).ready(function() {
+                $('#meeting-box').click(function() {
+                    $(this).toggleClass('open');
+                    $('.meeting-alert').toggleClass('is-open');
+                });
+
                 $(".mute-btn").click(function() {
                     $(".unmute-btn").css('display', 'flex');
                     $(".mute-btn").css('display', 'none');

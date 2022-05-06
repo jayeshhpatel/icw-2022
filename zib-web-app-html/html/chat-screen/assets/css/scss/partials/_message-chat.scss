@@ -376,11 +376,11 @@
         font-size: 16px;
         font-weight: 500;
         line-height: normal;
-        position: absolute;
-        right: 45px;
-        top: 0;
-        bottom: 0;
-        height: 24px;
+        // position: absolute;
+        // right: 45px;
+        // top: 0;
+        // bottom: 0;
+        // height: 24px;
         margin: auto;
         @include flexbox();
         @include align-items(center);
@@ -399,11 +399,67 @@
                 }
             }
         }
-        @media (max-width:480px) {
-            position: relative;
-            right: auto;
-            height: auto;
-            padding: 0 15px 15px;
+    }
+    .meeting-content-block {
+        -webkit-box-flex: 0;
+        -ms-flex: none;
+        flex: none;
+        display: inline-block;
+        position: relative;
+        padding-right: 50px;
+        @media (max-width:767px) {
+            padding: 0 15px 10px;
+        }
+    }
+    .meeting-alert {
+        background-color: #000000;
+        @include border-radius(5px);
+        color: rgba(255,255,255,0.9);
+        padding: 10px;
+        line-height: normal;
+        min-width: 270px;
+        position: absolute;
+        bottom: 100%;
+        z-index: 10;
+        left: -100px;
+        margin-bottom: 10px;
+        visibility: hidden;
+        @include opacity(0);
+        @include transition(0.3s, ease-in-out);
+        @media (max-width:767px) {
+           left: 0;
+        }
+        &.is-open{
+            visibility: visible;
+            @include opacity(1);
+        }
+        &:after {
+            content: "";
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 10px 10px 0px 10px;
+            border-color: #000000 transparent transparent transparent !important;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .alert-list {
+            font-size: 14px;
+            @include flexbox();
+            @include align-items(center);
+            padding-bottom: 5px;
+            .ico {
+                -webkit-box-flex: 0;
+                -ms-flex: none;
+                flex: none;
+                margin-right: 10px;
+            }
+        }
+        .small-dec {
+            font-size: 12px;
         }
     }
     .meeting-call-start {
@@ -577,7 +633,12 @@
             }
         }
     }
-
+    .meeting-alert {
+        background-color: rgba(42 ,42 ,42, 0.9);
+        &:after {
+            border-color: rgba(42 ,42 ,42, 0.9) transparent transparent transparent !important;
+        }
+    }
     .messageboard { background: transparent;       
         .start-chat { 
             .text { color: #454A60; }
