@@ -2360,7 +2360,14 @@
                                                     <textarea class="message-new" oninput="autoGrow(this)" placeholder="Message General"></textarea>
                                                     <div class="join-meeting-block">
                                                         <div class="invited-title">Invited by <span class="text-blue">William</span></div>
-                                                        <a href="video-chat.html" class="join-btn"><em class="ico icon-video-outline"></em>Join</a>
+                                                        <div class="join-meeting-btn">
+                                                            <a id="meeting-box" href="video-chat.html" class="join-btn"><em class="ico icon-video-outline"></em>Join</a>
+                                                            <div class="meeting-alert">
+                                                                <div class="alert-list"><em class="ico icon-camara-off"></em>Webcam not detected!</div>
+                                                                <div class="alert-list"><em class="ico icon-microphone-off"></em>Microphone not detected!</div>
+                                                                <div class="small-dec">Please check devices and start meeting again.</div>
+                                                            </div>
+                                                        </div>
                                                         <div class="invited-people-block">
                                                             <button type="button" class="people-popup" id="invited-popup">
                                                                 <div class="image-group">
@@ -4454,6 +4461,16 @@
         <script src="assets/js/wavesurfer.js"></script>
         <script src="assets/js/chat.js"></script>
         <script>
+             // meeting-alert popup
+            if ($("#meeting-box").length) {
+                $('#meeting-box').mouseenter(function () {
+                    $(this).addClass("open");
+                    $('.meeting-alert').addClass("is-open");
+                }).mouseleave(function () {
+                    $(this).removeClass("open");
+                    $('.meeting-alert').removeClass("is-open");
+                });
+            }
             // user-dropdown-box hover add class
             if ($(".metting-item").length) {
                 $('.metting-item').mouseenter(function () {
