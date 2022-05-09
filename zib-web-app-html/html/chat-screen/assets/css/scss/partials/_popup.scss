@@ -838,8 +838,8 @@
             .custom-modal { 
                 .popup-header { border-bottom-color: #ADB3CC;
                     .search-field { background: $white;
-                        input { color: #202028; background: $white; font-weight: 500;
-                            &::placeholder { color: #ACACAE; }
+                        input { color: #202028; background: $white; font-weight: 500;-webkit-text-fill-color: #202028;
+                            &::placeholder { color: #202028 !important; }
                         }
                         .edit { color: $primary; 
                             &:hover { color: $primary-hover; }
@@ -852,7 +852,10 @@
                         }
                         .search-for-block { 
                             .search-for { 
-                                span { color: #ACACAE; }
+                                label{
+                                    color: #202028 !important;
+                                }
+                                span { color: #33333F; }
                                 div { color: #33333F; }
                             }
                         }
@@ -889,6 +892,18 @@
                         .message-row {
                             &:hover { 
                                 .message-content { background: #F2F5F9; }
+                            }
+                        }
+                        .member-list {
+                            li {
+                                &:hover {
+                                    background-color: #F2F5F9;
+                                }
+                                .member-name {
+                                    .name {
+                                        color: #202028;
+                                    }
+                                }
                             }
                         }
                         .msg-details { 
